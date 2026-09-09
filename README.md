@@ -81,3 +81,18 @@ The copy is the editorial content from the design. Prices are deliberately unset
 carry the date they were checked — the site's rule is that a price is never shown undated. The
 school lists, course counts and the Harbourline profile are the design's sample data and need
 verifying against the schools before launch.
+
+## SEO
+
+`src/lib/site.ts` holds the canonical origin and the route registry. Add each new page to
+`routes` there and it appears in the sitemap automatically.
+
+- `/sitemap.xml` and `/robots.txt` are generated from that registry (`src/app/sitemap.ts`,
+  `src/app/robots.ts`).
+- Every page declares its own canonical URL via `alternates.canonical`.
+- Preview deployments serve `Disallow: /` so they can never be indexed in place of the
+  production site.
+
+Set `NEXT_PUBLIC_SITE_URL` in the Vercel project (for example `https://sailingschools.com.au`)
+once the domain is attached — it overrides the default origin used for canonicals and the
+sitemap.

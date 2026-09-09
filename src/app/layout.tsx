@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import '@phosphor-icons/web/duotone';
+import { siteUrl } from '@/lib/site';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import './site.css';
@@ -22,7 +23,8 @@ const serif = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sailingschools.com.au'),
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: '/' },
   title: {
     default: 'SailingSchools.com.au — Australia’s independent guide to learning to sail',
     template: '%s · SailingSchools.com.au',

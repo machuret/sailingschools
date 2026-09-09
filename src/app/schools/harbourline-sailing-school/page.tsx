@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Harbourline Sailing School (sample profile)',
   description:
     'A sample school profile showing the template every SailingSchools.com.au listing follows: accreditation, training waters, training boats, course list, published prices and the date they were checked.',
+  alternates: { canonical: '/schools/harbourline-sailing-school' },
 };
 
 const PRICES = [

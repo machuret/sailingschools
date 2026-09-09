@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Sailing schools by state',
   description:
     'Dedicated sailing schools, academies and yacht training businesses across every Australian state and territory — New South Wales, Queensland, Victoria, Western Australia, South Australia, Tasmania and the Northern Territory.',
+  alternates: { canonical: '/sailing-schools' },
 };
 
 /** The state/region tree from the site architecture. Only Sydney has a page so far. */

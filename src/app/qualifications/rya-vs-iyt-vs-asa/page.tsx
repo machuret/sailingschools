@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'RYA vs IYT vs ASA in Australia',
   description:
     'Three international schemes teach cruising yachts in Australia. Compared side by side on crew and skipper pathways, catamaran certificates, offshore routes, Australian school availability and commercial progression.',
+  alternates: { canonical: '/qualifications/rya-vs-iyt-vs-asa' },
 };
 
 type Row = { area: string; rya: string; iyt: string; asa: string; dim?: ('rya' | 'iyt' | 'asa')[]; spot?: ('rya' | 'iyt' | 'asa')[] };

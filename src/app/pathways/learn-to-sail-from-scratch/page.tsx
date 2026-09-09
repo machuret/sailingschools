@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'How to learn to sail in Australia from zero',
   description:
     'There is no rule requiring a complete beginner to start in a dinghy. Three legitimate routes into sailing in Australia — dinghy, keelboat or straight onto a cruising yacht — and how to pick the one that matches your goal.',
+  alternates: { canonical: '/pathways/learn-to-sail-from-scratch' },
 };
 
 export default function PathwayPage() {

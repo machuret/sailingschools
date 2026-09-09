@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'RYA Competent Crew',
   description:
     'RYA Competent Crew is a five-day practical course requiring no previous sailing experience, normally run liveaboard on a cruising yacht. What it covers, who it suits, and the Australian schools that teach it.',
+  alternates: { canonical: '/courses/rya-competent-crew' },
 };
 
 const SCHOOLS = [

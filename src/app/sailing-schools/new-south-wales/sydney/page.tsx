@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Sailing schools in Sydney',
   description:
     'Dedicated sailing schools operating from Sydney Harbour, Middle Harbour, Pittwater and Botany Bay — beginner sailing, Australian Sailing keelboat courses, RYA and IYT yacht training, catamaran handling, Yachtmaster preparation, racing, safety and navigation.',
+  alternates: { canonical: '/sailing-schools/new-south-wales/sydney' },
 };
 
 const SCHOOLS = [
