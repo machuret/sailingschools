@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'RYA vs IYT vs ASA Australia | Which Qualification to Choose',
@@ -52,9 +53,13 @@ export default function ComparePage() {
         <div className="hero-scrim" />
         <div className="wrap hero-in">
           <div>
-            <p className="crumb">
-              <Link href="/">Home</Link> / Qualifications / RYA vs IYT vs ASA
-            </p>
+            <Breadcrumbs
+              items={[
+                { name: 'Home', href: '/' },
+                { name: 'Qualifications' },
+                { name: 'RYA vs IYT vs ASA' },
+              ]}
+            />
             <h1>
               RYA vs IYT vs ASA <em>in Australia</em>
             </h1>

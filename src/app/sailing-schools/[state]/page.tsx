@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { itemList } from '@/lib/schema';
 import { schoolsInState } from '@/lib/schools';
 import { states, stateByKey } from '@/lib/states';
 
@@ -49,6 +52,14 @@ export default async function StatePage({ params }: Params) {
 
   return (
     <>
+      <JsonLd
+        nodes={[
+          itemList(
+            `Sailing schools in ${record.name}`,
+            list.map((s) => ({ name: s.name, href: s.profile })),
+          ),
+        ]}
+      />
       <section className="hero short">
         <div className="hero-photo">
           <ImageSlot placeholder={`Drop a photograph — sailing training water in ${record.name}`} />
@@ -56,10 +67,13 @@ export default async function StatePage({ params }: Params) {
         <div className="hero-scrim" />
         <div className="wrap hero-in">
           <div>
-            <p className="crumb">
-              <Link href="/">Home</Link> / <Link href="/sailing-schools/">Schools</Link> /{' '}
-              {record.name}
-            </p>
+            <Breadcrumbs
+              items={[
+                { name: 'Home', href: '/' },
+                { name: 'Schools', href: '/sailing-schools/' },
+                { name: record.name },
+              ]}
+            />
             <h1>
               Sailing Schools <em>{record.name}</em>
             </h1>

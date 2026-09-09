@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { itemList } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Sailing Schools Sydney | Sailing Lessons, RYA & Yacht Courses',
@@ -32,6 +35,14 @@ const COURSE_COUNTS = [
 export default function SydneyPage() {
   return (
     <>
+      <JsonLd
+        nodes={[
+          itemList(
+            'Sailing schools in Sydney',
+            SCHOOLS.map((s) => ({ name: s.name, href: '/schools/harbourline-sailing-school/' })),
+          ),
+        ]}
+      />
       <section className="hero short">
         <div className="hero-photo">
           <ImageSlot placeholder="Drop a photograph — Sydney Harbour from the water" />
@@ -39,10 +50,14 @@ export default function SydneyPage() {
         <div className="hero-scrim" />
         <div className="wrap hero-in">
           <div>
-            <p className="crumb">
-              <Link href="/">Home</Link> / <Link href="/sailing-schools/">Schools</Link> / New South
-              Wales / Sydney
-            </p>
+            <Breadcrumbs
+              items={[
+                { name: 'Home', href: '/' },
+                { name: 'Schools', href: '/sailing-schools/' },
+                { name: 'New South Wales', href: '/sailing-schools/new-south-wales/' },
+                { name: 'Sydney' },
+              ]}
+            />
             <h1>
               Sailing Schools <em>Sydney</em>
             </h1>

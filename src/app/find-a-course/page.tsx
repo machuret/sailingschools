@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import CourseFinder from './CourseFinder';
 
 export const metadata: Metadata = {
@@ -15,9 +15,7 @@ export default function FindCoursePage() {
       <section className="hero short">
         <div className="wrap hero-in">
           <div>
-            <p className="crumb">
-              <Link href="/">Home</Link> / Find a course
-            </p>
+            <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Find a course' }]} />
             <h1>
               Find the <em>Right</em> Sailing Course
             </h1>

@@ -29,12 +29,12 @@ export default function SiteFooter() {
             </div>
             <div className="cols3">
               <div>
-                <h4>Learn</h4>
-                <Link href="/pathways/complete-beginner/">Pathways</Link>
-                <Link href="/rya/">Courses</Link>
-                <Link href="/qualifications/rya-vs-iyt-vs-asa/">Qualifications</Link>
-                <Link href="/find-a-course/">How long does it take?</Link>
-                <Link href="/find-a-course/">How much do courses cost?</Link>
+                <h4>Courses</h4>
+                <Link href="/australian-sailing/">Australian Sailing</Link>
+                <Link href="/rya/">RYA</Link>
+                <Link href="/iyt/">IYT</Link>
+                <Link href="/asa/">American Sailing</Link>
+                <Link href="/qualifications/rya-vs-iyt-vs-asa/">Compare qualifications</Link>
               </div>
               <div>
                 <h4>Schools</h4>

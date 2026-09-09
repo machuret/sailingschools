@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { educationalOrganization } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Harbourline Sailing School | Sample School Profile',
@@ -20,13 +23,28 @@ const PRICES = [
 export default function SchoolPage() {
   return (
     <>
+      <JsonLd
+        nodes={[
+          educationalOrganization({
+            name: 'Harbourline Sailing School',
+            description:
+              'A sample school profile showing the template every listing follows. An RYA Training Centre at Rushcutters Bay, Sydney, running liveaboard cruising courses and own-boat tuition.',
+            areaServed: 'Sydney, New South Wales, Australia',
+          }),
+        ]}
+      />
       <section className="sec" style={{ paddingTop: 48 }}>
         <div className="wrap">
-          <p className="crumb dark">
-            <Link href="/">Home</Link> / <Link href="/sailing-schools/">Schools</Link> / NSW /{' '}
-            <Link href="/sailing-schools/new-south-wales/sydney/">Sydney</Link> / Harbourline Sailing
-            School
-          </p>
+          <Breadcrumbs
+            dark
+            items={[
+              { name: 'Home', href: '/' },
+              { name: 'Schools', href: '/sailing-schools/' },
+              { name: 'New South Wales', href: '/sailing-schools/new-south-wales/' },
+              { name: 'Sydney', href: '/sailing-schools/new-south-wales/sydney/' },
+              { name: 'Harbourline Sailing School' },
+            ]}
+          />
           <div
             className="split top"
             style={{ marginTop: 20, gridTemplateColumns: 'minmax(0,.9fr) minmax(0,1.1fr)' }}

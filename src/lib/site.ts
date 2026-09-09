@@ -34,6 +34,9 @@ const staticRoutes: SiteRoute[] = [
   { path: '/qualifications/rya-vs-iyt-vs-asa/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/pathways/complete-beginner/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/rya/', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/iyt/', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/asa/', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/australian-sailing/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/schools/harbourline-sailing-school/', priority: 0.5, changeFrequency: 'monthly' },
 ];
 

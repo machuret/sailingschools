@@ -36,7 +36,10 @@ trailing slash.
 | `/` | Home |
 | `/find-a-course/` | Three-question course finder (client-side, no account or email capture) |
 | `/pathways/complete-beginner/` | Complete-beginner pathway — the three routes in |
-| `/rya/` | RYA organisation hub |
+| `/australian-sailing/` | Australian Sailing hub — Tackers, OutThere, dinghy, keelboat |
+| `/rya/` | RYA hub |
+| `/iyt/` | IYT hub |
+| `/asa/` | American Sailing hub |
 | `/rya/competent-crew/` | Course detail |
 | `/qualifications/rya-vs-iyt-vs-asa/` | Scheme comparison |
 | `/sailing-schools/` | Schools index |
@@ -109,6 +112,12 @@ verifying against the schools before launch.
 - `/sitemap.xml` and `/robots.txt` are generated from that registry (`src/app/sitemap.ts`,
   `src/app/robots.ts`).
 - Every page declares its own canonical URL via `alternates.canonical`.
+- Structured data comes from `src/lib/schema.ts`, rendered by `<JsonLd>`. `<Breadcrumbs>`
+  emits the visible trail and its `BreadcrumbList` from one list, so the two cannot diverge.
+  Pages carry `Organization`/`WebSite` (home), `Course`, `ItemList` and
+  `EducationalOrganization` as appropriate. No `CourseInstance` dates, prices or
+  `aggregateRating` are emitted — we hold none, and inventing them would be a lie in
+  machine-readable form.
 - Preview deployments serve `Disallow: /` so they can never be indexed in place of the
   production site.
 

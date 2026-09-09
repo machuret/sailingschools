@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import JsonLd from '@/components/JsonLd';
+import { organization, website } from '@/lib/schema';
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd nodes={[organization(), website()]} />
       <section className="hero">
         <div className="hero-photo">
           <ImageSlot

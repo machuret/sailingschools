@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Learn to Sail Australia | Beginner Guide from Zero Experience',
@@ -19,9 +20,13 @@ export default function PathwayPage() {
         <div className="hero-scrim" />
         <div className="wrap hero-in">
           <div>
-            <p className="crumb">
-              <Link href="/">Home</Link> / Pathways / Complete beginner
-            </p>
+            <Breadcrumbs
+              items={[
+                { name: 'Home', href: '/' },
+                { name: 'Pathways' },
+                { name: 'Complete beginner' },
+              ]}
+            />
             <h1>
               How to Learn to Sail in Australia <em>From Zero</em>
             </h1>

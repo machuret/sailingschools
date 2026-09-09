@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { course } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'RYA Competent Crew Australia | Course Guide & Sailing Schools',
@@ -46,12 +49,40 @@ const SCHOOLS = [
 export default function CoursePage() {
   return (
     <>
+      <JsonLd
+        nodes={[
+          course({
+            name: 'RYA Competent Crew',
+            description:
+              'A five-day RYA practical course requiring no previous sailing experience, normally run liveaboard on a cruising yacht. It creates an active crew member rather than a skipper.',
+            provider: 'Royal Yachting Association',
+            timeRequired: 'P5D',
+            credential: 'RYA Competent Crew certificate',
+            teaches: [
+              'Steering',
+              'Changing sails',
+              'Reefing',
+              'Ropework and knots',
+              'Safety equipment',
+              'Person-overboard recovery',
+              'Basic meteorology',
+              'Keeping a lookout',
+              'Onboard routines',
+            ],
+          }),
+        ]}
+      />
       <section className="sec" style={{ paddingTop: 48 }}>
         <div className="wrap">
-          <p className="crumb dark">
-            <Link href="/">Home</Link> / <Link href="/qualifications/rya-vs-iyt-vs-asa/">RYA</Link> /
-            Sail cruising / Competent Crew
-          </p>
+          <Breadcrumbs
+            dark
+            items={[
+              { name: 'Home', href: '/' },
+              { name: 'RYA', href: '/rya/' },
+              { name: 'Sail cruising' },
+              { name: 'Competent Crew' },
+            ]}
+          />
           <div
             className="split top"
             style={{ marginTop: 20, gridTemplateColumns: 'minmax(0,.9fr) minmax(0,1.1fr)' }}

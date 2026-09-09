@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'RYA Courses Australia | Competent Crew to Yachtmaster',
@@ -53,9 +54,7 @@ export default function RyaHubPage() {
         <div className="hero-scrim" />
         <div className="wrap hero-in">
           <div>
-            <p className="crumb">
-              <Link href="/">Home</Link> / RYA
-            </p>
+            <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'RYA' }]} />
             <h1>
               RYA Courses <em>in Australia</em>
             </h1>
@@ -170,6 +169,24 @@ export default function RyaHubPage() {
               <div>
                 <h3>Starting from zero experience</h3>
                 <p>Whether to begin in a dinghy, a keelboat or straight onto a cruising yacht</p>
+              </div>
+              <span className="arrow">
+                <i className="ph-duotone ph-caret-right" />
+              </span>
+            </Link>
+            <Link className="row" href="/iyt/">
+              <div>
+                <h3>IYT courses</h3>
+                <p>Dedicated catamaran certificates at every skipper level</p>
+              </div>
+              <span className="arrow">
+                <i className="ph-duotone ph-caret-right" />
+              </span>
+            </Link>
+            <Link className="row" href="/australian-sailing/">
+              <div>
+                <h3>Australian Sailing courses</h3>
+                <p>The domestic dinghy and keelboat scheme, taught nationwide</p>
               </div>
               <span className="arrow">
                 <i className="ph-duotone ph-caret-right" />

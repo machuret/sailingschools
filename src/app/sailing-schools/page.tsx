@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { schoolsInState } from '@/lib/schools';
 import { states } from '@/lib/states';
 
@@ -21,9 +22,7 @@ export default function SchoolsIndexPage() {
         <div className="hero-scrim" />
         <div className="wrap hero-in">
           <div>
-            <p className="crumb">
-              <Link href="/">Home</Link> / Schools
-            </p>
+            <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Schools' }]} />
             <h1>
               Sailing Schools <em>Across Australia</em>
             </h1>
