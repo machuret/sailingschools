@@ -36,6 +36,8 @@ trailing slash.
 | `/` | Home |
 | `/find-a-course/` | Three-question course finder (client-side, no account or email capture) |
 | `/pathways/complete-beginner/` | Complete-beginner pathway — the three routes in |
+| `/courses/` | Intent course index, grouped by what you want to learn |
+| `/courses/[slug]/` | 22 intent course guides, generated from `src/lib/courses.ts` |
 | `/australian-sailing/` | Australian Sailing hub — Tackers, OutThere, dinghy, keelboat |
 | `/rya/` | RYA hub |
 | `/iyt/` | IYT hub |
@@ -46,6 +48,10 @@ trailing slash.
 | `/sailing-schools/[state]/` | State directory — 6 states, generated from `src/lib/states.ts` |
 | `/sailing-schools/new-south-wales/sydney/` | City directory |
 | `/schools/harbourline-sailing-school/` | School profile (a sample profile; Harbourline is fictional) |
+
+`src/lib/courses.ts` holds the intent course guides as ordered content blocks (`para`, `list`,
+`flow`), so a lead-in line stays attached to the list it introduces and one template renders all
+22. Adding a course is a record, not a page.
 
 ### Content data
 

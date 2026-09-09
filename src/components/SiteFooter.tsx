@@ -30,6 +30,7 @@ export default function SiteFooter() {
             <div className="cols3">
               <div>
                 <h4>Courses</h4>
+                <Link href="/courses/">All sailing courses</Link>
                 <Link href="/australian-sailing/">Australian Sailing</Link>
                 <Link href="/rya/">RYA</Link>
                 <Link href="/iyt/">IYT</Link>

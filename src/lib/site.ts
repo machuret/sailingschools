@@ -1,3 +1,4 @@
+import { courses } from './courses';
 import { states } from './states';
 
 /**
@@ -33,6 +34,7 @@ const staticRoutes: SiteRoute[] = [
   { path: '/rya/competent-crew/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/qualifications/rya-vs-iyt-vs-asa/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/pathways/complete-beginner/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/courses/', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/rya/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/iyt/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/asa/', priority: 0.85, changeFrequency: 'monthly' },
@@ -47,4 +49,11 @@ const stateRoutes: SiteRoute[] = states.map((state) => ({
   changeFrequency: 'weekly',
 }));
 
-export const routes: SiteRoute[] = [...staticRoutes, ...stateRoutes];
+/** Intent course pages, generated from the course records. */
+const courseRoutes: SiteRoute[] = courses.map((c) => ({
+  path: `/courses/${c.slug}/`,
+  priority: 0.7,
+  changeFrequency: 'monthly',
+}));
+
+export const routes: SiteRoute[] = [...staticRoutes, ...stateRoutes, ...courseRoutes];

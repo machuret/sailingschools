@@ -216,8 +216,8 @@ export default function IytHubPage() {
             <Link className="pill pill-orange" href="/find-a-course/">
               Find a course
             </Link>
-            <Link className="pill pill-ghost" href="/sailing-schools/">
-              Browse schools
+            <Link className="pill pill-ghost" href="/courses/">
+              All sailing courses
             </Link>
           </div>
         </div>

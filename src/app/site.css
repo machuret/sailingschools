@@ -138,6 +138,9 @@ em.serif { font-style: italic; }
 .track .node.dim { background: var(--sky-2); box-shadow: none; color: var(--navy-3); font-weight: 500; }
 .track .node.now { background: var(--orange); color: var(--white); }
 .track .node.lead { background: var(--navy); color: var(--white); }
+/* `.lead` is also the display-type class, whose serif face and 30ch max-width would
+   otherwise leak into a pathway node carrying the same modifier. */
+.track .node.lead { max-width: none; font-family: var(--sans); font-size: 15.5px; line-height: 1.6; font-weight: 600; letter-spacing: -0.01em; }
 .track .node::after { content: "\2193"; position: absolute; left: 50%; bottom: -13px; transform: translateX(-50%); color: var(--muted); font-size: 12px; line-height: 1; background: var(--bg); padding: 0 4px; }
 .track .node:last-child::after { display: none; }
 .panel .track .node::after { background: var(--cream); }
