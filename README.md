@@ -93,6 +93,6 @@ verifying against the schools before launch.
 - Preview deployments serve `Disallow: /` so they can never be indexed in place of the
   production site.
 
-Set `NEXT_PUBLIC_SITE_URL` in the Vercel project (for example `https://sailingschools.com.au`)
+Set `NEXT_PUBLIC_SITE_URL` in the Vercel project (for example `https://www.sailingschools.com.au`)
 once the domain is attached — it overrides the default origin used for canonicals and the
 sitemap.

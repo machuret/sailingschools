@@ -7,7 +7,7 @@ export const siteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_ENV === 'production' && process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : 'https://sailingschools.com.au')
+    : 'https://www.sailingschools.com.au')
 ).replace(/\/$/, '');
 
 export const absoluteUrl = (path: string) => `${siteUrl}${path === '/' ? '' : path}`;
