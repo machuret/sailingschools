@@ -1,4 +1,6 @@
+import { cities } from './cities';
 import { courses } from './courses';
+import { faqPages } from './faq';
 import { states } from './states';
 
 /**
@@ -30,11 +32,14 @@ const staticRoutes: SiteRoute[] = [
   { path: '/', priority: 1, changeFrequency: 'weekly' },
   { path: '/find-a-course/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/sailing-schools/', priority: 0.9, changeFrequency: 'weekly' },
-  { path: '/sailing-schools/new-south-wales/sydney/', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/rya/competent-crew/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/qualifications/rya-vs-iyt-vs-asa/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/pathways/complete-beginner/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/courses/', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/faq/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/sitemap/', priority: 0.3, changeFrequency: 'weekly' },
+  { path: '/privacy-policy/', priority: 0.2, changeFrequency: 'yearly' },
+  { path: '/terms-and-conditions/', priority: 0.2, changeFrequency: 'yearly' },
   { path: '/rya/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/iyt/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/asa/', priority: 0.85, changeFrequency: 'monthly' },
@@ -56,4 +61,33 @@ const courseRoutes: SiteRoute[] = courses.map((c) => ({
   changeFrequency: 'monthly',
 }));
 
-export const routes: SiteRoute[] = [...staticRoutes, ...stateRoutes, ...courseRoutes];
+/** City and region pages — the highest-intent geography, so weighted above the states. */
+const cityRoutes: SiteRoute[] = cities.map((c) => ({
+  path: `/sailing-schools/${c.state}/${c.slug}/`,
+  priority: 0.85,
+  changeFrequency: 'weekly',
+}));
+
+/** FAQ answers that carry their own URL. */
+const faqRoutes: SiteRoute[] = faqPages.map((f) => ({
+  path: `/faq/${f.page!.slug}/`,
+  priority: 0.6,
+  changeFrequency: 'monthly',
+}));
+
+const allRoutes: SiteRoute[] = [
+  ...staticRoutes,
+  ...stateRoutes,
+  ...cityRoutes,
+  ...courseRoutes,
+  ...faqRoutes,
+];
+
+/**
+ * De-duplicated by path. A page listed twice in a sitemap is a cheap way to look
+ * careless to a crawler, and it is easy to reintroduce when a hand-written entry is
+ * later replaced by a generated one.
+ */
+export const routes: SiteRoute[] = allRoutes.filter(
+  (route, i) => allRoutes.findIndex((r) => r.path === route.path) === i,
+);

@@ -6,9 +6,9 @@ import JsonLd from '@/components/JsonLd';
 import { course } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'RYA Competent Crew Australia | Course Guide & Sailing Schools',
+  title: 'RYA Competent Crew Australia | Course Guide',
   description:
-    'RYA Competent Crew is a five-day practical course requiring no previous sailing experience, normally run liveaboard on a cruising yacht. What it covers, who it suits, and the Australian schools that teach it.',
+    'A five-day practical course needing no previous experience, usually liveaboard. What it covers, who it suits, and the Australian schools that teach it.',
   alternates: { canonical: '/rya/competent-crew/' },
 };
 

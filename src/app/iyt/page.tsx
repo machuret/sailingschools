@@ -6,7 +6,7 @@ import ImageSlot from '@/components/ImageSlot';
 export const metadata: Metadata = {
   title: 'IYT Courses Australia | Crew, Bareboat & Yachtmaster',
   description:
-    'IYT sailing courses in Australia — the pathway from Try Sailing and International Crew through Flotilla Skipper and Bareboat Skipper to Yachtmaster Ocean, plus dedicated catamaran certificates and the ICC.',
+    'IYT courses in Australia — International Crew through Flotilla and Bareboat Skipper to Yachtmaster, plus dedicated catamaran certificates and the ICC.',
   alternates: { canonical: '/iyt/' },
 };
 

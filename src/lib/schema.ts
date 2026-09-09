@@ -89,3 +89,25 @@ export const educationalOrganization = (input: {
   ...(input.areaServed ? { areaServed: input.areaServed } : {}),
   ...(input.url ? { url: input.url } : {}),
 });
+
+/**
+ * FAQPage. Google restricted FAQ rich results to government and health sites in 2023, so
+ * this earns entity clarity and AI-answer citation rather than stars in the SERP.
+ */
+export const faqPage = (items: { question: string; answer: string }[]): JsonLdNode => ({
+  '@type': 'FAQPage',
+  mainEntity: items.map((i) => ({
+    '@type': 'Question',
+    name: i.question,
+    acceptedAnswer: { '@type': 'Answer', text: i.answer },
+  })),
+});
+
+export const webPage = (input: { name: string; description: string; url: string }): JsonLdNode => ({
+  '@type': 'WebPage',
+  name: input.name,
+  description: input.description,
+  url: absoluteUrl(input.url),
+  isPartOf: { '@id': `${siteUrl}/#website` },
+  inLanguage: 'en-AU',
+});

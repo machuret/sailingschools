@@ -66,7 +66,7 @@ export default function HomePage() {
                 not the certificate name.
               </h2>
             </div>
-            <Link className="pill pill-sky" href="/sailing-schools/">
+            <Link className="pill pill-sky" href="/faq/">
               About us
             </Link>
           </div>
@@ -250,7 +250,7 @@ export default function HomePage() {
               <span className="kicker">Our guides</span>
               <h2 className="serif lead">Latest insights</h2>
             </div>
-            <Link className="pill pill-orange" href="/pathways/complete-beginner/">
+            <Link className="pill pill-orange" href="/courses/">
               View all guides
             </Link>
           </div>

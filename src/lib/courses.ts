@@ -78,8 +78,8 @@ export const courses: CourseRecord[] = [
   {
     slug: 'diesel-engine',
     title: 'Marine Diesel Engine Courses for Sailors',
-    metaTitle: 'Marine Diesel Courses Australia | Engine Training for Sailors',
-    description: 'Marine diesel engine courses in Australia — fuel, cooling, filters, bleeding and the faults that strand a yacht within sight of the marina.',
+    metaTitle: 'Marine Diesel Courses Australia | Engine Training',
+    description: 'Marine diesel courses in Australia — fuel, cooling, filters, bleeding and the common faults that strand a yacht within sight of the marina.',
     category: 'technical',
     blocks: [
       { type: 'para', text: 'A sailing yacht\'s engine may only run for a fraction of the voyage, but when needed it can be critical.' },
@@ -93,7 +93,7 @@ export const courses: CourseRecord[] = [
     slug: 'sailing-taster',
     title: 'Sailing Taster and Try Sailing Courses',
     metaTitle: 'Sailing Taster Courses Australia | Try Sailing Days',
-    description: 'Try sailing and taster courses in Australia — a few hours on the water with no commitment, and how to tell a genuine introductory lesson from a passenger experience.',
+    description: 'Try sailing and taster courses — a few hours afloat with no commitment, and how to tell a real introductory lesson from a passenger experience.',
     category: 'learn',
     blocks: [
       { type: 'para', text: 'A taster course is designed for someone who does not yet know whether sailing is for them.' },
@@ -164,7 +164,7 @@ export const courses: CourseRecord[] = [
   {
     slug: 'docking-berthing',
     title: 'Docking and Berthing Courses',
-    metaTitle: 'Docking & Berthing Courses Australia | Close-Quarters Handling',
+    metaTitle: 'Docking & Berthing Courses Australia | Boat Handling',
     description: 'Docking and berthing courses in Australia — prop walk, springs, wind and tide, and the close-quarters handling that intimidates most new skippers.',
     category: 'handling',
     blocks: [
@@ -202,7 +202,7 @@ export const courses: CourseRecord[] = [
     slug: 'charter-preparation',
     title: 'Yacht Charter Preparation Courses',
     metaTitle: 'Charter Preparation Courses Australia | Bareboat Training',
-    description: 'Yacht charter preparation courses in Australia — handover, inventory, systems, anchoring and the charter-company limits that decide whether you get your bond back.',
+    description: 'Charter preparation courses in Australia — handover, inventory, systems, anchoring and the charter-company limits that decide if you keep your bond.',
     category: 'charter',
     blocks: [
       { type: 'para', text: 'Charter preparation sits between general skipper training and real-world chartering.' },
@@ -214,7 +214,7 @@ export const courses: CourseRecord[] = [
     slug: 'catamaran-sailing',
     title: 'Catamaran Sailing Courses',
     metaTitle: 'Catamaran Sailing Courses Australia | Multihull Training',
-    description: 'Catamaran sailing courses in Australia — twin engines, differential thrust, high windage and the handling differences that catch out experienced monohull sailors.',
+    description: 'Catamaran courses in Australia — twin engines, differential thrust, high windage and the handling differences that catch out monohull sailors.',
     category: 'cruising',
     blocks: [
       { type: 'para', text: 'Anyone planning to own or charter a catamaran should seek multihull-specific training.' },
@@ -289,7 +289,7 @@ export const courses: CourseRecord[] = [
     slug: 'marine-electrics',
     title: 'Marine Electrical Courses for Sailors',
     metaTitle: 'Marine Electrical Courses Australia | Yacht Electrics',
-    description: 'Marine electrical courses in Australia — batteries, charging, wiring and fault-finding on a cruising yacht.',
+    description: 'Marine electrical courses in Australia — batteries, charging, wiring, solar and fault-finding on a modern cruising yacht, for owners who do their own work.',
     category: 'technical',
     blocks: [
       { type: 'para', text: 'Useful topics include:' },

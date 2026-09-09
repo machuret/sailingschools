@@ -44,19 +44,29 @@ export default function SiteFooter() {
                 <Link href="/sailing-schools/victoria/">Victoria</Link>
                 <Link href="/sailing-schools/western-australia/">Western Australia</Link>
                 <Link href="/sailing-schools/">All states</Link>
+                <Link href="/sailing-schools/new-south-wales/sydney/">Sydney</Link>
+                <Link href="/sailing-schools/victoria/melbourne/">Melbourne</Link>
               </div>
               <div>
-                <h4>About</h4>
-                <Link href="/sailing-schools/">How we review schools</Link>
-                <Link href="/qualifications/rya-vs-iyt-vs-asa/">Accreditation</Link>
-                <Link href="/sailing-schools/">Update a school</Link>
-                <Link href="/qualifications/rya-vs-iyt-vs-asa/">Glossary</Link>
-                <Link href="/find-a-course/">FAQ</Link>
+                <h4>Learn</h4>
+                <Link href="/faq/">Questions &amp; answers</Link>
+                <Link href="/pathways/complete-beginner/">Learn to sail from zero</Link>
+                <Link href="/find-a-course/">Find the right course</Link>
+                <Link href="/schools/harbourline-sailing-school/">How a school profile works</Link>
+                <a href="mailto:hello@sailingschools.com.au">Update a school</a>
               </div>
             </div>
           </div>
         </div>
-        <div className="legal">
+        <div className="legal" style={{ marginTop: 48, paddingBottom: 4 }}>
+          <span style={{ display: 'flex', gap: 18, flexWrap: 'wrap' }}>
+            <Link href="/sitemap/">Site map</Link>
+            <Link href="/privacy-policy/">Privacy policy</Link>
+            <Link href="/terms-and-conditions/">Terms &amp; conditions</Link>
+            <a href="mailto:hello@sailingschools.com.au">Contact</a>
+          </span>
+        </div>
+        <div className="legal" style={{ marginTop: 0, borderTop: 0, paddingTop: 8 }}>
           <span>
             &copy; 2026 SailingSchools.com.au — independent, not affiliated with any training body
             or school.

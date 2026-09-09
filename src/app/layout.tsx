@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   // Part 19 titles are self-contained and already at the length search results show,
   // so pages set their own in full rather than having a site name appended.
   title: {
-    default: 'Sailing Schools Australia | Sailing Courses & Learn to Sail Guide',
+    default: 'Sailing Schools Australia | Learn to Sail Guide',
     template: '%s',
   },
   description:
-    'Find sailing schools, sailing courses and the right path to learn to sail in Australia — from a first afternoon on the water to Yachtmaster, bareboat charter or owning your own yacht.',
+    'Independent guide to Australian sailing schools and courses. Compare RYA, IYT, ASA and Australian Sailing, and find the right course near you.',
   openGraph: {
     type: 'website',
     siteName: 'SailingSchools.com.au',

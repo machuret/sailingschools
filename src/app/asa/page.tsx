@@ -6,7 +6,7 @@ import ImageSlot from '@/components/ImageSlot';
 export const metadata: Metadata = {
   title: 'ASA Courses Australia | ASA 101, 103, 104 & Catamaran',
   description:
-    'American Sailing courses in Australia — the full ASA certification list from ASA 101 Keelboat 1 to ASA 108 Offshore Passagemaking, and the far smaller question of which are actually available at an Australian school.',
+    'The full ASA list from ASA 101 to ASA 108 — and the far shorter list of which certifications an Australian school actually teaches today.',
   alternates: { canonical: '/asa/' },
 };
 

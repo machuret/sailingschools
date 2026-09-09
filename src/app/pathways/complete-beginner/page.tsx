@@ -4,9 +4,9 @@ import ImageSlot from '@/components/ImageSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Learn to Sail Australia | Beginner Guide from Zero Experience',
+  title: 'Learn to Sail Australia | Beginner Guide from Zero',
   description:
-    'There is no rule requiring a complete beginner to start in a dinghy. Three legitimate routes into sailing in Australia — dinghy, keelboat or straight onto a cruising yacht — and how to pick the one that matches your goal.',
+    'No rule says a beginner must start in a dinghy. Three legitimate routes into sailing — dinghy, keelboat or straight onto a cruising yacht — and how to choose.',
   alternates: { canonical: '/pathways/complete-beginner/' },
 };
 

@@ -36,6 +36,10 @@ trailing slash.
 | `/` | Home |
 | `/find-a-course/` | Three-question course finder (client-side, no account or email capture) |
 | `/pathways/complete-beginner/` | Complete-beginner pathway — the three routes in |
+| `/faq/` | FAQ index — 46 questions |
+| `/faq/[slug]/` | 12 questions answered in full, from `src/lib/faq.ts` |
+| `/sitemap/` | HTML site map |
+| `/privacy-policy/`, `/terms-and-conditions/` | Legal |
 | `/courses/` | Intent course index, grouped by what you want to learn |
 | `/courses/[slug]/` | 22 intent course guides, generated from `src/lib/courses.ts` |
 | `/australian-sailing/` | Australian Sailing hub — Tackers, OutThere, dinghy, keelboat |
@@ -46,7 +50,7 @@ trailing slash.
 | `/qualifications/rya-vs-iyt-vs-asa/` | Scheme comparison |
 | `/sailing-schools/` | Schools index |
 | `/sailing-schools/[state]/` | State directory — 6 states, generated from `src/lib/states.ts` |
-| `/sailing-schools/new-south-wales/sydney/` | City directory |
+| `/sailing-schools/[state]/[city]/` | 7 city and region pages, from `src/lib/cities.ts` |
 | `/schools/harbourline-sailing-school/` | School profile (a sample profile; Harbourline is fictional) |
 
 `src/lib/courses.ts` holds the intent course guides as ordered content blocks (`para`, `list`,
@@ -126,6 +130,11 @@ verifying against the schools before launch.
   machine-readable form.
 - Preview deployments serve `Disallow: /` so they can never be indexed in place of the
   production site.
+- `robots.txt` names and allows the major AI crawlers explicitly rather than leaving them to
+  the wildcard rule, and `/llms.txt` gives assistants a Markdown map of the site plus the
+  editorial conventions (dated prices, verified-only claims) that should survive quotation.
+- The route list is de-duplicated by path, so replacing a hand-written entry with a
+  generated one cannot list a page twice.
 
 Set `NEXT_PUBLIC_SITE_URL` in the Vercel project (for example `https://www.sailingschools.com.au`)
 once the domain is attached — it overrides the default origin used for canonicals and the

@@ -39,12 +39,12 @@ export default function SiteNav() {
             ))}
           </nav>
           <div className="util" style={{ marginLeft: 'auto' }}>
-            <Link className="hide-l" href="/sailing-schools/">
+            <Link className="hide-l" href="/faq/">
               About
             </Link>
-            <Link className="hide-l" href="/sailing-schools/">
+            <a className="hide-l" href="mailto:hello@sailingschools.com.au">
               Update a school
-            </Link>
+            </a>
             <Link className="hide-m" href="/find-a-course/" aria-label="Search">
               <i className="ph-duotone ph-magnifying-glass" />
             </Link>
@@ -73,11 +73,11 @@ export default function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Link href="/sailing-schools/" onClick={() => setOpen(false)}>
+            <Link href="/faq/" onClick={() => setOpen(false)}>
               About
             </Link>
-            <Link href="/sailing-schools/" onClick={() => setOpen(false)}>
-              Update a school
+            <Link href="/sitemap/" onClick={() => setOpen(false)}>
+              Site map
             </Link>
           </div>
         </div>

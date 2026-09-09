@@ -7,6 +7,7 @@ import JsonLd from '@/components/JsonLd';
 import { itemList } from '@/lib/schema';
 import { schoolsInState } from '@/lib/schools';
 import { states, stateByKey } from '@/lib/states';
+import { citiesInState } from '@/lib/cities';
 
 type Params = { params: Promise<{ state: string }> };
 
@@ -47,6 +48,7 @@ export default async function StatePage({ params }: Params) {
   if (!record) notFound();
 
   const list = schoolsInState(record.key);
+  const cityList = citiesInState(record.key);
   const verified = list.filter((s) => s.profile);
   const unverified = list.filter((s) => !s.profile);
 
@@ -99,10 +101,14 @@ export default async function StatePage({ params }: Params) {
               </span>
               <h2 className="h2">Sailing schools in {record.name}</h2>
             </div>
-            {record.cities?.length ? (
+            {cityList.length > 0 ? (
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                {record.cities.map((c) => (
-                  <Link className="tag tag-sky" href={c.path} key={c.name}>
+                {cityList.map((c) => (
+                  <Link
+                    className="tag tag-sky"
+                    href={`/sailing-schools/${c.state}/${c.slug}/`}
+                    key={c.slug}
+                  >
                     {c.name}
                   </Link>
                 ))}

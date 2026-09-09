@@ -6,7 +6,7 @@ import ImageSlot from '@/components/ImageSlot';
 export const metadata: Metadata = {
   title: 'Australian Sailing Courses | Dinghy, Keelboat & Racing',
   description:
-    'Australian Sailing courses — Tackers for kids, OutThere Sailing for teenagers, the dinghy pathway from Start Sailing 1, and the keelboat pathway from Start Crewing through Start Skippering to racing.',
+    'Australian Sailing courses — Tackers for kids, OutThere for teenagers, the dinghy pathway, and keelboat from Start Crewing through Start Skippering.',
   alternates: { canonical: '/australian-sailing/' },
 };
 

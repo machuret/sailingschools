@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'RYA Courses Australia | Competent Crew to Yachtmaster',
   description:
-    'RYA sailing courses in Australia — the sail cruising pathway from Start Yachting and Competent Crew through Day Skipper and Coastal Skipper to Yachtmaster, plus dinghy, navigation and specialist short courses.',
+    'RYA courses in Australia — the cruising pathway from Competent Crew through Day Skipper to Yachtmaster, plus dinghy, navigation and specialist short courses.',
   alternates: { canonical: '/rya/' },
 };
 

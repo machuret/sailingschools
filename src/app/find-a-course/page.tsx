@@ -3,9 +3,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import CourseFinder from './CourseFinder';
 
 export const metadata: Metadata = {
-  title: 'Which Sailing Course Should I Take? | Australia Course Finder',
+  title: 'Which Sailing Course Should I Take? | Course Finder',
   description:
-    'Three questions — have you sailed before, what boat do you want to sail, and what is your goal — point you at a starting sailing course and the Australian schools that teach it.',
+    'Three questions — your experience, your boat, your goal — point you at a starting sailing course and the Australian schools that teach it. No account needed.',
   alternates: { canonical: '/find-a-course/' },
 };
 

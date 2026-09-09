@@ -6,9 +6,9 @@ import { schoolsInState } from '@/lib/schools';
 import { states } from '@/lib/states';
 
 export const metadata: Metadata = {
-  title: 'Sailing Schools Australia | Directory by State & Territory',
+  title: 'Sailing Schools Australia | Directory by State',
   description:
-    'Dedicated sailing schools, academies and yacht training businesses across every Australian state and territory — New South Wales, Queensland, Victoria, Western Australia, South Australia, Tasmania and the Northern Territory.',
+    'Dedicated sailing schools and yacht training across Australia — New South Wales, Queensland, Victoria, Western Australia, South Australia and Tasmania.',
   alternates: { canonical: '/sailing-schools/' },
 };
 

@@ -7,9 +7,9 @@ import { itemList } from '@/lib/schema';
 import { courses, courseCategories, coursesInCategory } from '@/lib/courses';
 
 export const metadata: Metadata = {
-  title: 'Sailing Courses Australia | Compare Courses by What You Want to Learn',
+  title: 'Sailing Courses Australia | Compare by What You Learn',
   description:
-    'Every kind of sailing course taught in Australia, organised by what you want to learn rather than by scheme — learning to sail, boat handling, cruising, charter, navigation, safety and technical training.',
+    'Every kind of sailing course taught in Australia, grouped by what you want to learn — sailing, boat handling, cruising, charter, navigation and safety.',
   alternates: { canonical: '/courses/' },
 };
 

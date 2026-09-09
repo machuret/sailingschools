@@ -4,9 +4,9 @@ import ImageSlot from '@/components/ImageSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'RYA vs IYT vs ASA Australia | Which Qualification to Choose',
+  title: 'RYA vs IYT vs ASA Australia | Which to Choose',
   description:
-    'Three international schemes teach cruising yachts in Australia. Compared side by side on crew and skipper pathways, catamaran certificates, offshore routes, Australian school availability and commercial progression.',
+    'Three schemes teach cruising yachts here. Compared on crew and skipper pathways, catamaran certificates, school availability and commercial progression.',
   alternates: { canonical: '/qualifications/rya-vs-iyt-vs-asa/' },
 };
 
