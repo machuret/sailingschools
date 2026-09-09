@@ -8,6 +8,7 @@
 
 export type CourseBlock =
   | { type: 'para'; text: string }
+  | { type: 'sub'; text: string }
   | { type: 'list'; items: string[] }
   | { type: 'flow'; items: string[] };
 

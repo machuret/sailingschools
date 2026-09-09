@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
+import { coursesInScheme } from '@/lib/scheme-courses';
 
 export const metadata: Metadata = {
   title: 'ASA Courses Australia | ASA 101, 103, 104 & Catamaran',
@@ -171,6 +172,34 @@ export default function AsaHubPage() {
                 <i className="ph-duotone ph-caret-right" />
               </span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <div>
+              <span className="kicker">Course guides</span>
+              <h2 className="h2">Every American Sailing course, explained</h2>
+            </div>
+            <span className="tag tag-cream">
+              {coursesInScheme('asa').length} guides
+            </span>
+          </div>
+          <div className="rows">
+            {coursesInScheme('asa').map((c) => (
+              <Link className="row" href={`/${c.scheme}/${c.slug}/`} key={c.slug}>
+                <div>
+                  <h3>{c.title}</h3>
+                  <p>{c.standfirst}</p>
+                </div>
+                <span className="arrow">
+                  <i className="ph-duotone ph-caret-right" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

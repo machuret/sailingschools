@@ -1,6 +1,7 @@
 import { cities } from './cities';
 import { courses } from './courses';
 import { faqPages } from './faq';
+import { schemeCourses } from './scheme-courses';
 import { states } from './states';
 
 /**
@@ -68,6 +69,13 @@ const cityRoutes: SiteRoute[] = cities.map((c) => ({
   changeFrequency: 'weekly',
 }));
 
+/** Named courses under each training body's hub. */
+const schemeCourseRoutes: SiteRoute[] = schemeCourses.map((c) => ({
+  path: `/${c.scheme}/${c.slug}/`,
+  priority: 0.75,
+  changeFrequency: 'monthly',
+}));
+
 /** FAQ answers that carry their own URL. */
 const faqRoutes: SiteRoute[] = faqPages.map((f) => ({
   path: `/faq/${f.page!.slug}/`,
@@ -80,6 +88,7 @@ const allRoutes: SiteRoute[] = [
   ...stateRoutes,
   ...cityRoutes,
   ...courseRoutes,
+  ...schemeCourseRoutes,
   ...faqRoutes,
 ];
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
+import { coursesInScheme } from '@/lib/scheme-courses';
 
 export const metadata: Metadata = {
   title: 'IYT Courses Australia | Crew, Bareboat & Yachtmaster',
@@ -199,6 +200,34 @@ export default function IytHubPage() {
                 <i className="ph-duotone ph-caret-right" />
               </span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <div>
+              <span className="kicker">Course guides</span>
+              <h2 className="h2">Every IYT course, explained</h2>
+            </div>
+            <span className="tag tag-cream">
+              {coursesInScheme('iyt').length} guides
+            </span>
+          </div>
+          <div className="rows">
+            {coursesInScheme('iyt').map((c) => (
+              <Link className="row" href={`/${c.scheme}/${c.slug}/`} key={c.slug}>
+                <div>
+                  <h3>{c.title}</h3>
+                  <p>{c.standfirst}</p>
+                </div>
+                <span className="arrow">
+                  <i className="ph-duotone ph-caret-right" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

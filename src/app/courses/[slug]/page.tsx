@@ -106,6 +106,7 @@ export default async function CourseIntentPage({ params }: Params) {
                 </div>
               );
             }
+            if (block.type !== 'list') return null;
             return (
               <div className="chain" key={i} style={{ marginTop: 22 }}>
                 {block.items.map((item) => (

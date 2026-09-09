@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
+import { coursesInScheme } from '@/lib/scheme-courses';
 
 export const metadata: Metadata = {
   title: 'Australian Sailing Courses | Dinghy, Keelboat & Racing',
@@ -153,6 +154,34 @@ export default function AustralianSailingHubPage() {
                 <i className="ph-duotone ph-caret-right" />
               </span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <div>
+              <span className="kicker">Course guides</span>
+              <h2 className="h2">Every Australian Sailing course, explained</h2>
+            </div>
+            <span className="tag tag-cream">
+              {coursesInScheme('australian-sailing').length} guides
+            </span>
+          </div>
+          <div className="rows">
+            {coursesInScheme('australian-sailing').map((c) => (
+              <Link className="row" href={`/${c.scheme}/${c.slug}/`} key={c.slug}>
+                <div>
+                  <h3>{c.title}</h3>
+                  <p>{c.standfirst}</p>
+                </div>
+                <span className="arrow">
+                  <i className="ph-duotone ph-caret-right" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

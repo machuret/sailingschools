@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import { coursesInScheme } from '@/lib/scheme-courses';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
@@ -201,6 +202,34 @@ export default function RyaHubPage() {
                 <i className="ph-duotone ph-caret-right" />
               </span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <div>
+              <span className="kicker">Course guides</span>
+              <h2 className="h2">Every RYA course, explained</h2>
+            </div>
+            <span className="tag tag-cream">
+              {coursesInScheme('rya').length} guides
+            </span>
+          </div>
+          <div className="rows">
+            {coursesInScheme('rya').map((c) => (
+              <Link className="row" href={`/${c.scheme}/${c.slug}/`} key={c.slug}>
+                <div>
+                  <h3>{c.title}</h3>
+                  <p>{c.standfirst}</p>
+                </div>
+                <span className="arrow">
+                  <i className="ph-duotone ph-caret-right" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
