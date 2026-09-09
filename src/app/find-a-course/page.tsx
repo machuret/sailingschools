@@ -3,10 +3,10 @@ import Link from 'next/link';
 import CourseFinder from './CourseFinder';
 
 export const metadata: Metadata = {
-  title: 'Find the right sailing course',
+  title: 'Which Sailing Course Should I Take? | Australia Course Finder',
   description:
     'Three questions — have you sailed before, what boat do you want to sail, and what is your goal — point you at a starting sailing course and the Australian schools that teach it.',
-  alternates: { canonical: '/find-a-course' },
+  alternates: { canonical: '/find-a-course/' },
 };
 
 export default function FindCoursePage() {

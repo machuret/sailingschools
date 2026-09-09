@@ -3,10 +3,10 @@ import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
 
 export const metadata: Metadata = {
-  title: 'How to learn to sail in Australia from zero',
+  title: 'Learn to Sail Australia | Beginner Guide from Zero Experience',
   description:
     'There is no rule requiring a complete beginner to start in a dinghy. Three legitimate routes into sailing in Australia — dinghy, keelboat or straight onto a cruising yacht — and how to pick the one that matches your goal.',
-  alternates: { canonical: '/pathways/learn-to-sail-from-scratch' },
+  alternates: { canonical: '/pathways/complete-beginner/' },
 };
 
 export default function PathwayPage() {
@@ -31,10 +31,10 @@ export default function PathwayPage() {
               to sail, not on tradition.
             </p>
             <div className="cta">
-              <Link className="pill pill-orange" href="/find-a-course">
+              <Link className="pill pill-orange" href="/find-a-course/">
                 Find my starting course
               </Link>
-              <Link className="pill pill-ghost" href="/sailing-schools/new-south-wales/sydney">
+              <Link className="pill pill-ghost" href="/sailing-schools/new-south-wales/sydney/">
                 Schools near me
               </Link>
             </div>
@@ -60,13 +60,13 @@ export default function PathwayPage() {
               </p>
               <ul>
                 <li>
-                  <Link href="/find-a-course">Australian Sailing Start Sailing 1</Link> · ~12 hours
+                  <Link href="/find-a-course/">Australian Sailing Start Sailing 1</Link> · ~12 hours
                 </li>
                 <li>
-                  <Link href="/find-a-course">RYA Dinghy Level 1</Link> · 2 days
+                  <Link href="/find-a-course/">RYA Dinghy Level 1</Link> · 2 days
                 </li>
                 <li>
-                  <Link href="/find-a-course">IYT Bronze: Start Sailing</Link>
+                  <Link href="/find-a-course/">IYT Bronze: Start Sailing</Link>
                 </li>
               </ul>
             </div>
@@ -80,13 +80,13 @@ export default function PathwayPage() {
               </p>
               <ul>
                 <li>
-                  <Link href="/find-a-course">Start Crewing + Start Helming</Link> · ~20 hours
+                  <Link href="/find-a-course/">Start Crewing + Start Helming</Link> · ~20 hours
                 </li>
                 <li>
-                  <Link href="/find-a-course">Discover Sailing Experience</Link> · taster
+                  <Link href="/find-a-course/">Discover Sailing Experience</Link> · taster
                 </li>
                 <li>
-                  <Link href="/qualifications/rya-vs-iyt-vs-asa">ASA 101: Keelboat 1</Link>
+                  <Link href="/qualifications/rya-vs-iyt-vs-asa/">ASA 101: Keelboat 1</Link>
                 </li>
               </ul>
             </div>
@@ -100,13 +100,13 @@ export default function PathwayPage() {
               </p>
               <ul>
                 <li>
-                  <Link href="/courses/rya-competent-crew">RYA Competent Crew</Link> · 5 days
+                  <Link href="/rya/competent-crew/">RYA Competent Crew</Link> · 5 days
                 </li>
                 <li>
-                  <Link href="/find-a-course">RYA Start Yachting</Link> · 2 days
+                  <Link href="/find-a-course/">RYA Start Yachting</Link> · 2 days
                 </li>
                 <li>
-                  <Link href="/find-a-course">IYT Introductory Sailing Skills</Link>
+                  <Link href="/find-a-course/">IYT Introductory Sailing Skills</Link>
                 </li>
               </ul>
             </div>
@@ -170,7 +170,7 @@ export default function PathwayPage() {
             <span className="kicker">Then what?</span>
             <h2 className="h2">What comes after your first course</h2>
             <div className="rows">
-              <Link className="row" href="/courses/rya-competent-crew">
+              <Link className="row" href="/rya/competent-crew/">
                 <div>
                   <h3>Skipper training</h3>
                   <p>
@@ -182,7 +182,7 @@ export default function PathwayPage() {
                   <i className="ph-duotone ph-caret-right" />
                 </span>
               </Link>
-              <Link className="row" href="/find-a-course">
+              <Link className="row" href="/find-a-course/">
                 <div>
                   <h3>Navigation theory</h3>
                   <p>
@@ -194,7 +194,7 @@ export default function PathwayPage() {
                   <i className="ph-duotone ph-caret-right" />
                 </span>
               </Link>
-              <Link className="row" href="/find-a-course">
+              <Link className="row" href="/find-a-course/">
                 <div>
                   <h3>Safety and systems</h3>
                   <p>
@@ -225,25 +225,25 @@ export default function PathwayPage() {
                 h: 'Bareboat charter',
                 p: 'Eight steps from basic sailing to checking whether the charter company wants an ICC.',
                 tag: '8 steps',
-                href: '/find-a-course',
+                href: '/find-a-course/',
               },
               {
                 h: 'Yacht owner',
                 p: 'Sail, skipper, navigate, understand systems, safety — then buy the yacht and book own-boat tuition.',
                 tag: '6 stages',
-                href: '/find-a-course',
+                href: '/find-a-course/',
               },
               {
                 h: 'Yachtmaster',
                 p: 'RYA and IYT routes compared — and why you should choose it when your experience is ready, not because the title sounds good.',
                 tag: 'RYA · IYT',
-                href: '/qualifications/rya-vs-iyt-vs-asa',
+                href: '/qualifications/rya-vs-iyt-vs-asa/',
               },
               {
                 h: 'Kids & teens',
                 p: 'Tackers for 7–12s and OutThere Sailing for teenagers who feel too old for Tackers but do not want an adult qualification yet.',
                 tag: 'Australian Sailing',
-                href: '/find-a-course',
+                href: '/find-a-course/',
               },
             ].map((c) => (
               <Link className="ccard" href={c.href} key={c.h}>
@@ -271,10 +271,10 @@ export default function PathwayPage() {
             </p>
           </div>
           <div className="btns">
-            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney">
+            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney/">
               Sailing schools in Sydney
             </Link>
-            <Link className="pill pill-ghost" href="/find-a-course">
+            <Link className="pill pill-ghost" href="/find-a-course/">
               Answer three questions
             </Link>
           </div>

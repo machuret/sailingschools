@@ -3,10 +3,10 @@ import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
 
 export const metadata: Metadata = {
-  title: 'RYA vs IYT vs ASA in Australia',
+  title: 'RYA vs IYT vs ASA Australia | Which Qualification to Choose',
   description:
     'Three international schemes teach cruising yachts in Australia. Compared side by side on crew and skipper pathways, catamaran certificates, offshore routes, Australian school availability and commercial progression.',
-  alternates: { canonical: '/qualifications/rya-vs-iyt-vs-asa' },
+  alternates: { canonical: '/qualifications/rya-vs-iyt-vs-asa/' },
 };
 
 type Row = { area: string; rya: string; iyt: string; asa: string; dim?: ('rya' | 'iyt' | 'asa')[]; spot?: ('rya' | 'iyt' | 'asa')[] };
@@ -109,7 +109,7 @@ export default function ComparePage() {
                 <p className="copy" style={{ fontSize: 15 }}>
                   Yachtmaster is not the next five-day course: it is an independent examination
                   against a standard, after qualifying sea time.{' '}
-                  <Link href="/courses/rya-competent-crew">Competent Crew →</Link>
+                  <Link href="/rya/competent-crew/">Competent Crew →</Link>
                 </p>
               </div>
               <div>
@@ -158,7 +158,7 @@ export default function ComparePage() {
               AMSA&rsquo;s sea-service, radio, first-aid and medical requirements remain separate.
             </p>
             <div style={{ marginTop: 28 }}>
-              <Link className="pill pill-navy" href="/find-a-course">
+              <Link className="pill pill-navy" href="/find-a-course/">
                 Commercial sailing qualifications
               </Link>
             </div>
@@ -168,22 +168,22 @@ export default function ComparePage() {
               {
                 h: 'Australian Sailing vs RYA',
                 p: 'Keelboat scheme versus cruising-yacht scheme',
-                href: '/courses/rya-competent-crew',
+                href: '/rya/competent-crew/',
               },
               {
                 h: 'What is the ICC?',
                 p: 'Not a universal world sailing licence — eligibility rules apply',
-                href: '/find-a-course',
+                href: '/find-a-course/',
               },
               {
                 h: 'Qualifications for chartering',
                 p: 'What charter companies and insurers actually ask for',
-                href: '/find-a-course',
+                href: '/find-a-course/',
               },
               {
                 h: 'Qualifications for yacht ownership',
                 p: 'Skills first, then systems, then own-boat tuition',
-                href: '/pathways/learn-to-sail-from-scratch',
+                href: '/pathways/complete-beginner/',
               },
             ].map((r) => (
               <Link className="row" href={r.href} key={r.h}>
@@ -210,10 +210,10 @@ export default function ComparePage() {
             </p>
           </div>
           <div className="btns">
-            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney">
+            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney/">
               Browse schools
             </Link>
-            <Link className="pill pill-ghost" href="/find-a-course">
+            <Link className="pill pill-ghost" href="/find-a-course/">
               Find a course
             </Link>
           </div>

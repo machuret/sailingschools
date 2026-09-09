@@ -8,14 +8,14 @@ type Boat = 'dinghy' | 'keelboat' | 'mono' | 'cat' | 'racing' | 'own';
 type Goal = 'fun' | 'crew' | 'skipper' | 'charter' | 'offshore' | 'yachtmaster' | 'work';
 
 type Course = { name: string; meta: string; href: string };
-const C = (name: string, meta: string, href = '/courses/rya-competent-crew'): Course => ({
+const C = (name: string, meta: string, href = '/rya/competent-crew/'): Course => ({
   name,
   meta,
   href,
 });
 
-const COURSE = '/courses/rya-competent-crew';
-const COMPARE = '/qualifications/rya-vs-iyt-vs-asa';
+const COURSE = '/rya/competent-crew/';
+const COMPARE = '/qualifications/rya-vs-iyt-vs-asa/';
 
 const START: Record<Experience, Record<Boat, Course[]>> = {
   never: {
@@ -237,7 +237,7 @@ export default function CourseFinder() {
             <h3>Where are you?</h3>
             <div className="field">
               <input className="input" placeholder="Suburb, city or state" aria-label="Location" />
-              <Link className="pill pill-sky" href="/sailing-schools/new-south-wales/sydney">
+              <Link className="pill pill-sky" href="/sailing-schools/new-south-wales/sydney/">
                 Schools near me
               </Link>
             </div>
@@ -253,10 +253,10 @@ export default function CourseFinder() {
           <div className="sub-h">Then</div>
           <CourseList courses={NEXT[q3]} />
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 30 }}>
-            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney">
+            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney/">
               Schools near you
             </Link>
-            <Link className="pill pill-outline" href="/pathways/learn-to-sail-from-scratch">
+            <Link className="pill pill-outline" href="/pathways/complete-beginner/">
               Full pathway
             </Link>
           </div>

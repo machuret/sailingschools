@@ -30,27 +30,27 @@ export default function SiteFooter() {
             <div className="cols3">
               <div>
                 <h4>Learn</h4>
-                <Link href="/pathways/learn-to-sail-from-scratch">Pathways</Link>
-                <Link href="/courses/rya-competent-crew">Courses</Link>
-                <Link href="/qualifications/rya-vs-iyt-vs-asa">Qualifications</Link>
-                <Link href="/find-a-course">How long does it take?</Link>
-                <Link href="/find-a-course">How much do courses cost?</Link>
+                <Link href="/pathways/complete-beginner/">Pathways</Link>
+                <Link href="/rya/">Courses</Link>
+                <Link href="/qualifications/rya-vs-iyt-vs-asa/">Qualifications</Link>
+                <Link href="/find-a-course/">How long does it take?</Link>
+                <Link href="/find-a-course/">How much do courses cost?</Link>
               </div>
               <div>
                 <h4>Schools</h4>
-                <Link href="/sailing-schools/new-south-wales/sydney">New South Wales</Link>
-                <Link href="/sailing-schools">Queensland</Link>
-                <Link href="/sailing-schools">Victoria</Link>
-                <Link href="/sailing-schools">Western Australia</Link>
-                <Link href="/sailing-schools">All states</Link>
+                <Link href="/sailing-schools/new-south-wales/">New South Wales</Link>
+                <Link href="/sailing-schools/queensland/">Queensland</Link>
+                <Link href="/sailing-schools/victoria/">Victoria</Link>
+                <Link href="/sailing-schools/western-australia/">Western Australia</Link>
+                <Link href="/sailing-schools/">All states</Link>
               </div>
               <div>
                 <h4>About</h4>
-                <Link href="/sailing-schools">How we review schools</Link>
-                <Link href="/qualifications/rya-vs-iyt-vs-asa">Accreditation</Link>
-                <Link href="/sailing-schools">Update a school</Link>
-                <Link href="/qualifications/rya-vs-iyt-vs-asa">Glossary</Link>
-                <Link href="/find-a-course">FAQ</Link>
+                <Link href="/sailing-schools/">How we review schools</Link>
+                <Link href="/qualifications/rya-vs-iyt-vs-asa/">Accreditation</Link>
+                <Link href="/sailing-schools/">Update a school</Link>
+                <Link href="/qualifications/rya-vs-iyt-vs-asa/">Glossary</Link>
+                <Link href="/find-a-course/">FAQ</Link>
               </div>
             </div>
           </div>

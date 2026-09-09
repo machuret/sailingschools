@@ -5,11 +5,11 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 const LINKS = [
-  { href: '/sailing-schools/new-south-wales/sydney', label: 'Schools', section: '/sailing-schools' },
-  { href: '/courses/rya-competent-crew', label: 'Courses', section: '/courses' },
-  { href: '/pathways/learn-to-sail-from-scratch', label: 'Pathways', section: '/pathways' },
-  { href: '/qualifications/rya-vs-iyt-vs-asa', label: 'Qualifications', section: '/qualifications' },
-  { href: '/find-a-course', label: 'Learn', section: '/find-a-course' },
+  { href: '/sailing-schools/new-south-wales/sydney/', label: 'Schools', section: '/sailing-schools/' },
+  { href: '/rya/', label: 'Courses', section: '/rya' },
+  { href: '/pathways/complete-beginner/', label: 'Pathways', section: '/pathways' },
+  { href: '/qualifications/rya-vs-iyt-vs-asa/', label: 'Qualifications', section: '/qualifications' },
+  { href: '/find-a-course/', label: 'Learn', section: '/find-a-course/' },
 ];
 
 export default function SiteNav() {
@@ -22,7 +22,7 @@ export default function SiteNav() {
     <>
       <div className="bar">
         Not sure which sailing course is right for you?{' '}
-        <Link href="/find-a-course">Answer three questions</Link> and we&rsquo;ll point you at the
+        <Link href="/find-a-course/">Answer three questions</Link> and we&rsquo;ll point you at the
         right starting course.
       </div>
       <header className="hdr">
@@ -39,16 +39,16 @@ export default function SiteNav() {
             ))}
           </nav>
           <div className="util" style={{ marginLeft: 'auto' }}>
-            <Link className="hide-l" href="/sailing-schools">
+            <Link className="hide-l" href="/sailing-schools/">
               About
             </Link>
-            <Link className="hide-l" href="/sailing-schools">
+            <Link className="hide-l" href="/sailing-schools/">
               Update a school
             </Link>
-            <Link className="hide-m" href="/find-a-course" aria-label="Search">
+            <Link className="hide-m" href="/find-a-course/" aria-label="Search">
               <i className="ph-duotone ph-magnifying-glass" />
             </Link>
-            <Link className="pill pill-sky" href="/find-a-course">
+            <Link className="pill pill-sky" href="/find-a-course/">
               Find a course
             </Link>
             <button
@@ -73,10 +73,10 @@ export default function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Link href="/sailing-schools" onClick={() => setOpen(false)}>
+            <Link href="/sailing-schools/" onClick={() => setOpen(false)}>
               About
             </Link>
-            <Link href="/sailing-schools" onClick={() => setOpen(false)}>
+            <Link href="/sailing-schools/" onClick={() => setOpen(false)}>
               Update a school
             </Link>
           </div>

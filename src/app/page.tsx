@@ -22,16 +22,16 @@ export default function HomePage() {
               yacht.
             </p>
             <div className="cta">
-              <Link className="pill pill-orange" href="/find-a-course">
+              <Link className="pill pill-orange" href="/find-a-course/">
                 Find a course
               </Link>
-              <Link className="pill pill-sky" href="/sailing-schools/new-south-wales/sydney">
+              <Link className="pill pill-sky" href="/sailing-schools/new-south-wales/sydney/">
                 Browse schools
               </Link>
             </div>
           </div>
           <div className="glass-row">
-            <Link className="glass" href="/pathways/learn-to-sail-from-scratch">
+            <Link className="glass" href="/pathways/complete-beginner/">
               <h3>How to learn to sail from zero experience</h3>
               <p>
                 There is no rule requiring a complete beginner to start in a dinghy. Three legitimate
@@ -40,7 +40,7 @@ export default function HomePage() {
               </p>
               <span className="more">Read the pathway →</span>
             </Link>
-            <Link className="glass" href="/qualifications/rya-vs-iyt-vs-asa">
+            <Link className="glass" href="/qualifications/rya-vs-iyt-vs-asa/">
               <h3>RYA vs IYT vs ASA in Australia</h3>
               <p>
                 Three international schemes teach cruising yachts here. They overlap more than they
@@ -63,7 +63,7 @@ export default function HomePage() {
                 not the certificate name.
               </h2>
             </div>
-            <Link className="pill pill-sky" href="/sailing-schools">
+            <Link className="pill pill-sky" href="/sailing-schools/">
               About us
             </Link>
           </div>
@@ -105,12 +105,12 @@ export default function HomePage() {
               <span className="kicker">Start here</span>
               <h2 className="h2">What do you want to do?</h2>
             </div>
-            <Link className="pill pill-orange" href="/find-a-course">
+            <Link className="pill pill-orange" href="/find-a-course/">
               Find a course
             </Link>
           </div>
           <div className="cards">
-            <Link className="ccard" href="/pathways/learn-to-sail-from-scratch">
+            <Link className="ccard" href="/pathways/complete-beginner/">
               <div className="photo">
                 <span className="badge">Beginner</span>
                 <ImageSlot placeholder="Photo — first sail on a keelboat" />
@@ -127,7 +127,7 @@ export default function HomePage() {
                 </span>
               </div>
             </Link>
-            <Link className="ccard" href="/courses/rya-competent-crew">
+            <Link className="ccard" href="/rya/competent-crew/">
               <div className="photo">
                 <span className="badge">Skipper</span>
                 <ImageSlot placeholder="Photo — skipper at the helm" />
@@ -144,7 +144,7 @@ export default function HomePage() {
                 </span>
               </div>
             </Link>
-            <Link className="ccard" href="/qualifications/rya-vs-iyt-vs-asa">
+            <Link className="ccard" href="/qualifications/rya-vs-iyt-vs-asa/">
               <div className="photo">
                 <span className="badge">Charter</span>
                 <ImageSlot placeholder="Photo — catamaran at anchor, Whitsundays" />
@@ -161,7 +161,7 @@ export default function HomePage() {
                 </span>
               </div>
             </Link>
-            <Link className="ccard" href="/qualifications/rya-vs-iyt-vs-asa">
+            <Link className="ccard" href="/qualifications/rya-vs-iyt-vs-asa/">
               <div className="photo">
                 <span className="badge">Advanced</span>
                 <ImageSlot placeholder="Photo — offshore passage at dusk" />
@@ -194,7 +194,7 @@ export default function HomePage() {
               — verified, not copied from a brochure.
             </p>
             <div className="rows">
-              <Link className="row" href="/sailing-schools/new-south-wales/sydney">
+              <Link className="row" href="/sailing-schools/new-south-wales/">
                 <div>
                   <h3>New South Wales</h3>
                   <p>
@@ -205,7 +205,7 @@ export default function HomePage() {
                   <i className="ph-duotone ph-caret-right" />
                 </span>
               </Link>
-              <Link className="row" href="/sailing-schools">
+              <Link className="row" href="/sailing-schools/queensland/">
                 <div>
                   <h3>Queensland</h3>
                   <p>Brisbane, Moreton Bay, Sunshine Coast, Whitsundays, Hervey Bay — 6 schools</p>
@@ -214,7 +214,7 @@ export default function HomePage() {
                   <i className="ph-duotone ph-caret-right" />
                 </span>
               </Link>
-              <Link className="row" href="/sailing-schools">
+              <Link className="row" href="/sailing-schools/victoria/">
                 <div>
                   <h3>Victoria &amp; Western Australia</h3>
                   <p>Melbourne and Port Phillip; Perth, Fremantle and Geographe Bay — 9 schools</p>
@@ -223,10 +223,10 @@ export default function HomePage() {
                   <i className="ph-duotone ph-caret-right" />
                 </span>
               </Link>
-              <Link className="row" href="/sailing-schools">
+              <Link className="row" href="/sailing-schools/tasmania/">
                 <div>
-                  <h3>South Australia, Tasmania &amp; NT</h3>
-                  <p>Adelaide, Hobart, Darwin — 3 schools</p>
+                  <h3>South Australia &amp; Tasmania</h3>
+                  <p>Adelaide and Gulf St Vincent; Hobart and the Derwent — 3 schools</p>
                 </div>
                 <span className="arrow">
                   <i className="ph-duotone ph-caret-right" />
@@ -247,12 +247,12 @@ export default function HomePage() {
               <span className="kicker">Our guides</span>
               <h2 className="serif lead">Latest insights</h2>
             </div>
-            <Link className="pill pill-orange" href="/pathways/learn-to-sail-from-scratch">
+            <Link className="pill pill-orange" href="/pathways/complete-beginner/">
               View all guides
             </Link>
           </div>
           <div className="rows">
-            <Link className="row" href="/pathways/learn-to-sail-from-scratch">
+            <Link className="row" href="/pathways/complete-beginner/">
               <div>
                 <h3>How to learn to sail in Australia from zero experience</h3>
                 <p>
@@ -265,7 +265,7 @@ export default function HomePage() {
                 <i className="ph-duotone ph-caret-right" />
               </span>
             </Link>
-            <Link className="row" href="/courses/rya-competent-crew">
+            <Link className="row" href="/rya/competent-crew/">
               <div>
                 <h3>Is RYA Competent Crew the right first course?</h3>
                 <p>
@@ -278,7 +278,7 @@ export default function HomePage() {
                 <i className="ph-duotone ph-caret-right" />
               </span>
             </Link>
-            <Link className="row" href="/qualifications/rya-vs-iyt-vs-asa">
+            <Link className="row" href="/qualifications/rya-vs-iyt-vs-asa/">
               <div>
                 <h3>RYA vs IYT vs ASA: which qualification should an Australian sailor choose?</h3>
                 <p>
@@ -305,10 +305,10 @@ export default function HomePage() {
             </p>
           </div>
           <div className="btns">
-            <Link className="pill pill-orange" href="/find-a-course">
+            <Link className="pill pill-orange" href="/find-a-course/">
               Find a course
             </Link>
-            <Link className="pill pill-ghost" href="/qualifications/rya-vs-iyt-vs-asa">
+            <Link className="pill pill-ghost" href="/qualifications/rya-vs-iyt-vs-asa/">
               Compare qualifications
             </Link>
           </div>

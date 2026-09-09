@@ -25,9 +25,11 @@ const serif = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: '/' },
+  // Part 19 titles are self-contained and already at the length search results show,
+  // so pages set their own in full rather than having a site name appended.
   title: {
-    default: 'SailingSchools.com.au — Australia’s independent guide to learning to sail',
-    template: '%s · SailingSchools.com.au',
+    default: 'Sailing Schools Australia | Sailing Courses & Learn to Sail Guide',
+    template: '%s',
   },
   description:
     'Find sailing schools, sailing courses and the right path to learn to sail in Australia — from a first afternoon on the water to Yachtmaster, bareboat charter or owning your own yacht.',

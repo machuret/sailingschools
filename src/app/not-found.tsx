@@ -11,7 +11,7 @@ export default function NotFound() {
           The three-question course finder is the quickest way back on course.
         </p>
         <div className="cta" style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 30 }}>
-          <Link className="pill pill-orange" href="/find-a-course">
+          <Link className="pill pill-orange" href="/find-a-course/">
             Find a course
           </Link>
           <Link className="pill pill-outline" href="/">

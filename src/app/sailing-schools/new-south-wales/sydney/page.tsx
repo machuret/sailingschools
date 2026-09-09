@@ -3,10 +3,10 @@ import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
 
 export const metadata: Metadata = {
-  title: 'Sailing schools in Sydney',
+  title: 'Sailing Schools Sydney | Sailing Lessons, RYA & Yacht Courses',
   description:
     'Dedicated sailing schools operating from Sydney Harbour, Middle Harbour, Pittwater and Botany Bay — beginner sailing, Australian Sailing keelboat courses, RYA and IYT yacht training, catamaran handling, Yachtmaster preparation, racing, safety and navigation.',
-  alternates: { canonical: '/sailing-schools/new-south-wales/sydney' },
+  alternates: { canonical: '/sailing-schools/new-south-wales/sydney/' },
 };
 
 const SCHOOLS = [
@@ -40,7 +40,7 @@ export default function SydneyPage() {
         <div className="wrap hero-in">
           <div>
             <p className="crumb">
-              <Link href="/">Home</Link> / <Link href="/sailing-schools">Schools</Link> / New South
+              <Link href="/">Home</Link> / <Link href="/sailing-schools/">Schools</Link> / New South
               Wales / Sydney
             </p>
             <h1>
@@ -57,7 +57,7 @@ export default function SydneyPage() {
               <a className="pill pill-orange" href="#schools">
                 See the schools
               </a>
-              <Link className="pill pill-ghost" href="/find-a-course">
+              <Link className="pill pill-ghost" href="/find-a-course/">
                 Which course first?
               </Link>
             </div>
@@ -83,7 +83,7 @@ export default function SydneyPage() {
           </div>
           <div className="cards">
             {SCHOOLS.map((s) => (
-              <Link className="ccard" href="/schools/harbourline-sailing-school" key={s.name}>
+              <Link className="ccard" href="/schools/harbourline-sailing-school/" key={s.name}>
                 <div className="photo">
                   <span className="badge">{s.where}</span>
                   <ImageSlot placeholder="School photo" />
@@ -129,7 +129,7 @@ export default function SydneyPage() {
                 { h: 'Pittwater & Broken Bay', p: 'Cruising grounds an hour north — 4 schools' },
                 { h: 'Botany Bay', p: 'Open water, southern suburbs — 1 school' },
               ].map((r) => (
-                <Link className="row" href="/sailing-schools" key={r.h}>
+                <Link className="row" href="/sailing-schools/" key={r.h}>
                   <div>
                     <h3>{r.h}</h3>
                     <p>{r.p}</p>
@@ -180,10 +180,10 @@ export default function SydneyPage() {
             </p>
           </div>
           <div className="btns">
-            <Link className="pill pill-orange" href="/find-a-course">
+            <Link className="pill pill-orange" href="/find-a-course/">
               Find a course
             </Link>
-            <Link className="pill pill-ghost" href="/qualifications/rya-vs-iyt-vs-asa">
+            <Link className="pill pill-ghost" href="/qualifications/rya-vs-iyt-vs-asa/">
               How to compare schools
             </Link>
           </div>

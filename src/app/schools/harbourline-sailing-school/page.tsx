@@ -3,10 +3,10 @@ import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
 
 export const metadata: Metadata = {
-  title: 'Harbourline Sailing School (sample profile)',
+  title: 'Harbourline Sailing School | Sample School Profile',
   description:
     'A sample school profile showing the template every SailingSchools.com.au listing follows: accreditation, training waters, training boats, course list, published prices and the date they were checked.',
-  alternates: { canonical: '/schools/harbourline-sailing-school' },
+  alternates: { canonical: '/schools/harbourline-sailing-school/' },
 };
 
 const PRICES = [
@@ -23,8 +23,8 @@ export default function SchoolPage() {
       <section className="sec" style={{ paddingTop: 48 }}>
         <div className="wrap">
           <p className="crumb dark">
-            <Link href="/">Home</Link> / <Link href="/sailing-schools">Schools</Link> / NSW /{' '}
-            <Link href="/sailing-schools/new-south-wales/sydney">Sydney</Link> / Harbourline Sailing
+            <Link href="/">Home</Link> / <Link href="/sailing-schools/">Schools</Link> / NSW /{' '}
+            <Link href="/sailing-schools/new-south-wales/sydney/">Sydney</Link> / Harbourline Sailing
             School
           </p>
           <div
@@ -117,7 +117,7 @@ export default function SchoolPage() {
               <h3>Start Yachting &amp; Competent Crew</h3>
               <p>Two-day introduction, or the full five-day liveaboard crew course.</p>
               <div className="foot">
-                <Link className="pill pill-orange sm" href="/courses/rya-competent-crew">
+                <Link className="pill pill-orange sm" href="/rya/competent-crew/">
                   Competent Crew
                 </Link>
               </div>
@@ -132,7 +132,7 @@ export default function SchoolPage() {
                 Classroom or online theory, then five days liveaboard taking charge of the yacht.
               </p>
               <div className="foot">
-                <Link className="pill pill-orange sm" href="/find-a-course">
+                <Link className="pill pill-orange sm" href="/find-a-course/">
                   Day Skipper
                 </Link>
               </div>
@@ -148,7 +148,7 @@ export default function SchoolPage() {
                 application.
               </p>
               <div className="foot">
-                <Link className="pill pill-orange sm" href="/qualifications/rya-vs-iyt-vs-asa">
+                <Link className="pill pill-orange sm" href="/qualifications/rya-vs-iyt-vs-asa/">
                   Coastal Skipper
                 </Link>
               </div>
@@ -164,7 +164,7 @@ export default function SchoolPage() {
                 tuition by the day.
               </p>
               <div className="foot">
-                <Link className="pill pill-orange sm" href="/find-a-course">
+                <Link className="pill pill-orange sm" href="/find-a-course/">
                   Specialist courses
                 </Link>
               </div>
@@ -243,7 +243,7 @@ export default function SchoolPage() {
           <p className="copy" style={{ marginTop: 20 }}>
             Things to check before booking: current accreditation · exact vessel · instructor ratio ·
             prerequisites · accommodation · meals · exam fees · cancellation policy. Something out of
-            date? <Link href="/sailing-schools">Update this school →</Link>
+            date? <Link href="/sailing-schools/">Update this school →</Link>
           </p>
         </div>
       </section>
@@ -258,10 +258,10 @@ export default function SchoolPage() {
             </p>
           </div>
           <div className="btns">
-            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney">
+            <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney/">
               All Sydney schools
             </Link>
-            <Link className="pill pill-ghost" href="/find-a-course">
+            <Link className="pill pill-ghost" href="/find-a-course/">
               Find a course
             </Link>
           </div>

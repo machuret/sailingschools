@@ -1,34 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import { schoolsInState } from '@/lib/schools';
+import { states } from '@/lib/states';
 
 export const metadata: Metadata = {
-  title: 'Sailing schools by state',
+  title: 'Sailing Schools Australia | Directory by State & Territory',
   description:
     'Dedicated sailing schools, academies and yacht training businesses across every Australian state and territory — New South Wales, Queensland, Victoria, Western Australia, South Australia, Tasmania and the Northern Territory.',
-  alternates: { canonical: '/sailing-schools' },
+  alternates: { canonical: '/sailing-schools/' },
 };
-
-/** The state/region tree from the site architecture. Only Sydney has a page so far. */
-const STATES = [
-  {
-    name: 'New South Wales',
-    count: '14 schools',
-    regions: ['Sydney', 'Sydney Harbour', 'Middle Harbour', 'Pittwater', 'Broken Bay', 'Botany Bay'],
-    href: '/sailing-schools/new-south-wales/sydney',
-  },
-  {
-    name: 'Queensland',
-    count: '6 schools',
-    regions: ['Brisbane', 'Moreton Bay', 'Sunshine Coast', 'Mooloolaba', 'Whitsundays', 'Airlie Beach', 'Hervey Bay'],
-  },
-  { name: 'Victoria', count: '4 schools', regions: ['Melbourne', 'Port Phillip'] },
-  { name: 'Western Australia', count: '5 schools', regions: ['Perth', 'Fremantle', 'Busselton', 'Geographe Bay'] },
-  { name: 'South Australia', count: '1 school', regions: ['Adelaide'] },
-  { name: 'Tasmania', count: '1 school', regions: ['Hobart'] },
-  { name: 'Northern Territory', count: '1 school', regions: ['Darwin'] },
-  { name: 'Australian Capital Territory', count: 'Inland training', regions: ['Canberra'] },
-];
 
 export default function SchoolsIndexPage() {
   return (
@@ -53,10 +34,10 @@ export default function SchoolsIndexPage() {
               checked.
             </p>
             <div className="cta">
-              <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney">
+              <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney/">
                 Start with Sydney
               </Link>
-              <Link className="pill pill-ghost" href="/find-a-course">
+              <Link className="pill pill-ghost" href="/find-a-course/">
                 Which course first?
               </Link>
             </div>
@@ -73,30 +54,19 @@ export default function SchoolsIndexPage() {
             </div>
           </div>
           <div className="rows">
-            {STATES.map((s) => {
-              const body = (
-                <>
-                  <div>
-                    <h3>{s.name}</h3>
-                    <p>
-                      {s.regions.join(' · ')} — {s.count}
-                    </p>
-                  </div>
-                  <span className="arrow">
-                    <i className="ph-duotone ph-caret-right" />
-                  </span>
-                </>
-              );
-              return s.href ? (
-                <Link className="row" href={s.href} key={s.name}>
-                  {body}
-                </Link>
-              ) : (
-                <div className="row" key={s.name}>
-                  {body}
+            {states.map((s) => (
+              <Link className="row" href={`/sailing-schools/${s.key}/`} key={s.key}>
+                <div>
+                  <h3>{s.name}</h3>
+                  <p>
+                    {s.regions.join(' · ')} — {schoolsInState(s.key).length} schools
+                  </p>
                 </div>
-              );
-            })}
+                <span className="arrow">
+                  <i className="ph-duotone ph-caret-right" />
+                </span>
+              </Link>
+            ))}
           </div>
           <p className="copy" style={{ marginTop: 28 }}>
             A sailing school can operate from a yacht club or marina and still be listed here, so
@@ -118,7 +88,7 @@ export default function SchoolsIndexPage() {
               cannot pay for placement.
             </p>
             <div className="rows">
-              <Link className="row" href="/schools/harbourline-sailing-school">
+              <Link className="row" href="/schools/harbourline-sailing-school/">
                 <div>
                   <h3>What a school profile contains</h3>
                   <p>See the sample profile every listing follows</p>
@@ -127,7 +97,7 @@ export default function SchoolsIndexPage() {
                   <i className="ph-duotone ph-caret-right" />
                 </span>
               </Link>
-              <Link className="row" href="/qualifications/rya-vs-iyt-vs-asa">
+              <Link className="row" href="/qualifications/rya-vs-iyt-vs-asa/">
                 <div>
                   <h3>Accreditation explained</h3>
                   <p>Australian Sailing, RYA, IYT, American Sailing and AMSA</p>
@@ -136,7 +106,7 @@ export default function SchoolsIndexPage() {
                   <i className="ph-duotone ph-caret-right" />
                 </span>
               </Link>
-              <Link className="row" href="/pathways/learn-to-sail-from-scratch">
+              <Link className="row" href="/pathways/complete-beginner/">
                 <div>
                   <h3>Choosing between two schools</h3>
                   <p>Outcome, boat, class size and relevance — then price</p>
@@ -166,7 +136,7 @@ export default function SchoolsIndexPage() {
             <a className="pill pill-orange" href="mailto:hello@sailingschools.com.au">
               Update a school
             </a>
-            <Link className="pill pill-ghost" href="/find-a-course">
+            <Link className="pill pill-ghost" href="/find-a-course/">
               Find a course
             </Link>
           </div>

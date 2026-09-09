@@ -3,10 +3,10 @@ import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
 
 export const metadata: Metadata = {
-  title: 'RYA Competent Crew',
+  title: 'RYA Competent Crew Australia | Course Guide & Sailing Schools',
   description:
     'RYA Competent Crew is a five-day practical course requiring no previous sailing experience, normally run liveaboard on a cruising yacht. What it covers, who it suits, and the Australian schools that teach it.',
-  alternates: { canonical: '/courses/rya-competent-crew' },
+  alternates: { canonical: '/rya/competent-crew/' },
 };
 
 const SCHOOLS = [
@@ -16,7 +16,7 @@ const SCHOOLS = [
     blurb:
       'RYA Training Centre on Sydney Harbour. Also lists Cruising Level 1 and 2 for a shorter introduction before the full five days.',
     tags: ['RYA', 'Liveaboard'],
-    href: '/schools/harbourline-sailing-school',
+    href: '/schools/harbourline-sailing-school/',
   },
   {
     name: 'Yachtmaster Sailing School',
@@ -24,14 +24,14 @@ const SCHOOLS = [
     blurb:
       'Publishes 2026 prices from short introductory programs through liveaboard RYA courses on Port Phillip.',
     tags: ['RYA', 'Liveaboard'],
-    href: '/schools/harbourline-sailing-school',
+    href: '/schools/harbourline-sailing-school/',
   },
   {
     name: 'Oceanwest RYA Sailing School',
     badge: 'Fremantle · WA',
     blurb: 'RYA centre on Cockburn Sound, also listed for Cruising Level 1 and Level 2.',
     tags: ['RYA'],
-    href: '/schools/harbourline-sailing-school',
+    href: '/schools/harbourline-sailing-school/',
   },
   {
     name: 'Sunshine Sailing Australia',
@@ -39,7 +39,7 @@ const SCHOOLS = [
     blurb:
       'Separate current prices for RYA, ASA and charter-preparation programs on the Sunshine Coast.',
     tags: ['RYA', 'ASA'],
-    href: '/schools/harbourline-sailing-school',
+    href: '/schools/harbourline-sailing-school/',
   },
 ];
 
@@ -49,7 +49,7 @@ export default function CoursePage() {
       <section className="sec" style={{ paddingTop: 48 }}>
         <div className="wrap">
           <p className="crumb dark">
-            <Link href="/">Home</Link> / <Link href="/qualifications/rya-vs-iyt-vs-asa">RYA</Link> /
+            <Link href="/">Home</Link> / <Link href="/qualifications/rya-vs-iyt-vs-asa/">RYA</Link> /
             Sail cruising / Competent Crew
           </p>
           <div
@@ -129,7 +129,7 @@ export default function CoursePage() {
                 <div className="fact">
                   <dt>What comes next</dt>
                   <dd>
-                    <Link href="/find-a-course">Day Skipper Theory &amp; Practical</Link>
+                    <Link href="/find-a-course/">Day Skipper Theory &amp; Practical</Link>
                   </dd>
                 </div>
               </dl>
@@ -140,7 +140,7 @@ export default function CoursePage() {
                 <a className="pill pill-orange" href="#schools">
                   Schools offering this course
                 </a>
-                <Link className="pill pill-outline" href="/qualifications/rya-vs-iyt-vs-asa">
+                <Link className="pill pill-outline" href="/qualifications/rya-vs-iyt-vs-asa/">
                   Compare RYA, IYT &amp; ASA
                 </Link>
               </div>
@@ -180,7 +180,7 @@ export default function CoursePage() {
               </p>
               <ul>
                 <li>
-                  <Link href="/qualifications/rya-vs-iyt-vs-asa">IYT International Crew →</Link>
+                  <Link href="/qualifications/rya-vs-iyt-vs-asa/">IYT International Crew →</Link>
                 </li>
               </ul>
             </div>
@@ -192,7 +192,7 @@ export default function CoursePage() {
               </p>
               <ul>
                 <li>
-                  <Link href="/qualifications/rya-vs-iyt-vs-asa">ASA 101 + ASA 103 →</Link>
+                  <Link href="/qualifications/rya-vs-iyt-vs-asa/">ASA 101 + ASA 103 →</Link>
                 </li>
               </ul>
             </div>
@@ -204,7 +204,7 @@ export default function CoursePage() {
               </p>
               <ul>
                 <li>
-                  <Link href="/pathways/learn-to-sail-from-scratch">Start Crewing →</Link>
+                  <Link href="/pathways/complete-beginner/">Start Crewing →</Link>
                 </li>
               </ul>
             </div>
@@ -221,7 +221,7 @@ export default function CoursePage() {
             </div>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               <span className="tag tag-navy">All</span>
-              <Link className="tag tag-sky" href="/sailing-schools/new-south-wales/sydney">
+              <Link className="tag tag-sky" href="/sailing-schools/new-south-wales/sydney/">
                 NSW
               </Link>
               <span className="tag tag-sky">QLD</span>
@@ -255,7 +255,7 @@ export default function CoursePage() {
           <p className="copy" style={{ marginTop: 28 }}>
             Every price on this site carries the date it was checked. A two-hour introduction and a
             five-day liveaboard course should never be compared on price alone.{' '}
-            <Link href="/find-a-course">How much do sailing courses cost? →</Link>
+            <Link href="/find-a-course/">How much do sailing courses cost? →</Link>
           </p>
         </div>
       </section>
@@ -270,10 +270,10 @@ export default function CoursePage() {
             </p>
           </div>
           <div className="btns">
-            <Link className="pill pill-orange" href="/find-a-course">
+            <Link className="pill pill-orange" href="/find-a-course/">
               Find a course
             </Link>
-            <Link className="pill pill-ghost" href="/pathways/learn-to-sail-from-scratch">
+            <Link className="pill pill-ghost" href="/pathways/complete-beginner/">
               Beginner pathway
             </Link>
           </div>

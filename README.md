@@ -26,16 +26,35 @@ finder.
 
 ## Routes
 
+URLs follow the architecture in [`content-guide.md`](./content-guide.md): `/courses/` is
+reserved for intent pages, while each training body gets its own hub (`/rya/`, and in future
+`/iyt/`, `/asa/`, `/australian-sailing/`) holding that body's courses. Every path carries a
+trailing slash.
+
 | Route | Page |
 | --- | --- |
 | `/` | Home |
-| `/find-a-course` | Three-question course finder (client-side, no account or email capture) |
-| `/pathways/learn-to-sail-from-scratch` | Complete-beginner pathway — the three routes in |
-| `/courses/rya-competent-crew` | Course detail |
-| `/qualifications/rya-vs-iyt-vs-asa` | Scheme comparison |
-| `/sailing-schools` | Schools index, by state and territory |
-| `/sailing-schools/new-south-wales/sydney` | Regional school directory |
-| `/schools/harbourline-sailing-school` | School profile (a sample profile; Harbourline is fictional) |
+| `/find-a-course/` | Three-question course finder (client-side, no account or email capture) |
+| `/pathways/complete-beginner/` | Complete-beginner pathway — the three routes in |
+| `/rya/` | RYA organisation hub |
+| `/rya/competent-crew/` | Course detail |
+| `/qualifications/rya-vs-iyt-vs-asa/` | Scheme comparison |
+| `/sailing-schools/` | Schools index |
+| `/sailing-schools/[state]/` | State directory — 6 states, generated from `src/lib/states.ts` |
+| `/sailing-schools/new-south-wales/sydney/` | City directory |
+| `/schools/harbourline-sailing-school/` | School profile (a sample profile; Harbourline is fictional) |
+
+### Content data
+
+`src/lib/schools.ts` and `src/lib/states.ts` hold the directory. School records carry region,
+accreditation and course mix **only where a profile has been verified** — the rest are listed by
+name alone rather than guessed, because publishing the wrong accreditation for a real business is
+worse than saying the profile is still being checked. State pages render from these records, so
+adding a school is a data edit, not a new page.
+
+Only states with schools in the directory get a page. The Northern Territory and the ACT appear in
+the architecture but have no listed schools, so they are deliberately not published — an empty
+location page is a doorway page.
 
 The URL scheme follows the site architecture in [`content-guide.md`](./content-guide.md), which is
 the editorial source for the remaining state, region, course and pathway pages.
