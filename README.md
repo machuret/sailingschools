@@ -36,6 +36,9 @@ trailing slash.
 | `/` | Home |
 | `/find-a-course/` | Three-question course finder (client-side, no account or email capture) |
 | `/pathways/complete-beginner/` | Complete-beginner pathway — the three routes in |
+| `/learn/boat-licence/` | Boat licence comparison, all eight jurisdictions |
+| `/learn/boat-licence-[state]/` | 8 state licence pages, from `src/lib/licences.ts` |
+| `/rya/[slug]/`, `/iyt/[slug]/`, `/asa/[slug]/`, `/australian-sailing/[slug]/` | 38 scheme course pages, from `src/lib/scheme-courses.ts` |
 | `/faq/` | FAQ index — 46 questions |
 | `/faq/[slug]/` | 12 questions answered in full, from `src/lib/faq.ts` |
 | `/sitemap/` | HTML site map |
@@ -56,6 +59,10 @@ trailing slash.
 `src/lib/courses.ts` holds the intent course guides as ordered content blocks (`para`, `list`,
 `flow`), so a lead-in line stays attached to the list it introduces and one template renders all
 22. Adding a course is a record, not a page.
+
+`src/lib/licences.ts` holds recreational boat licence rules per state and territory. These were
+checked against each authority in September 2026 and every record carries that date and a link
+to the authority — licensing changes, and the pages say so.
 
 ### Content data
 

@@ -1,6 +1,7 @@
 import { cities } from './cities';
 import { courses } from './courses';
 import { faqPages } from './faq';
+import { licences } from './licences';
 import { schemeCourses } from './scheme-courses';
 import { states } from './states';
 
@@ -38,6 +39,7 @@ const staticRoutes: SiteRoute[] = [
   { path: '/pathways/complete-beginner/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/courses/', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/faq/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/learn/boat-licence/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/sitemap/', priority: 0.3, changeFrequency: 'weekly' },
   { path: '/privacy-policy/', priority: 0.2, changeFrequency: 'yearly' },
   { path: '/terms-and-conditions/', priority: 0.2, changeFrequency: 'yearly' },
@@ -76,6 +78,13 @@ const schemeCourseRoutes: SiteRoute[] = schemeCourses.map((c) => ({
   changeFrequency: 'monthly',
 }));
 
+/** Boat licence rules, one page per state and territory. */
+const licenceRoutes: SiteRoute[] = licences.map((l) => ({
+  path: `/learn/${l.slug}/`,
+  priority: 0.85,
+  changeFrequency: 'monthly',
+}));
+
 /** FAQ answers that carry their own URL. */
 const faqRoutes: SiteRoute[] = faqPages.map((f) => ({
   path: `/faq/${f.page!.slug}/`,
@@ -89,6 +98,7 @@ const allRoutes: SiteRoute[] = [
   ...cityRoutes,
   ...courseRoutes,
   ...schemeCourseRoutes,
+  ...licenceRoutes,
   ...faqRoutes,
 ];
 

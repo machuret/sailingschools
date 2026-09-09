@@ -50,6 +50,7 @@ export default function SiteFooter() {
               <div>
                 <h4>Learn</h4>
                 <Link href="/faq/">Questions &amp; answers</Link>
+                <Link href="/learn/boat-licence/">Do you need a boat licence?</Link>
                 <Link href="/pathways/complete-beginner/">Learn to sail from zero</Link>
                 <Link href="/find-a-course/">Find the right course</Link>
                 <Link href="/schools/harbourline-sailing-school/">How a school profile works</Link>
