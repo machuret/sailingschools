@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
-import SchoolMark from '@/components/SchoolMark';
+import SchoolCard from '@/components/SchoolCard';
+import { schoolsWithScheme } from '@/lib/schools';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { course } from '@/lib/schema';
@@ -13,39 +14,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/rya/competent-crew/' },
 };
 
-const SCHOOLS = [
-  {
-    name: 'SailCorp',
-    badge: 'Sydney · NSW',
-    blurb:
-      'RYA Training Centre on Sydney Harbour. Also lists Cruising Level 1 and 2 for a shorter introduction before the full five days.',
-    tags: ['RYA', 'Liveaboard'],
-    href: '/schools/harbourline-sailing-school/',
-  },
-  {
-    name: 'Yachtmaster Sailing School',
-    badge: 'Melbourne · VIC',
-    blurb:
-      'Publishes 2026 prices from short introductory programs through liveaboard RYA courses on Port Phillip.',
-    tags: ['RYA', 'Liveaboard'],
-    href: '/schools/harbourline-sailing-school/',
-  },
-  {
-    name: 'Oceanwest RYA Sailing School',
-    badge: 'Fremantle · WA',
-    blurb: 'RYA centre on Cockburn Sound, also listed for Cruising Level 1 and Level 2.',
-    tags: ['RYA'],
-    href: '/schools/harbourline-sailing-school/',
-  },
-  {
-    name: 'Sunshine Sailing Australia',
-    badge: 'Mooloolaba · QLD',
-    blurb:
-      'Separate current prices for RYA, ASA and charter-preparation programs on the Sunshine Coast.',
-    tags: ['RYA', 'ASA'],
-    href: '/schools/harbourline-sailing-school/',
-  },
-];
+/** RYA schools, from the verified directory — no second copy to drift. */
+const RYA_SCHOOLS = schoolsWithScheme('RYA');
 
 export default function CoursePage() {
   return (
@@ -246,26 +216,8 @@ export default function CoursePage() {
             </div>
           </div>
           <div className="cards">
-            {SCHOOLS.map((s) => (
-              <Link className="ccard" href={s.href} key={s.name}>
-                <div className="photo">
-                  <span className="badge">{s.badge}</span>
-                  <SchoolMark school={{ name: s.name, state: 'new-south-wales' }} />
-                </div>
-                <h3>{s.name}</h3>
-                <p>{s.blurb}</p>
-                <div className="meta">
-                  {s.tags.map((t, i) => (
-                    <span className={i === 0 ? 'tag tag-sky' : 'tag tag-cream'} key={t}>
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <div className="foot">
-                  <span className="price">From $—</span>
-                  <span className="tag tag-cream">Checked Sep 2026</span>
-                </div>
-              </Link>
+            {RYA_SCHOOLS.map((s) => (
+              <SchoolCard school={s} key={s.name} />
             ))}
           </div>
           <p className="copy" style={{ marginTop: 28 }}>

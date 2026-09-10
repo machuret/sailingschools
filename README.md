@@ -66,15 +66,19 @@ to the authority — licensing changes, and the pages say so.
 
 ### School identity marks
 
-We hold no school logos and no school website URLs, so `SchoolMark` renders a monogram from
-the school's initials instead of an empty box. The monogram is deliberately **ours, not
+All 32 schools now carry a verified website; logos are still to be licensed, so `SchoolMark`
+renders a monogram from the school's initials instead of an empty box. The monogram is deliberately **ours, not
 theirs**: one typeface and a restrained range of the site's own palette, picked
 deterministically from the name, so a directory grid reads as one system and nothing implies
 we are showing a school's real branding.
 
-`School.logo` and `School.website` exist for when real logos are licensed. Only set `logo`
-where the school has given permission or the use has been checked — never a file fetched
-from a domain guessed from the school's name.
+`School.logo` exists for when real logos are licensed. Only set it where the school has
+given permission or the use has been checked — never a file fetched from a domain guessed
+from the school's name.
+
+Every record's website, training base, accreditation and course types were checked against
+the school's own site in September 2026, and `checked` records that. Where a detail could
+not be confirmed the field is left unset rather than guessed.
 
 ### Content data
 
