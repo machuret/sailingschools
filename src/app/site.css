@@ -567,6 +567,29 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
   :root:not([data-theme='light']) .bar { border-bottom: 1px solid var(--line); }
 }
 
+.school-mark {
+  position: relative; display: grid; place-items: center; width: 100%; height: 100%;
+  min-height: 8rem; overflow: hidden;
+  background: var(--mark-bg); color: var(--mark-ink);
+}
+.school-mark-letters {
+  font-family: var(--sans); font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.03em; line-height: 1;
+}
+/* A single hairline under the monogram — a mark, not a logo pretending to be one. */
+.school-mark-rule {
+  position: absolute; left: 50%; transform: translateX(-50%); bottom: 28%;
+  width: 2.25rem; height: 2px; background: currentColor; opacity: .45;
+}
+.school-mark.has-logo { background: var(--surface); padding: 12%; }
+.school-mark.has-logo img { width: 100%; height: 100%; object-fit: contain; }
+
+.mark-navy  { --mark-bg: #12365e; --mark-ink: #cfe4f2; }
+.mark-blue  { --mark-bg: #1a5f96; --mark-ink: #dcefff; }
+.mark-cyan  { --mark-bg: #1d7a8c; --mark-ink: #ddf5f8; }
+.mark-deep  { --mark-bg: #0d2743; --mark-ink: #b9d6ea; }
+.mark-slate { --mark-bg: #2c4f69; --mark-ink: #d6e6f2; }
+
 /* The theme control itself. */
 .theme-btn {
   display: inline-grid; place-items: center; width: 40px; height: 40px;

@@ -64,6 +64,18 @@ trailing slash.
 checked against each authority in September 2026 and every record carries that date and a link
 to the authority — licensing changes, and the pages say so.
 
+### School identity marks
+
+We hold no school logos and no school website URLs, so `SchoolMark` renders a monogram from
+the school's initials instead of an empty box. The monogram is deliberately **ours, not
+theirs**: one typeface and a restrained range of the site's own palette, picked
+deterministically from the name, so a directory grid reads as one system and nothing implies
+we are showing a school's real branding.
+
+`School.logo` and `School.website` exist for when real logos are licensed. Only set `logo`
+where the school has given permission or the use has been checked — never a file fetched
+from a domain guessed from the school's name.
+
 ### Content data
 
 `src/lib/schools.ts` and `src/lib/states.ts` hold the directory. School records carry region,

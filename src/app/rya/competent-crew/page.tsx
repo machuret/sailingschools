@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import SchoolMark from '@/components/SchoolMark';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { course } from '@/lib/schema';
@@ -249,7 +250,7 @@ export default function CoursePage() {
               <Link className="ccard" href={s.href} key={s.name}>
                 <div className="photo">
                   <span className="badge">{s.badge}</span>
-                  <ImageSlot placeholder="School photo" />
+                  <SchoolMark school={{ name: s.name, state: 'new-south-wales' }} />
                 </div>
                 <h3>{s.name}</h3>
                 <p>{s.blurb}</p>

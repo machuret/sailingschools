@@ -28,6 +28,14 @@ export type School = {
   types?: string;
   /** Set once the full profile has been checked against the school. */
   profile?: string;
+  /** The school's own site. Needed before a logo can be sourced at all. */
+  website?: string;
+  /**
+   * Path to a self-hosted logo under /public. Only set this where the school
+   * has given permission or the use has been checked — never a file scraped
+   * from a domain guessed from the school's name.
+   */
+  logo?: string;
 };
 
 export const schools: School[] = [

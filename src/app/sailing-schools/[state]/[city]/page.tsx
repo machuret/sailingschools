@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
+import SchoolMark from '@/components/SchoolMark';
 import JsonLd from '@/components/JsonLd';
 import { itemList } from '@/lib/schema';
 import { cities, cityBySlug, citiesInState } from '@/lib/cities';
@@ -137,7 +138,7 @@ export default async function CityPage({ params }: Params) {
                 <Link className="ccard" href={s.profile!} key={s.name}>
                   <div className="photo">
                     {s.region && <span className="badge">{s.region}</span>}
-                    <ImageSlot placeholder={`Photo — ${s.name}`} />
+                    <SchoolMark school={s} />
                   </div>
                   <h3>{s.name}</h3>
                   {s.blurb && <p>{s.blurb}</p>}
