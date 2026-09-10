@@ -138,6 +138,21 @@ The header is sticky and translucent (navy at 82% with a backdrop blur), with a
 `@supports` fallback to solid navy. That is the one material gesture the site makes;
 everything else stays quiet.
 
+### Night sailing (dark theme)
+
+Not an inversion — a chart table under a red night light. Grounds go deep and slightly warm
+rather than blue-black, the accent loses its daylight glare, and text is a warm off-white,
+because pure white on black is what makes a screen painful to read in the dark. The
+announcement bar drops its accent flood-fill and keeps the accent as text only: at full
+strength it was the brightest thing on the page.
+
+Three states — light, dark, and follow-the-system — cycled by the header control and stored
+in `localStorage`. An inline script in the document head applies the stored choice before
+first paint, so the page never flashes the wrong theme.
+
+Surfaces use `--surface`, not `--white`: the two were the same token, which made a dark
+theme impossible until they were separated.
+
 `prefers-reduced-motion`, `prefers-reduced-transparency` and `prefers-contrast: more` are
 all handled. Under reduced motion, transforms are removed but colour and opacity changes
 stay, because those carry meaning.
@@ -146,6 +161,10 @@ Column ratios use modifier classes (`.split.lean-left`, `.facts.two`) declared i
 `min-width` query, never inline `grid-template-columns` — an inline style cannot be
 overridden by a media query, which was forcing two columns onto 320px screens.
 Wide tables go in `.scroll-x`; the page body never scrolls sideways.
+
+Micro-typography: kerning and common ligatures on, hanging punctuation where supported,
+tabular figures anywhere numbers form a column, and non-breaking spaces between a figure and
+its unit so "4.5 kW" can never wrap to strand the unit.
 
 ## SEO
 

@@ -100,26 +100,10 @@ export default function CoursePage() {
                 <span className="tag tag-orange" style={{ padding: '10px 20px', fontSize: 14 }}>
                   Description
                 </span>
-                <span
-                  className="tag"
-                  style={{
-                    padding: '10px 20px',
-                    fontSize: 14,
-                    border: '2px solid var(--navy)',
-                    color: 'var(--navy)',
-                  }}
-                >
+                <span className="tag tag-outline" style={{ padding: '10px 20px', fontSize: 14 }}>
                   Who it suits
                 </span>
-                <span
-                  className="tag"
-                  style={{
-                    padding: '10px 20px',
-                    fontSize: 14,
-                    border: '2px solid var(--navy)',
-                    color: 'var(--navy)',
-                  }}
-                >
+                <span className="tag tag-outline" style={{ padding: '10px 20px', fontSize: 14 }}>
                   Schools
                 </span>
               </div>

@@ -46,14 +46,14 @@ export const licences: LicenceRecord[] = [
     schoolsPath: '/sailing-schools/new-south-wales/',
     title: 'Do You Need a Boat Licence to Sail in NSW? | 2026',
     description:
-      'In NSW a boat driving licence is required to drive a vessel at 10 knots or more. Sailing under sail alone does not need one — but your auxiliary engine might.',
-    short: 'Only at 10 knots or more. Under sail alone, no licence.',
+      'In NSW a boat driving licence is required to drive a vessel at 10 knots or more. Sailing under sail alone does not need one — but your auxiliary engine might.',
+    short: 'Only at 10 knots or more. Under sail alone, no licence.',
     required: 'conditional',
     rule:
-      'A general boat driving licence is required to drive any vessel for recreational purposes at 10 knots (about 18.5 km/h) or more on NSW waters. Below that speed, and for vessels under sail alone, no licence is required.',
+      'A general boat driving licence is required to drive any vessel for recreational purposes at 10 knots (about 18.5 km/h) or more on NSW waters. Below that speed, and for vessels under sail alone, no licence is required.',
     sailing: [
       'NSW is the most sailing-friendly licence regime in the country, because the trigger is speed rather than engine power. Sail your yacht without the engine and no licence applies, whatever the boat’s size.',
-      'The catch is the auxiliary. The moment you are under power at 10 knots or more, you need the licence. Most displacement cruising yachts will not reach 10 knots under a diesel auxiliary, so in practice many Sydney yacht owners never need one — but a fast planing motor tender certainly will, and so will a performance multihull.',
+      'The catch is the auxiliary. The moment you are under power at 10 knots or more, you need the licence. Most displacement cruising yachts will not reach 10 knots under a diesel auxiliary, so in practice many Sydney yacht owners never need one — but a fast planing motor tender certainly will, and so will a performance multihull.',
       'If you are learning on Sydney Harbour or Pittwater, your school holds whatever is required for its own vessels. You do not need a licence to be a student.',
     ],
     registration: 'Registration of the vessel is a separate requirement from licensing the driver.',
@@ -68,18 +68,18 @@ export const licences: LicenceRecord[] = [
     schoolsPath: '/sailing-schools/queensland/',
     title: 'Do You Need a Boat Licence to Sail in QLD? | 2026',
     description:
-      'Queensland requires a marine licence for any vessel with an engine over 4.5 kW. Most cruising yacht auxiliaries exceed that, so sailors are caught by it.',
-    short: 'Yes if the engine is over 4.5 kW — which most yacht auxiliaries are.',
+      'Queensland requires a marine licence for any vessel with an engine over 4.5 kW. Most cruising yacht auxiliaries exceed that, so sailors are caught by it.',
+    short: 'Yes if the engine is over 4.5 kW — which most yacht auxiliaries are.',
     required: 'yes',
     rule:
-      'A recreational marine driver licence is required to operate a boat with engine power greater than 4.5 kW (about 6 horsepower). The threshold is engine power, not speed.',
+      'A recreational marine driver licence is required to operate a boat with engine power greater than 4.5 kW (about 6 horsepower). The threshold is engine power, not speed.',
     sailing: [
-      'This is the rule that catches Queensland sailors out. A 4.5 kW threshold is roughly 6 horsepower — smaller than the auxiliary in almost any cruising yacht. A 30-foot yacht typically carries something between 15 and 30 horsepower.',
+      'This is the rule that catches Queensland sailors out. A 4.5 kW threshold is roughly 6 horsepower — smaller than the auxiliary in almost any cruising yacht. A 30-foot yacht typically carries something between 15 and 30 horsepower.',
       'So if you own or charter a yacht in Moreton Bay or the Whitsundays, you very probably need a Queensland marine licence to motor it, even though sailing it needs no licence at all. Bareboat charter operators will ask.',
-      'Registration has a lower threshold again: recreational boats with an engine or auxiliary of 3 kW or more must be registered. Licensing and registration are separate obligations.',
+      'Registration has a lower threshold again: recreational boats with an engine or auxiliary of 3 kW or more must be registered. Licensing and registration are separate obligations.',
       'If you do not hold a licence, you may operate under the direct supervision of someone who does and who can take immediate control.',
     ],
-    registration: 'Recreational boats with an engine or auxiliary of 3 kW or more must be registered.',
+    registration: 'Recreational boats with an engine or auxiliary of 3 kW or more must be registered.',
     authority: 'Maritime Safety Queensland',
     authorityUrl: 'https://www.msq.qld.gov.au/licensing',
     checked: licenceChecked,
@@ -114,15 +114,15 @@ export const licences: LicenceRecord[] = [
     schoolsPath: '/sailing-schools/western-australia/',
     title: 'Do You Need a Skipper’s Ticket to Sail in WA? | 2026',
     description:
-      'Western Australia requires a Recreational Skipper’s Ticket for any vessel with a motor over 4.5 kW. Most yacht auxiliaries are well above that threshold.',
-    short: 'Yes — an RST for any motor over 4.5 kW (6hp).',
+      'Western Australia requires a Recreational Skipper’s Ticket for any vessel with a motor over 4.5 kW. Most yacht auxiliaries are well above that threshold.',
+    short: 'Yes — an RST for any motor over 4.5 kW (6hp).',
     required: 'yes',
     rule:
-      'A Recreational Skipper’s Ticket (RST) is required to operate a recreational vessel with a motor greater than 4.5 kW (6 horsepower). It has applied since April 2008.',
+      'A Recreational Skipper’s Ticket (RST) is required to operate a recreational vessel with a motor greater than 4.5 kW (6 horsepower). It has applied since April 2008.',
     sailing: [
-      'Western Australia calls its licence a Recreational Skipper’s Ticket, and the 4.5 kW threshold means virtually every cruising yacht auxiliary is covered.',
+      'Western Australia calls its licence a Recreational Skipper’s Ticket, and the 4.5 kW threshold means virtually every cruising yacht auxiliary is covered.',
       'The RST is a nationally recognised certificate of competency covering the knowledge and practical skills to operate a powerboat safely. It involves a practical component, not just a written test.',
-      'Only the skipper — the person in charge of the vessel — needs to hold it. You must be at least 14 years old, and once issued it does not need renewing and carries no ongoing fee.',
+      'Only the skipper — the person in charge of the vessel — needs to hold it. You must be at least 14 years old, and once issued it does not need renewing and carries no ongoing fee.',
       'None of this is a sailing qualification. An RST says you can safely operate a powerboat; it says nothing about reefing, navigation or handling a yacht under sail.',
     ],
     registration: 'Vessel registration is a separate requirement from holding an RST.',
@@ -166,7 +166,7 @@ export const licences: LicenceRecord[] = [
     short: 'Yes at 4hp or more — and it requires a practical course.',
     required: 'yes',
     rule:
-      'A motor boat licence is required to operate a vessel with an engine of 4 horsepower or more, with an exception for hire-and-drive vessels.',
+      'A motor boat licence is required to operate a vessel with an engine of 4 horsepower or more, with an exception for hire-and-drive vessels.',
     sailing: [
       'Tasmania’s 4hp threshold is the lowest powered threshold of the mainland-style rules, so any yacht auxiliary is comfortably above it.',
       'The distinctive part is how you get it: a motor boat licence can only be obtained by completing a BoatSafe practical course with an accredited provider. There is no study-and-sit-a-test-alone route.',

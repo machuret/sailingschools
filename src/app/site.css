@@ -5,6 +5,10 @@
   --sky: #bfe6f5; --sky-2: #e3f3fa; --orange: #ff5a1f; --orange-2: #e84d13; --cream: #fbf7ea; --bg: #f5f7fa;
   --text: #14304f; --muted: #4c6178; --line: #e2e8ef; --white: #fff;
   --sans: var(--font-sans), system-ui, sans-serif; --serif: var(--font-serif), Georgia, serif;
+  --surface: #fff; --row-hover: rgba(255, 255, 255, .7);
+  --bar-bg: var(--orange); --bar-ink: var(--white);
+  --hero-grad: linear-gradient(115deg, #0b2340 0%, #143d72 38%, #1a7fc2 72%, #26b3c9 100%);
+  --scrim: linear-gradient(90deg, rgba(11,35,64,.72) 0%, rgba(11,35,64,.35) 55%, rgba(11,35,64,.15) 100%);
   --r: 6px; --pill: 999px;
 
   /* Type scale. Tracking is size-specific: large display text is set tight, small
@@ -72,8 +76,8 @@ em.serif { font-style: italic; }
 }
 
 /* bar + header */
-.bar { background: var(--orange); color: var(--white); text-align: center; font-size: 14.5px; padding: 10px 16px; }
-.bar a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+.bar { background: var(--bar-bg); color: var(--bar-ink); text-align: center; font-size: 14.5px; padding: 10px 16px; }
+.bar a { color: var(--bar-ink); text-decoration: underline; text-underline-offset: 3px; }
 .hdr {
   background: var(--navy); color: var(--white);
   position: sticky; top: 0; z-index: 50;
@@ -114,14 +118,15 @@ em.serif { font-style: italic; }
 .pill.sm { padding: 10px 20px; font-size: 12.5px; }
 .tag { display: inline-flex; align-items: center; border-radius: var(--pill); padding: 5px 13px; font-size: 12.5px; font-weight: 600; letter-spacing: .02em; }
 .tag-sky { background: var(--sky); color: var(--navy); } .tag-cream { background: var(--cream); color: var(--navy); border: 1px solid #efe6c8; }
+.tag-outline { background: transparent; border: 2px solid var(--navy); color: var(--navy); }
 .tag-orange { background: var(--orange); color: var(--white); } .tag-navy { background: var(--navy); color: var(--white); }
 
 /* hero */
-.hero { position: relative; color: var(--white); overflow: hidden; background: linear-gradient(115deg, #0b2340 0%, #143d72 38%, #1a7fc2 72%, #26b3c9 100%); }
+.hero { position: relative; color: var(--white); overflow: hidden; background: var(--hero-grad); }
 .hero-photo { position: absolute; inset: 0; }
 .hero-photo .slot { width: 100%; height: 100%; display: block; }
 .hero-photo .slot-empty { background: transparent; color: rgba(255,255,255,.5); align-items: flex-end; justify-content: flex-end; padding: 28px; text-align: right; }
-.hero-scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,35,64,.72) 0%, rgba(11,35,64,.35) 55%, rgba(11,35,64,.15) 100%); pointer-events: none; }
+.hero-scrim { position: absolute; inset: 0; background: var(--scrim); pointer-events: none; }
 .hero-in { position: relative; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 48px; align-items: center; padding-block: 96px 110px; min-height: 640px; pointer-events: none; }
 .hero-in a, .hero-in .glass { pointer-events: auto; }
 .hero h1 { color: var(--white); font-size: var(--fs-display); line-height: 1.02; letter-spacing: var(--tr-display); }
@@ -150,7 +155,7 @@ em.serif { font-style: italic; }
 .copy + .copy { margin-top: 14px; }
 .copy b { color: var(--navy); font-weight: 600; }
 .panel { background: var(--cream); border-radius: 4px; padding: 60px 48px; margin-top: 40px; }
-.panel.white { background: var(--white); box-shadow: var(--shadow); }
+.panel.white { background: var(--surface); box-shadow: var(--shadow); }
 .feat { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 32px; }
 .feat > div { text-align: center; }
 .feat i { font-size: 48px; color: var(--navy); display: block; margin: 0 auto 26px; }
@@ -167,7 +172,7 @@ em.serif { font-style: italic; }
 /* cards */
 .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; margin-top: 44px; }
 .cards.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.ccard { background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px 14px 26px; display: flex; flex-direction: column; color: inherit; transition: transform .15s; }
+.ccard { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px 14px 26px; display: flex; flex-direction: column; color: inherit; transition: transform .15s; }
 .ccard:hover { transform: translateY(-3px); color: inherit; }
 .ccard .photo { aspect-ratio: 4 / 3; }
 .ccard h3 { font-size: 23px; margin: 24px 12px 0; }
@@ -192,14 +197,14 @@ em.serif { font-style: italic; }
 
 /* steps / pathway */
 .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 40px; }
-.step { background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); padding: 34px 30px 30px; position: relative; }
+.step { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 34px 30px 30px; position: relative; }
 .step .num { width: 44px; height: 44px; border-radius: 50%; background: var(--navy); color: var(--white); display: grid; place-items: center; font-weight: 700; font-size: 17px; margin-bottom: 22px; }
 .step .num.o { background: var(--orange); }
 .step h3 { font-size: 24px; } .step p { color: var(--muted); font-size: 15.5px; margin-top: 12px; }
 .step ul { margin: 16px 0 0; padding: 0; list-style: none; } .step li { padding: 6px 0; border-top: 1px solid var(--line); font-size: 15px; }
 .step li a { font-weight: 600; }
 .track { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
-.track .node { background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px 20px; font-weight: 600; color: var(--navy); font-size: 15.5px; position: relative; }
+.track .node { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px 20px; font-weight: 600; color: var(--navy); font-size: 15.5px; position: relative; }
 .track .node.dim { background: var(--sky-2); box-shadow: none; color: var(--navy-3); font-weight: 500; }
 .track .node.now { background: var(--orange); color: var(--white); }
 .track .node.lead { background: var(--navy); color: var(--white); }
@@ -214,7 +219,7 @@ em.serif { font-style: italic; }
 .chain .sep { color: var(--muted); }
 
 /* compare grid */
-.cmp { margin-top: 40px; background: var(--white); border-radius: var(--r); box-shadow: var(--shadow); overflow: hidden; }
+.cmp { margin-top: 40px; background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); overflow: hidden; }
 .cmp .r { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 24px; padding: 16px 28px; border-top: 1px solid var(--line); font-size: 15.5px; align-items: center; }
 .cmp .r:first-child { border-top: 0; background: var(--navy); color: var(--white); font-weight: 600; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; padding: 18px 28px; }
 .cmp .r > :first-child { font-weight: 600; color: var(--navy); } .cmp .r:first-child > :first-child { color: var(--white); }
@@ -225,7 +230,7 @@ em.serif { font-style: italic; }
 .scroll-x > .table { min-width: 34rem; }
 
 /* table */
-.table { width: 100%; border-collapse: collapse; margin-top: 28px; background: var(--white); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); font-size: 15.5px; }
+.table { width: 100%; border-collapse: collapse; margin-top: 28px; background: var(--surface); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); font-size: 15.5px; }
 .table th { text-align: left; background: var(--navy); color: var(--white); font-weight: 600; font-size: 13.5px; letter-spacing: .06em; text-transform: uppercase; padding: 16px 20px; }
 .table td { padding: 15px 20px; border-top: 1px solid var(--line); }
 
@@ -233,7 +238,7 @@ em.serif { font-style: italic; }
 .q { margin-top: 44px; } .q:first-child { margin-top: 0; }
 .q h3 { font-size: 26px; margin-top: 6px; }
 .opts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
-.opt { border-radius: var(--pill); padding: 12px 22px; font: inherit; font-size: 15px; font-weight: 500; border: 2px solid var(--navy); background: var(--white); color: var(--navy); cursor: pointer; transition: background .15s, color .15s; }
+.opt { border-radius: var(--pill); padding: 12px 22px; font: inherit; font-size: 15px; font-weight: 500; border: 2px solid var(--navy); background: var(--surface); color: var(--navy); cursor: pointer; transition: background .15s, color .15s; }
 .opt:hover { background: var(--sky-2); } .opt.on { background: var(--orange); border-color: var(--orange); color: var(--white); }
 .result { position: sticky; top: 24px; background: var(--cream); border-radius: var(--r); padding: 40px 38px; }
 .result h3 { font-size: 30px; } .result .copy { margin-top: 14px; }
@@ -243,7 +248,7 @@ em.serif { font-style: italic; }
 .result li a { font-weight: 600; color: var(--navy); } .result li a:hover { color: var(--orange); }
 .result li span { color: var(--muted); font-size: 14px; white-space: nowrap; }
 .field { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; max-width: 520px; }
-.input { flex: 1; min-width: 200px; border: 2px solid var(--line); background: var(--white); border-radius: var(--pill); padding: 12px 20px; font: inherit; font-size: 15px; color: var(--text); }
+.input { flex: 1; min-width: 200px; border: 2px solid var(--line); background: var(--surface); border-radius: var(--pill); padding: 12px 20px; font: inherit; font-size: 15px; color: var(--text); }
 .input:focus { border-color: var(--blue); outline: none; }
 
 /* banner cta */
@@ -343,7 +348,7 @@ em.serif { font-style: italic; }
 /* Rows are large targets; give them a surface on hover instead of only a
    colour change, so the whole row reads as the thing you are about to click. */
 .row { border-radius: var(--r); margin-inline: -16px; padding-inline: 16px; }
-.row:hover { background: rgba(255, 255, 255, .7); }
+.row:hover { background: var(--row-hover); }
 .row:active { transform: scale(.995); transition-duration: var(--t-press); }
 .arrow { transition: background var(--t) var(--ease), transform var(--t) var(--ease); }
 .row:hover .arrow, .ccard:hover .arrow { transform: translateX(2px); }
@@ -411,3 +416,164 @@ em.serif { font-style: italic; }
   .tag-cream { border-color: #c9bd93; }
   a:not(.pill):not(.ccard):not(.row) { text-decoration: underline; text-underline-offset: 3px; }
 }
+
+
+/* ============================================================================
+   Micro-typography.
+   ========================================================================= */
+
+/* Kerning and standard ligatures on, everywhere. */
+body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
+
+/* Punctuation hangs into the margin where the browser supports it, so the left
+   edge of a paragraph reads as optically straight rather than mechanically so. */
+.copy, .prose, .lead, blockquote { hanging-punctuation: first last; }
+
+/* Figures line up in any column of numbers. Prices, durations, comparison
+   tables and the fact lists all read as columns, so they get tabular figures
+   rather than proportional ones. */
+.table, .cmp, .facts dd, .price, .num, .fact dd, td, th {
+  font-variant-numeric: tabular-nums;
+}
+
+/* A measurement and its unit must never break across a line: "4.5 kW" wrapping
+   to leave a stranded "kW" is the classic tell of unconsidered typesetting. */
+.unit { white-space: nowrap; }
+
+/* Selection in the brand's own colour rather than the browser's blue. */
+::selection { background: var(--sky); color: var(--navy); }
+.hero ::selection, .ft ::selection, .cta-band ::selection, .hdr ::selection {
+  background: var(--orange); color: #fff;
+}
+
+/* Short labels should not leave a single word alone on the last line. balance
+   redistributes them instead — nowrap was tried here and is wrong: a kicker can
+   be a full clause ("RYA Training Centre · Rushcutters Bay, Sydney") and
+   refusing to wrap it pushes the column past the viewport. */
+.kicker, .fact dt, .sub-h { text-wrap: balance; }
+
+/* ============================================================================
+   Night sailing — the dark theme.
+
+   Not an inversion. A chart table under a red night light: the grounds go deep
+   and slightly warm rather than blue-black, the accent loses its daylight
+   glare, and text is a warm off-white instead of pure white, which is what
+   makes a bright screen painful to read in the dark.
+   ========================================================================= */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0a1520;
+    --surface: #10202e;
+    --cream: #16232c;
+    --sky: #2b5f7d;
+    --sky-2: #14293a;
+    --line: #1f3547;
+    --text: #e7eef4;
+    --muted: #9db2c4;
+    --navy: #081724;
+    --navy-2: #050f18;
+    --navy-3: #14293a;
+    --blue: #63b5e6;
+    --orange: #ff7a45;
+    --orange-2: #ff9163;
+    --white: #f4f7fa;
+    --surface-ink: #e7eef4;
+    --row-hover: rgba(255, 255, 255, .045);
+    --hero-grad: linear-gradient(115deg, #050f18 0%, #0b2036 42%, #12405e 74%, #16576b 100%);
+    --scrim: linear-gradient(90deg, rgba(4, 12, 20, .8) 0%, rgba(4, 12, 20, .55) 55%, rgba(4, 12, 20, .3) 100%);
+    --e1: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 16px rgba(0, 0, 0, .28);
+    --e2: 0 2px 4px rgba(0, 0, 0, .34), 0 12px 32px rgba(0, 0, 0, .4);
+    --e3: 0 4px 12px rgba(0, 0, 0, .45), 0 20px 48px rgba(0, 0, 0, .5);
+  --bar-bg: #16232c;
+  --bar-ink: #ffab86;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #0a1520;
+  --surface: #10202e;
+  --cream: #16232c;
+  --sky: #2b5f7d;
+  --sky-2: #14293a;
+  --line: #1f3547;
+  --text: #e7eef4;
+  --muted: #9db2c4;
+  --navy: #081724;
+  --navy-2: #050f18;
+  --navy-3: #14293a;
+  --blue: #63b5e6;
+  --orange: #ff7a45;
+  --orange-2: #ff9163;
+  --white: #f4f7fa;
+  --surface-ink: #e7eef4;
+  --row-hover: rgba(255, 255, 255, .045);
+  --hero-grad: linear-gradient(115deg, #050f18 0%, #0b2036 42%, #12405e 74%, #16576b 100%);
+  --scrim: linear-gradient(90deg, rgba(4, 12, 20, .8) 0%, rgba(4, 12, 20, .55) 55%, rgba(4, 12, 20, .3) 100%);
+  --e1: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 16px rgba(0, 0, 0, .28);
+  --e2: 0 2px 4px rgba(0, 0, 0, .34), 0 12px 32px rgba(0, 0, 0, .4);
+  --e3: 0 4px 12px rgba(0, 0, 0, .45), 0 20px 48px rgba(0, 0, 0, .5);
+  --bar-bg: #16232c;
+  --bar-ink: #ffab86;
+}
+
+/* Headings and body text sit on surfaces rather than on the light ground, so
+   they take their colour from a token that flips with the theme. */
+:root[data-theme='dark'] h1, :root[data-theme='dark'] h2,
+:root[data-theme='dark'] h3, :root[data-theme='dark'] h4,
+:root[data-theme='dark'] .price, :root[data-theme='dark'] .copy b,
+:root[data-theme='dark'] .track .node, :root[data-theme='dark'] .opt,
+:root[data-theme='dark'] .cmp .r > :first-child, :root[data-theme='dark'] .fact dd,
+:root[data-theme='dark'] .result li a, :root[data-theme='dark'] .input { color: var(--surface-ink); }
+:root[data-theme='dark'] .tag-sky { background: var(--sky); color: #eaf4fb; }
+:root[data-theme='dark'] .tag-cream { background: #1b2a35; color: #dbe6ef; border-color: #2a3d4c; }
+:root[data-theme='dark'] .pill-outline { border-color: var(--sky); color: var(--surface-ink); }
+:root[data-theme='dark'] .pill-outline:hover { background: var(--sky); color: #08151f; }
+:root[data-theme='dark'] .pill-sky { background: var(--sky); color: #eaf4fb; }
+:root[data-theme='dark'] .pill-sky:hover { background: #37718f; color: #fff; }
+:root[data-theme='dark'] .glass { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .16); }
+:root[data-theme='dark'] .slot-empty { background: var(--sky-2); color: #7f99ad; }
+:root[data-theme='dark'] .step .num { background: var(--sky); color: #eaf4fb; }
+:root[data-theme='dark'] .hdr { background: rgba(8, 23, 36, .86); }
+:root[data-theme='dark'] .track .node::after { background: var(--bg); }
+:root[data-theme='dark'] .panel .track .node::after { background: var(--cream); }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) h1, :root:not([data-theme='light']) h2,
+  :root:not([data-theme='light']) h3, :root:not([data-theme='light']) h4,
+  :root:not([data-theme='light']) .price, :root:not([data-theme='light']) .copy b,
+  :root:not([data-theme='light']) .track .node, :root:not([data-theme='light']) .opt,
+  :root:not([data-theme='light']) .cmp .r > :first-child, :root:not([data-theme='light']) .fact dd,
+  :root:not([data-theme='light']) .result li a, :root:not([data-theme='light']) .input { color: var(--surface-ink); }
+  :root:not([data-theme='light']) .tag-sky { background: var(--sky); color: #eaf4fb; }
+  :root:not([data-theme='light']) .tag-cream { background: #1b2a35; color: #dbe6ef; border-color: #2a3d4c; }
+  :root:not([data-theme='light']) .pill-outline { border-color: var(--sky); color: var(--surface-ink); }
+  :root:not([data-theme='light']) .pill-outline:hover { background: var(--sky); color: #08151f; }
+  :root:not([data-theme='light']) .pill-sky { background: var(--sky); color: #eaf4fb; }
+  :root:not([data-theme='light']) .pill-sky:hover { background: #37718f; color: #fff; }
+  :root:not([data-theme='light']) .glass { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .16); }
+  :root:not([data-theme='light']) .slot-empty { background: var(--sky-2); color: #7f99ad; }
+  :root:not([data-theme='light']) .step .num { background: var(--sky); color: #eaf4fb; }
+  :root:not([data-theme='light']) .hdr { background: rgba(8, 23, 36, .86); }
+  :root:not([data-theme='light']) .track .node::after { background: var(--bg); }
+  :root:not([data-theme='light']) .panel .track .node::after { background: var(--cream); }
+}
+
+
+:root[data-theme='dark'] .tag-outline { border-color: var(--sky); color: var(--surface-ink); }
+:root[data-theme='dark'] .cta-band { border: 1px solid var(--line); }
+:root[data-theme='dark'] .bar { border-bottom: 1px solid var(--line); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .tag-outline { border-color: var(--sky); color: var(--surface-ink); }
+  :root:not([data-theme='light']) .cta-band { border: 1px solid var(--line); }
+  :root:not([data-theme='light']) .bar { border-bottom: 1px solid var(--line); }
+}
+
+/* The theme control itself. */
+.theme-btn {
+  display: inline-grid; place-items: center; width: 40px; height: 40px;
+  background: transparent; border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: var(--pill); color: var(--white); cursor: pointer;
+  font-size: 18px; line-height: 1; padding: 0;
+  transition: background var(--t) var(--ease), border-color var(--t) var(--ease), transform var(--t) var(--ease);
+}
+.theme-btn:hover { background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .5); }
+.theme-btn:active { transform: scale(.94); transition-duration: var(--t-press); }

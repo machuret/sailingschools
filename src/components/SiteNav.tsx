@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const LINKS = [
   { href: '/sailing-schools/new-south-wales/sydney/', label: 'Schools', section: '/sailing-schools/' },
@@ -48,6 +49,7 @@ export default function SiteNav() {
             <Link className="hide-m" href="/find-a-course/" aria-label="Search">
               <i className="ph-duotone ph-magnifying-glass" />
             </Link>
+            <ThemeToggle />
             <Link className="pill pill-sky" href="/find-a-course/">
               Find a course
             </Link>
