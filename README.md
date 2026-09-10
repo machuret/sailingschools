@@ -154,17 +154,23 @@ The header is sticky and translucent (navy at 82% with a backdrop blur), with a
 `@supports` fallback to solid navy. That is the one material gesture the site makes;
 everything else stays quiet.
 
-### Night sailing (dark theme)
+### Night sailing (dark theme, opt-in)
 
-Not an inversion — a chart table under a red night light. Grounds go deep and slightly warm
+**The Coastal palette is the default for everyone.** The site deliberately does not read
+`prefers-color-scheme`: white ground, navy and orange is the brand, and it is what every
+visitor meets first whatever their operating system is set to. Dark is a choice made with the
+header control, never inherited from the OS.
+
+The dark theme itself is not an inversion — it is a chart table under a red night light. Grounds go deep and slightly warm
 rather than blue-black, the accent loses its daylight glare, and text is a warm off-white,
 because pure white on black is what makes a screen painful to read in the dark. The
 announcement bar drops its accent flood-fill and keeps the accent as text only: at full
 strength it was the brightest thing on the page.
 
-Three states — light, dark, and follow-the-system — cycled by the header control and stored
-in `localStorage`. An inline script in the document head applies the stored choice before
-first paint, so the page never flashes the wrong theme.
+Two states, light and dark, stored in `localStorage`. An inline script in the document head
+applies an explicit dark choice before first paint, so the page never flashes the wrong theme.
+`color-scheme` follows the theme too, so native controls and scrollbars match rather than
+tracking the OS.
 
 Surfaces use `--surface`, not `--white`: the two were the same token, which made a dark
 theme impossible until they were separated.

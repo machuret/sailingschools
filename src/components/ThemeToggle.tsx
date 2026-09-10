@@ -2,63 +2,62 @@
 
 import { useEffect, useState } from 'react';
 
-type Theme = 'light' | 'dark' | 'system';
+type Theme = 'light' | 'dark';
 
 /**
- * Cycles light → dark → follow the system. The stored value is read by an
- * inline script in the document head before first paint, so the page never
- * flashes the wrong theme.
+ * Two states, light and dark, defaulting to light.
+ *
+ * There is deliberately no "follow the system" option: the site does not read
+ * prefers-color-scheme, because the Coastal palette is the brand and every
+ * visitor should meet it first whatever their OS is set to. A third state would
+ * be indistinguishable from light and only confuse the control.
+ *
+ * The stored choice is applied by an inline script in the document head before
+ * first paint, so the page never flashes the wrong theme.
  */
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>('system');
+  const [theme, setTheme] = useState<Theme>('light');
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    const stored = (() => {
-      try {
-        return localStorage.getItem('theme') as Theme | null;
-      } catch {
-        return null;
-      }
-    })();
-    setTheme(stored ?? 'system');
+    let stored: string | null = null;
+    try {
+      stored = localStorage.getItem('theme');
+    } catch {
+      /* storage can be unavailable; light is the default either way */
+    }
+    setTheme(stored === 'dark' ? 'dark' : 'light');
     setReady(true);
   }, []);
 
-  const apply = (next: Theme) => {
+  const toggle = () => {
+    const next: Theme = theme === 'dark' ? 'light' : 'dark';
     setTheme(next);
     const root = document.documentElement;
-    if (next === 'system') root.removeAttribute('data-theme');
-    else root.setAttribute('data-theme', next);
+    if (next === 'dark') root.setAttribute('data-theme', 'dark');
+    else root.removeAttribute('data-theme');
     try {
-      if (next === 'system') localStorage.removeItem('theme');
-      else localStorage.setItem('theme', next);
+      if (next === 'dark') localStorage.setItem('theme', 'dark');
+      else localStorage.removeItem('theme');
     } catch {
-      /* storage can be unavailable; the choice still applies for this page */
+      /* the choice still applies for this page */
     }
   };
 
-  const next: Theme = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
-  const label =
-    theme === 'light'
-      ? 'Daylight theme. Switch to night'
-      : theme === 'dark'
-        ? 'Night theme. Follow system instead'
-        : 'Following system theme. Switch to daylight';
-  const icon = theme === 'light' ? 'ph-sun' : theme === 'dark' ? 'ph-moon-stars' : 'ph-circle-half';
+  const isDark = ready && theme === 'dark';
+  const label = isDark ? 'Switch to the daylight theme' : 'Switch to the night theme';
 
   return (
     <button
       className="theme-btn"
       type="button"
-      onClick={() => apply(next)}
+      onClick={toggle}
       aria-label={label}
+      aria-pressed={isDark}
       title={label}
-      // Rendered with the system icon until the stored choice is read, so the
-      // markup matches on the server and the client.
       suppressHydrationWarning
     >
-      <i className={`ph-duotone ${ready ? icon : 'ph-circle-half'}`} aria-hidden="true" />
+      <i className={`ph-duotone ${isDark ? 'ph-sun' : 'ph-moon-stars'}`} aria-hidden="true" />
     </button>
   );
 }

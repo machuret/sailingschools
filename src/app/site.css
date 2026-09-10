@@ -1,6 +1,7 @@
 /* SailingSchools.com.au — "Coastal" theme: navy header, orange calls to action, cream panels,
    geometric sans body with a serif display voice. */
 :root {
+  color-scheme: light;
   --navy: #0f2f55; --navy-2: #0b2340; --navy-3: #163d6b; --blue: #1a7fc2; --cyan: #26b3c9;
   --sky: #bfe6f5; --sky-2: #e3f3fa; --orange: #ff5a1f; --orange-2: #e84d13; --cream: #fbf7ea; --bg: #f5f7fa;
   --text: #14304f; --muted: #4c6178; --line: #e2e8ef; --white: #fff;
@@ -453,42 +454,20 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 .kicker, .fact dt, .sub-h { text-wrap: balance; }
 
 /* ============================================================================
-   Night sailing — the dark theme.
+   Night sailing — the dark theme, opt-in only.
 
-   Not an inversion. A chart table under a red night light: the grounds go deep
+   Deliberately NOT wired to prefers-color-scheme. The Coastal palette — white
+   ground, navy, orange — is the brand, and it is what every visitor should see
+   first, whatever their operating system is set to. Dark is a choice made here,
+   with the header control, not one inherited from the OS.
+
+   It is not an inversion. A chart table under a red night light: the grounds go deep
    and slightly warm rather than blue-black, the accent loses its daylight
    glare, and text is a warm off-white instead of pure white, which is what
    makes a bright screen painful to read in the dark.
    ========================================================================= */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --bg: #0a1520;
-    --surface: #10202e;
-    --cream: #16232c;
-    --sky: #2b5f7d;
-    --sky-2: #14293a;
-    --line: #1f3547;
-    --text: #e7eef4;
-    --muted: #9db2c4;
-    --navy: #081724;
-    --navy-2: #050f18;
-    --navy-3: #14293a;
-    --blue: #63b5e6;
-    --orange: #ff7a45;
-    --orange-2: #ff9163;
-    --white: #f4f7fa;
-    --surface-ink: #e7eef4;
-    --row-hover: rgba(255, 255, 255, .045);
-    --hero-grad: linear-gradient(115deg, #050f18 0%, #0b2036 42%, #12405e 74%, #16576b 100%);
-    --scrim: linear-gradient(90deg, rgba(4, 12, 20, .8) 0%, rgba(4, 12, 20, .55) 55%, rgba(4, 12, 20, .3) 100%);
-    --e1: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 16px rgba(0, 0, 0, .28);
-    --e2: 0 2px 4px rgba(0, 0, 0, .34), 0 12px 32px rgba(0, 0, 0, .4);
-    --e3: 0 4px 12px rgba(0, 0, 0, .45), 0 20px 48px rgba(0, 0, 0, .5);
-  --bar-bg: #16232c;
-  --bar-ink: #ffab86;
-  }
-}
 :root[data-theme='dark'] {
+  color-scheme: dark;
   --bg: #0a1520;
   --surface: #10202e;
   --cream: #16232c;
@@ -536,37 +515,9 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 :root[data-theme='dark'] .track .node::after { background: var(--bg); }
 :root[data-theme='dark'] .panel .track .node::after { background: var(--cream); }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) h1, :root:not([data-theme='light']) h2,
-  :root:not([data-theme='light']) h3, :root:not([data-theme='light']) h4,
-  :root:not([data-theme='light']) .price, :root:not([data-theme='light']) .copy b,
-  :root:not([data-theme='light']) .track .node, :root:not([data-theme='light']) .opt,
-  :root:not([data-theme='light']) .cmp .r > :first-child, :root:not([data-theme='light']) .fact dd,
-  :root:not([data-theme='light']) .result li a, :root:not([data-theme='light']) .input { color: var(--surface-ink); }
-  :root:not([data-theme='light']) .tag-sky { background: var(--sky); color: #eaf4fb; }
-  :root:not([data-theme='light']) .tag-cream { background: #1b2a35; color: #dbe6ef; border-color: #2a3d4c; }
-  :root:not([data-theme='light']) .pill-outline { border-color: var(--sky); color: var(--surface-ink); }
-  :root:not([data-theme='light']) .pill-outline:hover { background: var(--sky); color: #08151f; }
-  :root:not([data-theme='light']) .pill-sky { background: var(--sky); color: #eaf4fb; }
-  :root:not([data-theme='light']) .pill-sky:hover { background: #37718f; color: #fff; }
-  :root:not([data-theme='light']) .glass { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .16); }
-  :root:not([data-theme='light']) .slot-empty { background: var(--sky-2); color: #7f99ad; }
-  :root:not([data-theme='light']) .step .num { background: var(--sky); color: #eaf4fb; }
-  :root:not([data-theme='light']) .hdr { background: rgba(8, 23, 36, .86); }
-  :root:not([data-theme='light']) .track .node::after { background: var(--bg); }
-  :root:not([data-theme='light']) .panel .track .node::after { background: var(--cream); }
-}
-
-
 :root[data-theme='dark'] .tag-outline { border-color: var(--sky); color: var(--surface-ink); }
 :root[data-theme='dark'] .cta-band { border: 1px solid var(--line); }
 :root[data-theme='dark'] .bar { border-bottom: 1px solid var(--line); }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .tag-outline { border-color: var(--sky); color: var(--surface-ink); }
-  :root:not([data-theme='light']) .cta-band { border: 1px solid var(--line); }
-  :root:not([data-theme='light']) .bar { border-bottom: 1px solid var(--line); }
-}
-
 /* The card foot stacks: a domain and a checked-date side by side in a 250px
    card left the domain about 60px, which broke it one character per line. */
 .ccard .foot { flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; max-width: 100%; }
