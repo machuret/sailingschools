@@ -99,7 +99,7 @@ export default function BoatLicenceHubPage() {
             </div>
             <span className="tag tag-cream">Checked {licenceChecked}</span>
           </div>
-          <div style={{ overflowX: 'auto' }}>
+          <div className="scroll-x">
             <table className="table">
               <thead>
                 <tr>

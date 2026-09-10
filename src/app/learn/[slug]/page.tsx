@@ -66,8 +66,8 @@ export default async function LicencePage({ params }: Params) {
             ]}
           />
           <div
-            className="split top"
-            style={{ marginTop: 22, gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)' }}
+            className="split top even"
+            style={{ marginTop: 22 }}
           >
             <div>
               <span className="kicker">{record.state}</span>
@@ -89,7 +89,7 @@ export default async function LicencePage({ params }: Params) {
               <p className="copy" style={{ marginTop: 8 }}>
                 {record.rule}
               </p>
-              <dl className="facts" style={{ marginTop: 30, gridTemplateColumns: '1fr', gap: 18 }}>
+              <dl className="facts one" style={{ marginTop: 30, gap: 18 }}>
                 <div className="fact">
                   <dt>Registration</dt>
                   <dd style={{ fontWeight: 500, fontSize: 16 }}>{record.registration}</dd>

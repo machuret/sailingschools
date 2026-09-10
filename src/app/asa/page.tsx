@@ -87,7 +87,7 @@ export default function AsaHubPage() {
             Everything else in the table below exists as a certification but should be treated as
             unavailable locally until a school confirms otherwise.
           </p>
-          <div className="scroll" style={{ overflowX: 'auto' }}>
+          <div className="scroll-x">
             <table className="table">
               <thead>
                 <tr>

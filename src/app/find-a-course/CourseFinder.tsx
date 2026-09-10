@@ -180,8 +180,8 @@ export default function CourseFinder() {
   return (
     <section className="sec last">
       <div
-        className="wrap split top"
-        style={{ gridTemplateColumns: 'minmax(0,1.1fr) minmax(0,.9fr)', marginTop: 0 }}
+        className="wrap split top lean-left"
+        style={{ marginTop: 0 }}
       >
         <div>
           <div className="q">

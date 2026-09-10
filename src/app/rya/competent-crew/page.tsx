@@ -84,8 +84,8 @@ export default function CoursePage() {
             ]}
           />
           <div
-            className="split top"
-            style={{ marginTop: 20, gridTemplateColumns: 'minmax(0,.9fr) minmax(0,1.1fr)' }}
+            className="split top lean-right"
+            style={{ marginTop: 20 }}
           >
             <div className="photo tall" style={{ aspectRatio: '1 / 1' }}>
               <span className="badge">5 days</span>
@@ -142,8 +142,8 @@ export default function CoursePage() {
                 Start Yachting — two days rather than five.
               </p>
               <dl
-                className="facts"
-                style={{ marginTop: 32, gridTemplateColumns: 'repeat(2,minmax(0,1fr))' }}
+                className="facts two"
+                style={{ marginTop: 32 }}
               >
                 <div className="fact">
                   <dt>Duration</dt>

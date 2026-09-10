@@ -46,8 +46,8 @@ export default function SchoolPage() {
             ]}
           />
           <div
-            className="split top"
-            style={{ marginTop: 20, gridTemplateColumns: 'minmax(0,.9fr) minmax(0,1.1fr)' }}
+            className="split top lean-right"
+            style={{ marginTop: 20 }}
           >
             <div>
               <div className="photo" style={{ aspectRatio: '1 / 1' }}>
@@ -55,8 +55,8 @@ export default function SchoolPage() {
                 <ImageSlot placeholder="Drop a photograph — the school's training yacht at its berth" />
               </div>
               <div
-                className="cards two"
-                style={{ gridTemplateColumns: '1fr 1fr', gap: 14, marginTop: 14 }}
+                className="cards pair"
+                style={{ gap: 14, marginTop: 14 }}
               >
                 <div className="photo">
                   <ImageSlot placeholder="Photo — on deck" />
@@ -86,8 +86,8 @@ export default function SchoolPage() {
                 heading toward charter or ownership rather than club racing.
               </p>
               <dl
-                className="facts"
-                style={{ marginTop: 32, gridTemplateColumns: 'repeat(2,minmax(0,1fr))' }}
+                className="facts two"
+                style={{ marginTop: 32 }}
               >
                 <div className="fact">
                   <dt>Training waters</dt>
@@ -193,7 +193,7 @@ export default function SchoolPage() {
 
       <section className="sec">
         <div className="wrap">
-          <div className="panel feat" style={{ gridTemplateColumns: 'repeat(3,minmax(0,1fr))' }}>
+          <div className="panel feat three">
             <div style={{ textAlign: 'left' }}>
               <i className="ph-duotone ph-sailboat" style={{ margin: '0 0 20px' }} />
               <h3 style={{ fontSize: 26 }}>Training boats</h3>
@@ -234,7 +234,8 @@ export default function SchoolPage() {
             </div>
             <span className="tag tag-cream">Prices checked September 2026</span>
           </div>
-          <table className="table">
+          <div className="scroll-x">
+            <table className="table">
             <thead>
               <tr>
                 <th>Course</th>
@@ -257,7 +258,8 @@ export default function SchoolPage() {
                 </tr>
               ))}
             </tbody>
-          </table>
+            </table>
+          </div>
           <p className="copy" style={{ marginTop: 20 }}>
             Things to check before booking: current accreditation · exact vessel · instructor ratio ·
             prerequisites · accommodation · meals · exam fees · cancellation policy. Something out of

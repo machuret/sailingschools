@@ -5,24 +5,88 @@
   --sky: #bfe6f5; --sky-2: #e3f3fa; --orange: #ff5a1f; --orange-2: #e84d13; --cream: #fbf7ea; --bg: #f5f7fa;
   --text: #14304f; --muted: #4c6178; --line: #e2e8ef; --white: #fff;
   --sans: var(--font-sans), system-ui, sans-serif; --serif: var(--font-serif), Georgia, serif;
-  --r: 6px; --pill: 999px; --shadow: 0 6px 24px rgba(15, 47, 85, .08);
+  --r: 6px; --pill: 999px;
+
+  /* Type scale. Tracking is size-specific: large display text is set tight, small
+     text slightly open for legibility. Sizes are rem so the browser's text-size
+     setting still works. */
+  --fs-display: clamp(2.75rem, 5.4vw, 4.75rem);
+  --fs-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --fs-h3: 1.4375rem;
+  --fs-h4: 1.125rem;
+  --fs-body: 1.0625rem;
+  --fs-small: 0.875rem;
+  --fs-label: 0.78rem;
+  --tr-display: -0.032em;
+  --tr-h2: -0.022em;
+  --tr-h3: -0.014em;
+  --tr-h4: -0.006em;
+  --tr-small: 0.004em;
+  --tr-label: 0.09em;
+
+  /* Motion. One decelerating curve does the work; nothing on this site
+     animates unless a person asked it to. */
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --t-press: 110ms;
+  --t: 220ms;
+  --t-slow: 380ms;
+
+  /* Elevation as a scale rather than one shadow on everything, so a lifted
+     card and floating chrome are distinguishable. */
+  --e1: 0 1px 2px rgba(15, 47, 85, .04), 0 4px 16px rgba(15, 47, 85, .06);
+  --e2: 0 2px 4px rgba(15, 47, 85, .06), 0 12px 32px rgba(15, 47, 85, .11);
+  --e3: 0 4px 12px rgba(11, 35, 64, .14), 0 20px 48px rgba(11, 35, 64, .18);
+  --shadow: var(--e1);
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); text-wrap: pretty; }
-a { color: var(--blue); text-decoration: none; } a:hover { color: var(--orange); }
+/* Anchor targets clear the sticky header. */
+:target, [id] { scroll-margin-top: 108px; }
+body {
+  margin: 0; font-family: var(--sans); font-size: var(--fs-body); line-height: 1.65;
+  color: var(--text); background: var(--bg); text-wrap: pretty;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+a { color: var(--blue); text-decoration: none; transition: color var(--t) var(--ease); }
+a:hover { color: var(--orange); }
 img { display: block; max-width: 100%; }
-h1, h2, h3, h4 { margin: 0; font-family: var(--sans); color: var(--navy); font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
+h1, h2, h3, h4 { margin: 0; font-family: var(--sans); color: var(--navy); font-weight: 700; text-wrap: balance; }
+h1 { font-size: var(--fs-display); line-height: 1.02; letter-spacing: var(--tr-display); }
+h2 { font-size: var(--fs-h2); line-height: 1.12; letter-spacing: var(--tr-h2); }
+h3 { font-size: var(--fs-h3); line-height: 1.2; letter-spacing: var(--tr-h3); }
+h4 { font-size: var(--fs-h4); line-height: 1.3; letter-spacing: var(--tr-h4); }
 p { margin: 0; }
 .wrap { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
 .serif { font-family: var(--serif); font-weight: 400; letter-spacing: 0; }
 em.serif { font-style: italic; }
-:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+/* Two-tone ring so focus is visible on the navy header and the light body alike. */
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, .85);
+  border-radius: 3px;
+}
+.hdr :focus-visible, .ft :focus-visible, .hero :focus-visible, .cta-band :focus-visible {
+  box-shadow: 0 0 0 5px rgba(11, 35, 64, .75);
+}
 
 /* bar + header */
 .bar { background: var(--orange); color: var(--white); text-align: center; font-size: 14.5px; padding: 10px 16px; }
 .bar a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
-.hdr { background: var(--navy); color: var(--white); }
+.hdr {
+  background: var(--navy); color: var(--white);
+  position: sticky; top: 0; z-index: 50;
+}
+/* Navy at 82% with a blur, so long pages scroll under the chrome rather than
+   pushing it away. Falls back to solid navy where backdrop-filter is absent. */
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .hdr {
+    background: rgba(15, 47, 85, .82);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+}
 .hdr-in { display: flex; align-items: center; gap: 36px; min-height: 96px; }
 .hdr .brand img { height: 58px; width: auto; }
 .hdr nav { display: flex; gap: 32px; margin-left: 24px; flex: 1; }
@@ -60,7 +124,7 @@ em.serif { font-style: italic; }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,35,64,.72) 0%, rgba(11,35,64,.35) 55%, rgba(11,35,64,.15) 100%); pointer-events: none; }
 .hero-in { position: relative; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 48px; align-items: center; padding-block: 96px 110px; min-height: 640px; pointer-events: none; }
 .hero-in a, .hero-in .glass { pointer-events: auto; }
-.hero h1 { color: var(--white); font-size: clamp(44px, 5.6vw, 78px); line-height: 1.02; letter-spacing: -0.02em; }
+.hero h1 { color: var(--white); font-size: var(--fs-display); line-height: 1.02; letter-spacing: var(--tr-display); }
 .hero h1 em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 .hero .sub { margin-top: 26px; font-size: 17.5px; max-width: 56ch; color: rgba(255,255,255,.92); }
 .hero .cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 34px; }
@@ -77,11 +141,12 @@ em.serif { font-style: italic; }
 /* sections */
 .sec { padding: 88px 0 0; } .sec.last { padding-bottom: 96px; }
 .sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; }
-.kicker { display: block; color: var(--orange); font-size: 19px; font-weight: 500; margin-bottom: 8px; }
-.lead { font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.25; color: var(--navy); max-width: 30ch; letter-spacing: 0; }
-.h2 { font-size: clamp(30px, 3vw, 42px); }
-.h3 { font-size: 24px; } .h4 { font-size: 19px; }
-.copy { color: var(--muted); font-size: 16.5px; line-height: 1.65; max-width: 62ch; margin-top: 16px; }
+.kicker { display: block; color: var(--orange); font-size: 1.1875rem; font-weight: 500; margin-bottom: 8px; letter-spacing: -0.004em; }
+.lead { font-family: var(--serif); font-weight: 400; font-size: clamp(1.75rem, 2.8vw, 2.5rem); line-height: 1.25; color: var(--navy); max-width: 30ch; letter-spacing: -0.008em; }
+.h2 { font-size: clamp(1.875rem, 3vw, 2.625rem); line-height: 1.1; letter-spacing: var(--tr-h2); }
+.h3 { font-size: 1.5rem; line-height: 1.2; letter-spacing: var(--tr-h3); }
+.h4 { font-size: 1.1875rem; line-height: 1.3; letter-spacing: var(--tr-h4); }
+.copy { color: var(--muted); font-size: 1.03125rem; line-height: 1.68; max-width: 62ch; margin-top: 16px; }
 .copy + .copy { margin-top: 14px; }
 .copy b { color: var(--navy); font-weight: 600; }
 .panel { background: var(--cream); border-radius: 4px; padding: 60px 48px; margin-top: 40px; }
@@ -155,6 +220,10 @@ em.serif { font-style: italic; }
 .cmp .r > :first-child { font-weight: 600; color: var(--navy); } .cmp .r:first-child > :first-child { color: var(--white); }
 .cmp .dim { color: var(--muted); } .cmp .spot { color: var(--orange); font-weight: 700; }
 
+/* Wide content scrolls inside its own container; the page body never does. */
+.scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.scroll-x > .table { min-width: 34rem; }
+
 /* table */
 .table { width: 100%; border-collapse: collapse; margin-top: 28px; background: var(--white); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); font-size: 15.5px; }
 .table th { text-align: left; background: var(--navy); color: var(--white); font-weight: 600; font-size: 13.5px; letter-spacing: .06em; text-transform: uppercase; padding: 16px 20px; }
@@ -198,6 +267,21 @@ em.serif { font-style: italic; }
 .ft .cols3 a { display: block; color: rgba(255,255,255,.9); font-size: 15.5px; padding: 5px 0; } .ft .cols3 a:hover { color: var(--sky); }
 .ft .legal { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.15); font-size: 13px; color: rgba(255,255,255,.65); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
+
+/* Column-ratio modifiers. Declared inside a min-width query so the stacking
+   rules further down still apply on small screens — an inline style on the
+   element cannot be overridden by a media query, so these must be classes. */
+@media (min-width: 721px) {
+  .split.lean-left { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+  .split.lean-right { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+  .split.lean-right-lg { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); }
+  .split.even { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .facts.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cards.pair { grid-template-columns: 1fr 1fr; }
+  .feat.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.facts.one { grid-template-columns: 1fr; }
+
 /* collapse */
 @media (max-width: 1080px) {
   .hdr nav { display: none; } .hdr .menu-btn { display: inline-flex; } .hdr .hide-l { display: none; }
@@ -221,3 +305,109 @@ em.serif { font-style: italic; }
 .slot img { width: 100%; height: 100%; object-fit: cover; }
 .slot-empty { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
   padding: 24px; background: var(--sky-2); color: var(--navy-3); font-size: 13.5px; line-height: 1.45; text-align: center; }
+
+
+/* ============================================================================
+   Interaction, materials and accessibility.
+
+   Motion here only ever answers something a person did — there is no
+   scroll-triggered animation anywhere on this site, and every page reads at
+   rest. Feedback is on pointer-down rather than click, because a control that
+   waits for release feels slower than it is.
+   ========================================================================= */
+
+/* Press feedback. The scale is small on purpose: enough to feel the control
+   accept the press, not enough to shift the layout around it. */
+.pill, .opt, .ccard, .row, .menu-btn, .glass {
+  transition:
+    background var(--t) var(--ease),
+    color var(--t) var(--ease),
+    border-color var(--t) var(--ease),
+    box-shadow var(--t) var(--ease),
+    transform var(--t) var(--ease);
+}
+.pill:active, .opt:active, .menu-btn:active {
+  transform: scale(.97);
+  transition-duration: var(--t-press);
+}
+.ccard:active, .glass:active {
+  transform: scale(.995);
+  transition-duration: var(--t-press);
+}
+
+/* Elevation responds to pointer state rather than sitting flat. */
+.ccard { box-shadow: var(--e1); }
+.ccard:hover { transform: translateY(-3px); box-shadow: var(--e2); }
+.step, .track .node, .table, .cmp { box-shadow: var(--e1); }
+
+/* Rows are large targets; give them a surface on hover instead of only a
+   colour change, so the whole row reads as the thing you are about to click. */
+.row { border-radius: var(--r); margin-inline: -16px; padding-inline: 16px; }
+.row:hover { background: rgba(255, 255, 255, .7); }
+.row:active { transform: scale(.995); transition-duration: var(--t-press); }
+.arrow { transition: background var(--t) var(--ease), transform var(--t) var(--ease); }
+.row:hover .arrow, .ccard:hover .arrow { transform: translateX(2px); }
+
+/* Mobile menu enters and leaves along the axis it belongs to. */
+.hdr .mnav {
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  /* visibility, not just height: a collapsed menu must not be reachable by
+     keyboard. It is deferred until the collapse finishes so the links do not
+     vanish mid-animation. */
+  visibility: hidden;
+  transition:
+    max-height var(--t-slow) var(--ease-in-out),
+    visibility 0s linear var(--t-slow);
+}
+.hdr .mnav.open {
+  max-height: 32rem;
+  visibility: visible;
+  transition:
+    max-height var(--t-slow) var(--ease-in-out),
+    visibility 0s;
+}
+
+/* Inputs get the same considered treatment as buttons. */
+.input, .uline { transition: border-color var(--t) var(--ease), box-shadow var(--t) var(--ease); }
+.input:focus { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(26, 127, 194, .14); }
+
+/* Photo slots settle rather than snap when an image finally lands. */
+.slot img { transition: opacity var(--t-slow) var(--ease); }
+
+/* ---- Reduced motion -------------------------------------------------------
+   Movement is removed; colour and opacity changes stay, because they carry
+   meaning rather than decoration. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .pill:hover, .ccard:hover, .row:hover, .pill:active, .opt:active,
+  .ccard:active, .row:active, .menu-btn:active, .glass:active,
+  .row:hover .arrow, .ccard:hover .arrow { transform: none; }
+  .hdr .mnav { transition: visibility 0s linear var(--t-slow); }
+}
+
+/* ---- Reduced transparency -------------------------------------------------
+   Translucent surfaces become solid rather than merely less blurred. */
+@media (prefers-reduced-transparency: reduce) {
+  .hdr { background: var(--navy) !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  .glass { background: var(--navy-3); backdrop-filter: none; -webkit-backdrop-filter: none; border-color: rgba(255, 255, 255, .4); }
+  .hero-scrim { background: rgba(11, 35, 64, .8); }
+}
+
+/* ---- More contrast --------------------------------------------------------
+   Borders appear where the design relies on tone alone, and muted text
+   strengthens. */
+@media (prefers-contrast: more) {
+  :root { --muted: #33475c; --line: #b9c6d4; }
+  .ccard, .step, .panel, .result, .table, .cmp { border: 1px solid var(--line); }
+  .glass { background: rgba(11, 35, 64, .92); border-color: #fff; }
+  .tag-cream { border-color: #c9bd93; }
+  a:not(.pill):not(.ccard):not(.row) { text-decoration: underline; text-underline-offset: 3px; }
+}

@@ -121,6 +121,32 @@ carry the date they were checked — the site's rule is that a price is never sh
 school lists, course counts and the Harbourline profile are the design's sample data and need
 verifying against the schools before launch.
 
+## Design system
+
+`src/app/site.css` carries the whole thing — no CSS framework. Tokens at the top:
+
+- **Type** is a rem-based scale where tracking is size-specific: display text sets tight
+  (`-0.032em`), small text slightly open (`+0.004em`). Sizes are rem so the browser's
+  text-size setting still works — body text was previously locked to 16px and ignored it.
+- **Motion** is one decelerating curve (`--ease`) at three durations. Press feedback is
+  `--t-press` (110ms) because a control that waits for release feels slower than it is.
+  Nothing on the site animates on scroll; motion only ever answers a user action.
+- **Elevation** is a three-step scale (`--e1`–`--e3`) rather than one shadow on everything,
+  so a resting card, a lifted card and floating chrome are distinguishable.
+
+The header is sticky and translucent (navy at 82% with a backdrop blur), with a
+`@supports` fallback to solid navy. That is the one material gesture the site makes;
+everything else stays quiet.
+
+`prefers-reduced-motion`, `prefers-reduced-transparency` and `prefers-contrast: more` are
+all handled. Under reduced motion, transforms are removed but colour and opacity changes
+stay, because those carry meaning.
+
+Column ratios use modifier classes (`.split.lean-left`, `.facts.two`) declared inside a
+`min-width` query, never inline `grid-template-columns` — an inline style cannot be
+overridden by a media query, which was forcing two columns onto 320px screens.
+Wide tables go in `.scroll-x`; the page body never scrolls sideways.
+
 ## SEO
 
 `src/lib/site.ts` holds the canonical origin and the route registry. Add each new page to

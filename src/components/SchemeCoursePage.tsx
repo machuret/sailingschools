@@ -37,8 +37,8 @@ export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
             ]}
           />
           <div
-            className="split top"
-            style={{ marginTop: 22, gridTemplateColumns: 'minmax(0,.85fr) minmax(0,1.15fr)' }}
+            className="split top lean-right-lg"
+            style={{ marginTop: 22 }}
           >
             <div>
               <span className="kicker">{schemeName}</span>
@@ -96,8 +96,8 @@ export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
               })}
 
               <dl
-                className="facts"
-                style={{ marginTop: 34, gridTemplateColumns: '1fr', gap: 20 }}
+                className="facts one"
+                style={{ marginTop: 34, gap: 20 }}
               >
                 <div className="fact">
                   <dt>Who it suits</dt>
