@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ImageSlot from '@/components/ImageSlot';
-import SchoolMark from '@/components/SchoolMark';
+import SchoolCard from '@/components/SchoolCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { itemList } from '@/lib/schema';
@@ -50,8 +50,8 @@ export default async function StatePage({ params }: Params) {
 
   const list = schoolsInState(record.key);
   const cityList = citiesInState(record.key);
-  const verified = list.filter((s) => s.profile);
-  const unverified = list.filter((s) => !s.profile);
+  const verified = list.filter((s) => s.website || s.region);
+  const unverified = list.filter((s) => !s.website && !s.region);
 
   return (
     <>
@@ -120,27 +120,7 @@ export default async function StatePage({ params }: Params) {
           {verified.length > 0 && (
             <div className="cards">
               {verified.map((s) => (
-                <Link className="ccard" href={s.profile!} key={s.name}>
-                  <div className="photo">
-                    {s.region && <span className="badge">{s.region}</span>}
-                    <SchoolMark school={s} />
-                  </div>
-                  <h3>{s.name}</h3>
-                  {s.blurb && <p>{s.blurb}</p>}
-                  {s.scheme && (
-                    <div className="meta">
-                      <span className="tag tag-sky">{s.scheme}</span>
-                    </div>
-                  )}
-                  <div className="foot">
-                    <span className="meta" style={{ margin: 0 }}>
-                      {s.types}
-                    </span>
-                    <span className="arrow">
-                      <i className="ph-duotone ph-arrow-right" />
-                    </span>
-                  </div>
-                </Link>
+                <SchoolCard school={s} key={s.name} />
               ))}
             </div>
           )}
