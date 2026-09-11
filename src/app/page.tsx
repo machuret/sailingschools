@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
+import AustraliaChart from '@/components/AustraliaChart';
+import PointsOfSail from '@/components/PointsOfSail';
+import { mapMarkers, mapRegions } from '@/lib/geo';
 import JsonLd from '@/components/JsonLd';
 import { organization, website } from '@/lib/schema';
 
@@ -237,9 +240,28 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="photo tall">
-            <ImageSlot placeholder="Drop a photograph — training keelboat on Sydney Harbour, ferry behind" />
+          <div className="ozmap-wrap">
+            <AustraliaChart markers={mapMarkers} regions={mapRegions} />
           </div>
+        </div>
+      </section>
+
+      <section className="sec deep">
+        <div className="wrap">
+          <div className="sec-head">
+            <div>
+              <span className="kicker">The first hour of any course</span>
+              <h2 className="h2">A boat cannot sail straight at the wind</h2>
+            </div>
+            <Link className="pill pill-sky" href="/learn/points-of-sail/">
+              The full guide
+            </Link>
+          </div>
+          <p className="copy" style={{ marginBottom: 42 }}>
+            Everything else in sailing follows from that. Pick a point of sail and watch what the
+            sail does — as the boat turns away from the wind, the sail goes out.
+          </p>
+          <PointsOfSail />
         </div>
       </section>
 

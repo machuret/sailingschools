@@ -43,6 +43,7 @@
   --e2: 0 2px 4px rgba(15, 47, 85, .06), 0 12px 32px rgba(15, 47, 85, .11);
   --e3: 0 4px 12px rgba(11, 35, 64, .14), 0 20px 48px rgba(11, 35, 64, .18);
   --shadow: var(--e1);
+  --deep-band: linear-gradient(155deg, #0b2340 0%, #123256 55%, #0f2f55 100%);
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -260,6 +261,82 @@ em.serif { font-style: italic; }
 .ozmap a:focus-visible .oz-halo { opacity: .32; }
 .oz-furniture path { fill: none; stroke: var(--oz-mute); stroke-width: 1.2; opacity: .6; }
 .oz-fine { font-size: 11px; fill: var(--oz-mute); font-weight: 600; letter-spacing: .08em; opacity: .8; }
+
+
+/* points of sail — the interactive dial. See components/PointsOfSail.tsx. */
+.pos { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 48px; align-items: center; }
+.pos-dial { background: var(--surface); border-radius: var(--r); box-shadow: var(--e2); padding: 14px; }
+.pos-dial svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+.pos-wind path { stroke: var(--blue); stroke-width: 2; stroke-linecap: round; fill: none; opacity: .5;
+  animation: pos-gust 3.4s var(--ease-in-out) infinite; }
+.pos-windhead { opacity: .8 !important; animation: none !important; }
+@keyframes pos-gust { 0%, 100% { opacity: .18; } 45% { opacity: .62; } }
+.pos-windlabel { font-size: 12px; font-weight: 700; letter-spacing: .18em; fill: var(--blue); }
+
+.pos-nogo { fill: var(--orange); opacity: .13; }
+.pos-nogo-l { font-size: 11.5px; font-weight: 700; letter-spacing: .14em; fill: var(--orange-2); opacity: .75; }
+
+.pos-sector { fill: var(--sky); opacity: .42; transition: fill var(--t) var(--ease), opacity var(--t) var(--ease); }
+.pos-sector.on { fill: var(--blue); opacity: .34; }
+.pos-ticks line { stroke: var(--navy); opacity: .28; stroke-width: 1.4; }
+.pos-rim { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.pos-rim.faint { opacity: .55; }
+
+.pos-boat { transition: transform var(--t-slow) var(--ease); }
+.pos-rig { transition: transform var(--t-slow) var(--ease); }
+.pos-hull { fill: var(--navy); }
+.pos-deck { fill: var(--navy-3); opacity: .85; }
+.pos-sail { fill: var(--orange); fill-opacity: .16; stroke: var(--orange); stroke-width: 2.6; stroke-linejoin: round; }
+.pos-boom { stroke: var(--navy-2); stroke-width: 3.2; stroke-linecap: round; }
+.pos-pivot { fill: var(--orange); }
+.pos-clew { fill: var(--navy-2); }
+
+.pos-knob { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; transition: fill var(--t) var(--ease), stroke var(--t) var(--ease); }
+.pos-knob.on { fill: var(--orange); stroke: var(--orange); }
+.pos-knob-t { font-size: 10.5px; font-weight: 700; fill: var(--muted); pointer-events: none; }
+.pos-knob.on + .pos-knob-t { fill: var(--white); }
+.pos-knob-g { cursor: pointer; }
+.pos-knob-g:hover .pos-knob { stroke: var(--orange); }
+.pos-knob-g:focus-visible { outline: none; }
+.pos-knob-g:focus-visible .pos-knob { stroke: var(--orange); stroke-width: 3; }
+
+.pos-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
+.pos-tab { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: var(--pill);
+  padding: 8px 15px; font: inherit; font-size: var(--fs-small); font-weight: 600; cursor: pointer;
+  transition: background var(--t) var(--ease), color var(--t) var(--ease), border-color var(--t) var(--ease); }
+.pos-tab:hover { border-color: var(--blue); color: var(--navy); }
+.pos-tab.on { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.pos-short { color: var(--blue); font-weight: 600; font-size: var(--fs-small); letter-spacing: var(--tr-label);
+  text-transform: uppercase; margin-top: 6px; }
+.pos-trim { margin: 26px 0 0; padding: 18px 20px; background: var(--sky-2); border-radius: var(--r); }
+.pos-trim dt { color: var(--orange); font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.pos-trim dd { margin: 6px 0 0; color: var(--navy); font-weight: 600; font-size: 1.03125rem; }
+.pos-tack { margin-top: 22px; display: inline-flex; align-items: center; gap: 9px; cursor: pointer; border: 0; font: inherit; }
+
+@media (max-width: 900px) { .pos { grid-template-columns: 1fr; gap: 32px; } }
+@media (prefers-reduced-motion: reduce) { .pos-wind path { animation: none; opacity: .4; } }
+
+
+/* deep — a full-bleed dark band. The page is otherwise light end to end, and a long
+   scroll with no change of ground reads as one undifferentiated column. */
+.sec.deep { background: var(--deep-band); color: var(--white); position: relative; isolation: isolate; }
+.sec.deep::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: .5;
+  background:
+    radial-gradient(900px 420px at 12% 0%, rgba(38, 179, 201, .22), transparent 70%),
+    radial-gradient(700px 380px at 88% 100%, rgba(255, 90, 31, .16), transparent 70%); }
+.sec.deep .h2, .sec.deep h2, .sec.deep h3 { color: var(--white); }
+.sec.deep .kicker { color: var(--cyan); }
+.sec.deep .copy { color: rgba(255, 255, 255, .78); }
+.sec.deep .pos-panel { color: rgba(255, 255, 255, .8); }
+.sec.deep .pos-short { color: var(--cyan); }
+.sec.deep .pos-tab { background: rgba(255, 255, 255, .07); border-color: rgba(255, 255, 255, .18); color: rgba(255, 255, 255, .82); }
+.sec.deep .pos-tab:hover { border-color: var(--cyan); color: var(--white); }
+.sec.deep .pos-tab.on { background: var(--orange); border-color: var(--orange); color: var(--white); }
+.sec.deep .pos-trim { background: rgba(255, 255, 255, .08); }
+.sec.deep .pos-trim dd { color: var(--white); }
+.sec.deep .pos-tack { color: var(--white); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .32); background: transparent; }
+.sec.deep .pos-tack:hover { box-shadow: inset 0 0 0 1px var(--cyan); }
 
 /* qa — a short question-and-answer run inside a long-form guide */
 .qa { margin-top: 26px; border-top: 1px solid var(--line); }
