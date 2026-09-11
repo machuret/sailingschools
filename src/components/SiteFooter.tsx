@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function SiteFooter() {
   return (
@@ -15,6 +16,28 @@ export default function SiteFooter() {
               <br />
               Editorial research baseline: September 2026.
             </div>
+            <a
+              className="saily-credit"
+              href="https://yousail.com.au/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Saily — powered by YouSail.com.au"
+            >
+              <span className="saily-mark">
+                <Image
+                  src="/assets/saily.png"
+                  alt="Saily sailing assistant mascot"
+                  width={420}
+                  height={420}
+                  sizes="76px"
+                />
+              </span>
+              <span className="saily-copy">
+                <strong>Meet Saily</strong>
+                <span>Powered by YouSail.com.au</span>
+              </span>
+              <i className="ph-duotone ph-arrow-up-right" aria-hidden="true" />
+            </a>
           </div>
           <div>
             <h2>Find your way onto the water</h2>
