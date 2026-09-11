@@ -31,10 +31,15 @@ export default function HomePage() {
               <Link className="pill pill-orange" href="/find-a-course/">
                 Find a course
               </Link>
-              <Link className="pill pill-sky" href="/sailing-schools/new-south-wales/sydney/">
+              <Link className="pill pill-sky" href="/sailing-schools/">
                 Browse schools
               </Link>
             </div>
+            <ul className="hero-proof" aria-label="Why use Sailing Schools Australia">
+              <li><i className="ph-duotone ph-check-circle" aria-hidden="true" /> Independent advice</li>
+              <li><i className="ph-duotone ph-check-circle" aria-hidden="true" /> Australia-wide</li>
+              <li><i className="ph-duotone ph-check-circle" aria-hidden="true" /> All major schemes</li>
+            </ul>
           </div>
           <div className="glass-row">
             <Link className="glass" href="/pathways/complete-beginner/">
@@ -69,7 +74,7 @@ export default function HomePage() {
                 not the certificate name.
               </h2>
             </div>
-            <Link className="pill pill-sky" href="/faq/">
+            <Link className="pill pill-sky" href="/about/">
               About us
             </Link>
           </div>
@@ -272,7 +277,7 @@ export default function HomePage() {
               <span className="kicker">Our guides</span>
               <h2 className="serif lead">Latest insights</h2>
             </div>
-            <Link className="pill pill-orange" href="/courses/">
+            <Link className="pill pill-orange" href="/learn/">
               View all guides
             </Link>
           </div>

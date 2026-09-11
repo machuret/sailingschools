@@ -6,7 +6,7 @@ import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 
 const LINKS = [
-  { href: '/sailing-schools/new-south-wales/sydney/', label: 'Schools', section: '/sailing-schools/' },
+  { href: '/sailing-schools/', label: 'Schools', section: '/sailing-schools' },
   { href: '/courses/', label: 'Courses', section: '/courses' },
   { href: '/pathways/', label: 'Pathways', section: '/pathways' },
   { href: '/compare/', label: 'Compare', section: '/compare' },
@@ -55,16 +55,20 @@ export default function SiteNav() {
             </Link>
             <button
               className="menu-btn"
-              aria-label="Menu"
+              aria-label={open ? 'Close menu' : 'Open menu'}
               aria-expanded={open}
+              aria-controls="mobile-navigation"
               onClick={() => setOpen((o) => !o)}
             >
               <i className={`ph-duotone ${open ? 'ph-x' : 'ph-list'}`} />
             </button>
           </div>
         </div>
-        <div className={`mnav${open ? ' open' : ''}`}>
+        <div id="mobile-navigation" className={`mnav${open ? ' open' : ''}`} aria-hidden={!open}>
           <div className="wrap">
+            <Link className="mobile-cta" href="/find-a-course/" onClick={() => setOpen(false)}>
+              Find the right course
+            </Link>
             {LINKS.map((l) => (
               <Link
                 key={l.label}

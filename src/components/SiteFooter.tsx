@@ -9,7 +9,7 @@ export default function SiteFooter() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/assets/logo-white.png" alt="Sailing Schools Australia" />
             <div className="contact">
-              <span className="big">hello@sailingschools.com.au</span>
+              <a className="big" href="mailto:hello@sailingschools.com.au">hello@sailingschools.com.au</a>
               Australia&rsquo;s independent guide to sailing schools, sailing courses and sailing
               qualifications.
               <br />
@@ -17,15 +17,18 @@ export default function SiteFooter() {
             </div>
           </div>
           <div>
-            <h2>Get the monthly course digest:</h2>
-            <div className="sub-form">
-              <input className="uline" placeholder="Name" aria-label="Name" />
-              <input className="uline" placeholder="Email address" aria-label="Email address" />
-            </div>
-            <div style={{ marginTop: 28 }}>
-              <button className="pill pill-orange" type="button">
-                Subscribe
-              </button>
+            <h2>Find your way onto the water</h2>
+            <p className="footer-intro">
+              Start with three quick questions, then compare the courses and schools that fit your
+              experience, preferred boat and sailing goal.
+            </p>
+            <div className="footer-actions">
+              <Link className="pill pill-orange" href="/find-a-course/">
+                Find my course
+              </Link>
+              <Link className="pill pill-ghost" href="/sailing-schools/">
+                Browse schools
+              </Link>
             </div>
             <div className="cols3">
               <div>

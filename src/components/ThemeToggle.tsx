@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -16,19 +16,11 @@ type Theme = 'light' | 'dark';
  * first paint, so the page never flashes the wrong theme.
  */
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>('light');
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    let stored: string | null = null;
-    try {
-      stored = localStorage.getItem('theme');
-    } catch {
-      /* storage can be unavailable; light is the default either way */
-    }
-    setTheme(stored === 'dark' ? 'dark' : 'light');
-    setReady(true);
-  }, []);
+  const [theme, setTheme] = useState<Theme>(() =>
+    typeof document !== 'undefined' && document.documentElement.dataset.theme === 'dark'
+      ? 'dark'
+      : 'light',
+  );
 
   const toggle = () => {
     const next: Theme = theme === 'dark' ? 'light' : 'dark';
@@ -44,7 +36,7 @@ export default function ThemeToggle() {
     }
   };
 
-  const isDark = ready && theme === 'dark';
+  const isDark = theme === 'dark';
   const label = isDark ? 'Switch to the daylight theme' : 'Switch to the night theme';
 
   return (

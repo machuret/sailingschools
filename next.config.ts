@@ -2,6 +2,12 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  images: {
+    // Keep the editorial photo treatment crisp without shipping the original
+    // multi-megabyte generated assets to every viewport.
+    qualities: [75, 82],
+    formats: ['image/avif', 'image/webp'],
+  },
   // The editorial guide writes every path with a trailing slash; match it so there is
   // exactly one URL form for each page.
   trailingSlash: true,

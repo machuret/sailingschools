@@ -53,6 +53,26 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: ['/og.jpg'],
   },
+  category: 'education',
+  keywords: [
+    'sailing schools Australia',
+    'learn to sail',
+    'sailing courses Australia',
+    'RYA courses Australia',
+    'Australian Sailing courses',
+    'yacht training',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -69,8 +89,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
         <SiteNav />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter />
       </body>
     </html>
