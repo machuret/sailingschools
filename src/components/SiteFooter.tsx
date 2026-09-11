@@ -66,6 +66,7 @@ export default function SiteFooter() {
         </div>
         <div className="legal" style={{ marginTop: 48, paddingBottom: 4 }}>
           <span style={{ display: 'flex', gap: 18, flexWrap: 'wrap' }}>
+            <Link href="/about/">About</Link>
             <Link href="/sitemap/">Site map</Link>
             <Link href="/privacy-policy/">Privacy policy</Link>
             <Link href="/terms-and-conditions/">Terms &amp; conditions</Link>

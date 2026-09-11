@@ -9,7 +9,7 @@ import { orderedPathways } from '@/lib/pathways';
 export const metadata: Metadata = {
   title: 'Sailing Pathways | What Do I Need for What I Want to Do?',
   description:
-    'Goal-based sailing pathways for Australia — chartering, owning a boat, racing, offshore passages, instructing and commercial work, each with the route and the honest timeframe.',
+    'Goal-based sailing pathways for Australia — chartering, owning a boat, racing, offshore, instructing and commercial work, each with an honest timeframe.',
   alternates: { canonical: '/pathways/' },
 };
 

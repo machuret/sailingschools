@@ -10,7 +10,7 @@ import { absoluteUrl } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Sailing Terms Glossary | 94 Words Explained',
   description:
-    'A plain-English glossary of sailing terms — sheets, halyards, gybing, reefing, leeway, points of sail and the qualification acronyms — written for someone who just heard the word on a boat.',
+    'A plain-English glossary of 94 sailing terms — sheets, halyards, gybing, reefing, points of sail and the qualification acronyms, all on one page.',
   alternates: { canonical: '/glossary/' },
 };
 

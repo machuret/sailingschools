@@ -73,7 +73,7 @@ export const cityCourses: CityCourse[] = [
     topic: 'learn-to-sail',
     metaTitle: 'Learn to Sail Sydney | Beginner Sailing Courses',
     description:
-      'Learning to sail in Sydney — Harbour traffic teaches collision rules fast, Pittwater is where the gentler first lessons actually happen, and which to pick depends on you.',
+      'Learning to sail in Sydney — Harbour traffic teaches collision rules fast, Pittwater is where the gentler first lessons happen, and which suits you.',
     standfirst: 'Sydney gives beginners two very different first days, an hour apart.',
     angle: [
       { type: 'para', text: 'Sydney Harbour is the hardest beginner water in Australia, and that is mostly an advantage. Ferries run to fixed routes and do not deviate, tugs and cruise ships work the same channels, and at weekends racing fleets fill the middle of it. A beginner here learns collision regulations, pilotage and close-quarters handling as a matter of survival rather than as a syllabus item.' },
@@ -161,7 +161,7 @@ export const cityCourses: CityCourse[] = [
     topic: 'learn-to-sail',
     metaTitle: 'Learn to Sail Hobart | Beginner Courses on the Derwent',
     description:
-      'Learning to sail in Hobart — the Derwent is deep, sheltered and serious sailing water, with a short season and a sailing culture out of all proportion to the city’s size.',
+      'Learning to sail in Hobart — the Derwent is deep, sheltered and serious water, with a short season and a sailing culture far bigger than the city.',
     standfirst: 'A small city with an outsized sailing culture, on water that does not flatter anybody.',
     angle: [
       { type: 'para', text: 'The Derwent is deep and largely sheltered, and it is also the finish line of the Sydney to Hobart — which tells you something about the sailing culture attached to it. Hobart takes sailing more seriously per head than anywhere else in the country.' },
@@ -179,7 +179,7 @@ export const cityCourses: CityCourse[] = [
     topic: 'yacht-courses',
     metaTitle: 'Yacht Courses Sydney | RYA, IYT & Skipper Training',
     description:
-      'Yacht courses in Sydney — the largest training market in Australia, with Harbour pilotage, coastal access through the Heads and every level from crew to Yachtmaster preparation.',
+      'Yacht courses in Sydney — the largest training market in Australia, with Harbour pilotage and coastal access through the Heads, from crew to Yachtmaster.',
     standfirst: 'The deepest yacht-training market in the country, on water that teaches pilotage whether you want it or not.',
     angle: [
       { type: 'para', text: 'Sydney is the largest sailing-training market in Australia, which matters more than it sounds: it means a choice of schools, a choice of dates, and courses at levels that simply do not run elsewhere in the country every year.' },
@@ -366,7 +366,7 @@ export const cityCourses: CityCourse[] = [
     topic: 'charter-preparation',
     metaTitle: 'Charter Preparation Sydney | Skipper Readiness Courses',
     description:
-      'Charter preparation in Sydney — the certificate charter companies recognise, the sailing résumé they read more carefully, and where to get both in the largest training market.',
+      'Charter preparation in Sydney — the certificate charter companies recognise, the sailing résumé they read more carefully, and where to get both.',
     standfirst: 'Sydney can give you the certificate and the miles. Most people get one and forget the other.',
     angle: [
       { type: 'para', text: 'Sydney is the best-placed market in Australia for charter preparation, because it holds both halves of what a charter operator wants: the training to get a skipper certificate, and enough sailing to put real miles behind it.' },

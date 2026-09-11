@@ -44,7 +44,7 @@ export const comparisons: Comparison[] = [
     title: 'RYA vs Australian Sailing',
     metaTitle: 'RYA vs Australian Sailing | Which Scheme in Australia?',
     description:
-      'RYA or Australian Sailing? The domestic scheme has far wider availability and club pathways; the RYA travels internationally and dominates yacht training. Which suits which goal.',
+      'RYA or Australian Sailing? The domestic scheme has far wider availability and club pathways; the RYA travels internationally and owns yacht training.',
     standfirst: 'One is the national body with a club in every harbour. The other is what the yacht world outside Australia recognises.',
     verdict:
       'Australian Sailing if you are learning here and staying here, especially in a dinghy or through a club. RYA if your goal involves yachts, charter or anywhere outside Australia.',
@@ -100,7 +100,7 @@ export const comparisons: Comparison[] = [
     title: 'RYA vs IYT',
     metaTitle: 'RYA vs IYT | Which Yacht Qualification Travels Further?',
     description:
-      'RYA or IYT? Both are internationally recognised yacht schemes taught in Australia. The RYA has deeper school availability; IYT has dedicated catamaran certificates and issues the ICC.',
+      'RYA or IYT? Both are internationally recognised and taught in Australia. RYA has deeper availability; IYT has catamaran certificates and issues the ICC.',
     standfirst: 'Two international schemes covering nearly identical ground, with two genuine differences worth knowing.',
     verdict:
       'RYA for availability and for the Yachtmaster route. IYT if you want a catamaran-specific certificate or need an ICC issued without a separate process.',
@@ -154,7 +154,7 @@ export const comparisons: Comparison[] = [
     title: 'RYA vs American Sailing',
     metaTitle: 'RYA vs ASA | Which Works in Australia?',
     description:
-      'RYA or American Sailing? Both are respected schemes, but Australian availability is not close — ASA is taught here rarely, which usually decides it before anything else does.',
+      'RYA or American Sailing? Both are respected schemes, but ASA is taught here rarely — which usually decides it before anything else does.',
     standfirst: 'A fair comparison on paper, and a lopsided one in Australia.',
     verdict:
       'RYA, unless you are training in North America or already hold ASA certificates. Australian ASA availability is limited enough that it is not a plan you can rely on.',
@@ -202,7 +202,7 @@ export const comparisons: Comparison[] = [
     title: 'Competent Crew vs Day Skipper',
     metaTitle: 'Competent Crew vs Day Skipper | Which Course First?',
     description:
-      'Competent Crew or Day Skipper? One teaches you to be useful aboard, the other to take command. Which to book first, and when it is reasonable to skip straight to Day Skipper.',
+      'Competent Crew or Day Skipper? One teaches you to be useful aboard, the other to take command — and when it is reasonable to skip straight to the second.',
     standfirst: 'The difference is not difficulty. It is whether the boat is your responsibility.',
     verdict:
       'Competent Crew first if you have never sailed. Straight to Day Skipper if you have real sailing experience — and the theory course before the practical, either way.',
@@ -256,7 +256,7 @@ export const comparisons: Comparison[] = [
     title: 'Day Skipper vs Yachtmaster',
     metaTitle: 'Day Skipper vs Yachtmaster | The Real Difference',
     description:
-      'Day Skipper or Yachtmaster? One is a five-day course; the other is an examination taken after qualifying sea time. What separates them, and how long the gap really takes.',
+      'Day Skipper or Yachtmaster? One is a five-day course; the other is an examination taken after qualifying sea time. How far apart they really are.',
     standfirst: 'One is a course you book. The other is an examination you become ready for.',
     verdict:
       'Day Skipper is the certificate almost everybody actually needs. Yachtmaster is for skippering at night, offshore, or for pay — and it is years away, not weeks.',
@@ -309,7 +309,7 @@ export const comparisons: Comparison[] = [
     title: 'Yachtmaster Coastal vs Offshore',
     metaTitle: 'Yachtmaster Coastal vs Offshore | Which Exam?',
     description:
-      'Yachtmaster Coastal or Offshore? The difference is the sea time behind you and the water you are assessed in — and only one of them opens the AMSA Sailing Master Offshore route.',
+      'Yachtmaster Coastal or Offshore? The difference is sea time and the water you are assessed in — and only one opens the AMSA Sailing Master Offshore route.',
     standfirst: 'Same examination format, materially different sea time, and a real consequence at the commercial end.',
     verdict:
       'Coastal if your sailing is within reach of shelter. Offshore if you make genuine passages — and it is the one AMSA names for Sailing Master Offshore.',
@@ -450,7 +450,7 @@ export const comparisons: Comparison[] = [
     title: 'Dinghy vs keelboat',
     metaTitle: 'Dinghy or Keelboat? | Where to Learn to Sail',
     description:
-      'Learn to sail in a dinghy or a keelboat? A dinghy teaches feel faster because it punishes mistakes. A keelboat is more forgiving and closer to the yacht you want to end up on.',
+      'Dinghy or keelboat? A dinghy teaches feel faster because it punishes mistakes. A keelboat is more forgiving and closer to the yacht you want to end up on.',
     standfirst: 'One capsizes. That single fact is the whole comparison, and it cuts both ways.',
     verdict:
       'Dinghy if you want to learn to sail properly and fast. Keelboat if your goal is yachts, you are less mobile, or the idea of swimming would stop you booking at all.',
@@ -552,7 +552,7 @@ export const comparisons: Comparison[] = [
     title: 'Theory vs practical courses',
     metaTitle: 'Sailing Theory vs Practical Courses | Which First?',
     description:
-      'Sailing theory or practical first? Theory before practical, every time — the practical course assumes the theory, and students who arrive without it spend the week catching up.',
+      'Sailing theory or practical first? Theory, every time — the practical course assumes it, and students who arrive without it spend the week catching up.',
     standfirst: 'The order is not a matter of taste. Get it wrong and you pay for a week you do not get.',
     verdict:
       'Theory first. A practical skipper course assumes you can already plan a passage and read a chart, and it will not stop to teach you.',
@@ -601,7 +601,7 @@ export const comparisons: Comparison[] = [
     title: 'Liveaboard vs day courses',
     metaTitle: 'Liveaboard vs Day Sailing Courses | Which Format?',
     description:
-      'Liveaboard or day-release sailing courses? A liveaboard week teaches night sailing and life aboard; day courses spread the learning and let it settle. What each format actually gives you.',
+      'Liveaboard or day-release sailing courses? A liveaboard week gives you night hours and life aboard; day courses spread the learning and let it settle.',
     standfirst: 'Same syllabus, same certificate, very different weeks — and only one of them gets you out at night.',
     verdict:
       'Liveaboard if you want night hours, real passages and the experience of living aboard. Day courses if you learn better in instalments, or life will not release you for a week.',
@@ -653,7 +653,7 @@ export const comparisons: Comparison[] = [
     title: 'Private tuition vs group courses',
     metaTitle: 'Private Sailing Lessons vs Group Courses | Which Is Worth It?',
     description:
-      'Private sailing tuition or a group course? Private tuition is faster and can happen on your own boat; a group course is cheaper and gives you the crew dynamic you will actually sail in.',
+      'Private sailing tuition or a group course? Private is faster and can happen on your own boat; a group is cheaper and teaches you to crew.',
     standfirst: 'Private tuition is not simply the expensive option. For some people it is the only one that works.',
     verdict:
       'Group courses for most beginners — cheaper, and crewing with others is part of the skill. Private tuition if it is your own boat, your own schedule, or a specific problem to fix.',
@@ -704,7 +704,7 @@ export const comparisons: Comparison[] = [
     title: 'Sailing school vs yacht club',
     metaTitle: 'Sailing School or Yacht Club? | Where to Learn',
     description:
-      'Learn through a sailing school or a yacht club? A school sells structured courses and certificates; a club sells a season of sailing and the people to do it with. Most sailors want both.',
+      'Sailing school or yacht club? A school sells structured courses and certificates; a club sells a season of sailing and the people to do it with.',
     standfirst: 'A school sells you a certificate. A club sells you a season. They are not competing.',
     verdict:
       'A school for structure and certification. A club for the hours, the people and the cost. Do a course, then join a club — in that order, and do both.',

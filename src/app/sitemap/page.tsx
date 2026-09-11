@@ -258,6 +258,7 @@ export default function HtmlSitemapPage() {
               ))}
             </Group>
             <Group title="About this site">
+              <Item href="/about/">About this site</Item>
               <Item href="/faq/">All questions</Item>
               <Item href="/privacy-policy/">Privacy policy</Item>
               <Item href="/terms-and-conditions/">Terms &amp; conditions</Item>

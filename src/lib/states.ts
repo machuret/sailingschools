@@ -57,9 +57,9 @@ export const states: StateRecord[] = [
   {
     key: 'south-australia',
     name: 'South Australia',
-    title: 'Sailing Schools Adelaide | Learn to Sail South Australia',
+    title: 'Sailing Schools South Australia | Adelaide & Gulf St Vincent',
     description:
-      'Sailing schools in South Australia — Adelaide and Gulf St Vincent. Learn-to-sail courses, keelboat training and yacht instruction in sheltered gulf waters.',
+      'Sailing schools across South Australia — Adelaide, Gulf St Vincent and the state’s open-water training. A small market, so book the season early.',
     waters:
       'Adelaide sails on Gulf St Vincent, a large, comparatively sheltered body of water with a gentle sea breeze pattern through summer. It is forgiving water to learn in, and the training market is correspondingly small — most South Australian sailors travelling further up the qualification ladder do at least part of it interstate.',
     regions: ['Adelaide', 'Gulf St Vincent'],
@@ -67,9 +67,9 @@ export const states: StateRecord[] = [
   {
     key: 'tasmania',
     name: 'Tasmania',
-    title: 'Sailing Schools Hobart | Sailing Courses Tasmania',
+    title: 'Sailing Schools Tasmania | Hobart, Derwent & the Channel',
     description:
-      'Sailing schools in Tasmania — Hobart, the Derwent and the D’Entrecasteaux Channel. Learn to sail, yacht training and coastal sailing in southern waters.',
+      'Sailing schools across Tasmania — the Derwent, the D’Entrecasteaux Channel and Storm Bay. Cold water, real weather, and disproportionately capable sailors.',
     waters:
       'Hobart sails the Derwent estuary and the D’Entrecasteaux Channel, with Storm Bay and the Southern Ocean beyond. It is cold-water, high-latitude sailing with real weather, and the shortest-notice conditions of anywhere in the country. Tasmania is a small training market that produces disproportionately capable sailors.',
     regions: ['Hobart', 'Derwent', 'D’Entrecasteaux Channel'],

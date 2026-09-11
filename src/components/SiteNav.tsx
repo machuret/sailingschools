@@ -40,7 +40,7 @@ export default function SiteNav() {
             ))}
           </nav>
           <div className="util" style={{ marginLeft: 'auto' }}>
-            <Link className="hide-l" href="/faq/">
+            <Link className="hide-l" href="/about/">
               About
             </Link>
             <a className="hide-l" href="mailto:hello@sailingschools.com.au">
@@ -75,7 +75,7 @@ export default function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Link href="/faq/" onClick={() => setOpen(false)}>
+            <Link href="/about/" onClick={() => setOpen(false)}>
               About
             </Link>
             <Link href="/sitemap/" onClick={() => setOpen(false)}>

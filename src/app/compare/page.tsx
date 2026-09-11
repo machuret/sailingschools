@@ -9,7 +9,7 @@ import { comparisonGroups, comparisonsInGroup, comparisons } from '@/lib/compari
 export const metadata: Metadata = {
   title: 'Sailing Course Comparisons | X vs Y, Answered',
   description:
-    'Side-by-side comparisons of sailing schemes, courses, boats and formats — RYA vs Australian Sailing, Day Skipper vs Yachtmaster, dinghy vs keelboat, and more. Each one ends with an answer.',
+    'Side-by-side comparisons of sailing schemes, courses, boats and formats — RYA vs Australian Sailing, dinghy vs keelboat, and more. Each ends with an answer.',
   alternates: { canonical: '/compare/' },
 };
 

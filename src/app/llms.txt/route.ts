@@ -129,6 +129,7 @@ ${faqPages.map((f) => line(f.question, `/faq/${f.page!.slug}/`, f.short)).join('
 
 ## Site information
 
+${line('About', '/about/', 'how schools are listed and verified, and how the site is funded')}
 ${line('Site map', '/sitemap/')}
 ${line('Privacy policy', '/privacy-policy/')}
 ${line('Terms and conditions', '/terms-and-conditions/')}

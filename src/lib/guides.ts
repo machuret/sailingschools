@@ -124,7 +124,7 @@ export const guides: Guide[] = [
     title: 'AMSA certificates of competency explained',
     metaTitle: 'AMSA Certificates of Competency | Coxswain to Master',
     description:
-      'The AMSA domestic certificates of competency — General Purpose Hand, Coxswain grades, Master grades, engineer certificates and the two sailing certificates, and who each one is for.',
+      'The AMSA domestic certificates of competency — General Purpose Hand, the Coxswain and Master grades, the engineer certificates, and the two for sail.',
     standfirst:
       'Nine deck certificates, four engineer certificates and two for sail. The job picks the certificate, not the other way round.',
     kicker: 'Working on the water',

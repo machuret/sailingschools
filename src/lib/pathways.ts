@@ -48,7 +48,7 @@ export const pathways: Pathway[] = [
     title: 'I want to charter a yacht',
     metaTitle: 'Qualifications to Charter a Yacht in Australia | Pathway',
     description:
-      'What you actually need to bareboat charter a yacht in Australia — which certificate charter companies ask for, what a sailing résumé is, and the fastest honest route there.',
+      'What you need to bareboat charter a yacht in Australia — which certificate operators ask for, why the résumé matters more, and the fastest honest route.',
     standfirst:
       'Charter companies do not check a scheme. They check whether they believe you can bring their boat back.',
     goal: 'Hire a yacht without a skipper and sail it yourself.',
@@ -148,7 +148,7 @@ export const pathways: Pathway[] = [
     title: 'I want to bareboat the Whitsundays',
     metaTitle: 'Bareboat Charter Whitsundays | Qualifications & Preparation',
     description:
-      'What you need to bareboat charter in the Whitsundays — why operators there run their own briefing instead of demanding a certificate, and what to learn before you go.',
+      'What you need to bareboat charter in the Whitsundays — why operators there run their own briefing instead of demanding a certificate, and what to learn.',
     standfirst:
       'Australia’s easiest bareboat ground to sail and its least predictable to qualify for.',
     goal: 'Charter a yacht or catamaran in the Whitsundays and sail it yourself.',
@@ -434,7 +434,7 @@ export const pathways: Pathway[] = [
     title: 'I want to sail offshore',
     metaTitle: 'Offshore Sailing Qualifications Australia | Pathway',
     description:
-      'How to get from coastal sailing to genuine offshore passages in Australia — sea time, safety and sea survival, the Yachtmaster route, and what no course can give you.',
+      'Getting from coastal sailing to genuine offshore passages in Australia — sea time, sea survival, the Yachtmaster route, and what no course can give you.',
     standfirst:
       'Offshore is the one place where the certificate genuinely lags the experience, and everyone involved knows it.',
     goal: 'Make ocean and extended coastal passages, as crew or as skipper.',
@@ -723,7 +723,7 @@ export const pathways: Pathway[] = [
     title: 'I want to work on boats',
     metaTitle: 'Work on Boats in Australia | AMSA Certificates Pathway',
     description:
-      'Turning sailing into paid work in Australia — why recreational certificates are not commercial ones, which AMSA certificates of competency apply, and where sailing qualifications still count.',
+      'Turning sailing into paid work in Australia — why recreational certificates are not commercial ones, and which AMSA certificates actually apply.',
     standfirst:
       'The hardest thing to accept here: your Yachtmaster is not an Australian commercial licence.',
     goal: 'Be paid to operate or crew a vessel in Australia.',
