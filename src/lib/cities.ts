@@ -180,6 +180,150 @@ export const cities: CityRecord[] = [
     ],
     taught: ['Beginner sailing', 'Keelboat courses', 'Yacht training', 'Coastal sailing', 'Safety & Sea Survival', 'Navigation'],
   },
+  {
+    slug: 'pittwater',
+    name: 'Pittwater',
+    state: 'new-south-wales',
+    stateName: 'New South Wales',
+    title: 'Sailing Schools Pittwater | Learn to Sail Broken Bay',
+    description:
+      'Sailing courses on Pittwater and Broken Bay — sheltered deep water an hour north of Sydney, and the usual place Sydney schools take beginners and anchoring students.',
+    intro:
+      'An hour north of the city and a different proposition from Sydney Harbour: deep, sheltered and largely free of commercial traffic. It is where a great deal of Sydney’s beginner and anchoring training actually happens.',
+    waters: [
+      'Pittwater is a drowned river valley — deep almost to the shore, with steep wooded sides that shelter it from the prevailing weather. That makes it forgiving water to learn in, and unusually good for anchoring practice because you can anchor almost anywhere.',
+      'There is no ferry traffic and very little commercial shipping, which removes the pressure that makes Sydney Harbour a demanding first lesson. The trade-off is that you learn less about collision regulations here.',
+      'Broken Bay, at the mouth, opens onto the Tasman and gives access to genuine coastal conditions within a short passage when a course needs them.',
+      'The Hawkesbury River runs west from Broken Bay into sheltered, scenic water that suits overnight and passage-making exercises.',
+    ],
+    regions: [
+      { name: 'Pittwater', note: 'Deep, sheltered, dozens of anchorages — ideal first-lesson water' },
+      { name: 'Broken Bay', note: 'Where it opens to the Tasman; coastal conditions on demand' },
+      { name: 'Hawkesbury River', note: 'Sheltered overnight cruising west of the bay' },
+      { name: 'Barrenjoey', note: 'The headland at the entrance, and the local pilotage landmark' },
+    ],
+    taught: ['Beginner sailing', 'Anchoring', 'Keelboat courses', 'RYA yacht training', 'Overnight passages', 'Own boat tuition'],
+  },
+  {
+    slug: 'port-stephens',
+    name: 'Port Stephens',
+    state: 'new-south-wales',
+    stateName: 'New South Wales',
+    title: 'Sailing Schools Port Stephens | Nelson Bay Courses',
+    description:
+      'Sailing courses at Port Stephens and Nelson Bay — a large sheltered harbour two and a half hours north of Sydney, with room to sail and easy coastal access.',
+    intro:
+      'A large natural harbour with more sailable room than anywhere near Sydney, and a coast outside it that is straightforward to get to. Training here can be sheltered or open on the same day.',
+    waters: [
+      'Port Stephens is roughly two and a half times the area of Sydney Harbour with a fraction of the traffic, which means beginners get space to make mistakes without an approaching ferry making the decision for them.',
+      'The harbour is shallow in places and carries sandbanks that shift, so local pilotage and depth awareness are taught seriously here rather than as an afterthought.',
+      'The entrance between the heads runs strongly on the tide and can stand up against a swell, which makes it a genuine piece of pilotage and a useful teaching feature.',
+      'Outside, the coast north toward Broughton Island gives short coastal passages and overnight anchorages within an easy day.',
+    ],
+    regions: [
+      { name: 'Nelson Bay', note: 'The main base, with the marina and most operators' },
+      { name: 'Port Stephens', note: 'Large sheltered harbour, light traffic, plenty of room' },
+      { name: 'Broughton Island', note: 'A short coastal passage and an overnight anchorage' },
+      { name: 'The heads', note: 'Tidal entrance that teaches real pilotage' },
+    ],
+    taught: ['Beginner sailing', 'Keelboat courses', 'Coastal passages', 'Anchoring', 'Navigation', 'Charter preparation'],
+  },
+  {
+    slug: 'gold-coast',
+    name: 'the Gold Coast',
+    state: 'queensland',
+    stateName: 'Queensland',
+    title: 'Sailing Schools Gold Coast | Broadwater & Coomera',
+    description:
+      'Sailing courses on the Gold Coast — the Broadwater, Coomera and the Seaway. Sheltered flat water for beginners with a demanding bar entrance for those going further.',
+    intro:
+      'Flat sheltered water behind the sand islands, an enormous marine industry, and one of the more demanding bar entrances in the country a few minutes away. The contrast is the point.',
+    waters: [
+      'The Broadwater is protected by South and North Stradbroke Islands, giving flat water and a long sailing season. It is close to ideal beginner water, and the reason so much training is based here.',
+      'It is also shallow and tidal, with marked channels that must be followed. Students learn to read a channel and watch a depth sounder much earlier here than in deep harbours.',
+      'The Gold Coast Seaway is the entrance to open water and can be genuinely serious on an ebb tide against a swell. Schools treat crossing it as a taught skill, not a formality.',
+      'Coomera and the Broadwater hold one of Australia’s largest concentrations of marine trades, which means boats, instructors and refit expertise are all close at hand.',
+    ],
+    regions: [
+      { name: 'The Broadwater', note: 'Flat, sheltered, shallow — excellent beginner water' },
+      { name: 'Coomera', note: 'Marine industry hub and boatyard concentration' },
+      { name: 'Gold Coast Seaway', note: 'The bar entrance; taught deliberately, not casually' },
+      { name: 'South Stradbroke', note: 'Anchorages a short sail from the marinas' },
+    ],
+    taught: ['Beginner sailing', 'Keelboat courses', 'Bar crossings', 'Navigation', 'Catamaran handling', 'Own boat tuition'],
+  },
+  {
+    slug: 'sunshine-coast',
+    name: 'the Sunshine Coast',
+    state: 'queensland',
+    stateName: 'Queensland',
+    title: 'Sailing Schools Sunshine Coast | Mooloolaba Courses',
+    description:
+      'Sailing courses on the Sunshine Coast — Mooloolaba and the open coast north of Brisbane, where training happens on genuinely open water rather than inside a bay.',
+    intro:
+      'Unlike Brisbane and the Gold Coast, there is no large sheltered bay here. Training happens on open coast from the start, which changes what a first day looks like.',
+    waters: [
+      'Mooloolaba is the main base, with a river entrance and a marina immediately inside. Boats are on open water within minutes of leaving, which suits coastal training and suits nervous beginners less well.',
+      'The open coast means swell is a normal condition rather than an occasional one. Students here become comfortable with motion early, and seasickness management is a practical part of the teaching.',
+      'The river bar can build on an outgoing tide against a swell, so entrance timing is part of every passage plan rather than an advanced topic.',
+      'North toward the Great Sandy Strait and Fraser Island the coast opens into genuine cruising ground, which is where longer passages and mile-building runs head.',
+    ],
+    regions: [
+      { name: 'Mooloolaba', note: 'The main base; marina inside a river entrance' },
+      { name: 'The open coast', note: 'Swell as standard, from the first hour' },
+      { name: 'Caloundra', note: 'Southern access toward the top of Moreton Bay' },
+      { name: 'Great Sandy Strait', note: 'Cruising ground north, toward Fraser Island' },
+    ],
+    taught: ['Coastal passages', 'Keelboat courses', 'Navigation', 'Bar crossings', 'Mile building', 'Charter preparation'],
+  },
+  {
+    slug: 'geelong',
+    name: 'Geelong',
+    state: 'victoria',
+    stateName: 'Victoria',
+    title: 'Sailing Schools Geelong | Corio Bay & Port Phillip',
+    description:
+      'Sailing courses at Geelong and Corio Bay — sheltered water at the western end of Port Phillip, with a strong club culture and a short sail to open bay conditions.',
+    intro:
+      'Corio Bay is a bay within a bay: sheltered enough for first lessons, with the full width of Port Phillip a short sail away when a course needs more.',
+    waters: [
+      'Corio Bay is enclosed at the western end of Port Phillip, which makes it noticeably flatter than the bay proper and a good deal more forgiving on a windy day.',
+      'Port Phillip itself is large, shallow and capable of building a short steep chop very quickly in a southerly. Sailors trained here handle waves that are closer together and less predictable than ocean swell.',
+      'Geelong has an unusually strong club and dinghy racing culture for a regional city, which means club pathways are a realistic alternative to commercial courses.',
+      'The Rip at Port Phillip Heads is one of the more serious tidal entrances in Australia and is not casually crossed — a fact that shapes how local coastal training is planned.',
+    ],
+    regions: [
+      { name: 'Corio Bay', note: 'Sheltered, flat, and the usual first-lesson water' },
+      { name: 'Port Phillip', note: 'Large and shallow; short steep chop in a blow' },
+      { name: 'Geelong waterfront', note: 'Clubs and the main sailing base' },
+      { name: 'Port Phillip Heads', note: 'The Rip — planned for, never assumed' },
+    ],
+    taught: ['Beginner sailing', 'Dinghy courses', 'Keelboat courses', 'Racing', 'Navigation', 'Heavy weather handling'],
+  },
+  {
+    slug: 'gippsland-lakes',
+    name: 'the Gippsland Lakes',
+    state: 'victoria',
+    stateName: 'Victoria',
+    title: 'Sailing Schools Gippsland Lakes | Paynesville & Metung',
+    description:
+      'Sailing courses on the Gippsland Lakes — Australia’s largest inland waterway, with flat sheltered sailing at Paynesville and Metung and no tide to plan around.',
+    intro:
+      'Australia’s largest inland navigable waterway: four hundred square kilometres of flat, sheltered water with effectively no tide. Different from every other training ground in the country, and better for some things than any of them.',
+    waters: [
+      'The lakes are almost tideless, which removes an entire dimension from pilotage and lets a beginner concentrate on the boat. It also means tidal work has to be learned somewhere else.',
+      'Water is shallow and channels are marked, so depth awareness and channel discipline are taught from the first day. Running aground here is soft, common and instructive.',
+      'Wind funnels between the lakes and can be gusty and directionally unstable, which is good boat-handling practice even though the water stays flat.',
+      'Lakes Entrance is the only opening to Bass Strait, and it is a working bar that demands respect and timing. Most lake training never crosses it.',
+    ],
+    regions: [
+      { name: 'Paynesville', note: 'The main sailing base, with clubs and moorings' },
+      { name: 'Metung', note: 'Sheltered village base on Bancroft Bay' },
+      { name: 'Lake King', note: 'The largest open expanse; room to manoeuvre' },
+      { name: 'Lakes Entrance', note: 'The bar to Bass Strait — timed, not assumed' },
+    ],
+    taught: ['Beginner sailing', 'Keelboat courses', 'Own boat tuition', 'Anchoring', 'Navigation', 'Dinghy courses'],
+  },
 ];
 
 export const cityBySlug = (state: string, slug: string) =>

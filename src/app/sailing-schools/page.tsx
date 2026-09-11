@@ -6,6 +6,7 @@ import AustraliaChart from '@/components/AustraliaChart';
 import { schoolsInState } from '@/lib/schools';
 import { states } from '@/lib/states';
 import { mapMarkers, mapRegions } from '@/lib/geo';
+import { cities } from '@/lib/cities';
 
 export const metadata: Metadata = {
   title: 'Sailing Schools Australia | Directory by State',
@@ -56,9 +57,9 @@ export default function SchoolsIndexPage() {
               <span className="kicker">The coverage</span>
               <h2 className="h2">Where the training actually is</h2>
               <p className="copy">
-                Sailing training in Australia clusters hard around seven bodies of water. Between
-                them they account for almost every dedicated school in the country, which is why
-                this site is organised by water rather than by postcode.
+                Sailing training in Australia clusters hard around a handful of bodies of water.
+                Between them they account for almost every dedicated school in the country, which is
+                why this site is organised by water rather than by postcode.
               </p>
               <p className="copy">
                 The numbers on the map are schools currently listed and verified, not an estimate
@@ -66,12 +67,20 @@ export default function SchoolsIndexPage() {
                 that few exist — corrections are welcome.
               </p>
               <div className="chain" style={{ marginTop: 22 }}>
-                {mapMarkers.map((m) => (
-                  <Link className="tag tag-sky" href={m.href} key={m.name}>
-                    {m.name}
+                {cities.map((c) => (
+                  <Link
+                    className={mapMarkers.some((m) => m.href === `/sailing-schools/${c.state}/${c.slug}/`) ? 'tag tag-sky' : 'tag tag-cream'}
+                    href={`/sailing-schools/${c.state}/${c.slug}/`}
+                    key={c.slug}
+                  >
+                    {c.name.replace(/^the /, '')}
                   </Link>
                 ))}
               </div>
+              <p className="note" style={{ marginTop: 16 }}>
+                Marked on the map in blue; the others are regional training waters with their own
+                page.
+              </p>
             </div>
           </div>
         </div>
