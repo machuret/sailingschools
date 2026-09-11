@@ -9,7 +9,7 @@ export default function HomePage() {
       <JsonLd nodes={[organization(), website()]} />
       <section className="hero">
         <div className="hero-photo">
-          <ImageSlot
+          <ImageSlot tone="deep" live
             placeholder="Drop your hero photograph — a yacht under sail off the Australian coast"
           />
         </div>

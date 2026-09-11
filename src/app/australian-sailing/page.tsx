@@ -43,7 +43,7 @@ export default function AustralianSailingHubPage() {
     <>
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — a dinghy fleet training on sheltered water" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — a dinghy fleet training on sheltered water" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

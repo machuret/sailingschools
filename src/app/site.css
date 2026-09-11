@@ -126,7 +126,15 @@ em.serif { font-style: italic; }
 .hero { position: relative; color: var(--white); overflow: hidden; background: var(--hero-grad); }
 .hero-photo { position: absolute; inset: 0; }
 .hero-photo .slot { width: 100%; height: 100%; display: block; }
-.hero-photo .slot-empty { background: transparent; color: rgba(255,255,255,.5); align-items: flex-end; justify-content: flex-end; padding: 28px; text-align: right; }
+/* SeaChart — the generated chart illustration. See components/SeaChart.tsx. */
+.chart { display: block; width: 100%; height: 100%; }
+.hero-photo .chart { opacity: .58; }
+.photo .chart { opacity: .9; }
+.chart-track { animation: chart-sail 26s linear infinite; }
+.chart-drift { transform-origin: 50% 50%; }
+.chart-live .chart-drift { animation: chart-breathe 34s var(--ease-in-out) infinite; }
+@keyframes chart-sail { to { stroke-dashoffset: -200; } }
+@keyframes chart-breathe { 50% { transform: scale(1.035) translateY(-8px); } }
 .hero-scrim { position: absolute; inset: 0; background: var(--scrim); pointer-events: none; }
 .hero-in { position: relative; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 48px; align-items: center; padding-block: 96px 110px; min-height: 640px; pointer-events: none; }
 .hero-in a, .hero-in .glass { pointer-events: auto; }
@@ -223,6 +231,35 @@ em.serif { font-style: italic; }
 .rung-meta { display: inline-block; margin-top: 12px; font-size: var(--fs-label); letter-spacing: var(--tr-label);
   text-transform: uppercase; font-weight: 600; color: var(--blue); }
 .rung .tag { text-transform: none; letter-spacing: 0; }
+
+
+/* ozmap — the directory map. Tokens so the chart follows the theme. */
+.ozmap { --oz-sea-1: #eaf4fa; --oz-sea-2: #d4eaf6; --oz-land: #fbf7ea; --oz-coast: #c9a86b;
+  --oz-line: #1a7fc2; --oz-ink: #0f2f55; --oz-mute: #4c6178;
+  position: relative; }
+.ozmap svg { display: block; width: 100%; height: auto; }
+.ozmap-wrap { background: var(--surface); border-radius: var(--r); box-shadow: var(--e2); padding: 20px; }
+.oz-grid line { stroke: var(--oz-line); stroke-width: .6; opacity: .16; }
+.oz-land path { fill: var(--oz-land); }
+.oz-shelf path { stroke: none; }
+.oz-coast path { fill: none; stroke: var(--oz-coast); stroke-width: 2; stroke-linejoin: round; }
+.oz-borders path { fill: none; stroke: var(--oz-coast); stroke-width: 1; stroke-dasharray: 5 5; opacity: .75; }
+.oz-region-n { font-size: 30px; font-weight: 700; fill: var(--oz-ink); text-anchor: middle;
+  font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.oz-region-l { font-size: 12px; font-weight: 600; fill: var(--oz-mute); text-anchor: middle;
+  letter-spacing: .08em; text-transform: uppercase; }
+.oz-region { cursor: pointer; transition: opacity var(--t) var(--ease); }
+.oz-region.on .oz-region-n, .oz-region:hover .oz-region-n { fill: var(--orange); }
+.oz-halo { fill: var(--orange); opacity: 0; transition: opacity var(--t) var(--ease), r var(--t) var(--ease); }
+.oz-dot { fill: var(--orange); stroke: var(--surface); stroke-width: 2.5; }
+.oz-label { font-size: 14px; font-weight: 600; fill: var(--oz-ink); }
+.oz-mark { cursor: pointer; }
+.oz-mark:hover .oz-halo { opacity: .22; }
+.oz-mark:hover .oz-label { fill: var(--orange-2); }
+.ozmap a:focus-visible { outline: none; }
+.ozmap a:focus-visible .oz-halo { opacity: .32; }
+.oz-furniture path { fill: none; stroke: var(--oz-mute); stroke-width: 1.2; opacity: .6; }
+.oz-fine { font-size: 11px; fill: var(--oz-mute); font-weight: 600; letter-spacing: .08em; opacity: .8; }
 
 /* qa — a short question-and-answer run inside a long-form guide */
 .qa { margin-top: 26px; border-top: 1px solid var(--line); }
@@ -349,8 +386,6 @@ em.serif { font-style: italic; }
    its brief so the page still reads as a finished layout. */
 .slot { position: relative; display: block; width: 100%; height: 100%; }
 .slot img { width: 100%; height: 100%; object-fit: cover; }
-.slot-empty { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
-  padding: 24px; background: var(--sky-2); color: var(--navy-3); font-size: 13.5px; line-height: 1.45; text-align: center; }
 
 
 /* ============================================================================
@@ -426,6 +461,7 @@ em.serif { font-style: italic; }
    Movement is removed; colour and opacity changes stay, because they carry
    meaning rather than decoration. */
 @media (prefers-reduced-motion: reduce) {
+  .chart-track, .chart-live .chart-drift { animation: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after {
     animation-duration: .01ms !important;
@@ -506,6 +542,7 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
    glare, and text is a warm off-white instead of pure white, which is what
    makes a bright screen painful to read in the dark.
    ========================================================================= */
+:root[data-theme='dark'] .ozmap { --oz-sea-1: #0b1b2b; --oz-sea-2: #0e2a45; --oz-land: #13324f; --oz-coast: #6f8fae; --oz-line: #4f9fd0; --oz-ink: #e8f2f8; --oz-mute: #9db4c7; }
 :root[data-theme='dark'] {
   color-scheme: dark;
   --bg: #0a1520;
@@ -549,8 +586,7 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 :root[data-theme='dark'] .pill-sky { background: var(--sky); color: #eaf4fb; }
 :root[data-theme='dark'] .pill-sky:hover { background: #37718f; color: #fff; }
 :root[data-theme='dark'] .glass { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .16); }
-:root[data-theme='dark'] .slot-empty { background: var(--sky-2); color: #7f99ad; }
-:root[data-theme='dark'] .step .num { background: var(--sky); color: #eaf4fb; }
+:root[data-theme='dark'] :root[data-theme='dark'] .step .num { background: var(--sky); color: #eaf4fb; }
 :root[data-theme='dark'] .hdr { background: rgba(8, 23, 36, .86); }
 :root[data-theme='dark'] .track .node::after { background: var(--bg); }
 :root[data-theme='dark'] .panel .track .node::after { background: var(--cream); }

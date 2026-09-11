@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import AustraliaChart from '@/components/AustraliaChart';
 import { schoolsInState } from '@/lib/schools';
 import { states } from '@/lib/states';
+import { cities } from '@/lib/cities';
 
 export const metadata: Metadata = {
   title: 'Sailing Schools Australia | Directory by State',
@@ -12,12 +14,55 @@ export const metadata: Metadata = {
   alternates: { canonical: '/sailing-schools/' },
 };
 
+/**
+ * Where the map draws each label. The city coordinates are the training water rather than
+ * the CBD — Whitsundays sits on Airlie Beach, not on the island group's centroid — and the
+ * state counts are placed inland, clear of the coastal markers.
+ */
+const CITY_POINTS: Record<string, { lon: number; lat: number; anchor?: 'end' }> = {
+  sydney: { lon: 151.25, lat: -33.87 },
+  melbourne: { lon: 144.95, lat: -37.85, anchor: 'end' },
+  brisbane: { lon: 153.1, lat: -27.45, anchor: 'end' },
+  perth: { lon: 115.75, lat: -32.05, anchor: 'end' },
+  whitsundays: { lon: 148.7, lat: -20.27, anchor: 'end' },
+  adelaide: { lon: 138.6, lat: -34.93, anchor: 'end' },
+  hobart: { lon: 147.33, lat: -42.88 },
+};
+
+const STATE_POINTS: Record<string, { lon: number; lat: number }> = {
+  'new-south-wales': { lon: 146.3, lat: -31.6 },
+  queensland: { lon: 144, lat: -22.5 },
+  victoria: { lon: 142.8, lat: -36.5 },
+  'western-australia': { lon: 121, lat: -25.5 },
+  'south-australia': { lon: 135, lat: -29.5 },
+  tasmania: { lon: 144.3, lat: -42.9 },
+};
+
 export default function SchoolsIndexPage() {
+  const markers = cities
+    .filter((c) => CITY_POINTS[c.slug])
+    .map((c) => ({
+      name: c.name.replace(/^the /, ''),
+      href: `/sailing-schools/${c.state}/${c.slug}/`,
+      count: 0,
+      ...CITY_POINTS[c.slug],
+    }));
+
+  const regions = states
+    .filter((s) => STATE_POINTS[s.key])
+    .map((s) => ({
+      key: s.key,
+      name: s.name === 'New South Wales' ? 'NSW' : s.name,
+      href: `/sailing-schools/${s.key}/`,
+      count: schoolsInState(s.key).length,
+      ...STATE_POINTS[s.key],
+    }));
+
   return (
     <>
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — a training yacht on open Australian water" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — a training yacht on open Australian water" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">
@@ -39,6 +84,37 @@ export default function SchoolsIndexPage() {
               <Link className="pill pill-ghost" href="/find-a-course/">
                 Which course first?
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="split lean-left top">
+            <div className="ozmap-wrap">
+              <AustraliaChart markers={markers} regions={regions} />
+            </div>
+            <div>
+              <span className="kicker">The coverage</span>
+              <h2 className="h2">Where the training actually is</h2>
+              <p className="copy">
+                Sailing training in Australia clusters hard around seven bodies of water. Between
+                them they account for almost every dedicated school in the country, which is why
+                this site is organised by water rather than by postcode.
+              </p>
+              <p className="copy">
+                The numbers on the map are schools currently listed and verified, not an estimate
+                of the market. Where a state shows a low number it means we have verified few, not
+                that few exist — corrections are welcome.
+              </p>
+              <div className="chain" style={{ marginTop: 22 }}>
+                {markers.map((m) => (
+                  <Link className="tag tag-sky" href={m.href} key={m.name}>
+                    {m.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

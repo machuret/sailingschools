@@ -48,7 +48,7 @@ export default function ComparePage() {
     <>
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — yachts racing, spinnakers up" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — yachts racing, spinnakers up" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

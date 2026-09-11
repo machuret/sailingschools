@@ -27,7 +27,7 @@ export default function CoursesIndexPage() {
 
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — instruction under way on a training yacht" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — instruction under way on a training yacht" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

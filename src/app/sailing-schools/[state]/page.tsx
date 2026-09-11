@@ -65,7 +65,7 @@ export default async function StatePage({ params }: Params) {
       />
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder={`Drop a photograph — sailing training water in ${record.name}`} />
+          <ImageSlot tone="deep" placeholder={`Drop a photograph — sailing training water in ${record.name}`} />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

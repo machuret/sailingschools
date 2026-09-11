@@ -15,7 +15,7 @@ export default function PathwayPage() {
     <>
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — first-timers on a keelboat, instructor at the tiller" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — first-timers on a keelboat, instructor at the tiller" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

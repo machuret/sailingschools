@@ -52,7 +52,7 @@ export default async function PathwayPage({ params }: Params) {
 
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder={`Drop a photograph — ${record.goal.toLowerCase()}`} />
+          <ImageSlot tone="deep" placeholder={`Drop a photograph — ${record.goal.toLowerCase()}`} />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

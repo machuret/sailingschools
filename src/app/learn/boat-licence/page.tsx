@@ -33,7 +33,7 @@ export default function BoatLicenceHubPage() {
 
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — a yacht motoring out of a marina" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — a yacht motoring out of a marina" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

@@ -45,7 +45,7 @@ export default function PathwaysIndexPage() {
 
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — a yacht leaving a harbour at first light" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — a yacht leaving a harbour at first light" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

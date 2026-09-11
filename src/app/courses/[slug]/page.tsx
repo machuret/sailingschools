@@ -51,7 +51,7 @@ export default async function CourseIntentPage({ params }: Params) {
 
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder={`Drop a photograph — ${record.title.toLowerCase()}`} />
+          <ImageSlot tone="deep" placeholder={`Drop a photograph — ${record.title.toLowerCase()}`} />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

@@ -41,7 +41,7 @@ export default function AsaHubPage() {
     <>
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — a keelboat sailing in open water" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — a keelboat sailing in open water" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

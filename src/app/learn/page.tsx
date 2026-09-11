@@ -39,7 +39,7 @@ export default function LearnHubPage() {
 
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — a chart table, dividers and a paper chart" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — a chart table, dividers and a paper chart" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

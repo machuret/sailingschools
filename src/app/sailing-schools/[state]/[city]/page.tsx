@@ -51,7 +51,7 @@ export default async function CityPage({ params }: Params) {
 
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder={`Drop a photograph — sailing training water at ${record.name}`} />
+          <ImageSlot tone="deep" placeholder={`Drop a photograph — sailing training water at ${record.name}`} />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">

@@ -69,7 +69,7 @@ export default function RyaHubPage() {
     <>
       <section className="hero short">
         <div className="hero-photo">
-          <ImageSlot placeholder="Drop a photograph — a cruising yacht under sail, crew working the foredeck" />
+          <ImageSlot tone="deep" placeholder="Drop a photograph — a cruising yacht under sail, crew working the foredeck" />
         </div>
         <div className="hero-scrim" />
         <div className="wrap hero-in">
