@@ -34,27 +34,52 @@ trailing slash.
 | Route | Page |
 | --- | --- |
 | `/` | Home |
-| `/find-a-course/` | Three-question course finder (client-side, no account or email capture) |
+| `/find-a-course/` | Three-question course finder (client-side, nothing stored or sent) |
+| `/pathways/` | Goal-based pathway index |
 | `/pathways/complete-beginner/` | Complete-beginner pathway — the three routes in |
+| `/pathways/[slug]/` | 8 goal pathways, from `src/lib/pathways.ts` |
+| `/compare/` | Comparison index |
+| `/compare/[slug]/` | 14 head-to-head pages, from `src/lib/comparisons.ts` |
+| `/glossary/` | 94 sailing terms, one page, filterable |
+| `/learn/` | Guides hub |
+| `/learn/points-of-sail/` | The interactive points-of-sail dial |
 | `/learn/boat-licence/` | Boat licence comparison, all eight jurisdictions |
 | `/learn/boat-licence-[state]/` | 8 state licence pages, from `src/lib/licences.ts` |
-| `/rya/[slug]/`, `/iyt/[slug]/`, `/asa/[slug]/`, `/australian-sailing/[slug]/` | 38 scheme course pages, from `src/lib/scheme-courses.ts` |
+| `/learn/[slug]/` | 6 long-form guides — 4 AMSA, cost, duration — from `src/lib/guides.ts` |
+| `/rya/[slug]/`, `/iyt/[slug]/`, `/asa/[slug]/`, `/australian-sailing/[slug]/` | 58 scheme course pages, from `src/lib/scheme-courses.ts` |
 | `/faq/` | FAQ index — 46 questions |
 | `/faq/[slug]/` | 12 questions answered in full, from `src/lib/faq.ts` |
 | `/sitemap/` | HTML site map |
 | `/privacy-policy/`, `/terms-and-conditions/` | Legal |
 | `/courses/` | Intent course index, grouped by what you want to learn |
 | `/courses/[slug]/` | 22 intent course guides, generated from `src/lib/courses.ts` |
-| `/australian-sailing/` | Australian Sailing hub — Tackers, OutThere, dinghy, keelboat |
-| `/rya/` | RYA hub |
-| `/iyt/` | IYT hub |
-| `/asa/` | American Sailing hub |
+| `/australian-sailing/`, `/rya/`, `/iyt/`, `/asa/` | Scheme hubs |
 | `/rya/competent-crew/` | Course detail |
-| `/qualifications/rya-vs-iyt-vs-asa/` | Scheme comparison |
-| `/sailing-schools/` | Schools index |
-| `/sailing-schools/[state]/` | State directory — 6 states, generated from `src/lib/states.ts` |
-| `/sailing-schools/[state]/[city]/` | 7 city and region pages, from `src/lib/cities.ts` |
+| `/qualifications/rya-vs-iyt-vs-asa/` | Three-way scheme comparison |
+| `/sailing-schools/` | Schools index, with the chart map |
+| `/sailing-schools/[state]/` | State directory — 6 states, from `src/lib/states.ts` |
+| `/sailing-schools/[state]/[city]/` | 13 city and region pages, from `src/lib/cities.ts` |
+| `/sailing-schools/[state]/[city]/[topic]/` | 18 curated city × course pages, from `src/lib/city-courses.ts` |
 | `/schools/harbourline-sailing-school/` | School profile (a sample profile; Harbourline is fictional) |
+
+188 pages in all. Every route is registered in `src/lib/site.ts`, which the XML sitemap, the
+HTML site map and `llms.txt` all read from — so a page cannot exist without appearing in them,
+and none of them can advertise a page that does not exist.
+
+### Three axes, on purpose
+
+The same qualification appears in three places. `/courses/` is an intent guide ("what is this
+course"), a scheme hub is an awarding body's catalogue ("what does the RYA give you"), and
+`/pathways/` is a route to a goal ("I want to charter — what do I need"). Most readers arrive on
+one axis and leave on another.
+
+### Curated, not generated
+
+`/compare/` and the city × course cluster are explicit lists, not cross-products. The obvious
+build for the latter is every city times every course from a template; that would produce a lot
+of URLs, nothing worth reading, and — page after page — an implication that schools in that city
+teach that course, which is not verified. A pair exists only where the local water genuinely
+changes what learning that thing is like, and the angle on each is written for that pair.
 
 `src/lib/courses.ts` holds the intent course guides as ordered content blocks (`para`, `list`,
 `flow`), so a lead-in line stays attached to the list it introduces and one template renders all
@@ -104,38 +129,76 @@ src/
 │   ├── site.css            # the whole design system — one stylesheet, no CSS framework
 │   ├── icon.png            # favicon
 │   └── <route>/page.tsx    # one file per page
-└── components/
-    ├── SiteNav.tsx         # header, top bar, mobile menu (client component)
-    ├── SiteFooter.tsx
-    └── ImageSlot.tsx       # photo slot — see below
+├── components/
+│   ├── SiteNav.tsx         # header, top bar, mobile menu (client component)
+│   ├── SiteFooter.tsx
+│   ├── ImageSlot.tsx       # photo slot, falling back to SeaChart — see below
+│   ├── SeaChart.tsx        # the generated chart illustration
+│   ├── AustraliaChart.tsx  # the directory map
+│   ├── PointsOfSail.tsx    # the interactive dial
+│   └── GlossaryList.tsx    # glossary filter
+└── lib/                    # every page's content, as typed records
+    ├── site.ts             # the route registry — sitemap, HTML map and llms.txt read this
+    ├── schools.ts, states.ts, cities.ts, geo.ts
+    ├── courses.ts, scheme-courses.ts, city-courses.ts
+    ├── pathways.ts, guides.ts, comparisons.ts, licences.ts
+    ├── glossary.ts, faq.ts
+    └── schema.ts           # JSON-LD builders
 public/assets/              # logos
 ```
 
 Fonts (`next/font/google`) and the Phosphor icon set (`@phosphor-icons/web`) are self-hosted, so
 no stylesheet or font is fetched from a CDN at runtime.
 
-### Photography
+### Illustration, and the photography still to come
 
-The design hands over with the photography still to come. `ImageSlot` renders the brief for the
-photograph that belongs in each slot, so pages read as finished layouts until the images arrive:
+The design hands over with the photography still to come. An empty photo slot printing its own
+art brief is the loudest possible "unfinished" signal, on every page at once — so `ImageSlot`
+draws a chart instead.
+
+`SeaChart` generates an Admiralty-style sheet from a string seed: bathymetric contours through a
+Catmull-Rom spline so they read as depth rather than as polygons, a coastline with a hatched
+margin, a compass rose throwing rhumb lines, soundings, and a dashed passage with waypoints. The
+same seed always draws the same chart, so a page is stable across builds and no two pages match.
+No images, no canvas, no client JS — it is markup.
 
 ```tsx
 <ImageSlot placeholder="Drop a photograph — Sydney Harbour from the water" />
 ```
 
 Drop a file into `public/` and pass it as `src` to fill the slot — the placeholder text is then
-used as the alt text:
+used as the alt text, and the chart steps aside:
 
 ```tsx
 <ImageSlot src="/photos/sydney-harbour.jpg" placeholder="Sydney Harbour from the water" />
 ```
 
+Heroes pass `tone="deep"` to draw on the dark ground; the home hero adds `live` to animate.
+
+### Other drawn components
+
+- `AustraliaChart` — the directory map. The coast is traced from coastal waypoints in degrees
+  and projected at render time rather than stored as a path, so city markers land in the right
+  place by construction. State boundaries are almost all lines of latitude and longitude, which
+  is the only reason a map this small can carry them.
+- `PointsOfSail` — the interactive dial at `/learn/points-of-sail/`. The boat rotates to the
+  selected heading and the rig pivots about the mast, with the sail's camber carried round by
+  that rotation so it always bellies to leeward.
+- `GlossaryList` — every term is server-rendered; the filter only hides.
+
 ## Content status
 
-The copy is the editorial content from the design. Prices are deliberately unset (`$—`) and
-carry the date they were checked — the site's rule is that a price is never shown undated. The
-school lists, course counts and the Harbourline profile are the design's sample data and need
-verifying against the schools before launch.
+Prices are deliberately unset (`$—`) and, when set, carry the date they were checked — the
+site's rule is that a price is never shown undated. No verified prices are held yet;
+`/learn/sailing-course-costs/` says so on the page rather than guessing a range.
+
+All 32 school records were verified against the schools' own sites in September 2026. Two
+remain open: **Atlas Sailing** (Mosman Bay confirmed, domain unverified) and **Yachting
+Directions** (name only — could not be found anywhere). The Harbourline profile is a sample and
+is labelled as fictional on the page.
+
+The AMSA guides were checked against amsa.gov.au in September 2026 and each carries the date and
+a link to the source.
 
 ## Design system
 
