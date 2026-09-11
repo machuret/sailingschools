@@ -5,15 +5,30 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { faqPage, webPage } from '@/lib/schema';
 import { licences, licenceBySlug } from '@/lib/licences';
+import GuidePage from '@/components/GuidePage';
+import { guides, guideBySlug } from '@/lib/guides';
 
 type Params = { params: Promise<{ slug: string }> };
 
+/**
+ * /learn/ carries two kinds of page: one boat-licence record per jurisdiction, and
+ * long-form explainers. They share the namespace because readers do not distinguish
+ * them, and the route dispatches on which record the slug belongs to.
+ */
 export function generateStaticParams() {
-  return licences.map((l) => ({ slug: l.slug }));
+  return [...licences.map((l) => ({ slug: l.slug })), ...guides.map((g) => ({ slug: g.slug }))];
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
+  const guide = guideBySlug(slug);
+  if (guide) {
+    return {
+      title: guide.metaTitle,
+      description: guide.description,
+      alternates: { canonical: `/learn/${guide.slug}/` },
+    };
+  }
   const record = licenceBySlug(slug);
   if (!record) return {};
   return {
@@ -31,6 +46,9 @@ const VERDICT: Record<string, { label: string; cls: string }> = {
 
 export default async function LicencePage({ params }: Params) {
   const { slug } = await params;
+  const guide = guideBySlug(slug);
+  if (guide) return <GuidePage record={guide} />;
+
   const record = licenceBySlug(slug);
   if (!record) notFound();
 

@@ -3,6 +3,9 @@ import { states } from '@/lib/states';
 import { cities } from '@/lib/cities';
 import { courses, courseCategories, coursesInCategory } from '@/lib/courses';
 import { faqPages } from '@/lib/faq';
+import { orderedPathways } from '@/lib/pathways';
+import { guidesInSection } from '@/lib/guides';
+import { licences } from '@/lib/licences';
 
 export const dynamic = 'force-static';
 
@@ -52,6 +55,31 @@ ${line('Home', '/', 'what the site covers')}
 ${line('Find a course', '/find-a-course/', 'three questions to a starting course')}
 ${line('How to learn to sail from zero', '/pathways/complete-beginner/', 'the three routes in')}
 ${line('FAQ', '/faq/', 'short answers to common questions')}
+
+## Pathways — by what you want to do
+
+A pathway is a route to a goal rather than a course description. Each one states what it
+assumes you already have, the honest timeframe, and what completing it does not give you.
+
+${orderedPathways.map((p) => line(p.title, `/pathways/${p.slug}/`, p.goal)).join('\n')}
+
+## Guides
+
+${guidesInSection('practical').map((g) => line(g.title, `/learn/${g.slug}/`, g.standfirst)).join('\n')}
+
+### Commercial certification (AMSA)
+
+Australian commercial certification and the recreational schemes are separate systems. The
+one formal connection runs opposite to the common assumption: AMSA's two sailing certificates
+require a commercially endorsed RYA Yachtmaster or an IYT Master of Yachts as a prerequisite.
+
+${guidesInSection('amsa').map((g) => line(g.title, `/learn/${g.slug}/`, g.standfirst)).join('\n')}
+
+### Boat licences by state
+
+A recreational boat licence is a state matter and unrelated to any sailing certificate.
+
+${licences.map((l) => line(l.state, `/learn/${l.slug}/`, l.short)).join('\n')}
 
 ## Qualification schemes
 

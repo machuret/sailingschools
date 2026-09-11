@@ -8,9 +8,9 @@ import ThemeToggle from './ThemeToggle';
 const LINKS = [
   { href: '/sailing-schools/new-south-wales/sydney/', label: 'Schools', section: '/sailing-schools/' },
   { href: '/courses/', label: 'Courses', section: '/courses' },
-  { href: '/pathways/complete-beginner/', label: 'Pathways', section: '/pathways' },
+  { href: '/pathways/', label: 'Pathways', section: '/pathways' },
   { href: '/qualifications/rya-vs-iyt-vs-asa/', label: 'Qualifications', section: '/qualifications' },
-  { href: '/find-a-course/', label: 'Learn', section: '/find-a-course/' },
+  { href: '/learn/', label: 'Guides', section: '/learn' },
 ];
 
 export default function SiteNav() {

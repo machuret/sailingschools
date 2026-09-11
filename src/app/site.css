@@ -204,6 +204,44 @@ em.serif { font-style: italic; }
 .step h3 { font-size: 24px; } .step p { color: var(--muted); font-size: 15.5px; margin-top: 12px; }
 .step ul { margin: 16px 0 0; padding: 0; list-style: none; } .step li { padding: 6px 0; border-top: 1px solid var(--line); font-size: 15px; }
 .step li a { font-weight: 600; }
+
+/* ladder — the numbered route on a pathway page. Distinct from `.steps`, which is a
+   three-across card grid; a route reads as one column however wide the screen is. */
+.ladder { list-style: none; margin: 36px 0 0; padding: 0; display: grid; gap: 14px; counter-reset: none; }
+.rung { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 20px; align-items: start;
+  background: var(--surface); border-radius: var(--r); box-shadow: var(--e1); padding: 24px 26px;
+  transition: box-shadow var(--t) var(--ease), transform var(--t) var(--ease); }
+.rung:hover { box-shadow: var(--e2); }
+.rung-n { width: 46px; height: 46px; border-radius: 50%; background: var(--navy); color: var(--white);
+  display: grid; place-items: center; font-weight: 700; font-size: 1.0625rem; font-variant-numeric: tabular-nums; }
+.rung.optional .rung-n { background: var(--sky-2); color: var(--navy-3); box-shadow: inset 0 0 0 1px var(--line); }
+.rung-body h3 { font-size: var(--fs-h4); letter-spacing: var(--tr-h4); display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.rung-body h3 a { color: inherit; text-decoration: none; background-image: linear-gradient(var(--orange), var(--orange));
+  background-size: 0 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size var(--t) var(--ease); }
+.rung-body h3 a:hover { background-size: 100% 2px; color: var(--orange-2); }
+.rung-body p { color: var(--muted); font-size: 0.96875rem; line-height: 1.62; margin-top: 8px; max-width: 68ch; }
+.rung-meta { display: inline-block; margin-top: 12px; font-size: var(--fs-label); letter-spacing: var(--tr-label);
+  text-transform: uppercase; font-weight: 600; color: var(--blue); }
+.rung .tag { text-transform: none; letter-spacing: 0; }
+
+/* qa — a short question-and-answer run inside a long-form guide */
+.qa { margin-top: 26px; border-top: 1px solid var(--line); }
+.qa-item { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.qa-item h3 { font-size: var(--fs-h4); letter-spacing: var(--tr-h4); }
+.qa-item p { color: var(--muted); font-size: 1.03125rem; line-height: 1.65; margin-top: 8px; max-width: 62ch; }
+
+/* note — a source line or caveat, set smaller and quieter than body copy */
+.note { font-size: var(--fs-small); letter-spacing: var(--tr-small); color: var(--muted); line-height: 1.6; max-width: 62ch; }
+.note a { color: var(--blue); }
+
+/* bullets — a plain prose list, where `.chain` of tags would overstate the items */
+.bullets { margin: 18px 0 0; padding: 0; list-style: none; max-width: 62ch; }
+.bullets li { position: relative; padding: 9px 0 9px 26px; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 1.03125rem; line-height: 1.6; }
+.bullets li:first-child { border-top: 0; }
+.bullets li::before { content: ''; position: absolute; left: 4px; top: 1.05em; width: 7px; height: 7px;
+  border-radius: 50%; background: var(--orange); }
+
 .track { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
 .track .node { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px 20px; font-weight: 600; color: var(--navy); font-size: 15.5px; position: relative; }
 .track .node.dim { background: var(--sky-2); box-shadow: none; color: var(--navy-3); font-weight: 500; }
@@ -297,6 +335,8 @@ em.serif { font-style: italic; }
   .ft-in { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
+  .rung { grid-template-columns: 36px minmax(0, 1fr); gap: 14px; padding: 20px 18px; }
+  .rung-n { width: 36px; height: 36px; font-size: 0.9375rem; }
   .hdr .util .hide-m { display: none; }
   .feat, .cards, .cards.three, .cols, .cols.two, .split, .steps, .facts, .facts.five, .glass-row, .ft .cols3, .ft .sub-form { grid-template-columns: 1fr; }
   .panel { padding: 40px 24px; } .cta-band { padding: 40px 28px; }

@@ -8,6 +8,10 @@ import { cities } from '@/lib/cities';
 import { schoolsInState } from '@/lib/schools';
 import { courses, courseCategories, coursesInCategory } from '@/lib/courses';
 import { faqPages } from '@/lib/faq';
+import { schemeNames, coursesInScheme, type SchemeKey } from '@/lib/scheme-courses';
+import { licences } from '@/lib/licences';
+import { orderedPathways } from '@/lib/pathways';
+import { guidesInSection } from '@/lib/guides';
 import { routes } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -74,7 +78,9 @@ export default function HtmlSitemapPage() {
             <Group title="Start here">
               <Item href="/">Home</Item>
               <Item href="/find-a-course/">Find a course — three questions</Item>
+              <Item href="/pathways/">Pathways by goal</Item>
               <Item href="/pathways/complete-beginner/">How to learn to sail from zero</Item>
+              <Item href="/learn/">Guides</Item>
               <Item href="/faq/">Frequently asked questions</Item>
             </Group>
             <Group title="Qualification schemes" note="Each training body and the courses it awards.">
@@ -136,6 +142,72 @@ export default function HtmlSitemapPage() {
                 </Group>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
+          <h2 className="h2">Pathways and guides</h2>
+          <p className="copy">
+            A pathway is the route to a goal; a guide answers a question that sits either side of
+            choosing a course.
+          </p>
+          <div className="cols" style={{ marginTop: 32 }}>
+            <Group title="By goal">
+              <Item href="/pathways/">All pathways</Item>
+              <Item href="/pathways/complete-beginner/">I have never sailed</Item>
+              {orderedPathways.map((p) => (
+                <Item href={`/pathways/${p.slug}/`} key={p.slug}>
+                  {p.title}
+                </Item>
+              ))}
+            </Group>
+            <Group title="Before you book">
+              <Item href="/learn/">All guides</Item>
+              {guidesInSection('practical').map((g) => (
+                <Item href={`/learn/${g.slug}/`} key={g.slug}>
+                  {g.title}
+                </Item>
+              ))}
+            </Group>
+            <Group title="Working on the water">
+              {guidesInSection('amsa').map((g) => (
+                <Item href={`/learn/${g.slug}/`} key={g.slug}>
+                  {g.title}
+                </Item>
+              ))}
+            </Group>
+            <Group title="Boat licences">
+              <Item href="/learn/boat-licence/">All states compared</Item>
+              {licences.map((l) => (
+                <Item href={`/learn/${l.slug}/`} key={l.slug}>
+                  {l.state}
+                </Item>
+              ))}
+            </Group>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
+          <h2 className="h2">Courses by training body</h2>
+          <p className="copy">
+            The named courses each scheme awards, as distinct from the intent guides above.
+          </p>
+          <div className="cols" style={{ marginTop: 32 }}>
+            {(['rya', 'iyt', 'asa', 'australian-sailing'] as SchemeKey[]).map((scheme) => (
+              <Group title={schemeNames[scheme]} key={scheme}>
+                <Item href={`/${scheme}/`}>{schemeNames[scheme]} overview</Item>
+                {scheme === 'rya' && <Item href="/rya/competent-crew/">RYA Competent Crew</Item>}
+                {coursesInScheme(scheme).map((c) => (
+                  <Item href={`/${c.scheme}/${c.slug}/`} key={c.slug}>
+                    {c.title}
+                  </Item>
+                ))}
+              </Group>
+            ))}
           </div>
         </div>
       </section>

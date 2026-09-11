@@ -1,6 +1,8 @@
 import { cities } from './cities';
 import { courses } from './courses';
 import { faqPages } from './faq';
+import { guides } from './guides';
+import { pathways } from './pathways';
 import { licences } from './licences';
 import { schemeCourses } from './scheme-courses';
 import { states } from './states';
@@ -38,6 +40,8 @@ const staticRoutes: SiteRoute[] = [
   { path: '/qualifications/rya-vs-iyt-vs-asa/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/pathways/complete-beginner/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/courses/', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/pathways/', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/learn/', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/faq/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/learn/boat-licence/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/sitemap/', priority: 0.3, changeFrequency: 'weekly' },
@@ -85,6 +89,20 @@ const licenceRoutes: SiteRoute[] = licences.map((l) => ({
   changeFrequency: 'monthly',
 }));
 
+/** Goal-based pathways — high intent, so weighted with the hubs. */
+const pathwayRoutes: SiteRoute[] = pathways.map((p) => ({
+  path: `/pathways/${p.slug}/`,
+  priority: 0.85,
+  changeFrequency: 'monthly',
+}));
+
+/** Long-form explainers under /learn/ that are not licence records. */
+const guideRoutes: SiteRoute[] = guides.map((g) => ({
+  path: `/learn/${g.slug}/`,
+  priority: 0.8,
+  changeFrequency: 'monthly',
+}));
+
 /** FAQ answers that carry their own URL. */
 const faqRoutes: SiteRoute[] = faqPages.map((f) => ({
   path: `/faq/${f.page!.slug}/`,
@@ -99,6 +117,8 @@ const allRoutes: SiteRoute[] = [
   ...courseRoutes,
   ...schemeCourseRoutes,
   ...licenceRoutes,
+  ...pathwayRoutes,
+  ...guideRoutes,
   ...faqRoutes,
 ];
 
