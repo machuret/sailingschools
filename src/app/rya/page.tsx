@@ -25,25 +25,44 @@ const CRUISING = [
 const OTHER = [
   {
     h: 'Dinghy',
-    p: 'Levels 1–3, seamanship skills, day sailing, spinnakers, performance sailing and foiling — the adult dinghy scheme, plus the youth sailing scheme for under-16s.',
-    tag: 'Levels 1–3 +',
+    p: 'Start Sailing, Basic Skills and Improving Sailing Skills, then the advanced modules — seamanship, day sailing, spinnakers and performance sailing.',
+    tag: 'Levels 1–3 + 4 modules',
+    href: '/rya/dinghy-scheme/',
   },
   {
-    h: 'Keelboat',
-    p: 'A smaller scheme than the cruising one, aimed at sailors learning helm and crew roles on stable boats before moving to yachts.',
-    tag: 'Start · Intermediate',
+    h: 'Youth',
+    p: 'Stages 1 to 4 for sailors under 16, covering the same ground as the adult levels at a pace built for younger sailors, plus the racing modules.',
+    tag: 'Stages 1–4',
+    href: '/rya/youth-stage-1/',
   },
   {
-    h: 'Navigation',
-    p: 'Essential Navigation & Seamanship, Day Skipper Theory, Coastal/Yachtmaster Offshore Theory and Yachtmaster Ocean Theory — the shorebased spine of the whole scheme.',
-    tag: '4 shorebased courses',
+    h: 'Keelboat & multihull',
+    p: 'Parallel schemes on small ballasted boats and on beach catamarans — start, basic skills, day sailing and advanced handling in each.',
+    tag: '7 courses',
+    href: '/rya/keelboat-start-sailing/',
   },
   {
-    h: 'Specialist short courses',
-    p: 'Marine radio (SRC), diesel engine, radar, first aid and Safety & Sea Survival — one or two days each, and the courses that make a sailor self-reliant.',
+    h: 'Navigation & short courses',
+    p: 'Essential Navigation & Seamanship through Yachtmaster Ocean Theory, plus marine radio, diesel engine, radar, first aid and sea survival.',
     tag: '1–2 days each',
+    href: '/courses/',
   },
 ];
+
+/**
+ * The RYA hub lists 30-odd courses. Flat, that is a wall; grouped by sub-scheme it reads as
+ * four short menus. Order within a group still comes from the record's `order`.
+ */
+const GROUPS = (() => {
+  const all = coursesInScheme('rya');
+  const names = ['Sail cruising', 'Dinghy', 'Youth', 'Keelboat', 'Multihull'];
+  return names
+    .map((name) => ({
+      name,
+      list: all.filter((c) => (c.group ?? 'Sail cruising') === name),
+    }))
+    .filter((g) => g.list.length > 0);
+})();
 
 export default function RyaHubPage() {
   return (
@@ -123,7 +142,9 @@ export default function RyaHubPage() {
           <div className="cards">
             {OTHER.map((o) => (
               <div className="ccard" key={o.h}>
-                <h3>{o.h}</h3>
+                <h3>
+                  <Link href={o.href}>{o.h}</Link>
+                </h3>
                 <p>{o.p}</p>
                 <div className="foot">
                   <span className="tag tag-cream">{o.tag}</span>
@@ -218,19 +239,26 @@ export default function RyaHubPage() {
               {coursesInScheme('rya').length} guides
             </span>
           </div>
-          <div className="rows">
-            {coursesInScheme('rya').map((c) => (
-              <Link className="row" href={`/${c.scheme}/${c.slug}/`} key={c.slug}>
-                <div>
-                  <h3>{c.title}</h3>
-                  <p>{c.standfirst}</p>
-                </div>
-                <span className="arrow">
-                  <i className="ph-duotone ph-caret-right" />
-                </span>
-              </Link>
-            ))}
-          </div>
+          {GROUPS.map(({ name, list }) => (
+            <div key={name} style={{ marginTop: 34 }}>
+              <h3 className="h4" style={{ marginBottom: 14 }}>
+                {name}
+              </h3>
+              <div className="rows">
+                {list.map((c) => (
+                  <Link className="row" href={`/${c.scheme}/${c.slug}/`} key={c.slug}>
+                    <div>
+                      <h4>{c.title}</h4>
+                      <p>{c.standfirst}</p>
+                    </div>
+                    <span className="arrow">
+                      <i className="ph-duotone ph-caret-right" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
