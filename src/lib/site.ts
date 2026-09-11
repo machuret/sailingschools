@@ -3,6 +3,7 @@ import { courses } from './courses';
 import { faqPages } from './faq';
 import { guides } from './guides';
 import { comparisons } from './comparisons';
+import { cityCourses } from './city-courses';
 import { pathways } from './pathways';
 import { licences } from './licences';
 import { schemeCourses } from './scheme-courses';
@@ -100,6 +101,23 @@ const pathwayRoutes: SiteRoute[] = pathways.map((p) => ({
   changeFrequency: 'monthly',
 }));
 
+/**
+ * City x course pages. Curated pairs rather than a cross-product, so the list is derived
+ * from the records that exist rather than from every combination that could.
+ */
+const cityCourseRoutes: SiteRoute[] = cityCourses.flatMap((cc) => {
+  const city = cities.find((c) => c.slug === cc.city);
+  return city
+    ? [
+        {
+          path: `/sailing-schools/${city.state}/${cc.city}/${cc.topic}/`,
+          priority: 0.75,
+          changeFrequency: 'monthly' as const,
+        },
+      ]
+    : [];
+});
+
 /** Head-to-head comparison pages. */
 const comparisonRoutes: SiteRoute[] = comparisons.map((c) => ({
   path: `/compare/${c.slug}/`,
@@ -131,6 +149,7 @@ const allRoutes: SiteRoute[] = [
   ...pathwayRoutes,
   ...guideRoutes,
   ...comparisonRoutes,
+  ...cityCourseRoutes,
   ...faqRoutes,
 ];
 

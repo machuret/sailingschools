@@ -5,6 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import { webPage } from '@/lib/schema';
 import { states } from '@/lib/states';
 import { cities } from '@/lib/cities';
+import { cityCoursesIn, cityCourseTopicBySlug } from '@/lib/city-courses';
 import { schoolsInState } from '@/lib/schools';
 import { courses, courseCategories, coursesInCategory } from '@/lib/courses';
 import { faqPages } from '@/lib/faq';
@@ -119,6 +120,18 @@ export default function HtmlSitemapPage() {
                   {c.name.replace(/^the /, '')}
                 </Item>
               ))}
+            </Group>
+            <Group title="By city and course">
+              {cities.flatMap((c) =>
+                cityCoursesIn(c.slug).map((t) => (
+                  <Item
+                    href={`/sailing-schools/${c.state}/${c.slug}/${t.topic}/`}
+                    key={`${c.slug}-${t.topic}`}
+                  >
+                    {cityCourseTopicBySlug(t.topic)!.label} in {c.name.replace(/^the /, '')}
+                  </Item>
+                )),
+              )}
             </Group>
           </div>
         </div>

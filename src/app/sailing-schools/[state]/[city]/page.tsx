@@ -7,6 +7,7 @@ import SchoolCard from '@/components/SchoolCard';
 import JsonLd from '@/components/JsonLd';
 import { itemList } from '@/lib/schema';
 import { cities, cityBySlug, citiesInState } from '@/lib/cities';
+import { cityCoursesIn, cityCourseTopicBySlug } from '@/lib/city-courses';
 import { schoolsInState } from '@/lib/schools';
 import { stateByKey } from '@/lib/states';
 
@@ -37,6 +38,7 @@ export default async function CityPage({ params }: Params) {
   const verified = list.filter((s) => s.website || s.region);
   const unverified = list.filter((s) => !s.website && !s.region);
   const nearby = citiesInState(record.state).filter((c) => c.slug !== record.slug);
+  const localTopics = cityCoursesIn(record.slug);
 
   return (
     <>
@@ -158,6 +160,41 @@ export default async function CityPage({ params }: Params) {
           )}
         </div>
       </section>
+
+      {localTopics.length > 0 && (
+        <section className="sec">
+          <div className="wrap">
+            <div className="sec-head">
+              <div>
+                <span className="kicker">In more detail</span>
+                <h2 className="h2">Training at {record.name}, by course</h2>
+              </div>
+            </div>
+            <div className="rows">
+              {localTopics.map((t) => {
+                const topic = cityCourseTopicBySlug(t.topic)!;
+                return (
+                  <Link
+                    className="row"
+                    href={`/sailing-schools/${record.state}/${record.slug}/${t.topic}/`}
+                    key={t.topic}
+                  >
+                    <div>
+                      <h3>
+                        {topic.label} in {record.name.replace(/^the /, 'the ')}
+                      </h3>
+                      <p>{t.standfirst}</p>
+                    </div>
+                    <span className="arrow">
+                      <i className="ph-duotone ph-caret-right" />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="sec">
         <div className="wrap">

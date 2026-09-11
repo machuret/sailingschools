@@ -329,3 +329,5 @@ export const cities: CityRecord[] = [
 export const cityBySlug = (state: string, slug: string) =>
   cities.find((c) => c.state === state && c.slug === slug);
 export const citiesInState = (state: StateKey) => cities.filter((c) => c.state === state);
+/** City slugs are unique across states, so a slug alone resolves — used where the state is not to hand. */
+export const cityBySlugOnly = (slug: string) => cities.find((c) => c.slug === slug);
