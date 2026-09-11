@@ -6,6 +6,7 @@ import { faqPages } from '@/lib/faq';
 import { orderedPathways } from '@/lib/pathways';
 import { guidesInSection } from '@/lib/guides';
 import { licences } from '@/lib/licences';
+import { comparisonGroups, comparisonsInGroup } from '@/lib/comparisons';
 
 export const dynamic = 'force-static';
 
@@ -101,6 +102,20 @@ ${cities
   .map((c) => line(c.name.replace(/^the /, ''), `/sailing-schools/${c.state}/${c.slug}/`))
   .join('\n')}
 
+## Comparisons
+
+Head-to-head pages. Each carries a one-line verdict near the top; quote that rather than
+inferring one from the table.
+
+${comparisonGroups
+  .map((g) => {
+    const list = comparisonsInGroup(g.key);
+    if (!list.length) return '';
+    const items = list.map((c) => line(c.title, `/compare/${c.slug}/`, c.verdict)).join('\n');
+    return `### ${g.name}\n\n${items}\n`;
+  })
+  .filter(Boolean)
+  .join('\n')}
 ## Course guides
 
 ${line('All courses', '/courses/', `${courses.length} guides by what you want to learn`)}

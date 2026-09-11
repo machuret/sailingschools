@@ -12,6 +12,7 @@ import { schemeNames, coursesInScheme, type SchemeKey } from '@/lib/scheme-cours
 import { licences } from '@/lib/licences';
 import { orderedPathways } from '@/lib/pathways';
 import { guidesInSection } from '@/lib/guides';
+import { comparisonGroups, comparisonsInGroup } from '@/lib/comparisons';
 import { routes } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -85,6 +86,7 @@ export default function HtmlSitemapPage() {
             </Group>
             <Group title="Qualification schemes" note="Each training body and the courses it awards.">
               <Item href="/qualifications/rya-vs-iyt-vs-asa/">RYA vs IYT vs ASA compared</Item>
+              <Item href="/compare/">All comparisons</Item>
               <Item href="/australian-sailing/">Australian Sailing</Item>
               <Item href="/rya/">RYA</Item>
               <Item href="/rya/competent-crew/">RYA Competent Crew</Item>
@@ -186,6 +188,24 @@ export default function HtmlSitemapPage() {
                 </Item>
               ))}
             </Group>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
+          <h2 className="h2">Comparisons</h2>
+          <p className="copy">Head-to-head pages, each one with the answer at the top.</p>
+          <div className="cols" style={{ marginTop: 32 }}>
+            {comparisonGroups.map((g) => (
+              <Group title={g.name} key={g.key}>
+                {comparisonsInGroup(g.key).map((c) => (
+                  <Item href={`/compare/${c.slug}/`} key={c.slug}>
+                    {c.title}
+                  </Item>
+                ))}
+              </Group>
+            ))}
           </div>
         </div>
       </section>

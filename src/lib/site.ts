@@ -2,6 +2,7 @@ import { cities } from './cities';
 import { courses } from './courses';
 import { faqPages } from './faq';
 import { guides } from './guides';
+import { comparisons } from './comparisons';
 import { pathways } from './pathways';
 import { licences } from './licences';
 import { schemeCourses } from './scheme-courses';
@@ -41,6 +42,7 @@ const staticRoutes: SiteRoute[] = [
   { path: '/pathways/complete-beginner/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/courses/', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/pathways/', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/compare/', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/learn/', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/learn/points-of-sail/', priority: 0.8, changeFrequency: 'yearly' },
   { path: '/faq/', priority: 0.8, changeFrequency: 'monthly' },
@@ -97,6 +99,13 @@ const pathwayRoutes: SiteRoute[] = pathways.map((p) => ({
   changeFrequency: 'monthly',
 }));
 
+/** Head-to-head comparison pages. */
+const comparisonRoutes: SiteRoute[] = comparisons.map((c) => ({
+  path: `/compare/${c.slug}/`,
+  priority: 0.8,
+  changeFrequency: 'monthly',
+}));
+
 /** Long-form explainers under /learn/ that are not licence records. */
 const guideRoutes: SiteRoute[] = guides.map((g) => ({
   path: `/learn/${g.slug}/`,
@@ -120,6 +129,7 @@ const allRoutes: SiteRoute[] = [
   ...licenceRoutes,
   ...pathwayRoutes,
   ...guideRoutes,
+  ...comparisonRoutes,
   ...faqRoutes,
 ];
 

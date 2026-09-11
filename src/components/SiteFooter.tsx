@@ -36,6 +36,7 @@ export default function SiteFooter() {
                 <Link href="/iyt/">IYT</Link>
                 <Link href="/asa/">American Sailing</Link>
                 <Link href="/qualifications/rya-vs-iyt-vs-asa/">Compare qualifications</Link>
+                <Link href="/compare/">All comparisons</Link>
               </div>
               <div>
                 <h4>Schools</h4>

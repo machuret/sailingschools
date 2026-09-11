@@ -9,7 +9,7 @@ const LINKS = [
   { href: '/sailing-schools/new-south-wales/sydney/', label: 'Schools', section: '/sailing-schools/' },
   { href: '/courses/', label: 'Courses', section: '/courses' },
   { href: '/pathways/', label: 'Pathways', section: '/pathways' },
-  { href: '/qualifications/rya-vs-iyt-vs-asa/', label: 'Qualifications', section: '/qualifications' },
+  { href: '/compare/', label: 'Compare', section: '/compare' },
   { href: '/learn/', label: 'Guides', section: '/learn' },
 ];
 
