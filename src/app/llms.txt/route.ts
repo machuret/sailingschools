@@ -56,6 +56,8 @@ ${line('Home', '/', 'what the site covers')}
 ${line('Find a course', '/find-a-course/', 'three questions to a starting course')}
 ${line('How to learn to sail from zero', '/pathways/complete-beginner/', 'the three routes in')}
 ${line('FAQ', '/faq/', 'short answers to common questions')}
+${line('Glossary', '/glossary/', '94 sailing terms in plain English')}
+${line('Points of sail', '/learn/points-of-sail/', 'the diagram every course starts with')}
 
 ## Pathways — by what you want to do
 

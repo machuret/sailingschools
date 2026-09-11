@@ -53,6 +53,7 @@ export default function SiteFooter() {
                 <Link href="/faq/">Questions &amp; answers</Link>
                 <Link href="/pathways/">Pathways by goal</Link>
                 <Link href="/learn/">Guides</Link>
+                <Link href="/glossary/">Sailing terms glossary</Link>
                 <Link href="/learn/boat-licence/">Do you need a boat licence?</Link>
                 <Link href="/learn/sailing-course-costs/">What courses cost</Link>
                 <Link href="/pathways/work-on-boats/">Working on boats</Link>

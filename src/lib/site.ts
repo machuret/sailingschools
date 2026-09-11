@@ -43,6 +43,7 @@ const staticRoutes: SiteRoute[] = [
   { path: '/courses/', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/pathways/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/compare/', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/glossary/', priority: 0.75, changeFrequency: 'monthly' },
   { path: '/learn/', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/learn/points-of-sail/', priority: 0.8, changeFrequency: 'yearly' },
   { path: '/faq/', priority: 0.8, changeFrequency: 'monthly' },

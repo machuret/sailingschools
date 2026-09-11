@@ -82,6 +82,7 @@ export default function HtmlSitemapPage() {
               <Item href="/pathways/">Pathways by goal</Item>
               <Item href="/pathways/complete-beginner/">How to learn to sail from zero</Item>
               <Item href="/learn/">Guides</Item>
+              <Item href="/glossary/">Sailing terms glossary</Item>
               <Item href="/faq/">Frequently asked questions</Item>
             </Group>
             <Group title="Qualification schemes" note="Each training body and the courses it awards.">
