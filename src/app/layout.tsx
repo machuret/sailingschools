@@ -37,6 +37,21 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'SailingSchools.com.au',
     locale: 'en_AU',
+    // One card for the whole site. Generated from the same chart language the pages use
+    // (scripts/og.mjs) and committed, so the build has no image-generation step. Pages
+    // override the title and description through their own metadata; the image is shared.
+    images: [
+      {
+        url: '/og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'SailingSchools.com.au — Australia’s independent guide to learning to sail',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og.jpg'],
   },
 };
 
