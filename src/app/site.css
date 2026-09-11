@@ -315,7 +315,8 @@ em.serif { font-style: italic; }
 .pos-tack { margin-top: 22px; display: inline-flex; align-items: center; gap: 9px; cursor: pointer; border: 0; font: inherit; }
 
 @media (max-width: 900px) { .pos { grid-template-columns: 1fr; gap: 32px; } }
-@media (prefers-reduced-motion: reduce) { .pos-wind path { animation: none; opacity: .4; } }
+@media (prefers-reduced-motion: reduce) {
+  main { animation: none; } .pos-wind path { animation: none; opacity: .4; } }
 
 
 /* deep — a full-bleed dark band. The page is otherwise light end to end, and a long
@@ -338,6 +339,16 @@ em.serif { font-style: italic; }
 .sec.deep .pos-tack { color: var(--white); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .32); background: transparent; }
 .sec.deep .pos-tack:hover { box-shadow: inset 0 0 0 1px var(--cyan); }
 
+
+/* Page entry. React's ViewTransition needs an experimental React build, which is not a
+   dependency this site should carry, so the crossfade is done the plain way: main content
+   animates in on mount, which is once per navigation. Short enough not to be in the way.
+   `@view-transition` is declared for browsers doing a real document navigation - a hard
+   reload or a back/forward restore - where it costs nothing and improves those. */
+@view-transition { navigation: auto; }
+main { animation: page-in 260ms var(--ease) both; }
+@keyframes page-in { from { opacity: 0; transform: translateY(7px); } }
+
 /* qa — a short question-and-answer run inside a long-form guide */
 .qa { margin-top: 26px; border-top: 1px solid var(--line); }
 .qa-item { padding: 22px 0; border-bottom: 1px solid var(--line); }
@@ -356,17 +367,27 @@ em.serif { font-style: italic; }
 .bullets li::before { content: ''; position: absolute; left: 4px; top: 1.05em; width: 7px; height: 7px;
   border-radius: 50%; background: var(--orange); }
 
-.track { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
+/* A pathway is a passage, so it is drawn as one: a dashed rhumb line down the left with a
+   waypoint against each stage, rather than a stack of unrelated boxes. */
+.track { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; position: relative; padding-left: 42px; }
+.track::before { content: ''; position: absolute; left: 14px; top: 16px; bottom: 16px; width: 2px;
+  background: repeating-linear-gradient(to bottom, var(--blue) 0 7px, transparent 7px 15px); opacity: .5; }
+.track .node + .node::after { content: ''; position: absolute; left: -30px; top: -14px; width: 5px; height: 5px;
+  border-right: 1.6px solid var(--blue); border-bottom: 1.6px solid var(--blue);
+  transform: rotate(45deg); opacity: .55; }
 .track .node { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px 20px; font-weight: 600; color: var(--navy); font-size: 15.5px; position: relative; }
+.track .node::before { content: ''; position: absolute; left: -35px; top: calc(50% - 7px); width: 14px; height: 14px;
+  border-radius: 50%; background: var(--surface); box-shadow: inset 0 0 0 2.5px var(--blue);
+  transition: box-shadow var(--t) var(--ease), background var(--t) var(--ease); }
+.track a.node:hover::before { box-shadow: inset 0 0 0 2.5px var(--orange); }
+.track .node.dim::before { box-shadow: inset 0 0 0 2px var(--sky); }
+.track .node.now::before, .track .node.lead::before { background: var(--orange); box-shadow: inset 0 0 0 2.5px var(--orange), 0 0 0 4px rgba(255, 90, 31, .18); }
 .track .node.dim { background: var(--sky-2); box-shadow: none; color: var(--navy-3); font-weight: 500; }
 .track .node.now { background: var(--orange); color: var(--white); }
 .track .node.lead { background: var(--navy); color: var(--white); }
 /* `.lead` is also the display-type class, whose serif face and 30ch max-width would
    otherwise leak into a pathway node carrying the same modifier. */
 .track .node.lead { max-width: none; font-family: var(--sans); font-size: 15.5px; line-height: 1.6; font-weight: 600; letter-spacing: -0.01em; }
-.track .node::after { content: "\2193"; position: absolute; left: 50%; bottom: -13px; transform: translateX(-50%); color: var(--muted); font-size: 12px; line-height: 1; background: var(--bg); padding: 0 4px; }
-.track .node:last-child::after { display: none; }
-.panel .track .node::after { background: var(--cream); }
 .chain { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; font-size: 14.5px; }
 .chain .tag { padding: 9px 16px; font-size: 14px; }
 .chain .sep { color: var(--muted); }
@@ -449,6 +470,9 @@ em.serif { font-style: italic; }
   .ft-in { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
+  .track { padding-left: 32px; }
+  .track::before { left: 10px; }
+  .track .node::before { left: -27px; }
   .rung { grid-template-columns: 36px minmax(0, 1fr); gap: 14px; padding: 20px 18px; }
   .rung-n { width: 36px; height: 36px; font-size: 0.9375rem; }
   .hdr .util .hide-m { display: none; }
@@ -665,8 +689,6 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 :root[data-theme='dark'] .glass { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .16); }
 :root[data-theme='dark'] :root[data-theme='dark'] .step .num { background: var(--sky); color: #eaf4fb; }
 :root[data-theme='dark'] .hdr { background: rgba(8, 23, 36, .86); }
-:root[data-theme='dark'] .track .node::after { background: var(--bg); }
-:root[data-theme='dark'] .panel .track .node::after { background: var(--cream); }
 
 :root[data-theme='dark'] .tag-outline { border-color: var(--sky); color: var(--surface-ink); }
 :root[data-theme='dark'] .cta-band { border: 1px solid var(--line); }
