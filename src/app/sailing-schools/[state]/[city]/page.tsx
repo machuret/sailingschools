@@ -8,7 +8,7 @@ import JsonLd from '@/components/JsonLd';
 import { itemList } from '@/lib/schema';
 import { cities, cityBySlug, citiesInState } from '@/lib/cities';
 import { cityCoursesIn, cityCourseTopicBySlug } from '@/lib/city-courses';
-import { schoolsInState } from '@/lib/schools';
+import { schoolsInCity } from '@/lib/schools';
 import { stateByKey } from '@/lib/states';
 
 type Params = { params: Promise<{ state: string; city: string }> };
@@ -34,7 +34,7 @@ export default async function CityPage({ params }: Params) {
   if (!record) notFound();
 
   const stateRecord = stateByKey(record.state)!;
-  const list = schoolsInState(record.state);
+  const list = schoolsInCity(record.state, record.slug);
   const verified = list.filter((s) => s.website || s.region);
   const unverified = list.filter((s) => !s.website && !s.region);
   const nearby = citiesInState(record.state).filter((c) => c.slug !== record.slug);

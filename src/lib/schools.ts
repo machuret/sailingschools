@@ -380,22 +380,20 @@ const governedSchools = youSailSnapshot.schools as YouSailSchool[];
 export const schools: School[] = mergeGovernedFacts(editorialSchools, governedSchools);
 
 function mergeGovernedFacts(editorial: School[], governed: YouSailSchool[]): School[] {
-  const remaining = new Map(governed.map((school) => [school.sourceSlug, school]));
-  const byWebsite = new Map(governed.filter((school) => school.website).map((school) => [normaliseWebsite(school.website!), school]));
-  const byName = new Map(governed.map((school) => [normaliseName(school.name), school]));
-  const merged = editorial.map((school) => {
-    const source = (school.website ? byWebsite.get(normaliseWebsite(school.website)) : undefined)
-      ?? byName.get(normaliseName(school.name));
-    if (!source) return school;
-    remaining.delete(source.sourceSlug);
+  const byWebsite = new Map(editorial.filter((school) => school.website).map((school) => [normaliseWebsite(school.website!), school]));
+  const byName = new Map(editorial.map((school) => [normaliseName(school.name), school]));
+  const merged = governed.map((source) => {
+    const school = (source.website ? byWebsite.get(normaliseWebsite(source.website)) : undefined)
+      ?? byName.get(normaliseName(source.name));
     return {
       ...school,
+      ...source,
       name: source.name,
       state: source.state,
-      region: source.region ?? school.region,
-      website: source.website ?? school.website,
-      checked: formatChecked(source.checked) ?? school.checked,
-      logo: source.logo ?? school.logo,
+      region: source.region ?? school?.region,
+      website: source.website ?? school?.website,
+      checked: formatChecked(source.checked) ?? school?.checked,
+      logo: source.logo ?? school?.logo,
       sourceSlug: source.sourceSlug,
       sourceUrl: source.sourceUrl,
       phone: source.phone,
@@ -404,9 +402,6 @@ function mergeGovernedFacts(editorial: School[], governed: YouSailSchool[]): Sch
       freshness: source.freshness,
     };
   });
-  for (const source of remaining.values()) {
-    merged.push({ ...source, checked: formatChecked(source.checked) });
-  }
   return merged.sort((left, right) => left.name.localeCompare(right.name));
 }
 
@@ -426,5 +421,26 @@ function formatChecked(value: string | undefined): string | undefined {
 }
 
 export const schoolsInState = (state: StateKey) => schools.filter((s) => s.state === state);
+const cityLocationMatchers: Readonly<Record<string, RegExp>> = {
+  "new-south-wales/sydney": /sydney|rushcutters|darling harbour|lavender bay|balmain|mosman|middle harbour|drummoyne|botany|cronulla/iu,
+  "new-south-wales/pittwater": /pittwater|newport|broken bay|hawkesbury|barrenjoey/iu,
+  "new-south-wales/port-stephens": /port stephens|nelson bay|broughton/iu,
+  "victoria/melbourne": /melbourne|port phillip|docklands|patterson|albert park|hobsons bay/iu,
+  "victoria/geelong": /geelong|corio bay/iu,
+  "victoria/gippsland-lakes": /gippsland|lakes entrance|paynesville|metung/iu,
+  "queensland/brisbane": /brisbane|moreton bay|manly|redcliffe|scarborough/iu,
+  "queensland/whitsundays": /whitsunday|airlie beach|hamilton island/iu,
+  "queensland/gold-coast": /gold coast|broadwater|coomera|south stradbroke/iu,
+  "queensland/sunshine-coast": /sunshine coast|mooloolaba/iu,
+  "western-australia/perth": /perth|fremantle|cockburn|swan river/iu,
+  "south-australia/adelaide": /adelaide|gulf st vincent|outer harbor|holdfast/iu,
+  "tasmania/hobart": /hobart|derwent|sandy bay|d.entrecasteaux|storm bay/iu,
+};
+
+export const schoolsInCity = (state: StateKey, city: string) => {
+  const matcher = cityLocationMatchers[`${state}/${city}`];
+  if (!matcher) return [];
+  return schoolsInState(state).filter((school) => matcher.test(school.region ?? ""));
+};
 export const schoolsWithScheme = (scheme: string) =>
   schools.filter((s) => s.scheme?.includes(scheme));

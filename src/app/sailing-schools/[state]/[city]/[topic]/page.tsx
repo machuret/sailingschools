@@ -7,7 +7,7 @@ import SchoolCard from '@/components/SchoolCard';
 import JsonLd from '@/components/JsonLd';
 import { itemList, webPage } from '@/lib/schema';
 import { cityBySlug, cityBySlugOnly } from '@/lib/cities';
-import { schoolsInState } from '@/lib/schools';
+import { schoolsInCity } from '@/lib/schools';
 import {
   cityCourses,
   cityCourseFor,
@@ -50,7 +50,7 @@ export default async function CityCoursePage({ params }: Params) {
   const { cityRecord, topicRecord, record } = found;
 
   const name = cityRecord.name.replace(/^the /, 'the ');
-  const schools = schoolsInState(cityRecord.state);
+  const schools = schoolsInCity(cityRecord.state, cityRecord.slug);
   const verified = schools.filter((s) => s.website || s.region);
   const others = cityCoursesIn(cityRecord.slug).filter((c) => c.topic !== topic);
 
