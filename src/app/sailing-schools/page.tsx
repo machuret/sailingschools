@@ -129,10 +129,10 @@ export default function SchoolsIndexPage() {
               cannot pay for placement.
             </p>
             <div className="rows">
-              <Link className="row" href="/schools/harbourline-sailing-school/">
+              <Link className="row" href="/schools/adventure-sailing/">
                 <div>
                   <h3>What a school profile contains</h3>
-                  <p>See the sample profile every listing follows</p>
+                  <p>See a live profile synchronised from YouSail</p>
                 </div>
                 <span className="arrow">
                   <i className="ph-duotone ph-caret-right" />

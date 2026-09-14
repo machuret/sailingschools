@@ -105,7 +105,6 @@ export default function HtmlSitemapPage() {
           <div className="cols" style={{ marginTop: 32 }}>
             <Group title="Directory">
               <Item href="/sailing-schools/">All states and territories</Item>
-              <Item href="/schools/harbourline-sailing-school/">Sample school profile</Item>
             </Group>
             <Group title="By state">
               {states.map((s) => (

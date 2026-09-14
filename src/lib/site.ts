@@ -58,7 +58,6 @@ const staticRoutes: SiteRoute[] = [
   { path: '/iyt/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/asa/', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/australian-sailing/', priority: 0.9, changeFrequency: 'monthly' },
-  { path: '/schools/harbourline-sailing-school/', priority: 0.5, changeFrequency: 'monthly' },
 ];
 
 /** State directory pages are generated from the school data, so they are derived here too. */
