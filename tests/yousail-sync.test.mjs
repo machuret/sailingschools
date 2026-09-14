@@ -21,6 +21,34 @@ test('fetches every paginated school including territories', async () => {
   assert.equal(schools[1].state, 'northern-territory');
 });
 
+test('recovers from a transient 503 without delaying the test', async () => {
+  const responses = [
+    { ok: false, status: 503 },
+    { ok: true, json: async () => ({ pagination: { totalCount: 1 }, schools: [{ slug: 'alpha' }] }) },
+    { ok: true, json: async () => ({ school: school('alpha', 'NSW') }) },
+  ];
+  const waits = [];
+  const schools = await fetchYouSailSchools({
+    apiBaseUrl: 'https://example.test',
+    secret: 'x'.repeat(32),
+    fetchImpl: async () => responses.shift(),
+    sleepImpl: async (milliseconds) => waits.push(milliseconds),
+  });
+  assert.equal(schools.length, 1);
+  assert.deepEqual(waits, [750]);
+});
+
+test('does not retry permanent API errors', async () => {
+  let calls = 0;
+  await assert.rejects(fetchYouSailSchools({
+    apiBaseUrl: 'https://example.test',
+    secret: 'x'.repeat(32),
+    fetchImpl: async () => { calls += 1; return { ok: false, status: 401 }; },
+    sleepImpl: async () => assert.fail('permanent errors must not sleep or retry'),
+  }), /HTTP 401/);
+  assert.equal(calls, 1);
+});
+
 test('builds a dated, deterministic snapshot', () => {
   const snapshot = buildSchoolSnapshot({ schools: [{ sourceSlug: 'one' }], apiBaseUrl: 'https://example.test/', now: new Date('2026-09-14T00:00:00Z') });
   assert.deepEqual(snapshot._meta, { source: 'https://example.test', syncedAt: '2026-09-14T00:00:00.000Z', total: 1 });
