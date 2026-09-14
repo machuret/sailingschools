@@ -1,13 +1,13 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-14T11:12:52.386Z",
+    "syncedAt": "2026-09-14T16:05:11.710Z",
     "total": 15
   },
   "schools": [
     {
       "sourceSlug": "adventure-sailing",
-      "sourceUrl": "https://yousail.vercel.app/directory/adventure-sailing",
+      "sourceUrl": "https://yousail.com.au/directory/adventure-sailing",
       "sourceUpdatedAt": "2026-09-05T11:18:10.407986+00:00",
       "name": "Adventure Sailing",
       "state": "western-australia",
@@ -15,8 +15,8 @@
       "website": "https://www.adventuresailing.com.au/",
       "phone": "0428372931",
       "email": "hello@adventuresailing.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/4254239b-6dbd-438c-8b84-567721a7b140?v=1788607090",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/16fbf95e-5b3b-44a2-a9f3-75cc1f07db80?v=1788593203",
+      "logo": "https://yousail.com.au/api/directory/image/4254239b-6dbd-438c-8b84-567721a7b140?v=1788607090",
+      "featureImage": "https://yousail.com.au/api/editorial-images/16fbf95e-5b3b-44a2-a9f3-75cc1f07db80?v=1788593203",
       "checked": "2026-09-05T07:34:05.022791+00:00",
       "freshness": "current",
       "services": [
@@ -25,15 +25,15 @@
     },
     {
       "sourceSlug": "atlas-sailing",
-      "sourceUrl": "https://yousail.vercel.app/directory/atlas-sailing",
+      "sourceUrl": "https://yousail.com.au/directory/atlas-sailing",
       "sourceUpdatedAt": "2026-09-05T12:02:46.148047+00:00",
       "name": "Atlas Sailing",
       "state": "australia-wide",
       "region": "Mosman Bay",
       "website": "https://www.atlassailing.com.au/w/",
       "phone": "02 8467 2385",
-      "logo": "https://yousail.vercel.app/api/directory/image/83897c9f-da0a-4f1c-868c-b15f55abf832?v=1788609766",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/6f042c82-6d23-4322-8161-74276c22a9d7?v=1788609792",
+      "logo": "https://yousail.com.au/api/directory/image/83897c9f-da0a-4f1c-868c-b15f55abf832?v=1788609766",
+      "featureImage": "https://yousail.com.au/api/editorial-images/6f042c82-6d23-4322-8161-74276c22a9d7?v=1788609792",
       "checked": "2026-09-05T11:38:40.814071+00:00",
       "freshness": "current",
       "services": [
@@ -42,7 +42,7 @@
     },
     {
       "sourceSlug": "blue-water-sailing-school",
-      "sourceUrl": "https://yousail.vercel.app/directory/blue-water-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/blue-water-sailing-school",
       "sourceUpdatedAt": "2026-09-05T10:45:50.420805+00:00",
       "name": "Blue Water Sailing School",
       "state": "victoria",
@@ -50,8 +50,8 @@
       "website": "https://bluewatersail.com.au/",
       "phone": "0412 878 739",
       "email": "info@bluewatersail.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/5288b45a-1928-4c20-8620-2d49eff0f47d?v=1788605117",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/8b76d4ff-2ad0-485c-88aa-2700bac06762?v=1788598163",
+      "logo": "https://yousail.com.au/api/directory/image/5288b45a-1928-4c20-8620-2d49eff0f47d?v=1788605117",
+      "featureImage": "https://yousail.com.au/api/editorial-images/8b76d4ff-2ad0-485c-88aa-2700bac06762?v=1788598163",
       "checked": "2026-08-18T14:05:07.81282+00:00",
       "freshness": "current",
       "services": [
@@ -60,7 +60,7 @@
     },
     {
       "sourceSlug": "cruising-yacht-club-of-south-australia",
-      "sourceUrl": "https://yousail.vercel.app/directory/cruising-yacht-club-of-south-australia",
+      "sourceUrl": "https://yousail.com.au/directory/cruising-yacht-club-of-south-australia",
       "sourceUpdatedAt": "2026-09-09T23:48:03.137291+00:00",
       "name": "Cruising Yacht Club of South Australia",
       "state": "south-australia",
@@ -68,7 +68,7 @@
       "website": "https://cycsa.com.au",
       "phone": "08 8248 4222",
       "email": "reception@cycsa.com.au",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/87c1494f-41f9-4011-a6fd-5b089a444c81?v=1786929902",
+      "featureImage": "https://yousail.com.au/api/editorial-images/87c1494f-41f9-4011-a6fd-5b089a444c81?v=1786929902",
       "checked": "2026-08-15T14:17:58.342978+00:00",
       "freshness": "current",
       "services": [
@@ -82,7 +82,7 @@
     },
     {
       "sourceSlug": "flying-fish-sailing",
-      "sourceUrl": "https://yousail.vercel.app/directory/flying-fish-sailing",
+      "sourceUrl": "https://yousail.com.au/directory/flying-fish-sailing",
       "sourceUpdatedAt": "2026-09-05T11:07:54.555252+00:00",
       "name": "Flying Fish Sailing",
       "state": "new-south-wales",
@@ -90,8 +90,8 @@
       "website": "https://flyingfishsailing.com.au/",
       "phone": "+61 2 9969 8590",
       "email": "help@flyingfishsailing.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/6e30ae37-0e81-4cbe-9a59-db25a7a025c7?v=1788606474",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/9a435bfd-bf32-4291-bbb6-78fd24710ef4?v=1788010401",
+      "logo": "https://yousail.com.au/api/directory/image/6e30ae37-0e81-4cbe-9a59-db25a7a025c7?v=1788606474",
+      "featureImage": "https://yousail.com.au/api/editorial-images/9a435bfd-bf32-4291-bbb6-78fd24710ef4?v=1788010401",
       "checked": "2026-09-05T08:33:45.942781+00:00",
       "freshness": "current",
       "services": [
@@ -100,7 +100,7 @@
     },
     {
       "sourceSlug": "gladesville-bridge-marina",
-      "sourceUrl": "https://yousail.vercel.app/directory/gladesville-bridge-marina",
+      "sourceUrl": "https://yousail.com.au/directory/gladesville-bridge-marina",
       "sourceUpdatedAt": "2026-09-01T03:32:26.44374+00:00",
       "name": "Gladesville Bridge Marina",
       "state": "new-south-wales",
@@ -108,7 +108,7 @@
       "website": "https://gbmarina.com.au",
       "phone": "02 9181 2014",
       "email": "info@gbmarina.com.au",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/3dbe5795-64ec-485e-a543-483c6cde347d?v=1788393978",
+      "featureImage": "https://yousail.com.au/api/editorial-images/3dbe5795-64ec-485e-a543-483c6cde347d?v=1788393978",
       "checked": "2026-08-13T00:28:03.804418+00:00",
       "freshness": "current",
       "services": [
@@ -122,7 +122,7 @@
     },
     {
       "sourceSlug": "mainstay-sailing",
-      "sourceUrl": "https://yousail.vercel.app/directory/mainstay-sailing",
+      "sourceUrl": "https://yousail.com.au/directory/mainstay-sailing",
       "sourceUpdatedAt": "2026-09-05T11:44:50.021493+00:00",
       "name": "Mainstay Sailing",
       "state": "queensland",
@@ -130,8 +130,8 @@
       "website": "https://www.mainstaysailing.com.au/",
       "phone": "+61 402 429 152",
       "email": "info@mainstaysailing.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/1a97ce39-0846-425e-9f9d-d0243e3ef0b5?v=1788606865",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/6e74ddfc-c22f-4f7d-bb6b-a6674f59e7fa?v=1788607048",
+      "logo": "https://yousail.com.au/api/directory/image/1a97ce39-0846-425e-9f9d-d0243e3ef0b5?v=1788606865",
+      "featureImage": "https://yousail.com.au/api/editorial-images/6e74ddfc-c22f-4f7d-bb6b-a6674f59e7fa?v=1788607048",
       "checked": "2026-09-05T11:38:49.621809+00:00",
       "freshness": "current",
       "services": [
@@ -140,7 +140,7 @@
     },
     {
       "sourceSlug": "marina-adelaide",
-      "sourceUrl": "https://yousail.vercel.app/directory/marina-adelaide",
+      "sourceUrl": "https://yousail.com.au/directory/marina-adelaide",
       "sourceUpdatedAt": "2026-09-01T03:32:26.44374+00:00",
       "name": "Marina Adelaide",
       "state": "south-australia",
@@ -148,7 +148,7 @@
       "website": "https://www.marinaadelaide.com.au",
       "phone": "(08) 8169 0000",
       "email": "info@marinaadelaide.com.au",
-      "featureImage": "https://yousail.vercel.app/api/directory/image/7e864993-d448-425f-9bde-a0a2c26e61da?v=1786799586",
+      "featureImage": "https://yousail.com.au/api/directory/image/7e864993-d448-425f-9bde-a0a2c26e61da?v=1786799586",
       "checked": "2026-08-13T00:28:03.804418+00:00",
       "freshness": "current",
       "services": [
@@ -163,7 +163,7 @@
     },
     {
       "sourceSlug": "mooloolaba-marina",
-      "sourceUrl": "https://yousail.vercel.app/directory/mooloolaba-marina",
+      "sourceUrl": "https://yousail.com.au/directory/mooloolaba-marina",
       "sourceUpdatedAt": "2026-09-01T03:32:26.44374+00:00",
       "name": "Mooloolaba Marina",
       "state": "queensland",
@@ -171,7 +171,7 @@
       "website": "https://mooloolabamarina.com.au",
       "phone": "07 5444 5653",
       "email": "info@mooloolabamarina.com.au",
-      "featureImage": "https://yousail.vercel.app/api/directory/image/69f52fe4-5a8a-4c67-aa07-f349c7a4d167?v=1786799560",
+      "featureImage": "https://yousail.com.au/api/directory/image/69f52fe4-5a8a-4c67-aa07-f349c7a4d167?v=1786799560",
       "checked": "2026-08-13T00:28:03.804418+00:00",
       "freshness": "current",
       "services": [
@@ -183,7 +183,7 @@
     },
     {
       "sourceSlug": "oceanwest-rya-sailing-school",
-      "sourceUrl": "https://yousail.vercel.app/directory/oceanwest-rya-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/oceanwest-rya-sailing-school",
       "sourceUpdatedAt": "2026-09-05T10:48:13.938465+00:00",
       "name": "Oceanwest RYA Sailing School",
       "state": "western-australia",
@@ -191,8 +191,8 @@
       "website": "https://www.oceanwest.net.au/",
       "phone": "0412 060 130",
       "email": "sailing@oceanwest.net.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/3e2172e6-d22c-4304-885b-3523065bb93f?v=1788605294",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/fa54fc71-0ce3-4c48-aef7-7476b531078b?v=1788605323",
+      "logo": "https://yousail.com.au/api/directory/image/3e2172e6-d22c-4304-885b-3523065bb93f?v=1788605294",
+      "featureImage": "https://yousail.com.au/api/editorial-images/fa54fc71-0ce3-4c48-aef7-7476b531078b?v=1788605323",
       "checked": "2026-08-19T23:43:35.824818+00:00",
       "freshness": "current",
       "services": [
@@ -201,15 +201,15 @@
     },
     {
       "sourceSlug": "pacific-sailing-school",
-      "sourceUrl": "https://yousail.vercel.app/directory/pacific-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/pacific-sailing-school",
       "sourceUpdatedAt": "2026-09-05T10:47:01.731687+00:00",
       "name": "Pacific Sailing School",
       "state": "new-south-wales",
       "region": "Sydney",
       "website": "https://pacificsailingschool.com.au/",
       "phone": "(+61) 2-9326-2399",
-      "logo": "https://yousail.vercel.app/api/directory/image/2c445d75-5f5e-4242-8f0d-7b57826a34e6?v=1788603877",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/31f7e441-a3e6-476a-a45e-223fbe997d90?v=1788603847",
+      "logo": "https://yousail.com.au/api/directory/image/2c445d75-5f5e-4242-8f0d-7b57826a34e6?v=1788603877",
+      "featureImage": "https://yousail.com.au/api/editorial-images/31f7e441-a3e6-476a-a45e-223fbe997d90?v=1788603847",
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
@@ -217,7 +217,7 @@
     },
     {
       "sourceSlug": "paper-sailors-rock",
-      "sourceUrl": "https://yousail.vercel.app/directory/paper-sailors-rock",
+      "sourceUrl": "https://yousail.com.au/directory/paper-sailors-rock",
       "sourceUpdatedAt": "2026-09-05T12:05:13.748708+00:00",
       "name": "Paper Sailors Rock",
       "state": "australia-wide",
@@ -225,8 +225,8 @@
       "website": "https://www.papersailorsrock.com.au/",
       "phone": "0407 044 663",
       "email": "annette@papersailorsrock.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/3a6aca4c-f89b-479d-8cb0-0351298b133c?v=1788609390",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/9da37f99-33b3-4c57-8b2a-b18cf03e9228?v=1788609419",
+      "logo": "https://yousail.com.au/api/directory/image/3a6aca4c-f89b-479d-8cb0-0351298b133c?v=1788609390",
+      "featureImage": "https://yousail.com.au/api/editorial-images/9da37f99-33b3-4c57-8b2a-b18cf03e9228?v=1788609419",
       "checked": "2026-09-05T11:57:03.493307+00:00",
       "freshness": "current",
       "services": [
@@ -235,7 +235,7 @@
     },
     {
       "sourceSlug": "sailing-eventide",
-      "sourceUrl": "https://yousail.vercel.app/directory/sailing-eventide",
+      "sourceUrl": "https://yousail.com.au/directory/sailing-eventide",
       "sourceUpdatedAt": "2026-09-05T10:58:20.215153+00:00",
       "name": "Sailing Eventide",
       "state": "western-australia",
@@ -243,8 +243,8 @@
       "website": "https://www.sailingeventide.com.au/",
       "phone": "0419 968 595",
       "email": "info@sailingeventide.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/3237da07-0d11-4185-8d48-bee27cfd45b9?v=1788605900",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/2bb85733-1d42-4679-879d-d622f7bdea26?v=1788605932",
+      "logo": "https://yousail.com.au/api/directory/image/3237da07-0d11-4185-8d48-bee27cfd45b9?v=1788605900",
+      "featureImage": "https://yousail.com.au/api/editorial-images/2bb85733-1d42-4679-879d-d622f7bdea26?v=1788605932",
       "checked": "2026-08-19T23:58:39.669569+00:00",
       "freshness": "current",
       "services": [
@@ -253,7 +253,7 @@
     },
     {
       "sourceSlug": "sunshine-sailing-australia",
-      "sourceUrl": "https://yousail.vercel.app/directory/sunshine-sailing-australia",
+      "sourceUrl": "https://yousail.com.au/directory/sunshine-sailing-australia",
       "sourceUpdatedAt": "2026-09-05T11:26:36.109193+00:00",
       "name": "Sunshine Sailing Australia",
       "state": "queensland",
@@ -261,8 +261,8 @@
       "website": "https://learn2sail.com.au/",
       "phone": "+61 7 5478 2299",
       "email": "sailing@learn2sail.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/1678be9f-866c-41ab-bb13-102512db9ed3?v=1788606683",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/de0c4b70-ebfc-491b-abf2-0b79ec4e7ddb?v=1788605460",
+      "logo": "https://yousail.com.au/api/directory/image/1678be9f-866c-41ab-bb13-102512db9ed3?v=1788606683",
+      "featureImage": "https://yousail.com.au/api/editorial-images/de0c4b70-ebfc-491b-abf2-0b79ec4e7ddb?v=1788605460",
       "checked": "2026-09-05T11:26:36.109193+00:00",
       "freshness": "current",
       "services": [
@@ -271,15 +271,15 @@
     },
     {
       "sourceSlug": "yachtmaster-sailing-school",
-      "sourceUrl": "https://yousail.vercel.app/directory/yachtmaster-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/yachtmaster-sailing-school",
       "sourceUpdatedAt": "2026-09-10T00:09:26.234127+00:00",
       "name": "Yachtmaster Sailing School",
       "state": "victoria",
       "website": "https://www.yachtmaster.com.au/",
       "phone": "(07) 5461 3634 / 0414 906 017",
       "email": "yacht@yachtmaster.com.au",
-      "logo": "https://yousail.vercel.app/api/directory/image/24bac810-9098-4158-a4ad-7b0323ad6fc9?v=1788607414",
-      "featureImage": "https://yousail.vercel.app/api/editorial-images/ed0f9e25-c820-4994-82e6-92f5d6e28a23?v=1788607052",
+      "logo": "https://yousail.com.au/api/directory/image/24bac810-9098-4158-a4ad-7b0323ad6fc9?v=1788607414",
+      "featureImage": "https://yousail.com.au/api/editorial-images/ed0f9e25-c820-4994-82e6-92f5d6e28a23?v=1788607052",
       "checked": "2026-09-10T00:09:26.234127+00:00",
       "freshness": "current",
       "services": [
