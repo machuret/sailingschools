@@ -1,0 +1,44 @@
+name: Sync YouSail sailing school facts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-yousail-sailing-school-facts
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Refresh governed sailing school facts
+        env:
+          YOUSAIL_CONTENT_API_SECRET: ${{ secrets.YOUSAIL_CONTENT_API_SECRET }}
+        run: node tools/yousail-sync.mjs
+      - name: Verify the site and sync contract
+        run: |
+          npm ci --no-audit --fund=false
+          npm run lint
+          npm run build
+          node --test tests/*.test.mjs
+      - name: Publish changed facts
+        run: |
+          if git diff --quiet; then
+            echo "No sailing school facts changed."
+            exit 0
+          fi
+          git config user.name "machuret"
+          git config user.email "gmachuret@gmail.com"
+          git add -A
+          git commit -m "Sync published sailing school facts from YouSail"
+          git push

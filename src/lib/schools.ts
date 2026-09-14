@@ -1,3 +1,5 @@
+import youSailSnapshot from '../../data/yousail-schools.json';
+
 /**
  * School records.
  *
@@ -43,11 +45,17 @@ export type School = {
    * domain guessed from the school's name.
    */
   logo?: string;
+  sourceSlug?: string;
+  sourceUrl?: string;
+  phone?: string;
+  email?: string;
+  featureImage?: string;
+  freshness?: string;
 };
 
 const CHECKED = 'September 2026';
 
-export const schools: School[] = [
+const editorialSchools: School[] = [
   // ---- New South Wales -------------------------------------------------
   {
     name: 'Pacific Sailing School',
@@ -365,6 +373,57 @@ export const schools: School[] = [
     checked: CHECKED,
   },
 ];
+
+type YouSailSchool = School & { sourceSlug: string; sourceUrl: string; sourceUpdatedAt?: string; services?: string[] };
+const governedSchools = youSailSnapshot.schools as YouSailSchool[];
+
+export const schools: School[] = mergeGovernedFacts(editorialSchools, governedSchools);
+
+function mergeGovernedFacts(editorial: School[], governed: YouSailSchool[]): School[] {
+  const remaining = new Map(governed.map((school) => [school.sourceSlug, school]));
+  const byWebsite = new Map(governed.filter((school) => school.website).map((school) => [normaliseWebsite(school.website!), school]));
+  const byName = new Map(governed.map((school) => [normaliseName(school.name), school]));
+  const merged = editorial.map((school) => {
+    const source = (school.website ? byWebsite.get(normaliseWebsite(school.website)) : undefined)
+      ?? byName.get(normaliseName(school.name));
+    if (!source) return school;
+    remaining.delete(source.sourceSlug);
+    return {
+      ...school,
+      name: source.name,
+      state: source.state,
+      region: source.region ?? school.region,
+      website: source.website ?? school.website,
+      checked: formatChecked(source.checked) ?? school.checked,
+      logo: source.logo ?? school.logo,
+      sourceSlug: source.sourceSlug,
+      sourceUrl: source.sourceUrl,
+      phone: source.phone,
+      email: source.email,
+      featureImage: source.featureImage,
+      freshness: source.freshness,
+    };
+  });
+  for (const source of remaining.values()) {
+    merged.push({ ...source, checked: formatChecked(source.checked) });
+  }
+  return merged.sort((left, right) => left.name.localeCompare(right.name));
+}
+
+function normaliseWebsite(value: string): string {
+  try { return new URL(value).hostname.replace(/^www\./u, '').toLowerCase(); }
+  catch { return value.toLowerCase().replace(/^https?:\/\/(?:www\.)?/u, '').replace(/\/$/u, ''); }
+}
+
+function normaliseName(value: string): string {
+  return value.toLowerCase().replace(/\b(?:pty|limited|ltd)\b/gu, '').replace(/&/gu, 'and').replace(/[^a-z0-9]+/gu, ' ').trim();
+}
+
+function formatChecked(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.valueOf()) ? value : parsed.toLocaleDateString('en-AU', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+}
 
 export const schoolsInState = (state: StateKey) => schools.filter((s) => s.state === state);
 export const schoolsWithScheme = (scheme: string) =>

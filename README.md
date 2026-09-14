@@ -117,6 +117,11 @@ Only states with schools in the directory get a page. The Northern Territory and
 the architecture but have no listed schools, so they are deliberately not published — an empty
 location page is a doorway page.
 
+Published school identity, contact, location, media and freshness facts are refreshed daily from
+YouSail through a private, read-only content feed. `data/yousail-schools.json` is the generated
+snapshot used at build time. This site keeps its own descriptions, course guidance and editorial
+voice; YouSail remains the owner and source of the shared business records.
+
 The URL scheme follows the site architecture in [`content-guide.md`](./content-guide.md), which is
 the editorial source for the remaining state, region, course and pathway pages.
 
