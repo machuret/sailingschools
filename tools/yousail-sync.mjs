@@ -3,6 +3,7 @@ import fs from 'node:fs';
 const STATE_KEYS = {
   NSW: 'new-south-wales', QLD: 'queensland', VIC: 'victoria',
   WA: 'western-australia', SA: 'south-australia', TAS: 'tasmania',
+  NT: 'northern-territory', ACT: 'australian-capital-territory',
 };
 
 export async function fetchYouSailSchools({ apiBaseUrl, secret, fetchImpl = fetch }) {
@@ -39,19 +40,24 @@ export async function fetchYouSailSchools({ apiBaseUrl, secret, fetchImpl = fetc
 }
 
 export function buildSchoolSnapshot({ schools, apiBaseUrl, now = new Date() }) {
+  if (!Array.isArray(schools) || schools.length === 0) {
+    throw new Error('YouSail returned no published sailing schools; refusing to replace the current directory');
+  }
+  if (new Set(schools.map((school) => school.sourceSlug)).size !== schools.length) {
+    throw new Error('YouSail returned duplicate sailing school identities');
+  }
   return {
     _meta: {
       source: apiBaseUrl.replace(/\/$/, ''),
       syncedAt: now.toISOString(),
-      matched: schools.length,
+      total: schools.length,
     },
     schools,
   };
 }
 
 function toSchool(entry) {
-  const state = STATE_KEYS[entry.location?.stateOrTerritory] ?? null;
-  if (state === null) return null;
+  const state = STATE_KEYS[entry.location?.stateOrTerritory] ?? 'australia-wide';
   return compact({
     sourceSlug: entry.slug,
     sourceUrl: entry.canonicalUrl,

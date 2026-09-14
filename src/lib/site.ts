@@ -8,6 +8,7 @@ import { pathways } from './pathways';
 import { licences } from './licences';
 import { schemeCourses } from './scheme-courses';
 import { states } from './states';
+import { schools } from './schools';
 
 /**
  * Canonical origin for the site. Vercel sets VERCEL_PROJECT_PRODUCTION_URL on every
@@ -66,6 +67,12 @@ const stateRoutes: SiteRoute[] = states.map((state) => ({
   priority: 0.8,
   changeFrequency: 'weekly',
 }));
+
+const schoolRoutes: SiteRoute[] = schools.flatMap((school) => school.sourceSlug ? [{
+  path: `/schools/${school.sourceSlug}/`,
+  priority: 0.7,
+  changeFrequency: 'weekly' as const,
+}] : []);
 
 /** Intent course pages, generated from the course records. */
 const courseRoutes: SiteRoute[] = courses.map((c) => ({
@@ -143,6 +150,7 @@ const faqRoutes: SiteRoute[] = faqPages.map((f) => ({
 const allRoutes: SiteRoute[] = [
   ...staticRoutes,
   ...stateRoutes,
+  ...schoolRoutes,
   ...cityRoutes,
   ...courseRoutes,
   ...schemeCourseRoutes,

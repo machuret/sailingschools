@@ -20,7 +20,10 @@ export type StateKey =
   | 'victoria'
   | 'western-australia'
   | 'south-australia'
-  | 'tasmania';
+  | 'tasmania'
+  | 'northern-territory'
+  | 'australian-capital-territory'
+  | 'australia-wide';
 
 export type School = {
   name: string;
@@ -400,6 +403,7 @@ function mergeGovernedFacts(editorial: School[], governed: YouSailSchool[]): Sch
       email: source.email,
       featureImage: source.featureImage,
       freshness: source.freshness,
+      profile: `/schools/${source.sourceSlug}/`,
     };
   });
   return merged.sort((left, right) => left.name.localeCompare(right.name));

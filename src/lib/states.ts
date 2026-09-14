@@ -74,6 +74,30 @@ export const states: StateRecord[] = [
       'Hobart sails the Derwent estuary and the D’Entrecasteaux Channel, with Storm Bay and the Southern Ocean beyond. It is cold-water, high-latitude sailing with real weather, and the shortest-notice conditions of anywhere in the country. Tasmania is a small training market that produces disproportionately capable sailors.',
     regions: ['Hobart', 'Derwent', 'D’Entrecasteaux Channel'],
   },
+  {
+    key: 'northern-territory',
+    name: 'Northern Territory',
+    title: 'Sailing Schools Northern Territory | Darwin Training',
+    description: 'Published sailing schools and training providers in the Northern Territory, synchronised from YouSail.',
+    waters: 'Darwin Harbour combines large tides, tropical weather and a long dry-season sailing calendar. Confirm current training locations and availability directly with each provider.',
+    regions: ['Darwin', 'Darwin Harbour'],
+  },
+  {
+    key: 'australian-capital-territory',
+    name: 'Australian Capital Territory',
+    title: 'Sailing Schools ACT | Canberra Training',
+    description: 'Published sailing schools and training providers in the Australian Capital Territory, synchronised from YouSail.',
+    waters: 'Canberra sailing training is primarily inland. Confirm vessel type, current course availability and practical-water requirements directly with each provider.',
+    regions: ['Canberra', 'Lake Burley Griffin'],
+  },
+  {
+    key: 'australia-wide',
+    name: 'Australia-wide and online',
+    title: 'Australia-wide Sailing Schools | Online & Mobile Training',
+    description: 'Published national, mobile and online sailing-training providers whose YouSail record is not tied to one state.',
+    waters: 'These providers may teach online, travel to students or operate across several states. Their profiles show the current service area supplied by YouSail.',
+    regions: ['Australia-wide', 'Online', 'Mobile training'],
+  },
 ];
 
 export const stateByKey = (key: string) => states.find((s) => s.key === key);

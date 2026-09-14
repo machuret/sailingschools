@@ -27,6 +27,8 @@ const STATE_POINTS: Record<string, { lon: number; lat: number }> = {
   'western-australia': { lon: 121, lat: -25.5 },
   'south-australia': { lon: 135, lat: -29.5 },
   tasmania: { lon: 144.3, lat: -42.9 },
+  'northern-territory': { lon: 133.8, lat: -19.5 },
+  'australian-capital-territory': { lon: 149.1, lat: -35.3 },
 };
 
 export const mapMarkers = cities
