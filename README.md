@@ -1,5 +1,7 @@
 # SailingSchools.com.au
 
+Published school membership is synchronised from YouSail; this site owns its presentation and editorial guidance, not a separate school directory.
+
 Australia's independent guide to sailing schools, sailing courses and sailing qualifications.
 
 A Next.js (App Router) implementation of the "Coastal" design — navy header, orange calls to
