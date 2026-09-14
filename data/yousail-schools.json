@@ -1,8 +1,8 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-14T10:49:50.213Z",
-    "matched": 13
+    "syncedAt": "2026-09-14T11:12:52.386Z",
+    "total": 15
   },
   "schools": [
     {
@@ -18,6 +18,23 @@
       "logo": "https://yousail.vercel.app/api/directory/image/4254239b-6dbd-438c-8b84-567721a7b140?v=1788607090",
       "featureImage": "https://yousail.vercel.app/api/editorial-images/16fbf95e-5b3b-44a2-a9f3-75cc1f07db80?v=1788593203",
       "checked": "2026-09-05T07:34:05.022791+00:00",
+      "freshness": "current",
+      "services": [
+        "Sailing academy / training"
+      ]
+    },
+    {
+      "sourceSlug": "atlas-sailing",
+      "sourceUrl": "https://yousail.vercel.app/directory/atlas-sailing",
+      "sourceUpdatedAt": "2026-09-05T12:02:46.148047+00:00",
+      "name": "Atlas Sailing",
+      "state": "australia-wide",
+      "region": "Mosman Bay",
+      "website": "https://www.atlassailing.com.au/w/",
+      "phone": "02 8467 2385",
+      "logo": "https://yousail.vercel.app/api/directory/image/83897c9f-da0a-4f1c-868c-b15f55abf832?v=1788609766",
+      "featureImage": "https://yousail.vercel.app/api/editorial-images/6f042c82-6d23-4322-8161-74276c22a9d7?v=1788609792",
+      "checked": "2026-09-05T11:38:40.814071+00:00",
       "freshness": "current",
       "services": [
         "Sailing academy / training"
@@ -194,6 +211,24 @@
       "logo": "https://yousail.vercel.app/api/directory/image/2c445d75-5f5e-4242-8f0d-7b57826a34e6?v=1788603877",
       "featureImage": "https://yousail.vercel.app/api/editorial-images/31f7e441-a3e6-476a-a45e-223fbe997d90?v=1788603847",
       "freshness": "unverified",
+      "services": [
+        "Sailing academy / training"
+      ]
+    },
+    {
+      "sourceSlug": "paper-sailors-rock",
+      "sourceUrl": "https://yousail.vercel.app/directory/paper-sailors-rock",
+      "sourceUpdatedAt": "2026-09-05T12:05:13.748708+00:00",
+      "name": "Paper Sailors Rock",
+      "state": "australia-wide",
+      "region": "Manly; Sandy Bay",
+      "website": "https://www.papersailorsrock.com.au/",
+      "phone": "0407 044 663",
+      "email": "annette@papersailorsrock.com.au",
+      "logo": "https://yousail.vercel.app/api/directory/image/3a6aca4c-f89b-479d-8cb0-0351298b133c?v=1788609390",
+      "featureImage": "https://yousail.vercel.app/api/editorial-images/9da37f99-33b3-4c57-8b2a-b18cf03e9228?v=1788609419",
+      "checked": "2026-09-05T11:57:03.493307+00:00",
+      "freshness": "current",
       "services": [
         "Sailing academy / training"
       ]
