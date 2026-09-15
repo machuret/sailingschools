@@ -1,8 +1,8 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-14T21:45:02.454Z",
-    "total": 15
+    "syncedAt": "2026-09-15T04:44:15.743Z",
+    "total": 14
   },
   "schools": [
     {
@@ -59,25 +59,18 @@
       ]
     },
     {
-      "sourceSlug": "cruising-yacht-club-of-south-australia",
-      "sourceUrl": "https://yousail.com.au/directory/cruising-yacht-club-of-south-australia",
-      "sourceUpdatedAt": "2026-09-09T23:48:03.137291+00:00",
-      "name": "Cruising Yacht Club of South Australia",
+      "sourceSlug": "cycsa-marine-academy",
+      "sourceUrl": "https://yousail.com.au/directory/cycsa-marine-academy",
+      "sourceUpdatedAt": "2026-09-15T00:28:20.830017+00:00",
+      "name": "CYCSA Marine Academy",
       "state": "south-australia",
       "region": "North Haven",
-      "website": "https://cycsa.com.au",
+      "website": "https://cycsa.com.au/training/",
       "phone": "08 8248 4222",
-      "email": "reception@cycsa.com.au",
-      "featureImage": "https://yousail.com.au/api/editorial-images/87c1494f-41f9-4011-a6fd-5b089a444c81?v=1786929902",
-      "checked": "2026-08-15T14:17:58.342978+00:00",
-      "freshness": "current",
+      "email": "sailing@cycsa.com.au",
+      "freshness": "unverified",
       "services": [
-        "Berthing & moorings",
-        "Marine fuel",
-        "Haul-out / slipway",
-        "Boat storage",
-        "Sailing academy / training",
-        "Sailing club"
+        "Sailing academy / training"
       ]
     },
     {
@@ -95,28 +88,6 @@
       "checked": "2026-09-05T08:33:45.942781+00:00",
       "freshness": "current",
       "services": [
-        "Sailing academy / training"
-      ]
-    },
-    {
-      "sourceSlug": "gladesville-bridge-marina",
-      "sourceUrl": "https://yousail.com.au/directory/gladesville-bridge-marina",
-      "sourceUpdatedAt": "2026-09-01T03:32:26.44374+00:00",
-      "name": "Gladesville Bridge Marina",
-      "state": "new-south-wales",
-      "region": "Drummoyne",
-      "website": "https://gbmarina.com.au",
-      "phone": "02 9181 2014",
-      "email": "info@gbmarina.com.au",
-      "featureImage": "https://yousail.com.au/api/editorial-images/3dbe5795-64ec-485e-a543-483c6cde347d?v=1788393978",
-      "checked": "2026-08-13T00:28:03.804418+00:00",
-      "freshness": "current",
-      "services": [
-        "Marina service",
-        "Berthing & moorings",
-        "Marine fuel",
-        "Haul-out / slipway",
-        "Boatbuilding & repairs",
         "Sailing academy / training"
       ]
     },
@@ -139,45 +110,17 @@
       ]
     },
     {
-      "sourceSlug": "marina-adelaide",
-      "sourceUrl": "https://yousail.com.au/directory/marina-adelaide",
-      "sourceUpdatedAt": "2026-09-01T03:32:26.44374+00:00",
-      "name": "Marina Adelaide",
-      "state": "south-australia",
-      "region": "Largs North",
-      "website": "https://www.marinaadelaide.com.au",
-      "phone": "(08) 8169 0000",
-      "email": "info@marinaadelaide.com.au",
-      "featureImage": "https://yousail.com.au/api/directory/image/7e864993-d448-425f-9bde-a0a2c26e61da?v=1786799586",
-      "checked": "2026-08-13T00:28:03.804418+00:00",
-      "freshness": "current",
+      "sourceSlug": "navathome-australia",
+      "sourceUrl": "https://yousail.com.au/directory/navathome-australia",
+      "sourceUpdatedAt": "2026-09-15T00:28:29.433756+00:00",
+      "name": "NAVatHOME Australia",
+      "state": "western-australia",
+      "region": "Como",
+      "website": "https://www.navathome.com.au/",
+      "phone": "+61 8 6102 7741",
+      "email": "training@navathome.com.au",
+      "freshness": "unverified",
       "services": [
-        "Marina service",
-        "Berthing & moorings",
-        "Marine fuel",
-        "Haul-out / slipway",
-        "Boat storage",
-        "Boatbuilding & repairs",
-        "Sailing academy / training"
-      ]
-    },
-    {
-      "sourceSlug": "mooloolaba-marina",
-      "sourceUrl": "https://yousail.com.au/directory/mooloolaba-marina",
-      "sourceUpdatedAt": "2026-09-01T03:32:26.44374+00:00",
-      "name": "Mooloolaba Marina",
-      "state": "queensland",
-      "region": "Mooloolaba",
-      "website": "https://mooloolabamarina.com.au",
-      "phone": "07 5444 5653",
-      "email": "info@mooloolabamarina.com.au",
-      "featureImage": "https://yousail.com.au/api/directory/image/69f52fe4-5a8a-4c67-aa07-f349c7a4d167?v=1786799560",
-      "checked": "2026-08-13T00:28:03.804418+00:00",
-      "freshness": "current",
-      "services": [
-        "Marina service",
-        "Berthing & moorings",
-        "Boat storage",
         "Sailing academy / training"
       ]
     },
@@ -265,6 +208,21 @@
       "featureImage": "https://yousail.com.au/api/editorial-images/de0c4b70-ebfc-491b-abf2-0b79ec4e7ddb?v=1788605460",
       "checked": "2026-09-05T11:26:36.109193+00:00",
       "freshness": "current",
+      "services": [
+        "Sailing academy / training"
+      ]
+    },
+    {
+      "sourceSlug": "yachting-directions",
+      "sourceUrl": "https://yousail.com.au/directory/yachting-directions",
+      "sourceUpdatedAt": "2026-09-15T00:28:34.243572+00:00",
+      "name": "Yachting Directions",
+      "state": "new-south-wales",
+      "region": "Palm Beach",
+      "website": "https://www.yachtingdirections.com.au/",
+      "phone": "+61 427 333 353",
+      "email": "info@yachtingdirections.com.au",
+      "freshness": "unverified",
       "services": [
         "Sailing academy / training"
       ]
