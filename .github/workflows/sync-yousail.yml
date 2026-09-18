@@ -42,3 +42,11 @@ jobs:
           git add -A
           git commit -m "Sync published sailing school facts from YouSail"
           git push
+      - name: Mirror main onto the branch Vercel serves production from
+        # Vercel's production branch for this project is not main, so a push to
+        # main alone never reaches sailingschools.com.au. Mirroring keeps
+        # production following main until Project Settings > Git > Production
+        # Branch is set to main, at which point delete this step.
+        # Runs unconditionally: the branch can be behind from earlier runs even
+        # when this run changed nothing.
+        run: git push origin HEAD:refs/heads/claude/hopeful-rubin-w31svl
