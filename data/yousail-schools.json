@@ -1,41 +1,57 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-18T14:31:44.911Z",
-    "total": 15
+    "syncedAt": "2026-09-18T16:18:37.683Z",
+    "total": 18
   },
   "schools": [
     {
       "sourceSlug": "adventure-sailing",
       "sourceUrl": "https://yousail.com.au/directory/adventure-sailing",
-      "sourceUpdatedAt": "2026-09-18T09:19:27.588716+00:00",
+      "sourceUpdatedAt": "2026-09-18T14:59:03.78641+00:00",
       "name": "Adventure Sailing",
       "state": "western-australia",
-      "region": "Geographe Bay and the WA coastline (including Abrolhos Islands departures from Geraldton)",
+      "region": "Geographe",
       "website": "https://www.adventuresailing.com.au/",
       "phone": "0428372931",
       "email": "hello@adventuresailing.com.au",
       "logo": "https://yousail.com.au/api/directory/image/4254239b-6dbd-438c-8b84-567721a7b140?v=1788607090",
       "featureImage": "https://yousail.com.au/api/editorial-images/16fbf95e-5b3b-44a2-a9f3-75cc1f07db80?v=1788593203",
-      "checked": "2026-09-05T07:34:05.022791+00:00",
+      "checked": "2026-09-18T14:59:03.78641+00:00",
       "freshness": "current",
       "services": [
+        "Sailing charter company",
         "Sailing academy / training"
       ]
     },
     {
       "sourceSlug": "atlas-sailing",
       "sourceUrl": "https://yousail.com.au/directory/atlas-sailing",
-      "sourceUpdatedAt": "2026-09-05T12:02:46.148047+00:00",
+      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
       "name": "Atlas Sailing",
-      "state": "australia-wide",
-      "region": "Mosman Bay",
+      "state": "new-south-wales",
+      "region": "Mosman",
       "website": "https://www.atlassailing.com.au/w/",
       "phone": "02 8467 2385",
       "logo": "https://yousail.com.au/api/directory/image/83897c9f-da0a-4f1c-868c-b15f55abf832?v=1788609766",
       "featureImage": "https://yousail.com.au/api/editorial-images/6f042c82-6d23-4322-8161-74276c22a9d7?v=1788609792",
-      "checked": "2026-09-05T11:38:40.814071+00:00",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
+      "services": [
+        "Sailing academy / training"
+      ]
+    },
+    {
+      "sourceSlug": "aussea-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/aussea-sailing-school",
+      "sourceUpdatedAt": "2026-09-18T15:37:19.459154+00:00",
+      "name": "AusSea Sailing School",
+      "state": "new-south-wales",
+      "region": "Sans Souci",
+      "website": "https://ausseasailingschool.com.au/",
+      "phone": "0419 229 522",
+      "email": "info@ausseasailingschool.com.au",
+      "freshness": "unverified",
       "services": [
         "Sailing academy / training"
       ]
@@ -43,7 +59,7 @@
     {
       "sourceSlug": "blue-water-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/blue-water-sailing-school",
-      "sourceUpdatedAt": "2026-09-05T10:45:50.420805+00:00",
+      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
       "name": "Blue Water Sailing School",
       "state": "victoria",
       "region": "Docklands",
@@ -52,57 +68,42 @@
       "email": "info@bluewatersail.com.au",
       "logo": "https://yousail.com.au/api/directory/image/5288b45a-1928-4c20-8620-2d49eff0f47d?v=1788605117",
       "featureImage": "https://yousail.com.au/api/editorial-images/8b76d4ff-2ad0-485c-88aa-2700bac06762?v=1788598163",
-      "checked": "2026-08-18T14:05:07.81282+00:00",
+      "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
       "services": [
-        "Sailing academy / training"
-      ]
-    },
-    {
-      "sourceSlug": "cycsa-marine-academy",
-      "sourceUrl": "https://yousail.com.au/directory/cycsa-marine-academy",
-      "sourceUpdatedAt": "2026-09-15T00:28:20.830017+00:00",
-      "name": "CYCSA Marine Academy",
-      "state": "south-australia",
-      "region": "North Haven",
-      "website": "https://cycsa.com.au/training/",
-      "phone": "08 8248 4222",
-      "email": "sailing@cycsa.com.au",
-      "freshness": "unverified",
-      "services": [
+        "Sailing charter company",
         "Sailing academy / training"
       ]
     },
     {
       "sourceSlug": "flying-fish-sailing",
       "sourceUrl": "https://yousail.com.au/directory/flying-fish-sailing",
-      "sourceUpdatedAt": "2026-09-05T11:07:54.555252+00:00",
+      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
       "name": "Flying Fish Sailing",
       "state": "new-south-wales",
-      "region": "Middle Harbour Yacht Club",
+      "region": "Mosman",
       "website": "https://flyingfishsailing.com.au/",
       "phone": "+61 2 9969 8590",
       "email": "help@flyingfishsailing.com.au",
       "logo": "https://yousail.com.au/api/directory/image/6e30ae37-0e81-4cbe-9a59-db25a7a025c7?v=1788606474",
       "featureImage": "https://yousail.com.au/api/editorial-images/9a435bfd-bf32-4291-bbb6-78fd24710ef4?v=1788010401",
-      "checked": "2026-09-05T08:33:45.942781+00:00",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
       "services": [
         "Sailing academy / training"
       ]
     },
     {
-      "sourceSlug": "kgb-marine-pty-ltd",
-      "sourceUrl": "https://yousail.com.au/directory/kgb-marine-pty-ltd",
-      "sourceUpdatedAt": "2026-09-18T07:59:27.423242+00:00",
-      "name": "KGB Marine Pty Ltd",
-      "state": "western-australia",
-      "region": "Cable Beach",
-      "website": "https://www.kgbmarine.com.au/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=4717041502172875901",
-      "phone": "+61 417 964 664",
-      "featureImage": "https://yousail.com.au/api/directory/image/c300c538-dfa8-4ad5-b36e-642030f4b589?v=1788245659",
-      "checked": "2026-09-18T07:59:27.423242+00:00",
-      "freshness": "current",
+      "sourceSlug": "liquid-edge-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/liquid-edge-sailing-school",
+      "sourceUpdatedAt": "2026-09-18T15:39:13.223973+00:00",
+      "name": "Liquid Edge Sailing School",
+      "state": "new-south-wales",
+      "region": "Balmain",
+      "website": "https://www.liquidedge.com.au/sailing-school-sydney/",
+      "phone": "0410 088 028",
+      "email": "training@liquidedge.com.au",
+      "freshness": "unverified",
       "services": [
         "Sailing academy / training"
       ]
@@ -110,7 +111,7 @@
     {
       "sourceSlug": "mainstay-sailing",
       "sourceUrl": "https://yousail.com.au/directory/mainstay-sailing",
-      "sourceUpdatedAt": "2026-09-05T11:44:50.021493+00:00",
+      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
       "name": "Mainstay Sailing",
       "state": "queensland",
       "region": "Airlie Beach",
@@ -119,7 +120,7 @@
       "email": "info@mainstaysailing.com.au",
       "logo": "https://yousail.com.au/api/directory/image/1a97ce39-0846-425e-9f9d-d0243e3ef0b5?v=1788606865",
       "featureImage": "https://yousail.com.au/api/editorial-images/6e74ddfc-c22f-4f7d-bb6b-a6674f59e7fa?v=1788607048",
-      "checked": "2026-09-05T11:38:49.621809+00:00",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
       "services": [
         "Sailing academy / training"
@@ -128,14 +129,15 @@
     {
       "sourceSlug": "navathome-australia",
       "sourceUrl": "https://yousail.com.au/directory/navathome-australia",
-      "sourceUpdatedAt": "2026-09-15T00:28:29.433756+00:00",
+      "sourceUpdatedAt": "2026-09-18T14:59:03.78641+00:00",
       "name": "NAVatHOME Australia",
       "state": "western-australia",
       "region": "Como",
       "website": "https://www.navathome.com.au/",
       "phone": "+61 8 6102 7741",
       "email": "training@navathome.com.au",
-      "freshness": "unverified",
+      "checked": "2026-09-18T14:59:03.78641+00:00",
+      "freshness": "current",
       "services": [
         "Sailing academy / training"
       ]
@@ -143,33 +145,36 @@
     {
       "sourceSlug": "oceanwest-rya-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/oceanwest-rya-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T09:27:30.94359+00:00",
+      "sourceUpdatedAt": "2026-09-18T14:59:23.489353+00:00",
       "name": "Oceanwest RYA Sailing School",
       "state": "western-australia",
-      "region": "Geographe Bay / South West WA",
+      "region": "Busselton",
       "website": "https://www.oceanwest.net.au/",
       "phone": "0412 060 130",
       "email": "sailing@oceanwest.net.au",
       "logo": "https://yousail.com.au/api/directory/image/3e2172e6-d22c-4304-885b-3523065bb93f?v=1788605294",
       "featureImage": "https://yousail.com.au/api/editorial-images/fa54fc71-0ce3-4c48-aef7-7476b531078b?v=1788605323",
-      "checked": "2026-08-19T23:43:35.824818+00:00",
+      "checked": "2026-09-18T14:59:23.489353+00:00",
       "freshness": "current",
       "services": [
+        "Sailing charter company",
         "Sailing academy / training"
       ]
     },
     {
       "sourceSlug": "pacific-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/pacific-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T09:39:50.362049+00:00",
+      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
       "name": "Pacific Sailing School",
       "state": "new-south-wales",
-      "region": "Sydney",
+      "region": "Darling Point",
       "website": "https://pacificsailingschool.com.au/",
       "phone": "(+61) 2-9326-2399",
+      "email": "info@pacificsailingschool.com.au",
       "logo": "https://yousail.com.au/api/directory/image/2c445d75-5f5e-4242-8f0d-7b57826a34e6?v=1788603877",
       "featureImage": "https://yousail.com.au/api/editorial-images/31f7e441-a3e6-476a-a45e-223fbe997d90?v=1788603847",
-      "freshness": "unverified",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
+      "freshness": "current",
       "services": [
         "Sailing academy / training"
       ]
@@ -177,16 +182,16 @@
     {
       "sourceSlug": "paper-sailors-rock",
       "sourceUrl": "https://yousail.com.au/directory/paper-sailors-rock",
-      "sourceUpdatedAt": "2026-09-05T12:05:13.748708+00:00",
+      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
       "name": "Paper Sailors Rock",
-      "state": "australia-wide",
-      "region": "Manly; Sandy Bay",
+      "state": "queensland",
+      "region": "Manly",
       "website": "https://www.papersailorsrock.com.au/",
       "phone": "0407 044 663",
       "email": "annette@papersailorsrock.com.au",
       "logo": "https://yousail.com.au/api/directory/image/3a6aca4c-f89b-479d-8cb0-0351298b133c?v=1788609390",
       "featureImage": "https://yousail.com.au/api/editorial-images/9da37f99-33b3-4c57-8b2a-b18cf03e9228?v=1788609419",
-      "checked": "2026-09-05T11:57:03.493307+00:00",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
       "services": [
         "Sailing academy / training"
@@ -195,7 +200,7 @@
     {
       "sourceSlug": "sailing-eventide",
       "sourceUrl": "https://yousail.com.au/directory/sailing-eventide",
-      "sourceUpdatedAt": "2026-09-05T10:58:20.215153+00:00",
+      "sourceUpdatedAt": "2026-09-18T14:59:03.78641+00:00",
       "name": "Sailing Eventide",
       "state": "western-australia",
       "region": "Fremantle",
@@ -204,7 +209,39 @@
       "email": "info@sailingeventide.com.au",
       "logo": "https://yousail.com.au/api/directory/image/3237da07-0d11-4185-8d48-bee27cfd45b9?v=1788605900",
       "featureImage": "https://yousail.com.au/api/editorial-images/2bb85733-1d42-4679-879d-d622f7bdea26?v=1788605932",
-      "checked": "2026-08-19T23:58:39.669569+00:00",
+      "checked": "2026-09-18T14:59:03.78641+00:00",
+      "freshness": "current",
+      "services": [
+        "Sailing charter company",
+        "Sailing academy / training"
+      ]
+    },
+    {
+      "sourceSlug": "smooth-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/smooth-sailing-school",
+      "sourceUpdatedAt": "2026-09-18T15:37:19.459154+00:00",
+      "name": "Smooth Sailing School",
+      "state": "victoria",
+      "region": "Williamstown",
+      "website": "https://smoothsailingschool.com.au/",
+      "phone": "03 9069 9303",
+      "email": "info@smoothsailingschool.com",
+      "freshness": "unverified",
+      "services": [
+        "Sailing academy / training"
+      ]
+    },
+    {
+      "sourceSlug": "southern-cross-yachting",
+      "sourceUrl": "https://yousail.com.au/directory/southern-cross-yachting",
+      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
+      "name": "Southern Cross Yachting",
+      "state": "queensland",
+      "region": "Manly",
+      "website": "https://southerncrossyachting.com.au/",
+      "phone": "07 3396 4100",
+      "email": "sailing@southerncrossyachting.com.au",
+      "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
       "services": [
         "Sailing academy / training"
@@ -213,7 +250,7 @@
     {
       "sourceSlug": "sunshine-sailing-australia",
       "sourceUrl": "https://yousail.com.au/directory/sunshine-sailing-australia",
-      "sourceUpdatedAt": "2026-09-05T11:26:36.109193+00:00",
+      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
       "name": "Sunshine Sailing Australia",
       "state": "queensland",
       "region": "Mooloolaba",
@@ -222,8 +259,23 @@
       "email": "sailing@learn2sail.com.au",
       "logo": "https://yousail.com.au/api/directory/image/1678be9f-866c-41ab-bb13-102512db9ed3?v=1788606683",
       "featureImage": "https://yousail.com.au/api/editorial-images/de0c4b70-ebfc-491b-abf2-0b79ec4e7ddb?v=1788605460",
-      "checked": "2026-09-05T11:26:36.109193+00:00",
+      "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
+      "services": [
+        "Sailing academy / training"
+      ]
+    },
+    {
+      "sourceSlug": "whitsunday-sailing-school",
+      "sourceUrl": "https://yousail.com.au/directory/whitsunday-sailing-school",
+      "sourceUpdatedAt": "2026-09-18T15:37:19.459154+00:00",
+      "name": "Whitsunday Sailing School",
+      "state": "queensland",
+      "region": "Airlie Beach",
+      "website": "https://whitsundaysailingschool.com/",
+      "phone": "0427 076 400",
+      "email": "malcom.robertson@bigpond.com",
+      "freshness": "unverified",
       "services": [
         "Sailing academy / training"
       ]
@@ -231,14 +283,15 @@
     {
       "sourceSlug": "yachting-directions",
       "sourceUrl": "https://yousail.com.au/directory/yachting-directions",
-      "sourceUpdatedAt": "2026-09-15T00:28:34.243572+00:00",
+      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
       "name": "Yachting Directions",
       "state": "new-south-wales",
       "region": "Palm Beach",
       "website": "https://www.yachtingdirections.com.au/",
       "phone": "+61 427 333 353",
       "email": "info@yachtingdirections.com.au",
-      "freshness": "unverified",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
+      "freshness": "current",
       "services": [
         "Sailing academy / training"
       ]
@@ -246,15 +299,16 @@
     {
       "sourceSlug": "yachtmaster-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/yachtmaster-sailing-school",
-      "sourceUpdatedAt": "2026-09-10T00:09:26.234127+00:00",
+      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
       "name": "Yachtmaster Sailing School",
       "state": "victoria",
+      "region": "Middle Brighton",
       "website": "https://www.yachtmaster.com.au/",
-      "phone": "(07) 5461 3634 / 0414 906 017",
+      "phone": "0414 906 017",
       "email": "yacht@yachtmaster.com.au",
       "logo": "https://yousail.com.au/api/directory/image/24bac810-9098-4158-a4ad-7b0323ad6fc9?v=1788607414",
       "featureImage": "https://yousail.com.au/api/editorial-images/ed0f9e25-c820-4994-82e6-92f5d6e28a23?v=1788607052",
-      "checked": "2026-09-10T00:09:26.234127+00:00",
+      "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
       "services": [
         "Sailing academy / training"
