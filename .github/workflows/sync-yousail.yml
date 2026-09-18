@@ -18,6 +18,11 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          # Full history: the mirror step below pushes main onto another
+          # branch, and git can only confirm that is a fast-forward if it
+          # holds the commits in between. At depth 1 the push is rejected.
+          fetch-depth: 0
       - uses: actions/setup-node@v5
         with:
           node-version: 22
