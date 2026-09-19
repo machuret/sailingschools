@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import JsonLd from '@/components/JsonLd';
-import { course as courseSchema } from '@/lib/schema';
+import { webPage } from '@/lib/schema';
 import { courseBySlug, courses, courseCategories, coursesInCategory } from '@/lib/courses';
 
 type Params = { params: Promise<{ slug: string }> };
@@ -31,20 +31,14 @@ export default async function CourseIntentPage({ params }: Params) {
 
   const category = courseCategories.find((c) => c.key === record.category)!;
   const siblings = coursesInCategory(record.category).filter((c) => c.slug !== record.slug);
-  // Everything the guide lists as covered, flattened for the Course schema's `teaches`.
-  const teaches = record.blocks.flatMap((b) => (b.type === 'list' ? b.items : []));
-
   return (
     <>
       <JsonLd
         nodes={[
-          courseSchema({
+          webPage({
             name: record.title,
             description: record.description,
-            // Intent courses are taught by many schools under several schemes; no single
-            // awarding body owns them, so the site is named as the describing publisher.
-            provider: 'SailingSchools.com.au',
-            ...(teaches.length ? { teaches } : {}),
+            url: `/courses/${record.slug}/`,
           }),
         ]}
       />

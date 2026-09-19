@@ -48,7 +48,7 @@ export default function SchoolCard({ school }: { school: School }) {
             className="school-link"
             href={school.website}
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener"
           >
             <span>{host}</span>
             <i className="ph-duotone ph-arrow-up-right" aria-hidden="true" />

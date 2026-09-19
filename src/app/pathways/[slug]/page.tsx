@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import JsonLd from '@/components/JsonLd';
-import { itemList, webPage } from '@/lib/schema';
+import { article, itemList, webPage } from '@/lib/schema';
 import { pathways, pathwayBySlug, orderedPathways } from '@/lib/pathways';
 
 type Params = { params: Promise<{ slug: string }> };
@@ -40,6 +40,7 @@ export default async function PathwayPage({ params }: Params) {
             description: record.description,
             url: `/pathways/${record.slug}/`,
           }),
+          article({ headline: record.title, description: record.description, url: `/pathways/${record.slug}/` }),
           // The steps are the substance of the page, so they are published as an ordered
           // list rather than as HowTo: a HowTo implies a procedure with a guaranteed
           // outcome, and this is a route with choices in it.

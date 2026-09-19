@@ -54,6 +54,7 @@ export type School = {
   email?: string;
   featureImage?: string;
   freshness?: string;
+  sourceUpdatedAt?: string;
 };
 
 const CHECKED = 'September 2026';

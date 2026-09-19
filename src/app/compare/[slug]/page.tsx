@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
-import { faqPage, webPage } from '@/lib/schema';
+import { article, faqPage, webPage } from '@/lib/schema';
 import {
   comparisons,
   comparisonBySlug,
@@ -45,6 +45,7 @@ export default async function ComparePage({ params }: Params) {
             description: record.description,
             url: `/compare/${record.slug}/`,
           }),
+          article({ headline: record.title, description: record.description, url: `/compare/${record.slug}/` }),
           ...(record.faqs?.length
             ? [faqPage(record.faqs.map((f) => ({ question: f.q, answer: f.a })))]
             : []),

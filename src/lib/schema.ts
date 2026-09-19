@@ -82,12 +82,38 @@ export const educationalOrganization = (input: {
   description: string;
   areaServed?: string;
   url?: string;
+  telephone?: string;
+  email?: string;
+  logo?: string;
+  image?: string;
+  sameAs?: string[];
 }): JsonLdNode => ({
   '@type': 'EducationalOrganization',
   name: input.name,
   description: input.description,
   ...(input.areaServed ? { areaServed: input.areaServed } : {}),
   ...(input.url ? { url: input.url } : {}),
+  ...(input.telephone ? { telephone: input.telephone } : {}),
+  ...(input.email ? { email: input.email } : {}),
+  ...(input.logo ? { logo: input.logo } : {}),
+  ...(input.image ? { image: input.image } : {}),
+  ...(input.sameAs?.length ? { sameAs: input.sameAs } : {}),
+});
+
+/** Editorial articles are authored by the site as an organisation; no personal byline is implied. */
+export const article = (input: {
+  headline: string;
+  description: string;
+  url: string;
+}): JsonLdNode => ({
+  '@type': 'Article',
+  headline: input.headline,
+  description: input.description,
+  url: absoluteUrl(input.url),
+  mainEntityOfPage: absoluteUrl(input.url),
+  author: { '@id': `${siteUrl}/#organization` },
+  publisher: { '@id': `${siteUrl}/#organization` },
+  inLanguage: 'en-AU',
 });
 
 /**

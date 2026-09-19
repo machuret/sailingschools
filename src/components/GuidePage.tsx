@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
-import { faqPage, webPage } from '@/lib/schema';
+import { article, faqPage, webPage } from '@/lib/schema';
 import type { Guide } from '@/lib/guides';
 
 /** Shared body for the long-form explainers under /learn/ that are not licence records. */
@@ -12,6 +12,11 @@ export default function GuidePage({ record }: { record: Guide }) {
         nodes={[
           webPage({
             name: record.title,
+            description: record.description,
+            url: `/learn/${record.slug}/`,
+          }),
+          article({
+            headline: record.title,
             description: record.description,
             url: `/learn/${record.slug}/`,
           }),
@@ -101,11 +106,28 @@ export default function GuidePage({ record }: { record: Guide }) {
 
           {record.source && (
             <p className="note" style={{ marginTop: 40 }}>
-              Source: <a href={record.source.url} rel="nofollow noopener">{record.source.name}</a>,
+              Source: <a href={record.source.url} rel="noopener">{record.source.name}</a>,
               checked {record.source.checked}. Requirements change — confirm the current position
               with the issuing authority before you plan around anything on this page.
             </p>
           )}
+        </div>
+      </section>
+
+      <section className="sec" style={{ paddingTop: 0 }}>
+        <div className="wrap" style={{ maxWidth: 760 }}>
+          <div className="panel">
+            <span className="kicker">Editorial standard</span>
+            <h2 className="h4">Independently researched and reviewed</h2>
+            <p className="copy">
+              This guide is maintained by the SailingSchools.com.au editorial team. Training-body
+              and regulatory claims are checked against primary sources where available; schools
+              cannot pay to change the conclusion or their position in the directory.
+            </p>
+            <p className="note">
+              Found something that has changed? <a href="mailto:hello@sailingschools.com.au">Send a correction</a>.
+            </p>
+          </div>
         </div>
       </section>
 

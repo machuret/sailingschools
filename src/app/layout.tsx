@@ -54,14 +54,6 @@ export const metadata: Metadata = {
     images: ['/og.jpg'],
   },
   category: 'education',
-  keywords: [
-    'sailing schools Australia',
-    'learn to sail',
-    'sailing courses Australia',
-    'RYA courses Australia',
-    'Australian Sailing courses',
-    'yacht training',
-  ],
   robots: {
     index: true,
     follow: true,

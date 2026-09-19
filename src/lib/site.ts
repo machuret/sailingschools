@@ -67,7 +67,7 @@ const stateRoutes: SiteRoute[] = states.map((state) => ({
   changeFrequency: 'weekly',
 }));
 
-const schoolRoutes: SiteRoute[] = schools.flatMap((school) => school.sourceSlug ? [{
+const schoolRoutes: SiteRoute[] = schools.flatMap((school) => school.sourceSlug && school.freshness !== 'unverified' ? [{
   path: `/schools/${school.sourceSlug}/`,
   priority: 0.7,
   changeFrequency: 'weekly' as const,

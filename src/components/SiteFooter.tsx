@@ -84,7 +84,7 @@ export default function SiteFooter() {
                 <Link href="/learn/sailing-course-costs/">What courses cost</Link>
                 <Link href="/pathways/work-on-boats/">Working on boats</Link>
                 <Link href="/find-a-course/">Find the right course</Link>
-                <Link href="/schools/harbourline-sailing-school/">How a school profile works</Link>
+                <Link href="/about/">How school profiles are verified</Link>
                 <a href="mailto:hello@sailingschools.com.au">Update a school</a>
               </div>
             </div>

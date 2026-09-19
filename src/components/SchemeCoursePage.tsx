@@ -3,7 +3,15 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import JsonLd from '@/components/JsonLd';
 import { course as courseSchema } from '@/lib/schema';
+import { schoolsWithScheme } from '@/lib/schools';
 import { schemeNames, coursesInScheme, type SchemeCourse } from '@/lib/scheme-courses';
+
+const OFFICIAL_SCHEME_SOURCES = {
+  rya: { name: 'RYA training', url: 'https://www.rya.org.uk/training' },
+  iyt: { name: 'IYT course catalogue', url: 'https://www.iytworld.com/courses/' },
+  asa: { name: 'American Sailing certifications', url: 'https://asa.com/certifications/' },
+  'australian-sailing': { name: 'Australian Sailing courses', url: 'https://www.sailing.org.au/australian-sailing-courses/' },
+} as const;
 
 /** Shared body for every scheme course page. One template, four namespaces. */
 export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
@@ -12,6 +20,9 @@ export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
   const teaches = record.blocks.flatMap((b) => (b.type === 'list' ? b.items : []));
   const prev = siblings.find((c) => `/${c.scheme}/${c.slug}/` === record.prev);
   const next = siblings.find((c) => `/${c.scheme}/${c.slug}/` === record.next);
+  const schoolScheme = record.scheme === 'australian-sailing' ? 'Australian Sailing' : record.scheme === 'asa' ? 'ASA' : record.scheme.toUpperCase();
+  const schemeSchools = schoolsWithScheme(schoolScheme).filter((school) => school.freshness !== 'unverified');
+  const officialSource = OFFICIAL_SCHEME_SOURCES[record.scheme];
 
   return (
     <>
@@ -110,13 +121,17 @@ export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
               </dl>
 
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 32 }}>
-                <Link className="pill pill-orange" href="/sailing-schools/">
-                  Schools teaching this
+                <Link className="pill pill-orange" href={`/${record.scheme}/#schools`}>
+                  Schools using {schemeName}
                 </Link>
                 <Link className="pill pill-outline" href="/find-a-course/">
                   Is this right for me?
                 </Link>
               </div>
+              <p className="note" style={{ marginTop: 24 }}>
+                Primary source: <a href={officialSource.url} rel="noopener" target="_blank">{officialSource.name}</a>.
+                {' '}Course structures and prerequisites can change; confirm the current version with the training body and school.
+              </p>
             </div>
           </div>
         </div>
@@ -179,6 +194,29 @@ export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
           </div>
         </div>
       </section>
+
+      {schemeSchools.length > 0 && (
+        <section className="sec" id="schools">
+          <div className="wrap">
+            <div className="sec-head">
+              <div>
+                <span className="kicker">Verified provider records</span>
+                <h2 className="h2">Australian schools using {schemeName}</h2>
+              </div>
+              <Link className="pill pill-sky" href="/sailing-schools/">Browse by location</Link>
+            </div>
+            <p className="copy">
+              These schools advertise training under the {schemeName} system. This does not confirm
+              that every school currently runs {record.title}; check the current course list directly.
+            </p>
+            <div className="chain" style={{ marginTop: 24 }}>
+              {schemeSchools.map((school) => (
+                school.profile ? <Link className="tag tag-sky" href={school.profile} key={school.name}>{school.name}</Link> : null
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <div className="wrap">
         <div className="cta-band">

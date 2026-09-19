@@ -89,7 +89,7 @@ export default function AboutPage() {
             </div>
             <div className="fact">
               <dt>Schools listed</dt>
-              <dd>{schools.length}, each checked against its own site</dd>
+              <dd>{schools.length}, with verification status shown on every profile</dd>
             </div>
             <div className="fact">
               <dt>Paid placements</dt>
@@ -124,10 +124,10 @@ export default function AboutPage() {
             What gets verified
           </h2>
           <p className="copy">
-            Every school in the directory has been checked against its own website. Where a detail
-            was confirmed — the training base, the accreditation, the course types — it appears.
-            Where it could not be confirmed, the field is left empty and the school is listed by
-            name alone.
+            Published school details are synchronised from YouSail and combined with independently
+            checked editorial facts. Where a detail was confirmed — the training base, the
+            accreditation or the course types — it appears. Records still awaiting verification are
+            labelled clearly and excluded from search indexing until that check is complete.
           </p>
           <p className="copy">
             That is deliberate. Publishing the wrong accreditation for a real business is worse
@@ -164,6 +164,17 @@ export default function AboutPage() {
               glossary, not on a URL of its own.
             </li>
           </ul>
+
+          <h2 className="h3" style={{ marginTop: 44 }}>
+            How editorial review works
+          </h2>
+          <p className="copy">
+            Guides and comparisons are maintained by the SailingSchools.com.au editorial team rather
+            than carrying personal bylines. Regulatory and training-body claims are checked against
+            primary sources where available. School information is kept separate from editorial
+            conclusions, and a school cannot pay to change a conclusion or its position in the
+            directory.
+          </p>
 
           <h2 className="h3" style={{ marginTop: 44 }}>
             Independence, concretely

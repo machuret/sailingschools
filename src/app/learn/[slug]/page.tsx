@@ -121,7 +121,7 @@ export default async function LicencePage({ params }: Params) {
                 <div className="fact">
                   <dt>Authority</dt>
                   <dd style={{ fontWeight: 500, fontSize: 16 }}>
-                    <a href={record.authorityUrl} rel="nofollow noopener" target="_blank">
+                    <a href={record.authorityUrl} rel="noopener" target="_blank">
                       {record.authority} →
                     </a>
                   </dd>
@@ -160,7 +160,7 @@ export default async function LicencePage({ params }: Params) {
             <p className="copy" style={{ maxWidth: '68ch' }}>
               Licensing rules change. This page was checked in {record.checked}; confirm the current
               requirement with{' '}
-              <a href={record.authorityUrl} rel="nofollow noopener" target="_blank">
+              <a href={record.authorityUrl} rel="noopener" target="_blank">
                 {record.authority}
               </a>{' '}
               before you rely on it.
