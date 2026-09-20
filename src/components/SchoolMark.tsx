@@ -1,4 +1,5 @@
 import type { School } from '@/lib/schools';
+import Image from 'next/image';
 
 /**
  * A school's identity mark.
@@ -51,8 +52,7 @@ export default function SchoolMark({ school }: { school: School }) {
   if (school.logo) {
     return (
       <div className="school-mark has-logo">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={school.logo} alt={`${school.name} logo`} loading="lazy" />
+        <Image src={school.logo} alt={`${school.name} logo`} fill sizes="(max-width: 720px) 76vw, 260px" />
       </div>
     );
   }

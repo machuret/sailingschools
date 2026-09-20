@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import SchoolCard from '@/components/SchoolCard';
 import SchoolMark from '@/components/SchoolMark';
+import HelpTip from '@/components/HelpTip';
 import { cities } from '@/lib/cities';
 import { educationalOrganization, webPage } from '@/lib/schema';
 import { schools, schoolsInCity, schoolsInState } from '@/lib/schools';
@@ -99,8 +101,7 @@ export default async function SchoolProfilePage({ params }: Params) {
       <section className="hero short">
         {school.featureImage && (
           <div className="hero-photo">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="school-feature" src={school.featureImage} alt={`${school.name} sailing training`} />
+            <Image className="school-feature" src={school.featureImage} alt={`${school.name} sailing training`} fill priority sizes="100vw" />
           </div>
         )}
         {school.featureImage && <div className="hero-scrim" />}
@@ -137,7 +138,7 @@ export default async function SchoolProfilePage({ params }: Params) {
             <h2 className="h3" style={{ marginTop: 42 }}>Training information</h2>
             <dl className="facts two" style={{ marginTop: 20 }}>
               <div className="fact"><dt>Training area</dt><dd>{school.region ?? 'Confirm with the school'}</dd></div>
-              <div className="fact"><dt>Training system</dt><dd>{school.scheme ?? 'Not independently confirmed'}</dd></div>
+              <div className="fact"><dt>Training system <HelpTip label="What is a training system?">The organisation that publishes the course framework or recognises the training centre. It is separate from a government boat licence.</HelpTip></dt><dd>{school.scheme ?? 'Not independently confirmed'}</dd></div>
               <div className="fact"><dt>Training focus</dt><dd>{school.types ?? 'See the school’s current course list'}</dd></div>
               <div className="fact"><dt>Record status</dt><dd>{verified ? 'Current directory record' : 'Awaiting independent verification'}</dd></div>
             </dl>
@@ -197,7 +198,7 @@ export default async function SchoolProfilePage({ params }: Params) {
         <section className="sec">
           <div className="wrap">
             <div className="sec-head"><div><span className="kicker">Compare providers</span><h2 className="h2">Other verified schools in {state?.name}</h2></div>{state && <Link className="pill pill-sky" href={`/sailing-schools/${state.key}/`}>All {state.name} schools</Link>}</div>
-            <div className="cards">{relatedSchools.map((entry) => <SchoolCard school={entry} key={entry.name} />)}</div>
+            <div className="cards related-carousel">{relatedSchools.map((entry) => <SchoolCard school={entry} key={entry.name} />)}</div>
           </div>
         </section>
       )}

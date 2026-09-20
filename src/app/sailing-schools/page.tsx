@@ -7,6 +7,7 @@ import { schoolsInState } from '@/lib/schools';
 import { states } from '@/lib/states';
 import { mapMarkers, mapRegions } from '@/lib/geo';
 import { cities } from '@/lib/cities';
+import SchoolLogoRail from '@/components/SchoolLogoRail';
 
 export const metadata: Metadata = {
   title: 'Sailing Schools Australia | Directory by State',
@@ -31,9 +32,8 @@ export default function SchoolsIndexPage() {
             </h1>
             <p className="sub">
               Dedicated sailing schools, academies, yacht training businesses and specialist marine
-              education providers — not a directory of yacht clubs. Each profile shows accreditation,
-              training waters, training boats, course lists and prices with the date they were
-              checked.
+              education providers — not a directory of yacht clubs. Profiles show verified contact
+              details, training focus, qualification links and the date the record was checked.
             </p>
             <div className="cta">
               <Link className="pill pill-orange" href="/sailing-schools/new-south-wales/sydney/">
@@ -46,6 +46,8 @@ export default function SchoolsIndexPage() {
           </div>
         </div>
       </section>
+
+      <SchoolLogoRail />
 
       <section className="sec">
         <div className="wrap">
@@ -123,8 +125,8 @@ export default function SchoolsIndexPage() {
             <span className="kicker">How we list schools</span>
             <h2 className="h2">Verified, dated and independent</h2>
             <p className="copy">
-              Accreditation, course lists and prices are checked against the school rather than
-              copied from a brochure, and every price carries the date it was checked. We are not
+              Accreditation and course information are published only when the source supports
+              them, with a visible verification status. We are not
               affiliated with Australian Sailing, the RYA, IYT, American Sailing or AMSA, and schools
               cannot pay for placement.
             </p>
@@ -150,7 +152,7 @@ export default function SchoolsIndexPage() {
               <Link className="row" href="/pathways/complete-beginner/">
                 <div>
                   <h3>Choosing between two schools</h3>
-                  <p>Outcome, boat, class size and relevance — then price</p>
+                  <p>Outcome, boat, class size, training water and current availability</p>
                 </div>
                 <span className="arrow">
                   <i className="ph-duotone ph-caret-right" />

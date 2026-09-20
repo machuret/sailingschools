@@ -137,3 +137,17 @@ export const webPage = (input: { name: string; description: string; url: string 
   isPartOf: { '@id': `${siteUrl}/#website` },
   inLanguage: 'en-AU',
 });
+
+export const place = (input: {
+  name: string;
+  description: string;
+  state?: string;
+  url: string;
+}): JsonLdNode => ({
+  '@type': 'Place',
+  '@id': `${absoluteUrl(input.url)}#place`,
+  name: input.name,
+  description: input.description,
+  url: absoluteUrl(input.url),
+  ...(input.state ? { containedInPlace: { '@type': 'AdministrativeArea', name: input.state } } : {}),
+});

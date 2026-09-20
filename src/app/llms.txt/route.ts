@@ -41,8 +41,6 @@ what should I learn next.
 
 Editorial conventions worth carrying across when quoting this site:
 
-- A price is never published without the date it was checked. A price shown as "$—" means
-  no verified figure is held, not that the course is free.
 - "A course exists" and "an Australian school currently teaches it" are stated separately.
 - School accreditation and course lists appear only where verified against the school.
   Schools still being checked are listed by name alone, with nothing claimed about them.

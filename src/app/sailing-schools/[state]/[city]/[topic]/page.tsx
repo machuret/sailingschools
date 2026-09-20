@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import SchoolCard from '@/components/SchoolCard';
 import JsonLd from '@/components/JsonLd';
-import { itemList, webPage } from '@/lib/schema';
+import { faqPage, itemList, webPage } from '@/lib/schema';
 import { cityBySlug, cityBySlugOnly } from '@/lib/cities';
 import { schoolsInCity } from '@/lib/schools';
 import {
@@ -51,8 +51,22 @@ export default async function CityCoursePage({ params }: Params) {
 
   const name = cityRecord.name.replace(/^the /, 'the ');
   const schools = schoolsInCity(cityRecord.state, cityRecord.slug);
-  const verified = schools.filter((s) => s.website || s.region);
+  const verified = schools.filter((s) => s.freshness !== 'unverified');
   const others = cityCoursesIn(cityRecord.slug).filter((c) => c.topic !== topic);
+  const localFaqs = [
+    {
+      question: `Is ${topicRecord.label.toLowerCase()} available in ${name}?`,
+      answer: `This guide describes the local training context and providers listed near ${name}. It does not claim that every listed school currently teaches this course; confirm dates and availability directly.`,
+    },
+    {
+      question: `What should I compare before booking ${topicRecord.label.toLowerCase()}?`,
+      answer: 'Compare prerequisites, practical hours, the training boat, group size, the certificate or outcome, and the conditions in which exercises normally run.',
+    },
+    {
+      question: `Does training around ${name} suit a complete beginner?`,
+      answer: `That depends on the specific course rather than the location. Beginner courses assume no prior experience; skipper and advanced courses may require theory, logged miles or practical competence.`,
+    },
+  ];
 
   return (
     <>
@@ -65,8 +79,9 @@ export default async function CityCoursePage({ params }: Params) {
           }),
           itemList(
             `Sailing schools listed in ${cityRecord.stateName}`,
-            schools.map((s) => ({ name: s.name, href: s.profile })),
+            verified.map((s) => ({ name: s.name, href: s.profile })),
           ),
+          faqPage(localFaqs),
         ]}
       />
 
@@ -135,6 +150,32 @@ export default async function CityCoursePage({ params }: Params) {
       </section>
 
       <section className="sec">
+        <div className="wrap split top">
+          <div>
+            <span className="kicker">Book at the right level</span>
+            <h2 className="h2">Questions for a {name} provider</h2>
+            <ul className="bullets">
+              <li>Is this course designed for my current experience?</li>
+              <li>How much of the course is practical and how is helm time shared?</li>
+              <li>Which water and vessel are normally used?</li>
+              <li>What happens if local weather prevents an exercise?</li>
+              <li>What qualification or practical outcome should I expect?</li>
+            </ul>
+          </div>
+          <div className="panel" style={{ marginTop: 0 }}>
+            <span className="kicker">Continue researching</span>
+            <h2 className="h4">Understand the course before the provider</h2>
+            <p className="copy">Read the national course guide and prerequisites first. That gives you the same questions to ask every school and makes comparisons more meaningful.</p>
+            <div className="chain" style={{ marginTop: 20 }}>
+              <Link className="tag tag-sky" href={topicRecord.courseHref}>Course guide</Link>
+              <Link className="tag tag-sky" href="/learn/sailing-course-prerequisites/">Prerequisites explained</Link>
+              <Link className="tag tag-sky" href="/learn/how-to-choose-a-sailing-school/">Choose a school</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec">
         <div className="wrap">
           <div className="sec-head">
             <div>
@@ -156,6 +197,10 @@ export default async function CityCoursePage({ params }: Params) {
       </section>
 
       <section className="sec">
+        <div className="wrap"><div className="sec-head"><div><span className="kicker">Questions</span><h2 className="h2">{topicRecord.label} around {name}</h2></div></div><div className="qa">{localFaqs.map((faq) => <div className="qa-item" key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}</div></div>
+      </section>
+
+      <section className="sec">
         <div className="wrap">
           <div className="sec-head">
             <div>
@@ -173,7 +218,7 @@ export default async function CityCoursePage({ params }: Params) {
             teaching {topicRecord.label.toLowerCase()} — it is where to start asking. If you run one
             of these schools and want your course list on file, tell us.
           </p>
-          <div className="cards" style={{ marginTop: 30 }}>
+          <div className="cards related-carousel" style={{ marginTop: 30 }}>
             {verified.slice(0, 6).map((s) => (
               <SchoolCard school={s} key={s.name} />
             ))}

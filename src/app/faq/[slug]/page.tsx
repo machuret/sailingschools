@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
-import { faqPage } from '@/lib/schema';
+import { article, faqPage, webPage } from '@/lib/schema';
 import { faqPages, faqBySlug, faqsInCategory, faqCategories } from '@/lib/faq';
 
 type Params = { params: Promise<{ slug: string }> };
@@ -37,7 +37,11 @@ export default async function FaqAnswerPage({ params }: Params) {
   return (
     <>
       <JsonLd
-        nodes={[faqPage([{ question: entry.question, answer: page.answer.join(' ') }])]}
+        nodes={[
+          webPage({ name: entry.question, description: page.description, url: `/faq/${page.slug}/` }),
+          article({ headline: entry.question, description: page.description, url: `/faq/${page.slug}/` }),
+          faqPage([{ question: entry.question, answer: page.answer.join(' ') }]),
+        ]}
       />
 
       <section className="sec" style={{ paddingTop: 48 }}>

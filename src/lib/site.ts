@@ -10,17 +10,8 @@ import { schemeCourses } from './scheme-courses';
 import { states } from './states';
 import { schools } from './schools';
 
-/**
- * Canonical origin for the site. Vercel sets VERCEL_PROJECT_PRODUCTION_URL on every
- * deployment, but preview deployments must not emit canonicals or a sitemap pointing at
- * themselves — so an explicit NEXT_PUBLIC_SITE_URL always wins.
- */
-export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_ENV === 'production' && process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : 'https://www.sailingschools.com.au')
-).replace(/\/$/, '');
+/** Canonicals, structured data, robots and sitemaps always use the public custom domain. */
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.sailingschools.com.au').replace(/\/$/, '');
 
 export const absoluteUrl = (path: string) => `${siteUrl}${path === '/' ? '' : path}`;
 

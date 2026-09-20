@@ -3,13 +3,12 @@ import ImageSlot from '@/components/ImageSlot';
 import AustraliaChart from '@/components/AustraliaChart';
 import PointsOfSail from '@/components/PointsOfSail';
 import { mapMarkers, mapRegions } from '@/lib/geo';
-import JsonLd from '@/components/JsonLd';
-import { organization, website } from '@/lib/schema';
+import Image from 'next/image';
+import SchoolLogoRail from '@/components/SchoolLogoRail';
 
 export default function HomePage() {
   return (
     <>
-      <JsonLd nodes={[organization(), website()]} />
       <section className="hero">
         <div className="hero-photo">
           <ImageSlot tone="deep" live
@@ -102,9 +101,39 @@ export default function HomePage() {
             </div>
             <div>
               <i className="ph-duotone ph-calendar-check" />
-              <h3>Dated, Verified Prices</h3>
-              <p>Never an undated price; accreditation and course lists checked against the schools</p>
+              <h3>Verification Status</h3>
+              <p>Current records are distinguished clearly from details still awaiting verification</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <SchoolLogoRail />
+
+      <section className="sec editorial-feature">
+        <div className="wrap split top">
+          <div className="editorial-photo">
+            <Image
+              src="/assets/editorial/skippers-notes.png"
+              alt="Nautical chart, dividers and logbook on a cruising yacht chart table"
+              fill
+              sizes="(max-width: 800px) 100vw, 50vw"
+            />
+          </div>
+          <div>
+            <span className="kicker">Skipper&rsquo;s notes</span>
+            <h2 className="h2">Practical advice between the courses</h2>
+            <p className="copy">
+              Certificates provide structure. Confidence grows in the decisions around them: what
+              to wear, how to read a forecast, which boat to learn on, what belongs in a logbook and
+              how to recognise a well-run school.
+            </p>
+            <div className="rows compact-rows">
+              <Link className="row" href="/learn/first-sailing-lesson/"><div><h3>Your first sailing lesson</h3><p>What happens from the safety brief to taking the helm</p></div><span className="arrow"><i className="ph-duotone ph-caret-right" /></span></Link>
+              <Link className="row" href="/learn/how-to-choose-a-sailing-school/"><div><h3>How to choose a school</h3><p>The questions that reveal more than the course name</p></div><span className="arrow"><i className="ph-duotone ph-caret-right" /></span></Link>
+              <Link className="row" href="/learn/weather-for-beginner-sailors/"><div><h3>Read the sailing day</h3><p>Wind, gusts, local water and a sensible plan</p></div><span className="arrow"><i className="ph-duotone ph-caret-right" /></span></Link>
+            </div>
+            <Link className="pill pill-navy" href="/learn/">Explore all practical guides</Link>
           </div>
         </div>
       </section>
@@ -201,15 +230,15 @@ export default function HomePage() {
             <p className="copy">
               Sydney is Australia&rsquo;s largest sailing-training market, but dedicated schools
               operate from Moreton Bay and the Whitsundays to Port Phillip, Fremantle, Adelaide and
-              Hobart. Each profile shows accreditation, training boats, course lists and dated prices
-              — verified, not copied from a brochure.
+              Hobart. Profiles bring verified contact details, training focus, qualification links
+              and direct source records into one place.
             </p>
             <div className="rows">
               <Link className="row" href="/sailing-schools/new-south-wales/">
                 <div>
                   <h3>New South Wales</h3>
                   <p>
-                    Sydney Harbour, Middle Harbour, Pittwater, Broken Bay, Botany Bay — 14 schools
+                    Sydney Harbour, Middle Harbour, Pittwater, Broken Bay and Botany Bay
                   </p>
                 </div>
                 <span className="arrow">
@@ -219,7 +248,7 @@ export default function HomePage() {
               <Link className="row" href="/sailing-schools/queensland/">
                 <div>
                   <h3>Queensland</h3>
-                  <p>Brisbane, Moreton Bay, Sunshine Coast, Whitsundays, Hervey Bay — 6 schools</p>
+                  <p>Brisbane, Moreton Bay, Sunshine Coast, Whitsundays and Hervey Bay</p>
                 </div>
                 <span className="arrow">
                   <i className="ph-duotone ph-caret-right" />
@@ -228,7 +257,7 @@ export default function HomePage() {
               <Link className="row" href="/sailing-schools/victoria/">
                 <div>
                   <h3>Victoria &amp; Western Australia</h3>
-                  <p>Melbourne and Port Phillip; Perth, Fremantle and Geographe Bay — 9 schools</p>
+                  <p>Melbourne and Port Phillip; Perth, Fremantle and Geographe Bay</p>
                 </div>
                 <span className="arrow">
                   <i className="ph-duotone ph-caret-right" />
@@ -237,7 +266,7 @@ export default function HomePage() {
               <Link className="row" href="/sailing-schools/tasmania/">
                 <div>
                   <h3>South Australia &amp; Tasmania</h3>
-                  <p>Adelaide and Gulf St Vincent; Hobart and the Derwent — 3 schools</p>
+                  <p>Adelaide and Gulf St Vincent; Hobart and the Derwent</p>
                 </div>
                 <span className="arrow">
                   <i className="ph-duotone ph-caret-right" />

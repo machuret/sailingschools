@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
-import { faqPage } from '@/lib/schema';
+import { faqPage, webPage } from '@/lib/schema';
 import { faqs, faqCategories, faqsInCategory } from '@/lib/faq';
 
 export const metadata: Metadata = {
@@ -16,7 +16,10 @@ export default function FaqIndexPage() {
   return (
     <>
       <JsonLd
-        nodes={[faqPage(faqs.map((f) => ({ question: f.question, answer: f.short })))]}
+        nodes={[
+          webPage({ name: 'Sailing course questions', description: metadata.description as string, url: '/faq/' }),
+          faqPage(faqs.map((f) => ({ question: f.question, answer: f.short }))),
+        ]}
       />
 
       <section className="hero short">
@@ -42,11 +45,17 @@ export default function FaqIndexPage() {
         </div>
       </section>
 
+      <nav className="faq-jump wrap" aria-label="FAQ categories">
+        {faqCategories.map((category) => (
+          <a className="tag tag-sky" href={`#faq-${category.key}`} key={category.key}>{category.name}</a>
+        ))}
+      </nav>
+
       {faqCategories.map((category) => {
         const list = faqsInCategory(category.key);
         if (!list.length) return null;
         return (
-          <section className="sec" key={category.key}>
+          <section className="sec" id={`faq-${category.key}`} key={category.key}>
             <div className="wrap">
               <div className="sec-head">
                 <div>
@@ -69,12 +78,10 @@ export default function FaqIndexPage() {
                       </span>
                     </Link>
                   ) : (
-                    <div className="row" key={f.question}>
-                      <div>
-                        <h3>{f.question}</h3>
-                        <p>{f.short}</p>
-                      </div>
-                    </div>
+                    <details className="faq-disclosure" key={f.question}>
+                      <summary>{f.question}<i className="ph-duotone ph-plus" aria-hidden="true" /></summary>
+                      <p>{f.short}</p>
+                    </details>
                   ),
                 )}
               </div>

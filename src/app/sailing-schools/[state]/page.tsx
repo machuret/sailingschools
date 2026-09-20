@@ -5,7 +5,7 @@ import ImageSlot from '@/components/ImageSlot';
 import SchoolCard from '@/components/SchoolCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
-import { itemList } from '@/lib/schema';
+import { itemList, webPage } from '@/lib/schema';
 import { schoolsInState } from '@/lib/schools';
 import { states, stateByKey } from '@/lib/states';
 import { citiesInState } from '@/lib/cities';
@@ -50,16 +50,17 @@ export default async function StatePage({ params }: Params) {
 
   const list = schoolsInState(record.key);
   const cityList = citiesInState(record.key);
-  const verified = list.filter((s) => s.website || s.region);
-  const unverified = list.filter((s) => !s.website && !s.region);
+  const verified = list.filter((s) => s.freshness !== 'unverified');
+  const unverified = list.filter((s) => s.freshness === 'unverified');
 
   return (
     <>
       <JsonLd
         nodes={[
+          webPage({ name: record.title, description: record.description, url: `/sailing-schools/${record.key}/` }),
           itemList(
             `Sailing schools in ${record.name}`,
-            list.map((s) => ({ name: s.name, href: s.profile })),
+            verified.map((s) => ({ name: s.name, href: s.profile })),
           ),
         ]}
       />
@@ -136,7 +137,7 @@ export default async function StatePage({ params }: Params) {
               )}
               <p className="copy" style={{ marginTop: verified.length ? undefined : 8 }}>
                 These schools are in our directory but their profiles are still being checked. We
-                publish accreditation, training boats and prices only once we have verified them
+                publish accreditation, training boats and course details only once we have verified them
                 against the school, so nothing is listed for them yet.
               </p>
               <div className="chain" style={{ marginTop: 20 }}>
@@ -227,8 +228,8 @@ export default async function StatePage({ params }: Params) {
           <div>
             <h2>Not sure which school in {record.name} fits?</h2>
             <p>
-              Do not start with price. Start with the outcome, the boat you will train on, class
-              size and whether the qualification is relevant to what you want to do.
+              Start with the outcome, the boat you will train on, class size and whether the
+              qualification is relevant to what you want to do.
             </p>
           </div>
           <div className="btns">

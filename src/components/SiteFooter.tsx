@@ -81,7 +81,7 @@ export default function SiteFooter() {
                 <Link href="/learn/">Guides</Link>
                 <Link href="/glossary/">Sailing terms glossary</Link>
                 <Link href="/learn/boat-licence/">Do you need a boat licence?</Link>
-                <Link href="/learn/sailing-course-costs/">What courses cost</Link>
+                <Link href="/learn/how-to-choose-a-sailing-school/">Choose a sailing school</Link>
                 <Link href="/pathways/work-on-boats/">Working on boats</Link>
                 <Link href="/find-a-course/">Find the right course</Link>
                 <Link href="/about/">How school profiles are verified</Link>

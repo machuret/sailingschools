@@ -9,6 +9,7 @@
  * and tell the reader to confirm with AMSA rather than with us.
  */
 import type { CourseBlock } from './courses';
+import { additionalGuides } from './additional-guides';
 
 export type Guide = {
   slug: string;
@@ -31,7 +32,7 @@ export type Guide = {
 
 export const amsaChecked = 'September 2026';
 
-export const guides: Guide[] = [
+const coreGuides: Guide[] = [
   {
     slug: 'amsa-vs-recreational',
     title: 'AMSA certificates vs recreational qualifications',
@@ -611,6 +612,8 @@ export const guides: Guide[] = [
     ],
   },
 ];
+
+export const guides: Guide[] = [...coreGuides, ...additionalGuides];
 
 export const guideBySlug = (slug: string) => guides.find((g) => g.slug === slug);
 export const orderedGuides = [...guides].sort((a, b) => a.order - b.order);

@@ -5,7 +5,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import SchoolCard from '@/components/SchoolCard';
 import JsonLd from '@/components/JsonLd';
-import { itemList } from '@/lib/schema';
+import HelpTip from '@/components/HelpTip';
+import { faqPage, itemList, place, webPage } from '@/lib/schema';
 import { cities, cityBySlug, citiesInState } from '@/lib/cities';
 import { cityCoursesIn, cityCourseTopicBySlug } from '@/lib/city-courses';
 import { schoolsInCity } from '@/lib/schools';
@@ -35,19 +36,40 @@ export default async function CityPage({ params }: Params) {
 
   const stateRecord = stateByKey(record.state)!;
   const list = schoolsInCity(record.state, record.slug);
-  const verified = list.filter((s) => s.website || s.region);
-  const unverified = list.filter((s) => !s.website && !s.region);
+  const verified = list.filter((s) => s.freshness !== 'unverified');
+  const unverified = list.filter((s) => s.freshness === 'unverified');
   const nearby = citiesInState(record.state).filter((c) => c.slug !== record.slug);
   const localTopics = cityCoursesIn(record.slug);
+  const geoFaqs = [
+    {
+      question: `Where do sailing lessons run around ${record.name}?`,
+      answer: `${record.regions.slice(0, 3).map((region) => region.name).join(', ')} are the main training areas described in this guide. Confirm the exact departure point with the school because offices and training boats may be in different places.`,
+    },
+    {
+      question: `What sailing courses are available near ${record.name}?`,
+      answer: `The local market includes ${record.taught.slice(0, 5).join(', ')}. Availability changes by provider and season, so check the current course list directly.`,
+    },
+    {
+      question: `How should I compare sailing schools near ${record.name}?`,
+      answer: 'Compare the intended outcome, current recognition where relevant, training boat, student-to-instructor ratio, weather policy and how much practical helm time each student receives.',
+    },
+  ];
 
   return (
     <>
       <JsonLd
         nodes={[
+          webPage({
+            name: `Sailing schools in ${record.name}`,
+            description: record.description,
+            url: `/sailing-schools/${record.state}/${record.slug}/`,
+          }),
+          place({ name: record.name, description: record.description, state: stateRecord.name, url: `/sailing-schools/${record.state}/${record.slug}/` }),
           itemList(
             `Sailing schools near ${record.name}`,
-            list.map((s) => ({ name: s.name, href: s.profile })),
+            verified.map((s) => ({ name: s.name, href: s.profile })),
           ),
+          faqPage(geoFaqs),
         ]}
       />
 
@@ -82,6 +104,40 @@ export default async function CityPage({ params }: Params) {
         </div>
       </section>
 
+      <section className="sec geo-orientation">
+        <div className="wrap">
+          <div className="sec-head">
+            <div>
+              <span className="kicker">Local orientation</span>
+              <h2 className="h2">Plan sailing training around {record.name}</h2>
+            </div>
+          </div>
+          <dl className="facts geo-facts">
+            <div className="fact"><dt>Training areas <HelpTip label="What is a training area?">The water used for practical exercises. It may differ from the school&rsquo;s office or mailing address.</HelpTip></dt><dd>{record.regions.length}</dd></div>
+            <div className="fact"><dt>Verified providers shown</dt><dd>{verified.length}</dd></div>
+            <div className="fact"><dt>Local course guides</dt><dd>{localTopics.length}</dd></div>
+            <div className="fact"><dt>Wider directory</dt><dd><Link href={`/sailing-schools/${record.state}/`}>{stateRecord.name}</Link></dd></div>
+          </dl>
+          <div className="geo-notes">
+            <div className="panel">
+              <span className="kicker">Choose by water</span>
+              <h3>Where you train changes what you practise</h3>
+              <p className="copy">{record.waters[0]}</p>
+            </div>
+            <div className="panel">
+              <span className="kicker">Before you travel</span>
+              <h3>Confirm the operating details</h3>
+              <ul className="bullets">
+                <li>the exact meeting point and whether parking or public transport is practical</li>
+                <li>which boat runs the course and the normal group size</li>
+                <li>the school&rsquo;s weather, rescheduling and minimum-number policy</li>
+                <li>whether the practical course stays sheltered or uses open water</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="sec">
         <div className="wrap split">
           <div>
@@ -97,6 +153,20 @@ export default async function CityPage({ params }: Params) {
             <div className="photo tall">
               <ImageSlot placeholder={`Drop a map of the ${record.name} training waters`} />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head"><div><span className="kicker">Local questions</span><h2 className="h2">Learning to sail around {record.name}</h2></div></div>
+          <div className="qa">
+            {geoFaqs.map((faq) => <div className="qa-item" key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}
+          </div>
+          <div className="chain" style={{ marginTop: 30 }}>
+            <Link className="tag tag-sky" href="/learn/how-to-choose-a-sailing-school/">How to compare sailing schools</Link>
+            <Link className="tag tag-sky" href="/learn/first-sailing-lesson/">What happens in your first lesson</Link>
+            <Link className="tag tag-sky" href="/learn/weather-for-beginner-sailors/">Weather basics for beginners</Link>
           </div>
         </div>
       </section>
@@ -135,7 +205,7 @@ export default async function CityPage({ params }: Params) {
           </div>
 
           {verified.length > 0 ? (
-            <div className="cards">
+            <div className="cards related-carousel">
               {verified.map((s) => (
                 <SchoolCard school={s} key={s.name} />
               ))}
@@ -146,7 +216,7 @@ export default async function CityPage({ params }: Params) {
             <>
               <p className="copy" style={{ marginTop: verified.length ? 44 : 8 }}>
                 These schools operate in {stateRecord.name}. We publish a school&rsquo;s exact base,
-                accreditation and prices only once we have verified them against the school, so we
+                accreditation and course details only once we have verified them against the school, so we
                 do not yet claim which of these trade from {record.name} itself.
               </p>
               <div className="chain" style={{ marginTop: 20 }}>

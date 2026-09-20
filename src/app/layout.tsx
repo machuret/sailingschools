@@ -1,9 +1,11 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import '@phosphor-icons/web/duotone';
 import { siteUrl } from '@/lib/site';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
+import JsonLd from '@/components/JsonLd';
+import { organization, website } from '@/lib/schema';
 import './site.css';
 
 // Self-hosted so the site never waits on a font CDN at runtime.
@@ -24,6 +26,10 @@ const serif = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: 'Sailing Schools Australia',
+  creator: 'SailingSchools.com.au editorial team',
+  publisher: 'SailingSchools.com.au',
+  referrer: 'origin-when-cross-origin',
   alternates: { canonical: '/' },
   // Part 19 titles are self-contained and already at the length search results show,
   // so pages set their own in full rather than having a site name appended.
@@ -54,6 +60,11 @@ export const metadata: Metadata = {
     images: ['/og.jpg'],
   },
   category: 'education',
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: [{ url: '/icon.png', type: 'image/png', sizes: '1254x1254' }],
+    apple: [{ url: '/apple-icon.png', type: 'image/png', sizes: '180x180' }],
+  },
   robots: {
     index: true,
     follow: true,
@@ -65,6 +76,16 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#0f2f55' },
+    { media: '(prefers-color-scheme: dark)', color: '#081724' },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -81,6 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <JsonLd nodes={[organization(), website()]} />
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
