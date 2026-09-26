@@ -187,6 +187,7 @@ em.serif { font-style: italic; }
 .photo.tall { aspect-ratio: 4 / 5; } .photo.wide { aspect-ratio: 16 / 9; }
 .photo .slot { width: 100%; height: 100%; display: block; }
 .badge { position: absolute; top: 14px; left: 14px; z-index: 2; background: var(--sky); color: var(--navy); border-radius: var(--pill); padding: 8px 18px; font-size: 14px; font-weight: 500; }
+.badge-online { background: var(--orange); color: #fff; font-weight: 750; letter-spacing: .035em; text-transform: uppercase; box-shadow: var(--e1); }
 
 /* cards */
 .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; margin-top: 44px; }
@@ -896,6 +897,24 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 .school-feature { width: 100%; height: 100%; object-fit: cover; }
 .profile-contact { display: grid; gap: 10px; margin: 22px 0; }
 .profile-contact a { display: flex; align-items: center; gap: 9px; font-weight: 650; overflow-wrap: anywhere; }
+.profile-online-tag { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; padding: 9px 16px; border-radius: var(--pill); background: var(--orange); color: #fff; font-size: .8125rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+.school-editorial-lead { max-width: 68ch; margin-top: 20px; color: var(--muted); font-family: var(--serif); font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.62; }
+.editorial-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 38px; }
+.editorial-highlights article { padding: 30px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--e1); }
+.editorial-highlights i { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 20px; border-radius: 50%; background: var(--sky-2); color: var(--blue); font-size: 23px; }
+.editorial-highlights h3 { font-size: 1.25rem; }
+.editorial-highlights p, .school-fit-grid p, .editorial-conclusion p { margin-top: 13px; color: var(--muted); font-size: .96875rem; line-height: 1.72; }
+.school-fit-section { background: var(--navy-2); margin-top: 96px; padding-bottom: 96px; }
+.school-fit-section .h2 { color: #fff; }
+.school-fit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 36px; }
+.school-fit-grid article { position: relative; padding: 34px 30px; border-radius: var(--r); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); }
+.school-fit-grid h3 { margin-top: 28px; color: #fff; font-size: 1.25rem; }
+.school-fit-grid p { color: rgba(255,255,255,.78); }
+.fit-number { color: var(--sky); font-size: .8125rem; font-weight: 750; letter-spacing: .12em; }
+.editorial-conclusion { display: grid; grid-template-columns: 1.2fr .8fr; gap: 22px; }
+.editorial-conclusion article { padding: 42px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--e1); }
+.editorial-conclusion .verdict { background: var(--cream); border-top: 5px solid var(--orange); }
+.editorial-conclusion .verdict p { color: var(--navy); font-family: var(--serif); font-size: 1.25rem; }
 
 /* Editorial feature: one distinctive recurring voice, not another promotional card. */
 .editorial-feature { position: relative; }
@@ -976,6 +995,9 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
   .cards.related-carousel::-webkit-scrollbar { display: none; }
   .cards.related-carousel > * { flex: 0 0 min(84vw, 330px); scroll-snap-align: start; }
   .profile-contact a { min-height: 44px; }
+  .editorial-highlights, .school-fit-grid, .editorial-conclusion { grid-template-columns: 1fr; }
+  .school-fit-section { margin-top: 72px; padding-bottom: 72px; }
+  .editorial-conclusion article { padding: 30px 24px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

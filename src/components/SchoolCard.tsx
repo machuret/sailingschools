@@ -19,7 +19,9 @@ export default function SchoolCard({ school }: { school: School }) {
   return (
     <div className="ccard">
       <div className="photo">
-        {school.region && <span className="badge">{school.region}</span>}
+        {school.operatingScope === 'online'
+          ? <span className="badge badge-online">Online only</span>
+          : school.region && <span className="badge">{school.region}</span>}
         <SchoolMark school={school} />
       </div>
       <h3>{school.name}</h3>

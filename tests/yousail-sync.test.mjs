@@ -17,6 +17,13 @@ test('fetches every paginated school including territories', async () => {
     sourceUpdatedAt: '2026-09-14', name: 'Alpha Sailing', state: 'new-south-wales',
     region: 'Sydney', website: 'https://alpha.test', logo: 'https://yousail.com.au/logo.png',
     checked: '2026-09-12', freshness: 'current', services: ['Sailing lessons'],
+    operatingScope: 'online',
+    editorial: {
+      description: '## Learn more about Alpha Sailing\n\nA full profile.',
+      seoTitle: 'Alpha Sailing | Sailing Schools Australia',
+      seoDescription: 'A full profile.',
+      buyingGuide: 'Ideal for online learners.',
+    },
   });
   assert.equal(schools[1].state, 'northern-territory');
 });
@@ -66,7 +73,12 @@ function school(slug, state) {
     location: { suburb: 'Sydney', stateOrTerritory: state }, services: ['Sailing lessons'],
     featureImageUrl: null,
     contact: { website: 'https://alpha.test', phone: null, email: null },
-    school: { serviceArea: null },
+    school: { serviceArea: null, operatingScope: 'online' },
+    editorial: {
+      description: '## Learn more about Alpha Sailing\n\nA full profile.',
+      seoTitle: 'Alpha Sailing | Sailing Schools Australia',
+      seoDescription: 'A full profile.', buyingGuide: 'Ideal for online learners.',
+    },
     media: { logoImageUrl: 'https://yousail.com.au/logo.png', featureImageUrl: null },
     freshness: { lastVerifiedAt: '2026-09-12', state: 'current' },
   };

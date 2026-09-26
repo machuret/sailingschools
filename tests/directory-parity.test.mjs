@@ -13,5 +13,9 @@ test('the satellite directory contains every school in the YouSail snapshot exac
     assert.ok(school.name);
     assert.ok(school.sourceUrl);
     assert.ok(school.state);
+    assert.ok(school.editorial?.description, `${school.sourceSlug} needs its own editorial description`);
+    assert.match(school.editorial.description, /## What we love/);
+    assert.match(school.editorial.description, /## Ideal for/);
+    assert.doesNotMatch(school.editorial.description, /https?:\/\//);
   }
 });

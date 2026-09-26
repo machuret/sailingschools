@@ -35,6 +35,31 @@ const TRAINING_LINKS: { match: RegExp; name: string; href: string }[] = [
   { match: /commercial/iu, name: 'Commercial sailing pathway', href: '/pathways/work-on-boats/' },
 ];
 
+type EditorialSection = { body: string; subsections: { title: string; body: string }[] };
+
+function parseEditorial(markdown: string | undefined): Map<string, EditorialSection> {
+  const sections = new Map<string, EditorialSection>();
+  if (!markdown) return sections;
+  const matches = [...markdown.matchAll(/^## (.+)$/gmu)];
+  matches.forEach((match, index) => {
+    const title = match[1].trim();
+    const start = (match.index ?? 0) + match[0].length;
+    const end = matches[index + 1]?.index ?? markdown.length;
+    const content = markdown.slice(start, end).trim();
+    const subsectionMatches = [...content.matchAll(/^### (.+)$/gmu)];
+    const firstSubsection = subsectionMatches[0]?.index ?? content.length;
+    sections.set(title, {
+      body: content.slice(0, firstSubsection).trim(),
+      subsections: subsectionMatches.map((subsection, subsectionIndex) => {
+        const subsectionStart = (subsection.index ?? 0) + subsection[0].length;
+        const subsectionEnd = subsectionMatches[subsectionIndex + 1]?.index ?? content.length;
+        return { title: subsection[1].trim(), body: content.slice(subsectionStart, subsectionEnd).trim() };
+      }),
+    });
+  });
+  return sections;
+}
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -46,9 +71,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const school = schools.find((entry) => entry.sourceSlug === slug);
   if (!school) return {};
   const verified = school.freshness !== 'unverified';
-  const description = `${school.name}${school.region ? ` in ${school.region}` : ''}: independently organised contact details, training focus, qualification links and verification status.`;
+  const description = school.editorial?.seoDescription
+    ?? `${school.name}${school.region ? ` in ${school.region}` : ''}: sailing training, course pathways and who this school suits.`;
   return {
-    title: `${school.name} | Sailing School Profile`,
+    title: school.editorial?.seoTitle ?? `${school.name} | Sailing School Profile`,
     description,
     alternates: { canonical: `/schools/${slug}/` },
     robots: verified ? undefined : { index: false, follow: true },
@@ -77,7 +103,16 @@ export default async function SchoolProfilePage({ params }: Params) {
     ...schemes.flatMap((scheme) => SCHEME_LINKS[scheme] ? [SCHEME_LINKS[scheme]] : []),
     ...TRAINING_LINKS.filter((item) => item.match.test(trainingText)).map(({ name, href }) => ({ name, href })),
   ].filter((item, index, all) => all.findIndex((candidate) => candidate.href === item.href) === index);
-  const description = school.blurb ?? `${school.name} is listed as a sailing-training provider in the YouSail directory.`;
+  const description = school.editorial?.seoDescription
+    ?? school.blurb
+    ?? `${school.name} is listed as a sailing-training provider in the YouSail directory.`;
+  const editorial = parseEditorial(school.editorial?.description);
+  const learnMore = editorial.get(`Learn more about ${school.name}`)?.body ?? description;
+  const whatWeLove = editorial.get('What we love')?.body;
+  const whatYouWillLove = editorial.get('What you will love')?.body;
+  const idealFor = editorial.get('Ideal for')?.subsections ?? [];
+  const trainingTypes = editorial.get('Type of sailing and training')?.body;
+  const verdict = editorial.get('Our verdict')?.body ?? school.editorial?.buyingGuide;
 
   return (
     <>
@@ -115,6 +150,7 @@ export default async function SchoolProfilePage({ params }: Params) {
             ]} />
             <h1>{school.name}</h1>
             <p className="sub">{school.region ?? state?.name ?? 'Australia-wide sailing training provider'}</p>
+            {school.operatingScope === 'online' && <span className="profile-online-tag"><i className="ph-duotone ph-wifi-high" aria-hidden="true" /> Online only</span>}
             <div className="cta">
               {school.website && <a className="pill pill-orange" href={school.website} rel="noopener" target="_blank">Visit school website</a>}
               {location && <Link className="pill pill-ghost" href={`/sailing-schools/${location.state}/${location.slug}/`}>Schools near {location.name}</Link>}
@@ -127,13 +163,15 @@ export default async function SchoolProfilePage({ params }: Params) {
         <div className="wrap split top">
           <div>
             <span className="kicker">School overview</span>
-            <h2 className="h2">About {school.name}</h2>
-            <p className="copy">{description}</p>
-            <p className="copy">
-              Use this profile as a verified starting point, then confirm the current timetable,
-              prerequisites, vessel, class size and certificate directly with the school before
-              booking. SailingSchools.com.au does not take bookings or accept paid placement.
-            </p>
+            <h2 className="h2">Learn more about {school.name}</h2>
+            <p className="school-editorial-lead">{learnMore}</p>
+
+            {(whatWeLove || whatYouWillLove) && (
+              <div className="editorial-highlights">
+                {whatWeLove && <article><i className="ph-duotone ph-heart" aria-hidden="true" /><h3>What we love</h3><p>{whatWeLove}</p></article>}
+                {whatYouWillLove && <article><i className="ph-duotone ph-sparkle" aria-hidden="true" /><h3>What you will love</h3><p>{whatYouWillLove}</p></article>}
+              </div>
+            )}
 
             <h2 className="h3" style={{ marginTop: 42 }}>Training information</h2>
             <dl className="facts two" style={{ marginTop: 20 }}>
@@ -145,7 +183,10 @@ export default async function SchoolProfilePage({ params }: Params) {
           </div>
 
           <aside className="ccard">
-            <div className="photo"><SchoolMark school={school} /></div>
+            <div className="photo">
+              {school.operatingScope === 'online' && <span className="badge badge-online">Online only</span>}
+              <SchoolMark school={school} />
+            </div>
             <h3>Contact the school</h3>
             <p>Ask about the exact course, training boat, student-to-instructor ratio, prerequisites and what certificate is issued.</p>
             <div className="profile-contact">
@@ -154,10 +195,36 @@ export default async function SchoolProfilePage({ params }: Params) {
               {school.website && <a href={school.website} rel="noopener" target="_blank"><i className="ph-duotone ph-globe" /> School website</a>}
             </div>
             {school.checked && <p className="note">Directory details checked {school.checked}.</p>}
-            {school.sourceUrl && <a className="school-link" href={school.sourceUrl} rel="noopener" target="_blank"><span>View the source record on YouSail</span><i className="ph-duotone ph-arrow-up-right" /></a>}
           </aside>
         </div>
       </section>
+
+      {idealFor.length > 0 && (
+        <section className="sec school-fit-section">
+          <div className="wrap">
+            <span className="kicker">Find your fit</span>
+            <h2 className="h2">Ideal for</h2>
+            <div className="school-fit-grid">
+              {idealFor.map((item, index) => (
+                <article key={item.title}>
+                  <span className="fit-number">0{index + 1}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {(trainingTypes || verdict) && (
+        <section className="sec">
+          <div className="wrap editorial-conclusion">
+            {trainingTypes && <article><span className="kicker">The experience</span><h2 className="h3">Type of sailing and training</h2><p>{trainingTypes}</p></article>}
+            {verdict && <article className="verdict"><span className="kicker">Our verdict</span><p>{verdict}</p></article>}
+          </div>
+        </section>
+      )}
 
       <section className="sec">
         <div className="wrap split top">

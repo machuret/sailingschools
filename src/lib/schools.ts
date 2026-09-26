@@ -55,6 +55,13 @@ export type School = {
   featureImage?: string;
   freshness?: string;
   sourceUpdatedAt?: string;
+  operatingScope?: 'local' | 'nationwide' | 'online' | 'hybrid';
+  editorial?: {
+    description: string;
+    seoTitle: string | null;
+    seoDescription: string | null;
+    buyingGuide: string;
+  };
 };
 
 const CHECKED = 'September 2026';

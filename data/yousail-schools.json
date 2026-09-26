@@ -1,14 +1,14 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-26T16:16:37.612Z",
-    "total": 18
+    "syncedAt": "2026-09-26T16:44:14.679Z",
+    "total": 20
   },
   "schools": [
     {
       "sourceSlug": "adventure-sailing",
       "sourceUrl": "https://yousail.com.au/directory/adventure-sailing",
-      "sourceUpdatedAt": "2026-09-18T14:59:03.78641+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Adventure Sailing",
       "state": "western-australia",
       "region": "Geographe",
@@ -22,12 +22,19 @@
       "services": [
         "Sailing charter company",
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "hybrid",
+      "editorial": {
+        "description": "## Learn more about Adventure Sailing\n\nAdventure Sailing brings an adventurous, hands-on spirit to maritime training from Port Geographe near Busselton. Its welcoming instructors work with everyone from first-time crew and young sailors to future commercial mariners, with liveaboard catamaran experiences and the Western Australian coast adding real-world depth to every lesson.\n\n## What we love\n\nThe breadth is exceptional. A student can discover sailing, build recognised Australian Sailing skills, spend several days learning aboard a cruising catamaran or begin a serious commercial pathway without leaving the same training community. We also love the deliberate welcome extended to young sailors and women through programs designed around confidence, participation and shared adventure.\n\n## What you will love\n\nYou will love learning through action rather than observation. Port Geographe and the surrounding coast give students room to practise sail handling, helming, navigation and onboard routines in the conditions where those skills will eventually be used. The school also makes progression easy to imagine: a first weekend can lead naturally to liveaboard cruising, a Recreational Skipper's Ticket, marine radio competence or professional maritime study.\n\n## Ideal for\n\n### First-time sailors who want an active beginning\n\nThis is a strong choice if you want your first experience to feel substantial but not intimidating. Start Crewing and Start Helming introduce the language, safety habits and teamwork of sailing while giving students genuine jobs aboard, so confidence grows from successfully doing rather than simply listening.\n\n### Families, teenagers and women seeking a supportive pathway\n\nYouth adventures and She Sails experiences create an environment where learners can build independence without feeling they must already belong to the sailing world. The social, liveaboard and expedition elements are especially valuable for students motivated by connection and adventure as much as certification.\n\n### Future cruisers and commercial mariners\n\nIYT liveaboard catamaran programs suit people preparing for independent chartering, while Coxswain, Master, Marine Engine Driver and General Purpose Hand pathways serve those considering work on the water. It is rare to find recreational and commercial ambitions supported so naturally in one regional school.\n\n## Type of sailing and training\n\nAustralian Sailing keelboat training; youth sailing; women-only sailing; liveaboard catamaran cruising; bareboat preparation; recreational powerboat licensing; marine radio; commercial maritime training.\n\n## Our verdict\n\nAdventure Sailing is ideal when learning is part of a bigger plan. Come for a first qualification and you may leave with the skills, crew network and ambition for a much larger adventure.",
+        "seoTitle": "Adventure Sailing | Sailing Schools Australia",
+        "seoDescription": "Adventure Sailing brings an adventurous, hands-on spirit to maritime training from Port Geographe near Busselton. Its welcoming instructors work with everyone from first-time crew and young sailors to future commercial mariners, with liveaboard catamaran experiences and the Western Australian coast ",
+        "buyingGuide": "Adventure Sailing is ideal when learning is part of a bigger plan. Come for a first qualification and you may leave with the skills, crew network and ambition for a much larger adventure."
+      }
     },
     {
       "sourceSlug": "atlas-sailing",
       "sourceUrl": "https://yousail.com.au/directory/atlas-sailing",
-      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Atlas Sailing",
       "state": "new-south-wales",
       "region": "Mosman",
@@ -39,12 +46,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Atlas Sailing\n\nAtlas Sailing turns Sydney Harbour into an inspiring classroom, combining approachable coaching with a clear route from curious beginner to capable skipper. Its Mosman Bay base works particularly well for Sydney learners who value practical time at the helm and the option to progress into recognised Australian Sailing and RYA training.\n\n## What we love\n\nWe love the clarity of the pathway. Students are not pushed prematurely towards command: they first learn how to contribute as crew, then develop feel at the helm, and finally bring boat handling, navigation and leadership together. The mix of local Australian Sailing courses, international RYA learning and NSW boat-licence preparation also lets students choose a route that matches their actual boating plans.\n\n## What you will love\n\nYou will love the contrast between a friendly small-school atmosphere and the richness of Sydney Harbour as a training ground. Every session can involve real traffic awareness, changing wind around headlands, communication between crew and the satisfaction of handling a yacht in one of the world's great natural harbours.\n\n## Ideal for\n\n### Complete beginners who want a calm, structured start\n\nDiscover Sailing and Start Crewing let newcomers understand the boat before they are asked to take on more responsibility. This suits people who are excited by sailing but would learn better through a visible sequence of achievable steps than through an intensive all-at-once course.\n\n### Crew members ready to become skippers\n\nStart Helming and Start Skippering are valuable for sailors who have spent time aboard but still hesitate when asked to steer, plan a manoeuvre or direct the crew. The progression helps convert familiarity into judgement and gives students a safer place to practise taking charge.\n\n### Sailors balancing local and international goals\n\nThe combination of a NSW boat-licence option with RYA Competent Crew and Day Skipper makes Atlas useful for people who sail locally now but may cruise or charter overseas later. You can build immediate competence without closing the door on internationally recognised progression.\n\n## Type of sailing and training\n\nSydney Harbour keelboat sailing; crew and helm development; day skippering; cruising-yacht training; RYA theory and practical learning; recreational powerboat licensing.\n\n## Our verdict\n\nAtlas Sailing is a thoughtful choice for people who want their confidence to grow in the right order. It offers an accessible Sydney beginning and a credible pathway for the seasons ahead.",
+        "seoTitle": "Atlas Sailing | Sailing Schools Australia",
+        "seoDescription": "Atlas Sailing turns Sydney Harbour into an inspiring classroom, combining approachable coaching with a clear route from curious beginner to capable skipper. Its Mosman Bay base works particularly well for Sydney learners who value practical time at the helm and the option to progress into recognised",
+        "buyingGuide": "Atlas Sailing is a thoughtful choice for people who want their confidence to grow in the right order. It offers an accessible Sydney beginning and a credible pathway for the seasons ahead."
+      }
     },
     {
       "sourceSlug": "aussea-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/aussea-sailing-school",
-      "sourceUpdatedAt": "2026-09-26T14:26:40.477462+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "AusSea Sailing School",
       "state": "new-south-wales",
       "region": "Sans Souci",
@@ -55,12 +69,19 @@
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about AusSea Sailing School\n\nAusSea Sailing School offers patient, flexible IYT tuition from Kogarah Bay, using sheltered water for early learning before students extend into Botany Bay. Its seven-level pathway makes progress easy to understand, taking sailors from an introductory experience towards racing, offshore seamanship and independent bareboat chartering.\n\n## What we love\n\nWe love the way AusSea removes uncertainty about what comes next. Each level has a recognisable purpose, so students can enter at an appropriate point and keep moving without having to redesign their training plan after every course. The smaller-school format also supports individual feedback and meaningful time handling the boat.\n\n## What you will love\n\nYou will love developing on water that matches your stage of learning. Beginners can concentrate on steering, sails and communication without unnecessary pressure, while advancing students can move into the broader conditions and navigational demands of Botany Bay. Racing and offshore levels add variety for sailors whose ambitions extend beyond relaxed harbour cruising.\n\n## Ideal for\n\n### Beginners who value patient, progressive instruction\n\nTry Sail and the introductory levels suit people who want to test the experience before committing to a long program. The sheltered setting helps nervous learners focus on one skill at a time, while the level system makes each improvement visible and motivating.\n\n### Sydney sailors moving from crew to command\n\nIntermediate and advanced levels give regular crew members a place to practise helming, sail trim, manoeuvres and coordination until they can take responsibility with less prompting. This is particularly useful for students who have informal experience but gaps in their formal knowledge.\n\n### Future racers, offshore sailors and charter skippers\n\nDedicated racing and offshore stages let students explore faster teamwork, passage routines and navigation before working towards International Bareboat and ICC goals. That makes AusSea relevant to more than one version of the sailing dream.\n\n## Type of sailing and training\n\nSheltered-water training; harbour and bay sailing; progressive IYT development; yacht racing; coastal and offshore seamanship; bareboat-charter preparation; ICC and VHF assessment.\n\n## Our verdict\n\nAusSea is an excellent match for learners who want flexibility without losing direction. Its clear levels create a welcoming route from first sail to genuine independence.",
+        "seoTitle": "AusSea Sailing School | Sailing Schools Australia",
+        "seoDescription": "AusSea Sailing School offers patient, flexible IYT tuition from Kogarah Bay, using sheltered water for early learning before students extend into Botany Bay. Its seven-level pathway makes progress easy to understand, taking sailors from an introductory experience towards racing, offshore seamanship ",
+        "buyingGuide": "AusSea is an excellent match for learners who want flexibility without losing direction. Its clear levels create a welcoming route from first sail to genuine independence."
+      }
     },
     {
       "sourceSlug": "blue-water-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/blue-water-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Blue Water Sailing School",
       "state": "victoria",
       "region": "Docklands",
@@ -74,12 +95,19 @@
       "services": [
         "Sailing charter company",
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Blue Water Sailing School\n\nBlue Water Sailing School helps future cruisers turn ambition into practical confidence through training in Melbourne, the Whitsundays and online. Short introductions, private coaching and immersive liveaboard programs make it particularly attractive to couples, boat owners and charterers preparing for a real voyage rather than simply collecting a certificate.\n\n## What we love\n\nWe love the connection between local learning and destination sailing. Students can discover the basics on Port Phillip, strengthen navigation and radio knowledge online, then consolidate everything during liveaboard training in the Whitsundays. The option of private tuition is equally valuable for owners who need help with their own boat, systems or recurring manoeuvres.\n\n## What you will love\n\nYou will love being able to shape the pathway around a practical goal. Whether that goal is a Victorian licence, becoming dependable crew, chartering a catamaran or progressing towards Yachtmaster Coastal, the training can combine theory, targeted coaching and consecutive days aboard.\n\n## Ideal for\n\n### Melbourne beginners who want room to grow\n\nExperience Sailing and Learn to Sail provide an approachable first step without pretending that a single outing creates a skipper. They suit learners who want to establish sound habits locally and keep a clear option to pursue IYT qualifications later.\n\n### Couples and friends planning a charter holiday\n\nInternational Crew and Bareboat Skipper programs help a future charter team share the work rather than relying entirely on one confident person. Liveaboard time exposes students to anchoring, systems, navigation and daily routines that short harbour lessons cannot fully reproduce.\n\n### Boat owners and experienced sailors with specific gaps\n\nPrivate coaching is ideal when the challenge is not a complete syllabus but docking a particular yacht, understanding its systems or improving confidence in stronger conditions. Advanced coastal training and online navigation can then extend that focused work into a broader capability.\n\n## Type of sailing and training\n\nPort Phillip sailing; cruising-yacht skills; IYT crew and skipper training; liveaboard monohull and catamaran learning; private owner coaching; coastal navigation; radio; recreational licensing.\n\n## Our verdict\n\nBlue Water is strongest when training is tied to a real boat, charter or passage. Its blend of local, online and liveaboard learning helps students arrive at that next adventure genuinely prepared.",
+        "seoTitle": "Blue Water Sailing School | Sailing Schools Australia",
+        "seoDescription": "Blue Water Sailing School helps future cruisers turn ambition into practical confidence through training in Melbourne, the Whitsundays and online. Short introductions, private coaching and immersive liveaboard programs make it particularly attractive to couples, boat owners and charterers preparing ",
+        "buyingGuide": "Blue Water is strongest when training is tied to a real boat, charter or passage. Its blend of local, online and liveaboard learning helps students arrive at that next adventure genuinely prepared."
+      }
     },
     {
       "sourceSlug": "flying-fish-sailing",
       "sourceUrl": "https://yousail.com.au/directory/flying-fish-sailing",
-      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Flying Fish Sailing",
       "state": "new-south-wales",
       "region": "Mosman",
@@ -92,12 +120,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "hybrid",
+      "editorial": {
+        "description": "## Learn more about Flying Fish Sailing\n\nFlying Fish Sailing is a high-energy RYA centre on Sydney's Middle Harbour with pathways for complete beginners, ambitious cruisers and people planning a professional life on yachts. Its combination of structured qualifications, offshore passages, race campaigns and specialist training gives students unusual freedom to keep progressing.\n\n## What we love\n\nWe love the momentum this school can create. A first RYA course does not sit in isolation; it can lead into Day Skipper, Coastal Skipper, Yachtmaster preparation, ocean theory, race experience or a complete career program. Safety, powerboat, radio and first-aid options help students build the rounded competence expected of serious skippers and working crew.\n\n## What you will love\n\nYou will love the sense that training is connected to the wider sailing world. Practical courses can be reinforced through adventure passages and iconic races, giving students both sea miles and stories. Career-focused sailors also benefit from learning within a school that understands how qualifications, experience and employability fit together.\n\n## Ideal for\n\n### Beginners with big ambitions\n\nFlying Fish suits newcomers who may not yet know whether their future lies in weekend cruising, offshore adventure or professional yachting. The broad pathway allows you to begin with fundamentals and delay that decision until genuine experience has revealed what excites you most.\n\n### Offshore sailors and Yachtmaster candidates\n\nAdvanced students need more than classroom competence. Coastal passages, race campaigns and intensive preparation create opportunities to practise judgement, watchkeeping and command under pressure before presenting for higher-level assessment.\n\n### People considering work on yachts\n\nFast-track and career programs combine training with the practical expectations of the marine industry. They are appropriate for motivated candidates who want a purposeful route into professional crewing rather than assembling unrelated certificates on their own.\n\n## Type of sailing and training\n\nRYA cruising courses; coastal and offshore passage-making; Yachtmaster preparation; ocean navigation; yacht racing; powerboat handling; marine safety and radio; professional yacht-career training.\n\n## Our verdict\n\nFlying Fish is a launchpad rather than a one-course school. It is especially compelling for students who want their first qualification to open the door to offshore experience or a marine career.",
+        "seoTitle": "Flying Fish Sailing | Sailing Schools Australia",
+        "seoDescription": "Flying Fish Sailing is a high-energy RYA centre on Sydney's Middle Harbour with pathways for complete beginners, ambitious cruisers and people planning a professional life on yachts. Its combination of structured qualifications, offshore passages, race campaigns and specialist training gives student",
+        "buyingGuide": "Flying Fish is a launchpad rather than a one-course school. It is especially compelling for students who want their first qualification to open the door to offshore experience or a marine career."
+      }
     },
     {
       "sourceSlug": "liquid-edge-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/liquid-edge-sailing-school",
-      "sourceUpdatedAt": "2026-09-26T14:27:17.533611+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Liquid Edge Sailing School",
       "state": "new-south-wales",
       "region": "Balmain",
@@ -108,12 +143,19 @@
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Liquid Edge Sailing School\n\nLiquid Edge Sailing School keeps instruction personal, teaching small groups from Mort Bay in Balmain aboard both monohull and catamaran. Its practical IYT pathway is particularly attractive to couples and friends preparing to cruise or charter together, because everyone receives meaningful time handling the yacht.\n\n## What we love\n\nWe love the low student-to-instructor feel and the direct connection between training and independence. Students can start with the fundamentals, progress through crew and flotilla skills, then work towards Bareboat Skipper, ICC or Yachtmaster Coastal goals. Access to monohull and multihull training also helps future charterers choose experience relevant to the boat they intend to hire.\n\n## What you will love\n\nYou will love spending less time watching from the rail. Small groups create more opportunities to steer, trim sails, plan manoeuvres and talk through decisions. Sydney Harbour provides variety, while coastal and catamaran options allow the experience to become progressively more realistic.\n\n## Ideal for\n\n### Beginners who learn best through close coaching\n\nSome students need the freedom to repeat a manoeuvre and ask detailed questions without feeling lost in a large group. Liquid Edge's personal format is well suited to building sound fundamentals and correcting small misunderstandings before they become habits.\n\n### Couples preparing to charter together\n\nTraining as a pair makes it possible to practise communication, divide onboard responsibilities and ensure both people can contribute during docking, sail handling and emergencies. Catamaran-specific tuition is especially useful when the planned holiday involves a multihull.\n\n### Sailors pursuing international charter credentials\n\nBareboat Skipper and ICC preparation connect local harbour skills with the documentation and competence commonly expected by overseas charter operators. More experienced students can continue towards coastal-level navigation and command.\n\n## Type of sailing and training\n\nSmall-group harbour sailing; IYT crew and skipper training; flotilla sailing; monohull and catamaran handling; bareboat preparation; ICC assessment; coastal Yachtmaster development.\n\n## Our verdict\n\nLiquid Edge is ideal for students who want personal attention and a direct line between each lesson and the day they confidently take the boat themselves.",
+        "seoTitle": "Liquid Edge Sailing School | Sailing Schools Australia",
+        "seoDescription": "Liquid Edge Sailing School keeps instruction personal, teaching small groups from Mort Bay in Balmain aboard both monohull and catamaran. Its practical IYT pathway is particularly attractive to couples and friends preparing to cruise or charter together, because everyone receives meaningful time han",
+        "buyingGuide": "Liquid Edge is ideal for students who want personal attention and a direct line between each lesson and the day they confidently take the boat themselves."
+      }
     },
     {
       "sourceSlug": "mainstay-sailing",
       "sourceUrl": "https://yousail.com.au/directory/mainstay-sailing",
-      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Mainstay Sailing",
       "state": "queensland",
       "region": "Airlie Beach",
@@ -126,12 +168,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Mainstay Sailing\n\nMainstay Sailing turns the Whitsundays into an immersive liveaboard RYA classroom. Operating from Coral Sea Marina, the school teaches steering, navigation, anchoring, sail handling and teamwork through the real daily rhythm of cruising rather than a collection of disconnected exercises.\n\n## What we love\n\nWe love how naturally the setting supports the syllabus. Students plan routes between islands, enter anchorages, adapt to weather and live with the consequences of good preparation. The RYA pathway is impressively complete, extending from a short first experience through Competent Crew, Day Skipper, Coastal Skipper and Yachtmaster preparation.\n\n## What you will love\n\nYou will love finishing each day with a sense of having travelled, not merely attended class. Consecutive time aboard accelerates learning because yesterday's lesson becomes today's routine. Online theory, ICC, sea safety, diesel and radio courses also let students strengthen the knowledge surrounding their practical qualification.\n\n## Ideal for\n\n### Beginners who want an unforgettable first course\n\nStart Yachting and Competent Crew allow newcomers to learn inside a genuine cruising experience. Living aboard helps boat terminology, safety and seamanship make sense quickly because students see how every system and crew role contributes to the voyage.\n\n### Future charter skippers\n\nThe Whitsundays are one of Australia's great bareboat destinations, making them a highly relevant place to develop Day Skipper and ICC confidence. Students practise the same kinds of anchoring, pilotage and daily decision-making they will face on a future charter.\n\n### Experienced sailors preparing for advanced assessment\n\nCoastal passages, night work and Yachtmaster preparation suit sailors who already have miles but want their command skills examined and refined. The liveaboard format exposes weaknesses that can remain hidden during isolated day sessions.\n\n## Type of sailing and training\n\nLiveaboard cruising; RYA crew and skipper pathways; Whitsunday island navigation; anchoring and pilotage; coastal and night passages; ICC; sea safety, diesel and radio training.\n\n## Our verdict\n\nMainstay pairs rigorous international training with a voyage students will remember. It is one of the most natural ways to turn a qualification into lived cruising competence.",
+        "seoTitle": "Mainstay Sailing | Sailing Schools Australia",
+        "seoDescription": "Mainstay Sailing turns the Whitsundays into an immersive liveaboard RYA classroom. Operating from Coral Sea Marina, the school teaches steering, navigation, anchoring, sail handling and teamwork through the real daily rhythm of cruising rather than a collection of disconnected exercises.",
+        "buyingGuide": "Mainstay pairs rigorous international training with a voyage students will remember. It is one of the most natural ways to turn a qualification into lived cruising competence."
+      }
     },
     {
       "sourceSlug": "navathome-australia",
       "sourceUrl": "https://yousail.com.au/directory/navathome-australia",
-      "sourceUpdatedAt": "2026-09-26T13:56:31.90995+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "NAVatHOME Australia",
       "state": "western-australia",
       "region": "Como",
@@ -143,12 +192,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "online",
+      "editorial": {
+        "description": "## Learn more about NAVatHOME Australia\n\nNAVatHOME Australia is a fully online school for sailors who want serious navigation knowledge without rearranging life around a classroom timetable. Animated lessons, self-paced study, Southern Hemisphere context and instructor support create a flexible but structured route from first chartwork to Yachtmaster Ocean theory.\n\n## What we love\n\nWe love the accessibility without loss of depth. Students can pause difficult subjects, repeat exercises and study when concentration is best, while still following a recognised RYA pathway. The visual presentation is particularly helpful for topics such as tidal calculations, pilotage, weather systems and celestial navigation that can feel abstract in a traditional textbook.\n\n## What you will love\n\nYou will love being able to connect study with your real sailing calendar. Work through Day Skipper theory before a practical course, refresh collision regulations before a charter or tackle advanced navigation gradually between voyages. Instructor support means self-paced does not have to mean unsupported.\n\n## Ideal for\n\n### Busy sailors who cannot attend fixed classes\n\nShift workers, parents and professionals can build a consistent study routine without sacrificing whole evenings or travelling to a training centre. The ability to stop and resume also makes complex lessons easier to absorb than a compressed classroom weekend.\n\n### Cruisers preparing for practical training or chartering\n\nOnline theory gives students more capacity to focus on boat handling once they step aboard. Arriving with a working knowledge of charts, weather, buoyage and passage planning can make a practical course or charter substantially more rewarding.\n\n### Experienced skippers pursuing advanced theory\n\nCoastal Skipper, Yachtmaster Offshore and Yachtmaster Ocean subjects demand sustained study. The online format lets experienced sailors work methodically through higher-level navigation while fitting learning around voyages and professional commitments.\n\n## Type of sailing and training\n\nFully online navigation; RYA Essential Navigation; Day Skipper theory; Coastal Skipper and Yachtmaster Offshore theory; Yachtmaster Ocean; celestial navigation; passage planning and weather.\n\n## Our verdict\n\nNAVatHOME is ideal for independent learners who value flexibility but still want a respected syllabus and expert support. It turns any suitable desk into a serious navigation classroom.",
+        "seoTitle": "NAVatHOME Australia | Sailing Schools Australia",
+        "seoDescription": "NAVatHOME Australia is a fully online school for sailors who want serious navigation knowledge without rearranging life around a classroom timetable. Animated lessons, self-paced study, Southern Hemisphere context and instructor support create a flexible but structured route from first chartwork to ",
+        "buyingGuide": "NAVatHOME is ideal for independent learners who value flexibility but still want a respected syllabus and expert support. It turns any suitable desk into a serious navigation classroom."
+      }
     },
     {
       "sourceSlug": "oceanwest-rya-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/oceanwest-rya-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T14:59:23.489353+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Oceanwest RYA Sailing School",
       "state": "western-australia",
       "region": "Busselton",
@@ -162,12 +218,19 @@
       "services": [
         "Sailing charter company",
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Oceanwest RYA Sailing School\n\nOceanwest RYA Sailing School offers practical, internationally recognised training from Bunbury on Western Australia's South West coast. Its regional setting and choice of monohull or catamaran learning create an approachable environment for students developing from first-time crew into capable cruising skippers.\n\n## What we love\n\nWe love the combination of a dedicated Port Geographe base and a complete RYA progression. Students can establish fundamentals in comparatively protected water, then extend into more demanding coastal navigation, pilotage and night sailing. Training on different vessel types also makes the experience more relevant to future ownership or charter plans.\n\n## What you will love\n\nYou will love the space to learn away from the intensity of a major-city harbour. The South West setting still provides authentic wind, weather and coastal decision-making, while the school's staged courses ensure students add responsibility at a sensible pace.\n\n## Ideal for\n\n### South West beginners and returning sailors\n\nStart Yachting and Competent Crew provide a structured foundation for newcomers, while returning sailors can refresh ropework, sail handling and safety after time away. Local delivery makes continued practice much more achievable for regional students.\n\n### Couples preparing for a charter holiday\n\nMonohull and catamaran options let couples train on a vessel closer to the one they intend to charter. Learning together also develops shared language and roles before the pair must manage anchoring, manoeuvring and navigation without an instructor.\n\n### Skippers seeking recognised progression\n\nDay Skipper and Coastal Skipper pathways suit sailors whose informal experience has outgrown their formal training. Advanced work can strengthen command, night pilotage and passage planning while building a qualification recognised well beyond Western Australia.\n\n## Type of sailing and training\n\nRYA Start Yachting and Competent Crew; Day Skipper; Coastal Skipper; monohull sailing; catamaran handling; coastal navigation; pilotage and night sailing.\n\n## Our verdict\n\nOceanwest is a strong regional choice for students who want respected RYA training, genuine hands-on time and a calm setting in which confidence can grow.",
+        "seoTitle": "Oceanwest RYA Sailing School | Sailing Schools Australia",
+        "seoDescription": "Oceanwest RYA Sailing School offers practical, internationally recognised training from Bunbury on Western Australia's South West coast. Its regional setting and choice of monohull or catamaran learning create an approachable environment for students developing from first-time crew into capable crui",
+        "buyingGuide": "Oceanwest is a strong regional choice for students who want respected RYA training, genuine hands-on time and a calm setting in which confidence can grow."
+      }
     },
     {
       "sourceSlug": "pacific-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/pacific-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Pacific Sailing School",
       "state": "new-south-wales",
       "region": "Darling Point",
@@ -180,12 +243,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Pacific Sailing School\n\nPacific Sailing School has introduced generations of sailors to Sydney Harbour since 1977. Its depth of experience, varied fleet and enormous range make it possible for a newcomer to begin comfortably and continue into racing, liveaboard cruising, safety training or advanced RYA qualifications without changing schools.\n\n## What we love\n\nWe love the choice and continuity. Responsive J/24 keelboats teach feel, sail trim and teamwork close to shore; larger monohulls and catamarans introduce cruising systems and life aboard; RYA, Australian Sailing, racing and specialist courses then support almost any direction a student chooses.\n\n## What you will love\n\nYou will love being able to explore before committing to one identity as a sailor. Try a harbour course, discover racing, move into a liveaboard program or focus on navigation and safety. The school's long history and broad instructor community also provide reassuring depth for students undertaking ambitious qualifications.\n\n## Ideal for\n\n### Absolute beginners who want a proven pathway\n\nDiscover Sailing and the Australian Sailing keelboat sequence provide manageable entry points with plenty of practical repetition. Students can become useful crew and confident helms before deciding whether skippering, racing or cruising is the right next step.\n\n### Harbour sailors moving into cruising or racing\n\nStudents who already sail casually can use spinnaker, race and liveaboard courses to broaden their competence. Moving between a responsive keelboat and a cruising yacht reveals how the same fundamentals change with crew size, systems and purpose.\n\n### Ambitious RYA and Yachtmaster students\n\nDay Skipper, Coastal Skipper and Yachtmaster preparation can be supported by theory, passage experience, radio, diesel and sea-survival training. This makes it easier to build rounded command capability rather than concentrating only on the final exam.\n\n## Type of sailing and training\n\nAustralian Sailing keelboats; Sydney Harbour sailing; RYA cruising courses; monohull and catamaran liveaboards; yacht racing and spinnakers; coastal passages; sea survival; radio, diesel and powerboat skills.\n\n## Our verdict\n\nPacific is a Sydney sailing institution for good reason. Few schools offer such an easy first step and so many credible directions once a student discovers how far they want to go.",
+        "seoTitle": "Pacific Sailing School | Sailing Schools Australia",
+        "seoDescription": "Pacific Sailing School has introduced generations of sailors to Sydney Harbour since 1977. Its depth of experience, varied fleet and enormous range make it possible for a newcomer to begin comfortably and continue into racing, liveaboard cruising, safety training or advanced RYA qualifications witho",
+        "buyingGuide": "Pacific is a Sydney sailing institution for good reason. Few schools offer such an easy first step and so many credible directions once a student discovers how far they want to go."
+      }
     },
     {
       "sourceSlug": "paper-sailors-rock",
       "sourceUrl": "https://yousail.com.au/directory/paper-sailors-rock",
-      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Paper Sailors Rock",
       "state": "queensland",
       "region": "Manly",
@@ -198,12 +268,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Paper Sailors Rock\n\nPaper Sailors Rock is a thoughtful RYA school for people who want knowledge that remains useful long after an exam. Recognised theory and practical training are reinforced through focused workshops and real coastal passages where students can turn methods learned ashore into calm decisions at sea.\n\n## What we love\n\nWe love the emphasis on understanding. The school treats chartwork, weather, seamanship and boat handling as connected parts of good judgement rather than boxes to tick. Specialist workshops make it possible to address a precise weakness, while skippered passages show students how planning changes once wind, fatigue and coastline enter the picture.\n\n## What you will love\n\nYou will love the feeling of concepts becoming real. A course may begin with a chart, rule or manoeuvre, but the learning is carried into practical sailing and coastal mile building. This suits students who ask why something works and want enough context to adapt when a textbook example does not match the day.\n\n## Ideal for\n\n### Queensland sailors beginning an RYA pathway\n\nCompetent Crew and Day Skipper create a logical transition from participating aboard to making decisions for a short coastal voyage. The combination of theory and practical training prevents students from becoming strong in one area while remaining uncertain in the other.\n\n### Cruisers refreshing navigation and seamanship\n\nExperienced sailors often know what to do but want to update the reasoning behind it. Workshops and shorebased courses can rebuild confidence in chartwork, weather and regulations without requiring the learner to repeat an entire beginner program.\n\n### Crew seeking mentored passage experience\n\nCoastal adventures and mile builders provide the time needed to practise watchkeeping, pilotage and passage management across changing conditions. Expert guidance lets students stretch beyond familiar waters while still having support when a decision deserves discussion.\n\n## Type of sailing and training\n\nRYA crew and skipper training; navigation and shorebased theory; specialist seamanship workshops; coastal passages; night sailing; mile building and mentored cruising.\n\n## Our verdict\n\nPaper Sailors Rock is a strong match for reflective learners who want to understand their craft and carry that knowledge confidently from one boat and coastline to another.",
+        "seoTitle": "Paper Sailors Rock | Sailing Schools Australia",
+        "seoDescription": "Paper Sailors Rock is a thoughtful RYA school for people who want knowledge that remains useful long after an exam. Recognised theory and practical training are reinforced through focused workshops and real coastal passages where students can turn methods learned ashore into calm decisions at sea.",
+        "buyingGuide": "Paper Sailors Rock is a strong match for reflective learners who want to understand their craft and carry that knowledge confidently from one boat and coastline to another."
+      }
     },
     {
       "sourceSlug": "sailing-eventide",
       "sourceUrl": "https://yousail.com.au/directory/sailing-eventide",
-      "sourceUpdatedAt": "2026-09-18T14:59:03.78641+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Sailing Eventide",
       "state": "western-australia",
       "region": "Fremantle",
@@ -217,12 +294,45 @@
       "services": [
         "Sailing charter company",
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Sailing Eventide\n\nSailing Eventide offers a relaxed, personal way to learn catamaran sailing from Fremantle aboard a spacious Lagoon 38. The stable platform, small-group atmosphere and Western Australian coastline suit couples, private groups and teams who want instruction to feel like a rewarding day on the water.\n\n## What we love\n\nWe love the way the boat itself shapes the experience. A cruising catamaran gives students room to observe systems, move comfortably and understand the twin-engine manoeuvring that distinguishes multihulls from monohulls. Private and tailored formats also allow the day to balance learning, confidence and enjoyment.\n\n## What you will love\n\nYou will love being able to test the catamaran lifestyle rather than learning in the abstract. Steering, sail handling, close-quarters manoeuvres and onboard routines all happen aboard the kind of vessel many couples imagine chartering or owning. Groups can work together without the pressured atmosphere sometimes associated with formal assessment.\n\n## Ideal for\n\n### Couples considering catamaran cruising\n\nTraining together helps both partners understand systems and share responsibility instead of leaving one person to become the default skipper. The experience can also confirm whether the space, movement and handling of a cruising multihull suit their plans.\n\n### Small groups wanting a gentle introduction\n\nThe Lagoon 38 provides an approachable platform for friends or family who may have different confidence levels. Tailored instruction can give keen participants plenty to do while allowing more cautious guests to become involved gradually.\n\n### Teams looking for purposeful time together\n\nSailing requires communication, coordination and shared decisions, making it a natural team experience. Eventide can combine those lessons with a polished Fremantle day that feels more memorable than a conventional workshop.\n\n## Type of sailing and training\n\nCruising-catamaran sailing; twin-engine handling; multihull systems; introductory sail training; private coaching; accredited learning; corporate and group sailing.\n\n## Our verdict\n\nSailing Eventide is a beautiful introduction to multihull cruising for people who value personal attention, comfort and an easygoing atmosphere without losing the chance to learn real skills.",
+        "seoTitle": "Sailing Eventide | Sailing Schools Australia",
+        "seoDescription": "Sailing Eventide offers a relaxed, personal way to learn catamaran sailing from Fremantle aboard a spacious Lagoon 38. The stable platform, small-group atmosphere and Western Australian coastline suit couples, private groups and teams who want instruction to feel like a rewarding day on the water.",
+        "buyingGuide": "Sailing Eventide is a beautiful introduction to multihull cruising for people who value personal attention, comfort and an easygoing atmosphere without losing the chance to learn real skills."
+      }
+    },
+    {
+      "sourceSlug": "sistership-training",
+      "sourceUrl": "https://yousail.com.au/directory/sistership-training",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
+      "name": "SisterShip Training",
+      "state": "new-south-wales",
+      "region": "Eden",
+      "website": "https://sistershiptraining.com/",
+      "phone": "0458 391660",
+      "email": "jackie@sistershiptraining.com",
+      "logo": "https://yousail.com.au/api/directory/image/faec9446-da03-4871-b875-a2d840d80d4c?v=1790433970",
+      "checked": "2026-09-18T14:59:03.78641+00:00",
+      "freshness": "current",
+      "services": [
+        "Sailing academy / training",
+        "Skipper & safety training",
+        "Other marine service"
+      ],
+      "operatingScope": "online",
+      "editorial": {
+        "description": "## Learn more about SisterShip Training\n\nSisterShip Training makes boating knowledge practical, friendly and achievable through self-paced online courses shaped by real cruising and maritime experience. Clear videos, quizzes, checklists and reusable tools help students turn intimidating subjects into calmer decisions aboard.\n\n## What we love\n\nWe love the plain-language teaching and the focus on knowledge people can use immediately. Navigation, weather, collision regulations, passage planning, docking and emergencies are connected to realistic cruising situations rather than presented as isolated theory. The online format also lets students repeat difficult calculations or procedures until they genuinely make sense.\n\n## What you will love\n\nYou will love learning without a fixed timetable or the pressure to keep pace with a classroom. Downloadable planning tools and checklists can move from the course into your onboard routine. Bundled learning is especially useful for new skippers who need several subjects to work together before they feel ready to take command.\n\n## Ideal for\n\n### New skippers preparing to take responsibility\n\nThe Captain's Course and related modules suit boaters who can already participate aboard but feel uncertain when every decision becomes theirs. Passage planning, weather, collision rules and emergency preparation help replace vague anxiety with a repeatable method.\n\n### Crew members who want to become more capable\n\nA useful crew member understands what the skipper is trying to achieve and can anticipate the next task. Courses in charts, boat handling, anchoring and safety help crew contribute with greater independence and communicate more clearly during busy manoeuvres.\n\n### Cruisers refreshing a specific weak area\n\nExperienced boaters do not always need a complete qualification. Individual modules let them revisit coastal navigation, electronic charts, weather, radio or collision regulations before a passage, after time away, or when a new piece of equipment exposes a knowledge gap.\n\n## Type of sailing and training\n\nOnline coastal navigation; electronic charts; passage planning; marine weather; collision regulations; docking and anchoring theory; emergency preparation; marine radio learning.\n\n## Our verdict\n\nSisterShip is ideal for boaters who want knowledge to feel usable rather than academic. It builds the calm, organised thinking that makes both skippers and crew better company aboard.",
+        "seoTitle": "SisterShip Training | Sailing Schools Australia",
+        "seoDescription": "SisterShip Training makes boating knowledge practical, friendly and achievable through self-paced online courses shaped by real cruising and maritime experience. Clear videos, quizzes, checklists and reusable tools help students turn intimidating subjects into calmer decisions aboard.",
+        "buyingGuide": "SisterShip is ideal for boaters who want knowledge to feel usable rather than academic. It builds the calm, organised thinking that makes both skippers and crew better company aboard."
+      }
     },
     {
       "sourceSlug": "smooth-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/smooth-sailing-school",
-      "sourceUpdatedAt": "2026-09-26T13:57:10.771118+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Smooth Sailing School",
       "state": "victoria",
       "region": "Williamstown",
@@ -233,12 +343,19 @@
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Smooth Sailing School\n\nSmooth Sailing School is a welcoming mobile Victorian school built around making sailing accessible. Through partner venues including Williamstown, its instructors help children, teenagers and adults develop through active time on the water, clear Australian Sailing pathways and a confidence-first teaching style.\n\n## What we love\n\nWe love the absence of exclusivity. The mobile model brings structured programs to communities and venues instead of assuming every learner already belongs to a yacht club. Age-appropriate pathways, friendly coaching and an emphasis on participation help nervous newcomers experience early success.\n\n## What you will love\n\nYou will love seeing progress through practical milestones: steering a consistent course, understanding the wind, completing a tack, helping rig the boat and working as part of a crew. For families, the availability of programs across age groups can make sailing a shared interest rather than an activity reserved for one member.\n\n## Ideal for\n\n### Children and teenagers discovering sailing\n\nYoung sailors need challenge, movement and responsibility delivered in a safe environment. Structured junior programs build boat awareness and independence gradually, while the social nature of learning with peers helps maintain enthusiasm.\n\n### Adults who have always wanted to learn\n\nThe school is well suited to adults who worry they started too late or will be surrounded by experienced sailors. Beginner programs assume no prior knowledge and focus on practical participation, allowing confidence to grow without unnecessary jargon or performance pressure.\n\n### Schools, clubs and community groups\n\nMobile delivery makes it possible to bring an established Australian Sailing program into a partner setting. Groups gain a structured syllabus and experienced instruction while retaining the local relationships and venue that make participation convenient.\n\n## Type of sailing and training\n\nJunior learn-to-sail; teen sailing; adult beginner programs; Australian Sailing pathways; school and community-group delivery; private confidence coaching.\n\n## Our verdict\n\nSmooth Sailing is a particularly good choice for families and first-time adults who need an encouraging doorway into the sport and a clear reason to return for the next session.",
+        "seoTitle": "Smooth Sailing School | Sailing Schools Australia",
+        "seoDescription": "Smooth Sailing School is a welcoming mobile Victorian school built around making sailing accessible. Through partner venues including Williamstown, its instructors help children, teenagers and adults develop through active time on the water, clear Australian Sailing pathways and a confidence-first t",
+        "buyingGuide": "Smooth Sailing is a particularly good choice for families and first-time adults who need an encouraging doorway into the sport and a clear reason to return for the next session."
+      }
     },
     {
       "sourceSlug": "southern-cross-yachting",
       "sourceUrl": "https://yousail.com.au/directory/southern-cross-yachting",
-      "sourceUpdatedAt": "2026-09-26T13:55:51.390014+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Southern Cross Yachting",
       "state": "queensland",
       "region": "Manly",
@@ -250,12 +367,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Southern Cross Yachting\n\nSouthern Cross Yachting provides one of Queensland's most complete RYA training environments from East Coast Marina in Manly. Moreton Bay is the everyday classroom, selected programs extend into the Whitsundays, and sail, power and shorebased theory combine into a coherent journey from first crew to advanced skipper.\n\n## What we love\n\nWe love the ability to stay with one trusted school while ambitions grow. Students can begin with Start Yachting, progress through Competent Crew and Day Skipper, strengthen navigation and radio knowledge ashore, then prepare for Coastal Skipper or Yachtmaster assessment. Powerboat training adds another practical dimension for sailors who operate tenders or mixed fleets.\n\n## What you will love\n\nYou will love seeing theory tested quickly on the water. Moreton Bay offers navigation, traffic, weather and passage-planning challenges within reach of Brisbane, while Whitsunday options add destination cruising and unfamiliar anchorages. The breadth lets students build competence rather than chase isolated certificates.\n\n## Ideal for\n\n### Brisbane beginners seeking recognised training\n\nNew sailors can enter through a short introduction or Competent Crew without needing to decide immediately how far they will go. The RYA structure then provides a widely understood next step whenever they are ready for more responsibility.\n\n### Cruisers preparing for bareboat chartering\n\nDay Skipper theory and practical work connect route planning, boat handling and crew leadership. Training in Queensland cruising grounds helps future charterers practise anchoring, pilotage and daily decision-making in an environment relevant to their goal.\n\n### Experienced Yachtmaster candidates\n\nAdvanced sailors can address weaknesses in navigation, passage command and close-quarters handling before an independent examination. Supporting radio, power and specialist theory courses help create the rounded competence expected at this level.\n\n## Type of sailing and training\n\nRYA Start Yachting and Competent Crew; Day and Coastal Skipper; Yachtmaster preparation; Moreton Bay and Whitsunday cruising; powerboat handling; radio and shorebased theory.\n\n## Our verdict\n\nSouthern Cross Yachting is an excellent long-term school for Queensland sailors who want each qualification to form part of a complete and credible development journey.",
+        "seoTitle": "Southern Cross Yachting | Sailing Schools Australia",
+        "seoDescription": "Southern Cross Yachting provides one of Queensland's most complete RYA training environments from East Coast Marina in Manly. Moreton Bay is the everyday classroom, selected programs extend into the Whitsundays, and sail, power and shorebased theory combine into a coherent journey from first crew to",
+        "buyingGuide": "Southern Cross Yachting is an excellent long-term school for Queensland sailors who want each qualification to form part of a complete and credible development journey."
+      }
     },
     {
       "sourceSlug": "sunshine-sailing-australia",
       "sourceUrl": "https://yousail.com.au/directory/sunshine-sailing-australia",
-      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Sunshine Sailing Australia",
       "state": "queensland",
       "region": "Mooloolaba",
@@ -268,12 +392,44 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "hybrid",
+      "editorial": {
+        "description": "## Learn more about Sunshine Sailing Australia\n\nSunshine Sailing Australia gives Queensland learners the unusual advantage of choosing between RYA and American Sailing pathways. Training from Mooloolaba extends across the Sunshine Coast, Moreton Bay and the Whitsundays, with keelboats, monohulls and catamarans available to match different cruising ambitions.\n\n## What we love\n\nWe love the ability to start with the destination and work backwards. A student planning an American charter may prefer an American Sailing pathway; someone pursuing RYA recognition can follow that system; a couple dreaming of a multihull can add dedicated catamaran experience. The school does not force every sailor into the same boat or qualification.\n\n## What you will love\n\nYou will love the variety of training grounds and vessels. Responsive keelboats develop feel and teamwork, cruising monohulls introduce passage routines, and catamarans build confidence with multihull systems and manoeuvring. Private tuition can then target the exact areas a couple, owner or charter crew still finds difficult.\n\n## Ideal for\n\n### Sunshine Coast beginners\n\nIntroductory and keelboat programs provide a manageable first step close to home. Students can build steering, sail trim and teamwork before committing to a larger cruising qualification or liveaboard experience.\n\n### Couples preparing for a specific charter\n\nTraining can be matched to the likely destination, qualification system and vessel type. This is especially useful for couples who know they will charter a catamaran and want both partners confident with sail handling, systems and twin-engine manoeuvring.\n\n### Sailors choosing between international pathways\n\nThe availability of both RYA and American Sailing courses helps students select credentials aligned with future travel and learning preferences. Experienced instructors can help turn that choice into a sensible sequence rather than a collection of overlapping certificates.\n\n## Type of sailing and training\n\nKeelboat sailing; RYA cruising pathways; American Sailing 101, 103, 104 and 114; monohull and catamaran liveaboards; bareboat preparation; private owner and charter coaching.\n\n## Our verdict\n\nSunshine Sailing Australia is ideal for students with a clear cruising dream who want the qualification, boat and training ground chosen to support it.",
+        "seoTitle": "Sunshine Sailing Australia | Sailing Schools Australia",
+        "seoDescription": "Sunshine Sailing Australia gives Queensland learners the unusual advantage of choosing between RYA and American Sailing pathways. Training from Mooloolaba extends across the Sunshine Coast, Moreton Bay and the Whitsundays, with keelboats, monohulls and catamarans available to match different cruisin",
+        "buyingGuide": "Sunshine Sailing Australia is ideal for students with a clear cruising dream who want the qualification, boat and training ground chosen to support it."
+      }
+    },
+    {
+      "sourceSlug": "sydney-by-sail",
+      "sourceUrl": "https://yousail.com.au/directory/sydney-by-sail",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
+      "name": "Sydney By Sail",
+      "state": "new-south-wales",
+      "region": "Sydney",
+      "website": "https://sydneybysail.com/",
+      "phone": "02 9280 1110",
+      "email": "info@sydneybysail.com",
+      "logo": "https://yousail.com.au/api/directory/image/a45d818b-536e-4391-ac07-1b01545b774c?v=1790432211",
+      "checked": "2026-09-18T15:36:05.224497+00:00",
+      "freshness": "current",
+      "services": [
+        "Sailing charter company",
+        "Sailing academy / training"
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Sydney By Sail\n\nSydney By Sail offers structured, internationally recognised training that begins in the centre of Sydney and can progress into coastal passages, liveaboard experience, independent chartering and yacht racing. Operating from Darling Harbour since 1995, the school teaches aboard a modern fleet and supports complete beginners, developing crew and aspiring bareboat skippers.\n\n## What we love\n\nWe love that the pathway feels purposeful. Students first learn how to contribute safely as crew, then add night sailing, radio, navigation and command skills before progressing towards bareboat responsibility. Sydney Harbour is more than an attractive backdrop: its traffic, channels and changing wind give learners a rich environment in which to develop awareness.\n\n## What you will love\n\nYou will love being involved from the beginning. Training prioritises time steering, handling lines and sails, participating in manoeuvres and understanding the decisions behind them. Mile builders, regattas, charters and yacht-share opportunities also give graduates practical ways to keep sailing after the formal course is complete.\n\n## Ideal for\n\n### Complete beginners wanting a genuine introduction\n\nThe introductory program goes beyond sightseeing. Over two days, students learn how a yacht is prepared, how the crew communicates, how sails are handled and how safety, weather, navigation and collision rules influence a day on the harbour. It provides enough depth to decide whether sailing should become a serious pursuit.\n\n### Couples and friends preparing to charter\n\nA capable charter team needs shared knowledge rather than one confident person carrying every responsibility. Training together lets future crew practise communication, divide roles and identify weaknesses in docking, navigation or sail handling while an instructor is still available.\n\n### Developing skippers who need miles and judgement\n\nCertificates do not automatically create command confidence. Liveaboard passages, night sailing and mile-building opportunities expose students to watchkeeping, changing conditions and sustained decision-making before they take full responsibility for an unfamiliar yacht.\n\n## Type of sailing and training\n\nPractical keelboat sailing; cruising-yacht training; Sydney Harbour navigation; night sailing; IYT crew and bareboat pathways; coastal passage-making; liveaboard experience; mile building and yacht racing.\n\n## Our verdict\n\nSydney By Sail is strongest for people who want more than an isolated beginner course. It provides an exciting entry point, a recognised pathway and several realistic ways to make sailing part of life after qualification.",
+        "seoTitle": "Sydney By Sail | Sailing Schools Australia",
+        "seoDescription": "Sydney By Sail offers structured, internationally recognised training that begins in the centre of Sydney and can progress into coastal passages, liveaboard experience, independent chartering and yacht racing. Operating from Darling Harbour since 1995, the school teaches aboard a modern fleet and su",
+        "buyingGuide": "Sydney By Sail is strongest for people who want more than an isolated beginner course. It provides an exciting entry point, a recognised pathway and several realistic ways to make sailing part of life after qualification."
+      }
     },
     {
       "sourceSlug": "whitsunday-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/whitsunday-sailing-school",
-      "sourceUpdatedAt": "2026-09-26T13:58:03.818744+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Whitsunday Sailing School",
       "state": "queensland",
       "region": "Airlie Beach",
@@ -284,12 +440,19 @@
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Whitsunday Sailing School\n\nWhitsunday Sailing School combines recognised IYT training with the experience of living aboard among tropical islands and anchorages. From Airlie Beach, students learn through the complete rhythm of cruising—steering, navigation, anchoring, watches, teamwork and daily life aboard—rather than through disconnected drills.\n\n## What we love\n\nWe love the immersion. Consecutive days aboard allow skills to be repeated in changing bays and conditions, while every arrival, departure and overnight stop adds another lesson. The pathway from Introduction to Yachting through International Crew, Flotilla Skipper and Bareboat Skipper is also beautifully aligned with the Whitsundays' culture of independent chartering.\n\n## What you will love\n\nYou will love finishing the course with memories of an actual voyage. Navigation, meals, watches, systems and crew communication become part of everyday life, helping students understand not only how to sail the yacht but how to live aboard it comfortably and responsibly.\n\n## Ideal for\n\n### Beginners wanting a sailing holiday with purpose\n\nAn introductory or crew course here offers the excitement of island cruising while maintaining a clear learning structure. The setting keeps motivation high, and living aboard helps newcomers absorb terminology and routines much faster than occasional day lessons.\n\n### Couples preparing for a bareboat charter\n\nTraining together lets both partners practise anchoring, mooring, navigation and onboard roles in the exact style of cruising they hope to enjoy later. Flotilla and Bareboat Skipper stages provide a natural bridge from supported learning to independent responsibility.\n\n### Crew ready to step into command\n\nStudents with experience can use the liveaboard environment to connect separate skills into a complete skipper mindset. Planning the day, briefing the crew and adapting to changing weather reveal whether knowledge remains reliable when decisions have consequences.\n\n## Type of sailing and training\n\nLiveaboard tropical cruising; IYT Introduction and International Crew; Flotilla Skipper; Bareboat Skipper; anchoring and mooring; island navigation; VHF radio and charter preparation.\n\n## Our verdict\n\nWhitsunday Sailing School is the rare course where the training itself already feels like the cruising life students are working towards.",
+        "seoTitle": "Whitsunday Sailing School | Sailing Schools Australia",
+        "seoDescription": "Whitsunday Sailing School combines recognised IYT training with the experience of living aboard among tropical islands and anchorages. From Airlie Beach, students learn through the complete rhythm of cruising—steering, navigation, anchoring, watches, teamwork and daily life aboard—rather than throug",
+        "buyingGuide": "Whitsunday Sailing School is the rare course where the training itself already feels like the cruising life students are working towards."
+      }
     },
     {
       "sourceSlug": "yachting-directions",
       "sourceUrl": "https://yousail.com.au/directory/yachting-directions",
-      "sourceUpdatedAt": "2026-09-26T13:58:37.939244+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Yachting Directions",
       "state": "new-south-wales",
       "region": "Palm Beach",
@@ -301,12 +464,19 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "local",
+      "editorial": {
+        "description": "## Learn more about Yachting Directions\n\nYachting Directions offers focused guidance for sailors ready to convert experience into deeper understanding. RYA Yachtmaster Instructor Brien Daniel connects chart-table methods with coastal decision-making through theory, assessment preparation and mentored miles around Sydney and Newcastle.\n\n## What we love\n\nWe love the bridge between knowing and doing. Navigation rules and calculations are taught with their practical consequences in mind, then reinforced through passage experience where weather, fatigue, traffic and timing complicate the plan. The focused format is valuable for students who do not need another broad beginner course.\n\n## What you will love\n\nYou will love having space to discuss judgement, not only correct answers. Advanced sailors often benefit most from understanding how an experienced instructor frames a decision, what information matters and when a conservative alternative is wiser. Coastal mile building lets those conversations continue in real conditions.\n\n## Ideal for\n\n### Day Skipper and Yachtmaster theory students\n\nStructured theory helps candidates organise existing experience into reliable navigation and passage-planning methods. It is particularly useful for sailors who are comfortable handling a boat but less confident with chartwork, pilotage, weather or collision regulations.\n\n### Candidates preparing for an RYA examination\n\nFocused coaching can identify the small weaknesses that become significant under assessment pressure. Students can refine their planning, communication and command approach before an examiner expects them to integrate everything independently.\n\n### Sailors seeking quality coastal miles\n\nNot all sea miles teach equally. Mentored passages create opportunities to take watches, make navigational decisions and receive feedback, helping experience become more than a number in a logbook.\n\n## Type of sailing and training\n\nRYA Day Skipper theory; Coastal Skipper and Yachtmaster theory; exam preparation; coastal navigation; pilotage; night and passage experience; mentored mile building.\n\n## Our verdict\n\nYachting Directions is ideal for thoughtful sailors who already have some experience and want expert guidance turning it into consistent, defensible judgement.",
+        "seoTitle": "Yachting Directions | Sailing Schools Australia",
+        "seoDescription": "Yachting Directions offers focused guidance for sailors ready to convert experience into deeper understanding. RYA Yachtmaster Instructor Brien Daniel connects chart-table methods with coastal decision-making through theory, assessment preparation and mentored miles around Sydney and Newcastle.",
+        "buyingGuide": "Yachting Directions is ideal for thoughtful sailors who already have some experience and want expert guidance turning it into consistent, defensible judgement."
+      }
     },
     {
       "sourceSlug": "yachtmaster-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/yachtmaster-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
+      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
       "name": "Yachtmaster Sailing School",
       "state": "victoria",
       "region": "Middle Brighton",
@@ -319,7 +489,14 @@
       "freshness": "current",
       "services": [
         "Sailing academy / training"
-      ]
+      ],
+      "operatingScope": "hybrid",
+      "editorial": {
+        "description": "## Learn more about Yachtmaster Sailing School\n\nYachtmaster Sailing School offers Melbourne sailors a deep practical education that can begin with basic boat handling and continue into navigation, passage planning and liveaboard experience. Private tuition and shorebased learning make the pathway adaptable to newcomers, returning sailors and skippers with precise development goals.\n\n## What we love\n\nWe love the range of ways people can engage. Sailing can begin as a course, a private lesson, a group experience or a practical holiday, then become more serious as confidence grows. Combining time aboard with navigation and theory ensures students understand both the movement of the yacht and the decisions that keep it safe.\n\n## What you will love\n\nYou will love being able to target the kind of confidence you actually need. Some students want a supportive first turn at the helm; others need to strengthen chartwork, plan longer passages or practise command over consecutive days. The mix of standard courses and private coaching accommodates both.\n\n## Ideal for\n\n### Melbourne newcomers and returning sailors\n\nBeginner handling and practical sailing provide a welcoming way into the sport, while refresher tuition helps people rebuild skills after time away. Students can progress without being rushed towards advanced certification before the fundamentals feel natural.\n\n### Skippers strengthening navigation and passage planning\n\nShorebased theory and practical application help close the gap between plotting a route and safely executing it. This suits sailors preparing for longer coastal trips or taking greater responsibility aboard their own yacht.\n\n### Private groups seeking meaningful time under sail\n\nTailored sessions can give families, friends or corporate groups a memorable shared experience while still teaching genuine teamwork and boat-handling skills. Participants can be as active as their confidence allows.\n\n## Type of sailing and training\n\nMelbourne and bayside sailing; beginner boat handling; navigation and passage planning; private tuition; cruising-yacht skills; liveaboard development; group and corporate sailing.\n\n## Our verdict\n\nYachtmaster Sailing School suits learners who want practical depth and flexibility. It provides an accessible beginning while leaving plenty of room for serious navigation and command development.",
+        "seoTitle": "Yachtmaster Sailing School | Sailing Schools Australia",
+        "seoDescription": "Yachtmaster Sailing School offers Melbourne sailors a deep practical education that can begin with basic boat handling and continue into navigation, passage planning and liveaboard experience. Private tuition and shorebased learning make the pathway adaptable to newcomers, returning sailors and skip",
+        "buyingGuide": "Yachtmaster Sailing School suits learners who want practical depth and flexibility. It provides an accessible beginning while leaving plenty of room for serious navigation and command development."
+      }
     }
   ]
 }

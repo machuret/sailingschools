@@ -74,6 +74,8 @@ function toSchool(entry) {
     checked: entry.freshness?.lastVerifiedAt,
     freshness: entry.freshness?.state,
     services: entry.services,
+    operatingScope: entry.school?.operatingScope,
+    editorial: entry.editorial,
   });
 }
 
