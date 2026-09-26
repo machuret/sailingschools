@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-26T11:15:21.547Z",
+    "syncedAt": "2026-09-26T16:16:37.612Z",
     "total": 18
   },
   "schools": [
@@ -44,13 +44,14 @@
     {
       "sourceSlug": "aussea-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/aussea-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T15:37:19.459154+00:00",
+      "sourceUpdatedAt": "2026-09-26T14:26:40.477462+00:00",
       "name": "AusSea Sailing School",
       "state": "new-south-wales",
       "region": "Sans Souci",
       "website": "https://ausseasailingschool.com.au/",
       "phone": "0419 229 522",
       "email": "info@ausseasailingschool.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/7e9f8527-ad67-4545-9c90-0acb9ea507f0?v=1790432800",
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
@@ -96,13 +97,14 @@
     {
       "sourceSlug": "liquid-edge-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/liquid-edge-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T15:39:13.223973+00:00",
+      "sourceUpdatedAt": "2026-09-26T14:27:17.533611+00:00",
       "name": "Liquid Edge Sailing School",
       "state": "new-south-wales",
       "region": "Balmain",
       "website": "https://www.liquidedge.com.au/sailing-school-sydney/",
       "phone": "0410 088 028",
       "email": "training@liquidedge.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/c4acb31e-6983-455a-b76e-b989b35e178b?v=1790432837",
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
@@ -129,13 +131,14 @@
     {
       "sourceSlug": "navathome-australia",
       "sourceUrl": "https://yousail.com.au/directory/navathome-australia",
-      "sourceUpdatedAt": "2026-09-18T14:59:03.78641+00:00",
+      "sourceUpdatedAt": "2026-09-26T13:56:31.90995+00:00",
       "name": "NAVatHOME Australia",
       "state": "western-australia",
       "region": "Como",
       "website": "https://www.navathome.com.au/",
       "phone": "+61 8 6102 7741",
       "email": "training@navathome.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/fe020bb1-3e06-4496-8205-c03e0876f389?v=1790430992",
       "checked": "2026-09-18T14:59:03.78641+00:00",
       "freshness": "current",
       "services": [
@@ -219,13 +222,14 @@
     {
       "sourceSlug": "smooth-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/smooth-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T15:37:19.459154+00:00",
+      "sourceUpdatedAt": "2026-09-26T13:57:10.771118+00:00",
       "name": "Smooth Sailing School",
       "state": "victoria",
       "region": "Williamstown",
       "website": "https://smoothsailingschool.com.au/",
       "phone": "03 9069 9303",
       "email": "info@smoothsailingschool.com",
+      "logo": "https://yousail.com.au/api/directory/image/49ee70b9-5141-4968-98f7-a17ee31a7918?v=1790431031",
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
@@ -234,13 +238,14 @@
     {
       "sourceSlug": "southern-cross-yachting",
       "sourceUrl": "https://yousail.com.au/directory/southern-cross-yachting",
-      "sourceUpdatedAt": "2026-09-18T14:56:03.2724+00:00",
+      "sourceUpdatedAt": "2026-09-26T13:55:51.390014+00:00",
       "name": "Southern Cross Yachting",
       "state": "queensland",
       "region": "Manly",
       "website": "https://southerncrossyachting.com.au/",
       "phone": "07 3396 4100",
       "email": "sailing@southerncrossyachting.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/83e08532-a6ef-42a7-aa55-57c37a0809a5?v=1790430951",
       "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
       "services": [
@@ -268,13 +273,14 @@
     {
       "sourceSlug": "whitsunday-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/whitsunday-sailing-school",
-      "sourceUpdatedAt": "2026-09-18T15:37:19.459154+00:00",
+      "sourceUpdatedAt": "2026-09-26T13:58:03.818744+00:00",
       "name": "Whitsunday Sailing School",
       "state": "queensland",
       "region": "Airlie Beach",
       "website": "https://whitsundaysailingschool.com/",
       "phone": "0427 076 400",
       "email": "malcom.robertson@bigpond.com",
+      "logo": "https://yousail.com.au/api/directory/image/eb770b6d-ff17-426a-8f6f-810dfa763c5f?v=1790431084",
       "freshness": "unverified",
       "services": [
         "Sailing academy / training"
@@ -283,13 +289,14 @@
     {
       "sourceSlug": "yachting-directions",
       "sourceUrl": "https://yousail.com.au/directory/yachting-directions",
-      "sourceUpdatedAt": "2026-09-18T15:04:01.352614+00:00",
+      "sourceUpdatedAt": "2026-09-26T13:58:37.939244+00:00",
       "name": "Yachting Directions",
       "state": "new-south-wales",
       "region": "Palm Beach",
       "website": "https://www.yachtingdirections.com.au/",
       "phone": "+61 427 333 353",
       "email": "info@yachtingdirections.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/8d405b5e-8632-443c-b943-992ce06de722?v=1790431118",
       "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
       "services": [
