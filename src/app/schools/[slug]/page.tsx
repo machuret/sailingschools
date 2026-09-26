@@ -103,7 +103,9 @@ export default async function SchoolProfilePage({ params }: Params) {
     ...schemes.flatMap((scheme) => SCHEME_LINKS[scheme] ? [SCHEME_LINKS[scheme]] : []),
     ...TRAINING_LINKS.filter((item) => item.match.test(trainingText)).map(({ name, href }) => ({ name, href })),
   ].filter((item, index, all) => all.findIndex((candidate) => candidate.href === item.href) === index);
-  const description = school.blurb ?? `${school.name} is listed as a sailing-training provider in the YouSail directory.`;
+  const description = school.editorial?.seoDescription
+    ?? school.blurb
+    ?? `${school.name} is listed as a sailing-training provider in the YouSail directory.`;
   const editorial = parseEditorial(school.editorial?.description);
   const learnMore = editorial.get(`Learn more about ${school.name}`)?.body ?? description;
   const whatWeLove = editorial.get('What we love')?.body;
