@@ -5,6 +5,7 @@ import PointsOfSail from '@/components/PointsOfSail';
 import { mapMarkers, mapRegions } from '@/lib/geo';
 import Image from 'next/image';
 import SchoolLogoRail from '@/components/SchoolLogoRail';
+import { inDepthArticles } from '@/lib/in-depth';
 
 export default function HomePage() {
   return (
@@ -111,9 +112,16 @@ export default function HomePage() {
       <SchoolLogoRail />
 
       <section className="sec in-depth-feature">
-        <div className="wrap split top">
-          <div><span className="kicker">New · In-depth school profile</span><a className="featured-school-logo" href="https://flyingfishsailing.com.au/" target="_blank" rel="noopener noreferrer"><Image src="/images/schools/flying-fish-logo.webp" alt="Flying Fish Sailing website" width={1038} height={273} /></a><h2 className="h2">Inside Flying Fish Sailing</h2><p className="copy">Founding Director Andy Fairclough explains how the Middle Harbour school takes people from their first active day aboard to Yachtmaster preparation and professional command time.</p><blockquote>“You do not need to have grown up sailing, own a boat or know all the terminology before you start.”</blockquote><Link className="pill pill-orange" href="/in-depth/flying-fish-sailing/">Read the in-depth article</Link></div>
-          <div className="panel"><span className="kicker">What the article covers</span><div className="rows compact-rows"><div className="row"><div><h3>Day one on the water</h3><p>Why beginners rotate through real crew positions immediately</p></div></div><div className="row"><div><h3>RYA, MCA and AMSA</h3><p>How distinct pathways serve international and Australian work</p></div></div><div className="row"><div><h3>Beyond Yachtmaster</h3><p>Why qualifications must be followed by command experience</p></div></div></div></div>
+        <div className="wrap">
+          <div className="sec-head"><div><span className="kicker">Meet the schools · In depth</span><h2 className="h2">The stories behind the training</h2><p className="copy">Direct interviews expanded into practical, independent profiles of how Australian sailing schools teach.</p></div><Link className="pill pill-sky" href="/in-depth/">See all profiles</Link></div>
+          <div className="cards pair featured-school-cards">
+            {inDepthArticles.map((feature) => <article className="ccard" key={feature.slug}>
+              <div className="photo"><Image src={feature.heroImage ?? feature.portrait} alt={`${feature.schoolName} sailing training`} fill sizes="(max-width: 800px) 100vw, 50vw" /><span className="badge">Featured school</span></div>
+              <a className="featured-school-logo" href={feature.schoolUrl} target="_blank" rel="noopener noreferrer"><Image src={feature.logo} alt={`${feature.schoolName} website`} width={feature.logoWidth ?? 1038} height={feature.logoHeight ?? 273} /></a>
+              <h3 className="h3">{feature.title}</h3><p>{feature.description}</p><blockquote>“{feature.pullQuote}”</blockquote>
+              <div className="foot"><Link className="pill pill-orange" href={`/in-depth/${feature.slug}/`}>Read the in-depth article</Link><Link className="school-link" href={`/schools/${feature.schoolSlug}/`}>School profile →</Link></div>
+            </article>)}
+          </div>
         </div>
       </section>
 
