@@ -33,6 +33,116 @@ export type InDepthArticle = {
 
 /** Long-form school reporting. Add future interviews here to populate the hub. */
 export const inDepthArticles: InDepthArticle[] = [
+{
+  "schoolName": "Mainstay Sailing",
+  "interviewee": "Mainstay Sailing",
+  "role": "School team",
+  "credentials": [
+    "RYA sailing courses",
+    "Australian Sailing training",
+    "Liveaboard cruising",
+    "Private and couples’ training"
+  ],
+  "portrait": "/images/schools/mainstay-sailing.jpg",
+  "logo": "/images/schools/mainstay-sailing-logo.jpg",
+  "logoWidth": 2126,
+  "logoHeight": 2126,
+  "schoolUrl": "https://www.mainstaysailing.com.au/",
+  "teamUrl": "https://www.mainstaysailing.com.au/",
+  "coursesUrl": "https://www.mainstaysailing.com.au/rya-sailing-courses",
+  "publishedAt": "2026-09-28",
+  "subjectType": "Organization",
+  "slug": "mainstay-sailing",
+  "schoolSlug": "mainstay-sailing",
+  "title": "Inside Mainstay Sailing: the Whitsundays as a liveaboard classroom",
+  "description": "How Mainstay Sailing teaches through life aboard: cruising yachts, island navigation, crew confidence and RYA pathways from Airlie Beach.",
+  "readTime": "8 minute read",
+  "biography": [
+    "Mainstay Sailing teaches from Coral Sea Marina in Airlie Beach, using the Whitsunday islands as a liveaboard classroom. The school offers both RYA and Australian Sailing training, with a focus on small groups and practical participation.",
+    "Students learn aboard Kayami, a Jeanneau 44, and Mohawk, a Beneteau Oceanis 40.1. Sailing, navigation, anchoring, cooking and everyday yacht routines become part of the same experience."
+  ],
+  "introduction": [
+    "A sailing course at Mainstay is also a voyage. Students live aboard cruising yachts, share the jobs that keep a boat running and learn while moving through the Whitsunday islands.",
+    "In its interview, the Airlie Beach school explains why it chose this format, how beginners become involved and why the confidence to make decisions matters as much as the qualification."
+  ],
+  "sections": [
+    {
+      "heading": "A small school with a clear purpose",
+      "paragraphs": [
+        "Mainstay began with a gap its founders saw in Airlie Beach: an extraordinary sailing area without the RYA school they wanted to build. Their answer was a niche operation focused on quality, time aboard and practical confidence.",
+        "The interview describes a school that treats the Whitsundays as part of the teaching. Students travel, work as a crew and see how decisions about weather, navigation and anchoring affect the day."
+      ]
+    },
+    {
+      "heading": "Both RYA and Australian Sailing",
+      "paragraphs": [
+        "Mainstay clarifies that it offers both RYA and Australian Sailing training. The RYA pathway appealed because of its international reach and progression through crew, skipper and advanced qualifications.",
+        "Competent Crew is the most common starting point described in the interview. Some students continue to Day Skipper, Coastal Skipper and Yachtmaster; others achieve their goal by becoming useful, confident crew for family and friends. The next course depends on what the sailor wants to do."
+      ]
+    },
+    {
+      "heading": "A week aboard is more than consecutive lessons",
+      "paragraphs": [
+        "Arrival begins with settling into the yacht, meeting the crew and learning the fundamentals. Students quickly become involved in hoisting sails, handling lines, navigation, meals and looking after the boat.",
+        "During the week, responsibility grows. Days combine passages between islands with manoeuvres and anchoring; evenings at anchor provide time to discuss the day and prepare for the next one. Yacht systems, personal space and crew routines are learned alongside sailing skills."
+      ]
+    },
+    {
+      "heading": "Cruising yachts chosen for what comes next",
+      "paragraphs": [
+        "The school currently trains aboard Kayami, a Jeanneau 44, and Mohawk, a Beneteau Oceanis 40.1. Mainstay chose cruising yachts because students may later charter, sail or own similar boats.",
+        "Living on the same vessel used for training makes its systems part of the course. Students learn how to organise equipment, keep the yacht tidy and safe, share tasks and operate the boat as a whole."
+      ]
+    },
+    {
+      "heading": "Nara Inlet, Hook Passage and routes farther north",
+      "paragraphs": [
+        "Nara Inlet provides sheltered water for anchoring, boat handling and manoeuvring. Hook Passage adds tides, current and the interaction between wind and land to the navigation exercise.",
+        "The school also describes trips towards Gloucester Island and Bowen, beyond the main bareboat charter areas. These routes give students another setting in which to plan and navigate, while the passages between islands bring helming, trim, crew communication and weather awareness together.",
+        "The itinerary changes with conditions. Mainstay wants students to start assessing the chart, weather and boat themselves, then work out a sensible next step."
+      ]
+    },
+    {
+      "heading": "Starting later in life and settling into a crew",
+      "paragraphs": [
+        "Mainstay has taught students in their sixties and beyond. Its message is that patience, experience and a willingness to learn can be valuable strengths; students need to be able to participate safely and build skills progressively.",
+        "Sharing a yacht begins with expectations about communication, jobs, tidiness and personal space. The school sees the group becoming a crew as part of the learning, with friendships often growing through days of sailing and evenings in the cockpit."
+      ]
+    },
+    {
+      "heading": "Packing and the rhythm of the seasons",
+      "paragraphs": [
+        "The school recommends packing lightly in a soft bag, with comfortable clothes, swimwear, sun protection, suitable footwear, a light warm layer and personal medication. Food is included in its liveaboard training.",
+        "Mainstay sails throughout the year. Winter commonly brings cooler days and trade winds; spring and summer bring warmer and more variable conditions. Weather awareness and adapting plans remain part of the course in every season."
+      ]
+    },
+    {
+      "heading": "Confidence beyond the certificate",
+      "paragraphs": [
+        "Students often worry they will be the least experienced person aboard. Mainstay describes growing confidence as the biggest change: newcomers begin to take the helm, navigate and contribute to the crew.",
+        "The school is developing private training and couples’ sailing experiences alongside its RYA pathway. The theme across the interview is practical independence: understanding the yacht, making decisions and taking useful sailing knowledge into the next experience."
+      ]
+    }
+  ],
+  "pullQuote": "A yacht works best when everyone understands that you’re a crew rather than a collection of individuals.",
+  "heroImage": "/images/schools/mainstay-sailing.jpg",
+  "profileEyebrow": "Meet the school",
+  "profileTitle": "Mainstay Sailing",
+  "credentialsHeading": "Training discussed",
+  "base": "Coral Sea Marina, Airlie Beach",
+  "pathways": "RYA and Australian Sailing",
+  "focus": "Liveaboard cruising, navigation and crew confidence",
+  "relatedLinks": [
+    {
+      "href": "/rya/competent-crew/",
+      "label": "Explore Competent Crew"
+    },
+    {
+      "href": "/sailing-schools/queensland/whitsundays/",
+      "label": "Sailing schools in the Whitsundays"
+    }
+  ]
+},
   {
     slug: 'flying-fish-sailing',
     schoolSlug: 'flying-fish-sailing',
