@@ -1,10 +1,36 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-28T05:12:10.299Z",
+    "syncedAt": "2026-09-28T13:42:31.483Z",
     "total": 20
   },
   "schools": [
+    {
+      "sourceSlug": "adventure-sailing",
+      "sourceUrl": "https://yousail.com.au/directory/adventure-sailing",
+      "sourceUpdatedAt": "2026-09-28T05:42:27.713894+00:00",
+      "name": "Adventure Sailing",
+      "state": "western-australia",
+      "region": "Geographe",
+      "website": "https://www.adventuresailing.com.au/",
+      "phone": "0428372931",
+      "email": "hello@adventuresailing.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/4254239b-6dbd-438c-8b84-567721a7b140?v=1788607090",
+      "featureImage": "https://yousail.com.au/api/editorial-images/16fbf95e-5b3b-44a2-a9f3-75cc1f07db80?v=1788593203",
+      "checked": "2026-09-18T14:59:03.78641+00:00",
+      "freshness": "current",
+      "services": [
+        "Sailing charter company",
+        "Sailing academy / training"
+      ],
+      "operatingScope": "hybrid",
+      "editorial": {
+        "description": "## Learn more about Adventure Sailing\n\nAdventure Sailing brings an adventurous, hands-on spirit to maritime training from Port Geographe near Busselton. Its welcoming instructors work with everyone from first-time crew and young sailors to future commercial mariners, with liveaboard catamaran experiences and the Western Australian coast adding real-world depth to every lesson.\n\n## What we love\n\nThe breadth is exceptional. A student can discover sailing, build recognised Australian Sailing skills, spend several days learning aboard a cruising catamaran or begin a serious commercial pathway without leaving the same training community. We also love the deliberate welcome extended to young sailors and women through programs designed around confidence, participation and shared adventure.\n\n## What you will love\n\nYou will love learning through action rather than observation. Port Geographe and the surrounding coast give students room to practise sail handling, helming, navigation and onboard routines in the conditions where those skills will eventually be used. The school also makes progression easy to imagine: a first weekend can lead naturally to liveaboard cruising, a Recreational Skipper's Ticket, marine radio competence or professional maritime study.\n\n## Ideal for\n\n### First-time sailors who want an active beginning\n\nThis is a strong choice if you want your first experience to feel substantial but not intimidating. Start Crewing and Start Helming introduce the language, safety habits and teamwork of sailing while giving students genuine jobs aboard, so confidence grows from successfully doing rather than simply listening.\n\n### Families, teenagers and women seeking a supportive pathway\n\nYouth adventures and She Sails experiences create an environment where learners can build independence without feeling they must already belong to the sailing world. The social, liveaboard and expedition elements are especially valuable for students motivated by connection and adventure as much as certification.\n\n### Future cruisers and commercial mariners\n\nIYT liveaboard catamaran programs suit people preparing for independent chartering, while Coxswain, Master, Marine Engine Driver and General Purpose Hand pathways serve those considering work on the water. It is rare to find recreational and commercial ambitions supported so naturally in one regional school.\n\n## Type of sailing and training\n\nAustralian Sailing keelboat training; youth sailing; women-only sailing; liveaboard catamaran cruising; bareboat preparation; recreational powerboat licensing; marine radio; commercial maritime training.\n\n## Our verdict\n\nAdventure Sailing is ideal when learning is part of a bigger plan. Come for a first qualification and you may leave with the skills, crew network and ambition for a much larger adventure.",
+        "seoTitle": "Adventure Sailing | Sailing Schools Australia",
+        "seoDescription": "Adventure Sailing brings an adventurous, hands-on spirit to maritime training from Port Geographe near Busselton. Its welcoming instructors work with everyone from first-time crew and young sailors to future commercial mariners, with liveaboard catamaran experiences and the Western Australian coast ",
+        "buyingGuide": "Adventure Sailing is ideal when learning is part of a bigger plan. Come for a first qualification and you may leave with the skills, crew network and ambition for a much larger adventure."
+      }
+    },
     {
       "sourceSlug": "flying-fish-sailing",
       "sourceUrl": "https://yousail.com.au/directory/flying-fish-sailing",
@@ -31,29 +57,28 @@
       }
     },
     {
-      "sourceSlug": "adventure-sailing",
-      "sourceUrl": "https://yousail.com.au/directory/adventure-sailing",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
-      "name": "Adventure Sailing",
-      "state": "western-australia",
-      "region": "Geographe",
-      "website": "https://www.adventuresailing.com.au/",
-      "phone": "0428372931",
-      "email": "hello@adventuresailing.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/4254239b-6dbd-438c-8b84-567721a7b140?v=1788607090",
-      "featureImage": "https://yousail.com.au/api/editorial-images/16fbf95e-5b3b-44a2-a9f3-75cc1f07db80?v=1788593203",
-      "checked": "2026-09-18T14:59:03.78641+00:00",
+      "sourceSlug": "mainstay-sailing",
+      "sourceUrl": "https://yousail.com.au/directory/mainstay-sailing",
+      "sourceUpdatedAt": "2026-09-28T06:06:48.210507+00:00",
+      "name": "Mainstay Sailing",
+      "state": "queensland",
+      "region": "Airlie Beach",
+      "website": "https://www.mainstaysailing.com.au/",
+      "phone": "+61 402 429 152",
+      "email": "info@mainstaysailing.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/1a97ce39-0846-425e-9f9d-d0243e3ef0b5?v=1788606865",
+      "featureImage": "https://yousail.com.au/api/editorial-images/6e74ddfc-c22f-4f7d-bb6b-a6674f59e7fa?v=1788607048",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
       "services": [
-        "Sailing charter company",
         "Sailing academy / training"
       ],
-      "operatingScope": "hybrid",
+      "operatingScope": "local",
       "editorial": {
-        "description": "## Learn more about Adventure Sailing\n\nAdventure Sailing brings an adventurous, hands-on spirit to maritime training from Port Geographe near Busselton. Its welcoming instructors work with everyone from first-time crew and young sailors to future commercial mariners, with liveaboard catamaran experiences and the Western Australian coast adding real-world depth to every lesson.\n\n## What we love\n\nThe breadth is exceptional. A student can discover sailing, build recognised Australian Sailing skills, spend several days learning aboard a cruising catamaran or begin a serious commercial pathway without leaving the same training community. We also love the deliberate welcome extended to young sailors and women through programs designed around confidence, participation and shared adventure.\n\n## What you will love\n\nYou will love learning through action rather than observation. Port Geographe and the surrounding coast give students room to practise sail handling, helming, navigation and onboard routines in the conditions where those skills will eventually be used. The school also makes progression easy to imagine: a first weekend can lead naturally to liveaboard cruising, a Recreational Skipper's Ticket, marine radio competence or professional maritime study.\n\n## Ideal for\n\n### First-time sailors who want an active beginning\n\nThis is a strong choice if you want your first experience to feel substantial but not intimidating. Start Crewing and Start Helming introduce the language, safety habits and teamwork of sailing while giving students genuine jobs aboard, so confidence grows from successfully doing rather than simply listening.\n\n### Families, teenagers and women seeking a supportive pathway\n\nYouth adventures and She Sails experiences create an environment where learners can build independence without feeling they must already belong to the sailing world. The social, liveaboard and expedition elements are especially valuable for students motivated by connection and adventure as much as certification.\n\n### Future cruisers and commercial mariners\n\nIYT liveaboard catamaran programs suit people preparing for independent chartering, while Coxswain, Master, Marine Engine Driver and General Purpose Hand pathways serve those considering work on the water. It is rare to find recreational and commercial ambitions supported so naturally in one regional school.\n\n## Type of sailing and training\n\nAustralian Sailing keelboat training; youth sailing; women-only sailing; liveaboard catamaran cruising; bareboat preparation; recreational powerboat licensing; marine radio; commercial maritime training.\n\n## Our verdict\n\nAdventure Sailing is ideal when learning is part of a bigger plan. Come for a first qualification and you may leave with the skills, crew network and ambition for a much larger adventure.",
-        "seoTitle": "Adventure Sailing | Sailing Schools Australia",
-        "seoDescription": "Adventure Sailing brings an adventurous, hands-on spirit to maritime training from Port Geographe near Busselton. Its welcoming instructors work with everyone from first-time crew and young sailors to future commercial mariners, with liveaboard catamaran experiences and the Western Australian coast ",
-        "buyingGuide": "Adventure Sailing is ideal when learning is part of a bigger plan. Come for a first qualification and you may leave with the skills, crew network and ambition for a much larger adventure."
+        "description": "## Learn more about Mainstay Sailing\n\nMainstay Sailing turns the Whitsundays into an immersive liveaboard RYA classroom. Operating from Coral Sea Marina, the school teaches steering, navigation, anchoring, sail handling and teamwork through the real daily rhythm of cruising rather than a collection of disconnected exercises.\n\n## What we love\n\nWe love how naturally the setting supports the syllabus. Students plan routes between islands, enter anchorages, adapt to weather and live with the consequences of good preparation. The RYA pathway is impressively complete, extending from a short first experience through Competent Crew, Day Skipper, Coastal Skipper and Yachtmaster preparation.\n\n## What you will love\n\nYou will love finishing each day with a sense of having travelled, not merely attended class. Consecutive time aboard accelerates learning because yesterday's lesson becomes today's routine. Online theory, ICC, sea safety, diesel and radio courses also let students strengthen the knowledge surrounding their practical qualification.\n\n## Ideal for\n\n### Beginners who want an unforgettable first course\n\nStart Yachting and Competent Crew allow newcomers to learn inside a genuine cruising experience. Living aboard helps boat terminology, safety and seamanship make sense quickly because students see how every system and crew role contributes to the voyage.\n\n### Future charter skippers\n\nThe Whitsundays are one of Australia's great bareboat destinations, making them a highly relevant place to develop Day Skipper and ICC confidence. Students practise the same kinds of anchoring, pilotage and daily decision-making they will face on a future charter.\n\n### Experienced sailors preparing for advanced assessment\n\nCoastal passages, night work and Yachtmaster preparation suit sailors who already have miles but want their command skills examined and refined. The liveaboard format exposes weaknesses that can remain hidden during isolated day sessions.\n\n## Type of sailing and training\n\nLiveaboard cruising; RYA crew and skipper pathways; Whitsunday island navigation; anchoring and pilotage; coastal and night passages; ICC; sea safety, diesel and radio training.\n\n## Our verdict\n\nMainstay pairs rigorous international training with a voyage students will remember. It is one of the most natural ways to turn a qualification into lived cruising competence.",
+        "seoTitle": "Mainstay Sailing | Sailing Schools Australia",
+        "seoDescription": "Mainstay Sailing turns the Whitsundays into an immersive liveaboard RYA classroom. Operating from Coral Sea Marina, the school teaches steering, navigation, anchoring, sail handling and teamwork through the real daily rhythm of cruising rather than a collection of disconnected exercises.",
+        "buyingGuide": "Mainstay pairs rigorous international training with a voyage students will remember. It is one of the most natural ways to turn a qualification into lived cruising competence."
       }
     },
     {
@@ -150,31 +175,6 @@
         "seoTitle": "Liquid Edge Sailing School | Sailing Schools Australia",
         "seoDescription": "Liquid Edge Sailing School keeps instruction personal, teaching small groups from Mort Bay in Balmain aboard both monohull and catamaran. Its practical IYT pathway is particularly attractive to couples and friends preparing to cruise or charter together, because everyone receives meaningful time han",
         "buyingGuide": "Liquid Edge is ideal for students who want personal attention and a direct line between each lesson and the day they confidently take the boat themselves."
-      }
-    },
-    {
-      "sourceSlug": "mainstay-sailing",
-      "sourceUrl": "https://yousail.com.au/directory/mainstay-sailing",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
-      "name": "Mainstay Sailing",
-      "state": "queensland",
-      "region": "Airlie Beach",
-      "website": "https://www.mainstaysailing.com.au/",
-      "phone": "+61 402 429 152",
-      "email": "info@mainstaysailing.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/1a97ce39-0846-425e-9f9d-d0243e3ef0b5?v=1788606865",
-      "featureImage": "https://yousail.com.au/api/editorial-images/6e74ddfc-c22f-4f7d-bb6b-a6674f59e7fa?v=1788607048",
-      "checked": "2026-09-18T15:04:01.352614+00:00",
-      "freshness": "current",
-      "services": [
-        "Sailing academy / training"
-      ],
-      "operatingScope": "local",
-      "editorial": {
-        "description": "## Learn more about Mainstay Sailing\n\nMainstay Sailing turns the Whitsundays into an immersive liveaboard RYA classroom. Operating from Coral Sea Marina, the school teaches steering, navigation, anchoring, sail handling and teamwork through the real daily rhythm of cruising rather than a collection of disconnected exercises.\n\n## What we love\n\nWe love how naturally the setting supports the syllabus. Students plan routes between islands, enter anchorages, adapt to weather and live with the consequences of good preparation. The RYA pathway is impressively complete, extending from a short first experience through Competent Crew, Day Skipper, Coastal Skipper and Yachtmaster preparation.\n\n## What you will love\n\nYou will love finishing each day with a sense of having travelled, not merely attended class. Consecutive time aboard accelerates learning because yesterday's lesson becomes today's routine. Online theory, ICC, sea safety, diesel and radio courses also let students strengthen the knowledge surrounding their practical qualification.\n\n## Ideal for\n\n### Beginners who want an unforgettable first course\n\nStart Yachting and Competent Crew allow newcomers to learn inside a genuine cruising experience. Living aboard helps boat terminology, safety and seamanship make sense quickly because students see how every system and crew role contributes to the voyage.\n\n### Future charter skippers\n\nThe Whitsundays are one of Australia's great bareboat destinations, making them a highly relevant place to develop Day Skipper and ICC confidence. Students practise the same kinds of anchoring, pilotage and daily decision-making they will face on a future charter.\n\n### Experienced sailors preparing for advanced assessment\n\nCoastal passages, night work and Yachtmaster preparation suit sailors who already have miles but want their command skills examined and refined. The liveaboard format exposes weaknesses that can remain hidden during isolated day sessions.\n\n## Type of sailing and training\n\nLiveaboard cruising; RYA crew and skipper pathways; Whitsunday island navigation; anchoring and pilotage; coastal and night passages; ICC; sea safety, diesel and radio training.\n\n## Our verdict\n\nMainstay pairs rigorous international training with a voyage students will remember. It is one of the most natural ways to turn a qualification into lived cruising competence.",
-        "seoTitle": "Mainstay Sailing | Sailing Schools Australia",
-        "seoDescription": "Mainstay Sailing turns the Whitsundays into an immersive liveaboard RYA classroom. Operating from Coral Sea Marina, the school teaches steering, navigation, anchoring, sail handling and teamwork through the real daily rhythm of cruising rather than a collection of disconnected exercises.",
-        "buyingGuide": "Mainstay pairs rigorous international training with a voyage students will remember. It is one of the most natural ways to turn a qualification into lived cruising competence."
       }
     },
     {
