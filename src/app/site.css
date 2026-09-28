@@ -935,16 +935,20 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 .article-body section { margin-top: 48px; }
 .article-body section h2 { font-size: clamp(1.65rem, 3vw, 2.25rem); }
 .article-body section p { margin-top: 18px; color: var(--muted); font-size: 1.03125rem; line-height: 1.8; }
-.interview-person { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 32px; margin-top: 44px; padding: 30px; border: 1px solid #cfe4ee; border-radius: 22px; background: linear-gradient(145deg, #fff, var(--sky-2)); box-shadow: var(--e1); }
-.interview-person-photo { position: relative; min-height: 300px; overflow: hidden; border-radius: 16px; background: var(--sky); }
+.in-depth-card-photo img { object-fit: cover; object-position: center 32%; transition: transform var(--t-slow) var(--ease); }
+.ccard:hover .in-depth-card-photo img { transform: scale(1.025); }
+.photo-caption { position: absolute; right: 12px; bottom: 12px; left: 12px; padding: 9px 12px; border-radius: 10px; background: rgba(11,35,64,.82); color: #fff; font-size: .78rem; font-weight: 650; line-height: 1.35; backdrop-filter: blur(10px); }
+.interview-person { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 36px; align-items: start; margin-top: 44px; padding: 30px; border: 1px solid #cfe4ee; border-radius: 22px; background: linear-gradient(145deg, #fff, var(--sky-2)); box-shadow: var(--e1); }
+.interview-person-visual { min-width: 0; }
+.interview-person-photo { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; border-radius: 16px; background: var(--sky); }
 .interview-person-photo img { object-fit: cover; }
-.interview-person-copy .kicker { display: block; margin-top: 22px; }
+.interview-person-copy .kicker { display: block; }
 .interview-person-copy h2 { margin-top: 6px; font-size: 2rem; }
 .interview-person-copy .person-role { margin-top: 5px; color: var(--blue); font-weight: 750; }
 .interview-person-copy > p:not(.person-role) { margin-top: 16px; color: var(--muted); font-size: .96875rem; line-height: 1.72; }
 .interview-person-copy h3 { margin-top: 24px; font-size: 1.1rem; }
 .interview-school-logo, .aside-school-logo { display: flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
-.interview-school-logo { width: min(240px, 100%); }
+.interview-school-logo { width: 100%; margin-top: 14px; }
 .interview-school-logo img, .aside-school-logo img { width: 100%; height: auto; }
 .credentials-list { display: grid; gap: 7px; margin: 14px 0 0; padding: 0; list-style: none; color: var(--text); font-size: .9rem; line-height: 1.5; }
 .credentials-list li { position: relative; padding-left: 22px; }
@@ -1045,7 +1049,9 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
   .article-aside { position: static; }
   .article-body > blockquote { padding: 24px; font-size: 1.3rem; }
   .interview-person { grid-template-columns: 1fr; gap: 0; padding: 20px; }
-  .interview-person-photo { min-height: 0; aspect-ratio: 1; margin: -20px -20px 24px; border-radius: 22px 22px 0 0; }
+  .interview-person-visual { margin: -20px -20px 28px; }
+  .interview-person-photo { border-radius: 22px 22px 0 0; }
+  .interview-school-logo { width: min(260px, calc(100% - 40px)); margin: 16px 20px 0; }
   .external-actions { align-items: stretch; flex-direction: column; }
   .external-actions .pill, .external-actions .school-link { width: 100%; justify-content: center; text-align: center; }
 }

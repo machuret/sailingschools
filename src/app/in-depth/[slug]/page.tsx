@@ -81,9 +81,11 @@ export default async function InDepthArticlePage({ params }: Params) {
           <div className="article-standfirst">{feature.introduction.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
 
           <section className="interview-person" aria-labelledby="who-is-andy">
-            <div className="interview-person-photo"><Image src={feature.portrait} alt={`${feature.interviewee}, ${feature.role} of ${feature.schoolName}`} fill priority sizes="(max-width: 720px) 100vw, 280px" /></div>
-            <div className="interview-person-copy">
+            <div className="interview-person-visual">
+              <div className="interview-person-photo"><Image src={feature.portrait} alt={`${feature.interviewee}, ${feature.role} of ${feature.schoolName}`} fill priority sizes="(max-width: 720px) 100vw, 280px" /></div>
               <a className="interview-school-logo" href={feature.schoolUrl} target="_blank" rel="noopener noreferrer"><Image src={feature.logo} alt={`${feature.schoolName} website`} width={1038} height={273} /></a>
+            </div>
+            <div className="interview-person-copy">
               <span className="kicker">Who is Andy?</span>
               <h2 id="who-is-andy">{feature.interviewee}</h2>
               <p className="person-role">{feature.role}</p>
