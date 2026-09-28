@@ -107,6 +107,9 @@ export const article = (input: {
   url: string;
   datePublished?: string;
   about?: string;
+  aboutUrl?: string;
+  image?: string;
+  interviewee?: { name: string; jobTitle: string; sameAs?: string };
 }): JsonLdNode => ({
   '@type': 'Article',
   headline: input.headline,
@@ -116,7 +119,9 @@ export const article = (input: {
   author: { '@id': `${siteUrl}/#organization` },
   publisher: { '@id': `${siteUrl}/#organization` },
   ...(input.datePublished ? { datePublished: input.datePublished, dateModified: input.datePublished } : {}),
-  ...(input.about ? { about: { '@type': 'EducationalOrganization', name: input.about } } : {}),
+  ...(input.image ? { image: absoluteUrl(input.image) } : {}),
+  ...(input.about ? { about: { '@type': 'EducationalOrganization', name: input.about, ...(input.aboutUrl ? { url: input.aboutUrl } : {}) } } : {}),
+  ...(input.interviewee ? { mentions: { '@type': 'Person', name: input.interviewee.name, jobTitle: input.interviewee.jobTitle, ...(input.interviewee.sameAs ? { sameAs: input.interviewee.sameAs } : {}), affiliation: input.about ? { '@type': 'EducationalOrganization', name: input.about, ...(input.aboutUrl ? { url: input.aboutUrl } : {}) } : undefined } } : {}),
   inLanguage: 'en-AU',
 });
 

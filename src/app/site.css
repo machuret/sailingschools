@@ -918,6 +918,10 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 
 /* Editorial feature: one distinctive recurring voice, not another promotional card. */
 .editorial-feature { position: relative; }
+.in-depth-feature { margin-top: 96px; padding: 96px 0; background: linear-gradient(135deg, var(--sky-2) 0%, #f1f8fb 56%, var(--cream) 100%); border-block: 1px solid #cfe4ee; }
+.in-depth-feature .panel { background: rgba(255,255,255,.88); box-shadow: var(--e2); }
+.featured-school-logo { display: flex; align-items: center; width: min(260px, 72vw); min-height: 64px; margin: 20px 0 28px; padding: 12px 18px; border: 1px solid rgba(15,47,85,.12); border-radius: 14px; background: #fff; box-shadow: var(--e1); }
+.featured-school-logo img { width: 100%; height: auto; }
 .in-depth-feature blockquote { margin: 28px 0; padding-left: 24px; border-left: 4px solid var(--orange); color: var(--navy); font-family: var(--serif); font-size: 1.35rem; line-height: 1.55; }
 .profile-interview { margin-top: 34px; padding: 28px; border-radius: var(--r); border: 1px solid var(--line); background: var(--cream); }
 .profile-interview p { margin: 12px 0 22px; color: var(--muted); line-height: 1.7; }
@@ -931,7 +935,25 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 .article-body section { margin-top: 48px; }
 .article-body section h2 { font-size: clamp(1.65rem, 3vw, 2.25rem); }
 .article-body section p { margin-top: 18px; color: var(--muted); font-size: 1.03125rem; line-height: 1.8; }
+.interview-person { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 32px; margin-top: 44px; padding: 30px; border: 1px solid #cfe4ee; border-radius: 22px; background: linear-gradient(145deg, #fff, var(--sky-2)); box-shadow: var(--e1); }
+.interview-person-photo { position: relative; min-height: 300px; overflow: hidden; border-radius: 16px; background: var(--sky); }
+.interview-person-photo img { object-fit: cover; }
+.interview-person-copy .kicker { display: block; margin-top: 22px; }
+.interview-person-copy h2 { margin-top: 6px; font-size: 2rem; }
+.interview-person-copy .person-role { margin-top: 5px; color: var(--blue); font-weight: 750; }
+.interview-person-copy > p:not(.person-role) { margin-top: 16px; color: var(--muted); font-size: .96875rem; line-height: 1.72; }
+.interview-person-copy h3 { margin-top: 24px; font-size: 1.1rem; }
+.interview-school-logo, .aside-school-logo { display: flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.interview-school-logo { width: min(240px, 100%); }
+.interview-school-logo img, .aside-school-logo img { width: 100%; height: auto; }
+.credentials-list { display: grid; gap: 7px; margin: 14px 0 0; padding: 0; list-style: none; color: var(--text); font-size: .9rem; line-height: 1.5; }
+.credentials-list li { position: relative; padding-left: 22px; }
+.credentials-list li::before { content: '✓'; position: absolute; left: 0; color: var(--blue); font-weight: 800; }
+.external-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 26px; }
+.external-actions .pill { padding-inline: 20px; }
+.external-actions .school-link { min-height: 44px; }
 .article-aside { position: sticky; top: 130px; padding: 30px; border-radius: var(--r); background: var(--cream); }
+.aside-school-logo { margin-bottom: 24px; }
 .article-aside h2 { font-size: 1.5rem; }
 .article-aside dl { margin: 24px 0; }
 .article-aside dl div { padding: 14px 0; border-top: 1px solid var(--line); }
@@ -994,6 +1016,7 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 .theme-btn:active { transform: scale(.94); transition-duration: var(--t-press); }
 
 @media (max-width: 720px) {
+  .in-depth-feature { margin-top: 72px; padding: 72px 0; }
   .logo-section { padding-top: 72px; }
   .logo-intro { align-items: start; flex-direction: column; }
   .logo-viewport { -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
@@ -1021,6 +1044,10 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
   .article-layout { grid-template-columns: 1fr; gap: 48px; }
   .article-aside { position: static; }
   .article-body > blockquote { padding: 24px; font-size: 1.3rem; }
+  .interview-person { grid-template-columns: 1fr; gap: 0; padding: 20px; }
+  .interview-person-photo { min-height: 0; aspect-ratio: 1; margin: -20px -20px 24px; border-radius: 22px 22px 0 0; }
+  .external-actions { align-items: stretch; flex-direction: column; }
+  .external-actions .pill, .external-actions .school-link { width: 100%; justify-content: center; text-align: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {

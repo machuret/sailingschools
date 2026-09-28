@@ -8,6 +8,13 @@ export type InDepthArticle = {
   readTime: string;
   interviewee: string;
   role: string;
+  credentials: string[];
+  biography: string[];
+  portrait: string;
+  logo: string;
+  schoolUrl: string;
+  teamUrl: string;
+  coursesUrl: string;
   introduction: string[];
   sections: { heading: string; paragraphs: string[] }[];
   pullQuote: string;
@@ -20,14 +27,24 @@ export const inDepthArticles: InDepthArticle[] = [
     schoolSlug: 'flying-fish-sailing',
     schoolName: 'Flying Fish Sailing',
     title: 'Inside Flying Fish Sailing: from day one to Yachtmaster',
-    description: 'An in-depth look at Flying Fish Sailing in Middle Harbour: its teaching approach, boats, qualifications and professional pathways, based on our interview with founder Andy.',
+    description: 'An in-depth look at Flying Fish Sailing in Middle Harbour: its teaching approach, boats, qualifications and professional pathways, based on our interview with Founding Director Andy Fairclough.',
     publishedAt: '2026-09-28',
     readTime: '10 minute read',
-    interviewee: 'Andy',
-    role: 'Founder',
+    interviewee: 'Andy Fairclough',
+    role: 'Founding Director',
+    credentials: ['AMSA Master 24', 'RYA Yachtmaster Examiner', 'RYA Cruising Instructor Trainer', 'RYA Dinghy Coach Assessor', 'RYA Windsurfing Trainer'],
+    biography: [
+      'Andy Fairclough is the Founding Director of Flying Fish. Sailing and windsurfing shaped his early interest in the ocean; he later studied oceanography and worked as a senior lecturer at universities in the UK and Spain.',
+      'In 1996, Andy and fellow windsurfing enthusiast Andrew Lorant founded Flying Fish from a small apartment on the Isle of Wight. Their first course trained windsurfing instructors in Barbados. More than twenty-five years later, the school has become an international sailing and watersports training business.',
+    ],
+    portrait: '/images/schools/andy-fairclough.jpg',
+    logo: '/images/schools/flying-fish-logo.webp',
+    schoolUrl: 'https://flyingfishsailing.com.au/',
+    teamUrl: 'https://flyingfishsailing.com.au/about-us/our-team/',
+    coursesUrl: 'https://flyingfishsailing.com.au/catalogue/',
     introduction: [
       'Flying Fish occupies an unusual place in Australian sail training. It can give a complete beginner a first weekend on Sydney Harbour, then keep the same student moving through cruising qualifications, offshore miles and professional preparation.',
-      'Our interview with founder Andy revealed how that breadth developed, what students actually do on the water and where the school sees a qualification ending and genuine command experience beginning.',
+      'Our interview with Founding Director Andy Fairclough revealed how that breadth developed, what students actually do on the water and where the school sees a qualification ending and genuine command experience beginning.',
     ],
     pullQuote: 'You do not need to have grown up sailing, own a boat or know all the terminology before you start.',
     sections: [
