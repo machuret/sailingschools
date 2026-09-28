@@ -9,7 +9,6 @@ const LINKS = [
   { href: '/sailing-schools/', label: 'Schools', section: '/sailing-schools' },
   { href: '/courses/', label: 'Courses', section: '/courses' },
   { href: '/pathways/', label: 'Pathways', section: '/pathways' },
-  { href: '/compare/', label: 'Compare', section: '/compare' },
   { href: '/learn/', label: 'Guides', section: '/learn' },
   { href: '/in-depth/', label: 'In depth', section: '/in-depth' },
 ];
@@ -44,9 +43,6 @@ export default function SiteNav() {
             <Link className="hide-l" href="/about/">
               About
             </Link>
-            <a className="hide-l" href="mailto:hello@sailingschools.com.au">
-              Update a school
-            </a>
             <Link className="hide-m" href="/find-a-course/" aria-label="Search">
               <i className="ph-duotone ph-magnifying-glass" />
             </Link>
