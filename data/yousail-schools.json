@@ -1,10 +1,35 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-09-27T21:16:13.240Z",
+    "syncedAt": "2026-09-28T05:12:10.299Z",
     "total": 20
   },
   "schools": [
+    {
+      "sourceSlug": "flying-fish-sailing",
+      "sourceUrl": "https://yousail.com.au/directory/flying-fish-sailing",
+      "sourceUpdatedAt": "2026-09-28T03:46:37.05328+00:00",
+      "name": "Flying Fish Sailing",
+      "state": "new-south-wales",
+      "region": "Mosman",
+      "website": "https://flyingfishsailing.com.au/",
+      "phone": "+61 2 9969 8590",
+      "email": "help@flyingfishsailing.com.au",
+      "logo": "https://yousail.com.au/api/directory/image/6e30ae37-0e81-4cbe-9a59-db25a7a025c7?v=1788606474",
+      "featureImage": "https://yousail.com.au/api/editorial-images/9a435bfd-bf32-4291-bbb6-78fd24710ef4?v=1788010401",
+      "checked": "2026-09-18T15:04:01.352614+00:00",
+      "freshness": "current",
+      "services": [
+        "Sailing academy / training"
+      ],
+      "operatingScope": "hybrid",
+      "editorial": {
+        "description": "## Learn more about Flying Fish Sailing\n\nFlying Fish Sailing is a high-energy RYA centre on Sydney's Middle Harbour with pathways for complete beginners, ambitious cruisers and people planning a professional life on yachts. Its combination of structured qualifications, offshore passages, race campaigns and specialist training gives students unusual freedom to keep progressing.\n\n## What we love\n\nWe love the momentum this school can create. A first RYA course does not sit in isolation; it can lead into Day Skipper, Coastal Skipper, Yachtmaster preparation, ocean theory, race experience or a complete career program. Safety, powerboat, radio and first-aid options help students build the rounded competence expected of serious skippers and working crew.\n\n## What you will love\n\nYou will love the sense that training is connected to the wider sailing world. Practical courses can be reinforced through adventure passages and iconic races, giving students both sea miles and stories. Career-focused sailors also benefit from learning within a school that understands how qualifications, experience and employability fit together.\n\n## Ideal for\n\n### Beginners with big ambitions\n\nFlying Fish suits newcomers who may not yet know whether their future lies in weekend cruising, offshore adventure or professional yachting. The broad pathway allows you to begin with fundamentals and delay that decision until genuine experience has revealed what excites you most.\n\n### Offshore sailors and Yachtmaster candidates\n\nAdvanced students need more than classroom competence. Coastal passages, race campaigns and intensive preparation create opportunities to practise judgement, watchkeeping and command under pressure before presenting for higher-level assessment.\n\n### People considering work on yachts\n\nFast-track and career programs combine training with the practical expectations of the marine industry. They are appropriate for motivated candidates who want a purposeful route into professional crewing rather than assembling unrelated certificates on their own.\n\n## Type of sailing and training\n\nRYA cruising courses; coastal and offshore passage-making; Yachtmaster preparation; ocean navigation; yacht racing; powerboat handling; marine safety and radio; professional yacht-career training.\n\n## Our verdict\n\nFlying Fish is a launchpad rather than a one-course school. It is especially compelling for students who want their first qualification to open the door to offshore experience or a marine career.",
+        "seoTitle": "Flying Fish Sailing | Sailing Schools Australia",
+        "seoDescription": "Flying Fish Sailing is a high-energy RYA centre on Sydney's Middle Harbour with pathways for complete beginners, ambitious cruisers and people planning a professional life on yachts. Its combination of structured qualifications, offshore passages, race campaigns and specialist training gives student",
+        "buyingGuide": "Flying Fish is a launchpad rather than a one-course school. It is especially compelling for students who want their first qualification to open the door to offshore experience or a marine career."
+      }
+    },
     {
       "sourceSlug": "adventure-sailing",
       "sourceUrl": "https://yousail.com.au/directory/adventure-sailing",
@@ -102,31 +127,6 @@
         "seoTitle": "Blue Water Sailing School | Sailing Schools Australia",
         "seoDescription": "Blue Water Sailing School helps future cruisers turn ambition into practical confidence through training in Melbourne, the Whitsundays and online. Short introductions, private coaching and immersive liveaboard programs make it particularly attractive to couples, boat owners and charterers preparing ",
         "buyingGuide": "Blue Water is strongest when training is tied to a real boat, charter or passage. Its blend of local, online and liveaboard learning helps students arrive at that next adventure genuinely prepared."
-      }
-    },
-    {
-      "sourceSlug": "flying-fish-sailing",
-      "sourceUrl": "https://yousail.com.au/directory/flying-fish-sailing",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
-      "name": "Flying Fish Sailing",
-      "state": "new-south-wales",
-      "region": "Mosman",
-      "website": "https://flyingfishsailing.com.au/",
-      "phone": "+61 2 9969 8590",
-      "email": "help@flyingfishsailing.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/6e30ae37-0e81-4cbe-9a59-db25a7a025c7?v=1788606474",
-      "featureImage": "https://yousail.com.au/api/editorial-images/9a435bfd-bf32-4291-bbb6-78fd24710ef4?v=1788010401",
-      "checked": "2026-09-18T15:04:01.352614+00:00",
-      "freshness": "current",
-      "services": [
-        "Sailing academy / training"
-      ],
-      "operatingScope": "hybrid",
-      "editorial": {
-        "description": "## Learn more about Flying Fish Sailing\n\nFlying Fish Sailing is a high-energy RYA centre on Sydney's Middle Harbour with pathways for complete beginners, ambitious cruisers and people planning a professional life on yachts. Its combination of structured qualifications, offshore passages, race campaigns and specialist training gives students unusual freedom to keep progressing.\n\n## What we love\n\nWe love the momentum this school can create. A first RYA course does not sit in isolation; it can lead into Day Skipper, Coastal Skipper, Yachtmaster preparation, ocean theory, race experience or a complete career program. Safety, powerboat, radio and first-aid options help students build the rounded competence expected of serious skippers and working crew.\n\n## What you will love\n\nYou will love the sense that training is connected to the wider sailing world. Practical courses can be reinforced through adventure passages and iconic races, giving students both sea miles and stories. Career-focused sailors also benefit from learning within a school that understands how qualifications, experience and employability fit together.\n\n## Ideal for\n\n### Beginners with big ambitions\n\nFlying Fish suits newcomers who may not yet know whether their future lies in weekend cruising, offshore adventure or professional yachting. The broad pathway allows you to begin with fundamentals and delay that decision until genuine experience has revealed what excites you most.\n\n### Offshore sailors and Yachtmaster candidates\n\nAdvanced students need more than classroom competence. Coastal passages, race campaigns and intensive preparation create opportunities to practise judgement, watchkeeping and command under pressure before presenting for higher-level assessment.\n\n### People considering work on yachts\n\nFast-track and career programs combine training with the practical expectations of the marine industry. They are appropriate for motivated candidates who want a purposeful route into professional crewing rather than assembling unrelated certificates on their own.\n\n## Type of sailing and training\n\nRYA cruising courses; coastal and offshore passage-making; Yachtmaster preparation; ocean navigation; yacht racing; powerboat handling; marine safety and radio; professional yacht-career training.\n\n## Our verdict\n\nFlying Fish is a launchpad rather than a one-course school. It is especially compelling for students who want their first qualification to open the door to offshore experience or a marine career.",
-        "seoTitle": "Flying Fish Sailing | Sailing Schools Australia",
-        "seoDescription": "Flying Fish Sailing is a high-energy RYA centre on Sydney's Middle Harbour with pathways for complete beginners, ambitious cruisers and people planning a professional life on yachts. Its combination of structured qualifications, offshore passages, race campaigns and specialist training gives student",
-        "buyingGuide": "Flying Fish is a launchpad rather than a one-course school. It is especially compelling for students who want their first qualification to open the door to offshore experience or a marine career."
       }
     },
     {
