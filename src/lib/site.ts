@@ -9,6 +9,7 @@ import { licences } from './licences';
 import { schemeCourses } from './scheme-courses';
 import { states } from './states';
 import { schools } from './schools';
+import { inDepthArticles } from './in-depth';
 
 /** Canonicals, structured data, robots and sitemaps always use the public custom domain. */
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.sailingschools.com.au').replace(/\/$/, '');
@@ -38,6 +39,7 @@ const staticRoutes: SiteRoute[] = [
   { path: '/compare/', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/glossary/', priority: 0.75, changeFrequency: 'monthly' },
   { path: '/learn/', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/in-depth/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/learn/points-of-sail/', priority: 0.8, changeFrequency: 'yearly' },
   { path: '/faq/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/learn/boat-licence/', priority: 0.9, changeFrequency: 'monthly' },
@@ -63,6 +65,12 @@ const schoolRoutes: SiteRoute[] = schools.flatMap((school) => school.sourceSlug 
   priority: 0.7,
   changeFrequency: 'weekly' as const,
 }] : []);
+
+const inDepthRoutes: SiteRoute[] = inDepthArticles.map((article) => ({
+  path: `/in-depth/${article.slug}/`,
+  priority: 0.78,
+  changeFrequency: 'monthly' as const,
+}));
 
 /** Intent course pages, generated from the course records. */
 const courseRoutes: SiteRoute[] = courses.map((c) => ({
@@ -141,6 +149,7 @@ const allRoutes: SiteRoute[] = [
   ...staticRoutes,
   ...stateRoutes,
   ...schoolRoutes,
+  ...inDepthRoutes,
   ...cityRoutes,
   ...courseRoutes,
   ...schemeCourseRoutes,

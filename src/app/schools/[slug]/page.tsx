@@ -11,6 +11,7 @@ import HelpTip from '@/components/HelpTip';
 import { cities } from '@/lib/cities';
 import { educationalOrganization, webPage } from '@/lib/schema';
 import { schools, schoolsInCity, schoolsInState } from '@/lib/schools';
+import { inDepthArticles } from '@/lib/in-depth';
 import { stateByKey } from '@/lib/states';
 
 type Params = { params: Promise<{ slug: string }> };
@@ -113,6 +114,7 @@ export default async function SchoolProfilePage({ params }: Params) {
   const idealFor = editorial.get('Ideal for')?.subsections ?? [];
   const trainingTypes = editorial.get('Type of sailing and training')?.body;
   const verdict = editorial.get('Our verdict')?.body ?? school.editorial?.buyingGuide;
+  const inDepth = inDepthArticles.find((article) => article.schoolSlug === slug);
 
   return (
     <>
@@ -165,6 +167,8 @@ export default async function SchoolProfilePage({ params }: Params) {
             <span className="kicker">School overview</span>
             <h2 className="h2">Learn more about {school.name}</h2>
             <p className="school-editorial-lead">{learnMore}</p>
+
+            {inDepth && <div className="profile-interview"><span className="kicker">Featured in-depth profile</span><h2 className="h3">The story behind the school</h2><p>{inDepth.description}</p><Link className="pill pill-orange" href={`/in-depth/${inDepth.slug}/`}>Read the full article</Link></div>}
 
             {(whatWeLove || whatYouWillLove) && (
               <div className="editorial-highlights">

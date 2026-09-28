@@ -105,6 +105,8 @@ export const article = (input: {
   headline: string;
   description: string;
   url: string;
+  datePublished?: string;
+  about?: string;
 }): JsonLdNode => ({
   '@type': 'Article',
   headline: input.headline,
@@ -113,6 +115,8 @@ export const article = (input: {
   mainEntityOfPage: absoluteUrl(input.url),
   author: { '@id': `${siteUrl}/#organization` },
   publisher: { '@id': `${siteUrl}/#organization` },
+  ...(input.datePublished ? { datePublished: input.datePublished, dateModified: input.datePublished } : {}),
+  ...(input.about ? { about: { '@type': 'EducationalOrganization', name: input.about } } : {}),
   inLanguage: 'en-AU',
 });
 

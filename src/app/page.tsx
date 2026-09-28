@@ -110,6 +110,13 @@ export default function HomePage() {
 
       <SchoolLogoRail />
 
+      <section className="sec in-depth-feature">
+        <div className="wrap split top">
+          <div><span className="kicker">New · In-depth school profile</span><h2 className="h2">Inside Flying Fish Sailing</h2><p className="copy">A direct interview became a deeper look at how the Middle Harbour school takes people from their first active day aboard to Yachtmaster preparation and professional command time.</p><blockquote>“You do not need to have grown up sailing, own a boat or know all the terminology before you start.”</blockquote><Link className="pill pill-orange" href="/in-depth/flying-fish-sailing/">Read the in-depth article</Link></div>
+          <div className="panel"><span className="kicker">What the article covers</span><div className="rows compact-rows"><div className="row"><div><h3>Day one on the water</h3><p>Why beginners rotate through real crew positions immediately</p></div></div><div className="row"><div><h3>RYA, MCA and AMSA</h3><p>How distinct pathways serve international and Australian work</p></div></div><div className="row"><div><h3>Beyond Yachtmaster</h3><p>Why qualifications must be followed by command experience</p></div></div></div></div>
+        </div>
+      </section>
+
       <section className="sec editorial-feature">
         <div className="wrap split top">
           <div className="editorial-photo">

@@ -918,6 +918,26 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
 
 /* Editorial feature: one distinctive recurring voice, not another promotional card. */
 .editorial-feature { position: relative; }
+.in-depth-feature blockquote { margin: 28px 0; padding-left: 24px; border-left: 4px solid var(--orange); color: var(--navy); font-family: var(--serif); font-size: 1.35rem; line-height: 1.55; }
+.profile-interview { margin-top: 34px; padding: 28px; border-radius: var(--r); border: 1px solid var(--line); background: var(--cream); }
+.profile-interview p { margin: 12px 0 22px; color: var(--muted); line-height: 1.7; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 24px; color: rgba(255,255,255,.8); font-size: .875rem; }
+.article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 72px; align-items: start; }
+.article-body { max-width: 760px; }
+.article-standfirst { font-family: var(--serif); font-size: 1.25rem; line-height: 1.7; color: var(--navy); }
+.article-standfirst p + p, .article-body section p + p { margin-top: 16px; }
+.article-body > blockquote { margin: 42px 0; padding: 30px; border-radius: var(--r); background: var(--navy-2); color: #fff; font-family: var(--serif); font-size: 1.5rem; line-height: 1.5; }
+.article-body blockquote cite { display: block; margin-top: 16px; color: var(--sky); font-family: var(--sans); font-size: .875rem; font-style: normal; }
+.article-body section { margin-top: 48px; }
+.article-body section h2 { font-size: clamp(1.65rem, 3vw, 2.25rem); }
+.article-body section p { margin-top: 18px; color: var(--muted); font-size: 1.03125rem; line-height: 1.8; }
+.article-aside { position: sticky; top: 130px; padding: 30px; border-radius: var(--r); background: var(--cream); }
+.article-aside h2 { font-size: 1.5rem; }
+.article-aside dl { margin: 24px 0; }
+.article-aside dl div { padding: 14px 0; border-top: 1px solid var(--line); }
+.article-aside dt { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.article-aside dd { margin: 5px 0 0; color: var(--navy); font-weight: 650; line-height: 1.45; }
+.article-aside .school-link { margin-top: 16px; white-space: normal; }
 .editorial-photo { position: relative; min-height: 520px; border-radius: calc(var(--r) + 8px); overflow: hidden; box-shadow: var(--e2); }
 .editorial-photo img { object-fit: cover; }
 .compact-rows { margin-bottom: 28px; }
@@ -998,6 +1018,9 @@ body { font-kerning: normal; font-variant-ligatures: common-ligatures; }
   .editorial-highlights, .school-fit-grid, .editorial-conclusion { grid-template-columns: 1fr; }
   .school-fit-section { margin-top: 72px; padding-bottom: 72px; }
   .editorial-conclusion article { padding: 30px 24px; }
+  .article-layout { grid-template-columns: 1fr; gap: 48px; }
+  .article-aside { position: static; }
+  .article-body > blockquote { padding: 24px; font-size: 1.3rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

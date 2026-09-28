@@ -7,6 +7,7 @@ import { orderedPathways } from '@/lib/pathways';
 import { guidesInSection } from '@/lib/guides';
 import { licences } from '@/lib/licences';
 import { comparisonGroups, comparisonsInGroup } from '@/lib/comparisons';
+import { inDepthArticles } from '@/lib/in-depth';
 
 export const dynamic = 'force-static';
 
@@ -121,6 +122,10 @@ ${comparisonGroups
 ${line('All courses', '/courses/', `${courses.length} guides by what you want to learn`)}
 
 ${courseSections}
+## In-depth school profiles
+
+${inDepthArticles.map((article) => line(article.title, `/in-depth/${article.slug}/`, article.description)).join('\n')}
+
 ## Questions answered in full
 
 ${faqPages.map((f) => line(f.question, `/faq/${f.page!.slug}/`, f.short)).join('\n')}

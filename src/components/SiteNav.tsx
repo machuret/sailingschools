@@ -11,6 +11,7 @@ const LINKS = [
   { href: '/pathways/', label: 'Pathways', section: '/pathways' },
   { href: '/compare/', label: 'Compare', section: '/compare' },
   { href: '/learn/', label: 'Guides', section: '/learn' },
+  { href: '/in-depth/', label: 'In depth', section: '/in-depth' },
 ];
 
 export default function SiteNav() {
