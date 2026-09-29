@@ -64,6 +64,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="welcome-audio" aria-labelledby="welcome-audio-title">
+        <div className="wrap">
+          <div className="welcome-audio-card">
+            <div className="welcome-audio-heading">
+              <span className="welcome-audio-icon" aria-hidden="true"><i className="ph-duotone ph-headphones" /></span>
+              <div>
+                <h2 id="welcome-audio-title">Welcome to Sailing Schools</h2>
+                <p>Listen to our introduction · 1 min 7 sec</p>
+              </div>
+            </div>
+            <audio controls preload="metadata" aria-labelledby="welcome-audio-title">
+              <source src="/audio/welcome-to-sailing-schools.mp3" type="audio/mpeg" />
+              <a href="/audio/welcome-to-sailing-schools.mp3">Download the welcome audio</a>
+            </audio>
+          </div>
+        </div>
+      </section>
+
       <section className="sec">
         <div className="wrap">
           <div className="sec-head">
