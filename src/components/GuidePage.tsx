@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { basics, basicHref } from '@/lib/basics';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { article, faqPage, webPage } from '@/lib/schema';
@@ -180,6 +181,7 @@ export default function GuidePage({ record }: { record: Guide }) {
       </section>
 
       <div className="wrap">
+        {basics.some(lesson => lesson.related === record.slug) && <section className="sec" aria-label="Related beginner lessons"><h2 className="h3">Try a mini-lesson with Saily</h2><div className="rows">{basics.filter(lesson => lesson.related === record.slug).slice(0, 3).map(lesson => <Link className="row" href={basicHref(lesson.slug)} key={lesson.slug}><div><h3>{lesson.title}</h3><p>{lesson.intro}</p></div><span aria-hidden="true">→</span></Link>)}</div></section>}
         <div className="cta-band">
           <div>
             <h2>Still working out where to start?</h2>

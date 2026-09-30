@@ -93,6 +93,13 @@ export default function PrivacyPolicyPage() {
               people read. You can block or delete cookies in your browser; the site will continue to
               work without them.
             </p>
+            <p className="copy">
+              If you mark a Learn the Basics lesson as read, we save that lesson identifier in your
+              browser’s local storage. This reading record is not sent to us and does not sync
+              between devices. You can undo a mark on the lesson or reset the record on the lesson
+              hub. Clearing this site’s browser data also removes it. Lessons and quizzes remain
+              available without saved progress.
+            </p>
 
             <h2 className="h3" style={{ marginTop: 40 }}>
               Who we share it with

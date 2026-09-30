@@ -1,3 +1,4 @@
+import BasicConcept from './BasicConcept';
 export default function BasicVisual({ slug, memory }: { slug: string; memory: string[] }) {
   return <figure className="basic-visual">
     {slug === 'parts-of-a-sailing-boat' && <svg viewBox="0 0 560 300" role="img" aria-label="Side view of a sailing boat: mast upright, boom horizontal, hull at the water, keel below and rudder at the stern.">
@@ -11,6 +12,7 @@ export default function BasicVisual({ slug, memory }: { slug: string; memory: st
       <path d="M280 208 V112 L270 130 M280 112 L290 130" stroke="#078494" strokeWidth="4" fill="none"/>
       <g fontSize="20" fill="#123653" fontFamily="sans-serif" textAnchor="middle"><text x="280" y="30">Bow</text><text x="280" y="282">Stern</text><text x="120" y="160">Port</text><text x="440" y="160">Starboard</text></g>
     </svg>}
-    <figcaption><span className="kicker">Picture the idea</span><ol className="basic-memory">{memory.map((item, i) => <li key={item}><span aria-hidden="true">0{i + 1}</span>{item}</li>)}</ol></figcaption>
+    <BasicConcept slug={slug} />
+    <figcaption><span className="kicker">Remember these three things</span><ol className="basic-memory">{memory.map((item, i) => <li key={item}><span aria-hidden="true">0{i + 1}</span>{item}</li>)}</ol></figcaption>
   </figure>;
 }

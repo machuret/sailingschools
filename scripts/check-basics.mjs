@@ -18,6 +18,10 @@ for (const slug of ['', ...slugs]) {
     assert.ok(html.includes('LearningResource'), `Schema: ${path}`);
     assert.ok(html.includes('What stuck with you?'), `Quiz: ${path}`);
     assert.ok(html.includes('Saily’s tip'), `Tip: ${path}`);
+    assert.ok(html.includes('Show the explanation'), `Worked example: ${path}`);
+    assert.ok(html.includes('Word to know:'), `Term explanation: ${path}`);
+    assert.ok(html.includes('Your reading journey'), `Reading progress: ${path}`);
+    assert.ok(html.includes('<svg'), `Illustration: ${path}`);
   }
   for (const match of html.matchAll(/href="(\/[^"#?]*)"/g)) {
     if (!match[1].startsWith('/_next/') && !match[1].includes('.')) links.add(match[1]);
