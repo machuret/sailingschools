@@ -13,6 +13,7 @@ for (const slug of ['', ...slugs]) {
   assert.equal(response.status, 200, path);
   const html = await response.text();
   assert.ok(html.includes('/assets/saily.png'), `Mascot: ${path}`);
+  assert.ok(html.includes('/images/basics/saily-'), `Chapter artwork: ${path}`);
   assert.ok(html.includes(`https://www.sailingschools.com.au${path}`), `Canonical: ${path}`);
   if (slug) {
     assert.ok(html.includes('LearningResource'), `Schema: ${path}`);

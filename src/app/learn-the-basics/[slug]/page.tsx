@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import BasicQuiz from '@/components/BasicQuiz';
 import BasicVisual from '@/components/BasicVisual';
+import BasicChapterImage from '@/components/BasicChapterImage';
+import { basicImages } from '@/lib/basic-images';
 import BasicProgress from '@/components/BasicProgress';
 import { basicExamples } from '@/lib/basic-examples';
 import JsonLd from '@/components/JsonLd';
@@ -17,7 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const lesson = basics.find(l => l.slug === slug);
   if (!lesson) return {};
-  return { title: `${lesson.title} | Learn the Basics with Saily`, description: lesson.intro, alternates: { canonical: basicHref(lesson.slug) }, openGraph: { title: lesson.title, description: lesson.intro, url: absoluteUrl(basicHref(lesson.slug)), images: [{ url: absoluteUrl('/assets/saily.png'), width: 420, height: 420, alt: 'Saily sailing mascot' }] } };
+  const illustration = basicImages[lesson.group];
+  return { title: `${lesson.title} | Learn the Basics with Saily`, description: lesson.intro, alternates: { canonical: basicHref(lesson.slug) }, openGraph: { title: lesson.title, description: lesson.intro, url: absoluteUrl(basicHref(lesson.slug)), images: [{ url: absoluteUrl(illustration.src), width: 1200, height: 800, alt: illustration.alt }] } };
 }
 export default async function LessonPage({ params }: Props) {
   const { slug } = await params;
@@ -30,6 +33,7 @@ export default async function LessonPage({ params }: Props) {
     <div className="wrap basic-reading">
       <Breadcrumbs dark items={[{ name: 'Home', href: '/' }, { name: 'Learn the Basics', href: '/learn-the-basics/' }, { name: lesson.title }]} />
       <header className="basic-heading"><span className="kicker">{lesson.group} · Lesson {index + 1} of {basics.length}</span><h1>{lesson.title}</h1><p>{lesson.intro}</p><span className="basic-meta">3-minute read + a quick quiz</span></header>
+      <BasicChapterImage group={lesson.group} />
       <aside className="basic-saily"><Image src="/assets/saily.png" alt="Saily" width={100} height={100} priority /><div><strong>Saily’s tip</strong><p>{lesson.tip}</p></div></aside>
       <BasicVisual slug={slug} memory={lesson.memory} />
       <article className="basic-copy">{lesson.sections.map(section => <section key={section.title}><h2>{section.title}</h2><p>{section.text}</p></section>)}</article>

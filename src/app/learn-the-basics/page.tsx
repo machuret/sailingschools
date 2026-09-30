@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import BasicProgress from '@/components/BasicProgress';
+import BasicChapterImage from '@/components/BasicChapterImage';
 import { basics, basicHref } from '@/lib/basics';
 import { itemList } from '@/lib/schema';
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function BasicsPage() {
       <div className="basic-welcome"><div><span className="kicker">Your first steps, at your pace</span><h1>Learn the Basics<br /><em>with Saily.</em></h1><p>New to sailing? Start with one small idea. Get to know the boat, make sense of the wind and arrive at your first lesson with better questions.</p><Link href={basicHref(basics[0].slug)} className="pill pill-orange">Start lesson 1 →</Link><p className="basic-meta">15 mini-lessons · No account needed · Free to explore</p></div><Image src="/assets/saily.png" alt="Meet Saily, your guide to the sailing basics" width={300} height={300} priority /></div>
     </div></section>
     <div className="wrap basic-progress-wrap"><BasicProgress lessons={basics.map(({ slug, title }) => ({ slug, title }))} /></div>
-    <div className="wrap basic-library">{Array.from(new Set(basics.map(l => l.group))).map((group, i) => <section key={group} aria-labelledby={`group-${i}`}><span className="kicker">Chapter {i + 1}</span><h2 id={`group-${i}`}>{group}</h2><div className="basic-grid">{basics.filter(l => l.group === group).map(l => <Link className="basic-card" key={l.slug} href={basicHref(l.slug)}><span className="basic-meta">Lesson {basics.indexOf(l) + 1} · 3-minute read + quiz</span><h3>{l.title}</h3><p>{l.intro}</p><span className="basic-card-link">Explore lesson →</span></Link>)}</div></section>)}
+    <div className="wrap basic-library">{Array.from(new Set(basics.map(l => l.group))).map((group, i) => <section key={group} aria-labelledby={`group-${i}`}><div className="basic-chapter-heading"><div><span className="kicker">Chapter {i + 1}</span><h2 id={`group-${i}`}>{group}</h2><p>Three small lessons. One step closer to feeling at home on the water.</p></div><BasicChapterImage group={group} compact /></div><div className="basic-grid">{basics.filter(l => l.group === group).map(l => <Link className="basic-card" key={l.slug} href={basicHref(l.slug)}><span className="basic-meta">Lesson {basics.indexOf(l) + 1} · 3-minute read + quiz</span><h3>{l.title}</h3><p>{l.intro}</p><span className="basic-card-link">Explore lesson →</span></Link>)}</div></section>)}
       <aside className="basic-boundary"><h2>Then take it onto the water</h2><p>These introductions help you prepare for practical learning. They are not a qualification or a replacement for instruction aboard your boat.</p><Link className="pill pill-sky" href="/pathways/complete-beginner/">Find your beginner pathway →</Link></aside>
     </div>
   </>;
