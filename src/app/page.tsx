@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import BasicsPromo from '@/components/BasicsPromo';
 import ImageSlot from '@/components/ImageSlot';
 import AustraliaChart from '@/components/AustraliaChart';
 import PointsOfSail from '@/components/PointsOfSail';
@@ -63,6 +64,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <BasicsPromo />
 
       <section className="welcome-audio" aria-labelledby="welcome-audio-title">
         <div className="wrap">

@@ -6,6 +6,7 @@ import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 
 const LINKS = [
+  { href: '/learn-the-basics/', label: 'Learn the Basics', section: '/learn-the-basics' },
   { href: '/sailing-schools/', label: 'Schools', section: '/sailing-schools' },
   { href: '/courses/', label: 'Courses', section: '/courses' },
   { href: '/pathways/', label: 'Pathways', section: '/pathways' },

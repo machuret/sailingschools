@@ -1,4 +1,5 @@
 import { cities } from './cities';
+import { basics, basicHref } from './basics';
 import { courses } from './courses';
 import { faqPages } from './faq';
 import { guides } from './guides';
@@ -28,6 +29,8 @@ export type SiteRoute = {
  * future link auditing, read from this one list rather than crawling the filesystem.
  */
 const staticRoutes: SiteRoute[] = [
+  { path: '/learn-the-basics/', priority: 0.85, changeFrequency: 'monthly' },
+  ...basics.map(lesson => ({ path: basicHref(lesson.slug), priority: 0.7, changeFrequency: 'monthly' as const })),
   { path: '/', priority: 1, changeFrequency: 'weekly' },
   { path: '/find-a-course/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/sailing-schools/', priority: 0.9, changeFrequency: 'weekly' },

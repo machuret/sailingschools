@@ -1,4 +1,5 @@
 import { absoluteUrl } from '@/lib/site';
+import { basics, basicHref } from '@/lib/basics';
 import { states } from '@/lib/states';
 import { cities } from '@/lib/cities';
 import { courses, courseCategories, coursesInCategory } from '@/lib/courses';
@@ -64,6 +65,12 @@ A pathway is a route to a goal rather than a course description. Each one states
 assumes you already have, the honest timeframe, and what completing it does not give you.
 
 ${orderedPathways.map((p) => line(p.title, `/pathways/${p.slug}/`, p.goal)).join('\n')}
+
+## Learn the Basics with Saily
+
+Introductory lessons for beginners, not a practical qualification.
+${line('All beginner lessons', '/learn-the-basics/')}
+${basics.map(l => line(l.title, basicHref(l.slug), l.intro)).join('\n')}
 
 ## Guides
 
