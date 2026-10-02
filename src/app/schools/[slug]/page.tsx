@@ -260,7 +260,7 @@ export default async function SchoolProfilePage({ params }: Params) {
                 ? 'The published identity and contact record has been checked through YouSail. Course schedules and availability can change, so confirm them directly.'
                 : 'This school is known to the directory, but the record is not yet independently verified. This page is excluded from search indexing until that check is complete.'}
             </p>
-            <p className="note">Corrections are welcome at <a href="mailto:hello@sailingschools.com.au">hello@sailingschools.com.au</a>.</p>
+            <p className="note">Corrections are welcome at <a href="mailto:gabriel@yousail.com.au">gabriel@yousail.com.au</a>.</p>
           </div>
         </div>
       </section>

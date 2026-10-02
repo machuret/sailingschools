@@ -146,7 +146,7 @@ ${line('Terms and conditions', '/terms-and-conditions/')}
 
 ## Contact
 
-hello@sailingschools.com.au — corrections to a school listing are welcome and acted on.
+gabriel@yousail.com.au — corrections to a school listing are welcome and acted on.
 `;
 
   return new Response(body, {

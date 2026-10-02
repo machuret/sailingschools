@@ -10,7 +10,7 @@ export default function SiteFooter() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/assets/logo-white.png" alt="Sailing Schools Australia" />
             <div className="contact">
-              <a className="big" href="mailto:hello@sailingschools.com.au">hello@sailingschools.com.au</a>
+              <a className="big" href="mailto:gabriel@yousail.com.au">gabriel@yousail.com.au</a>
               Australia&rsquo;s independent guide to sailing schools, sailing courses and sailing
               qualifications.
               <br />
@@ -86,18 +86,20 @@ export default function SiteFooter() {
                 <Link href="/pathways/work-on-boats/">Working on boats</Link>
                 <Link href="/find-a-course/">Find the right course</Link>
                 <Link href="/about/">How school profiles are verified</Link>
-                <a href="mailto:hello@sailingschools.com.au">Update a school</a>
+                <a href="mailto:gabriel@yousail.com.au">Update a school</a>
               </div>
             </div>
           </div>
         </div>
         <div className="legal" style={{ marginTop: 48, paddingBottom: 4 }}>
           <span style={{ display: 'flex', gap: 18, flexWrap: 'wrap' }}>
-            <Link href="/about/">About</Link>
+            <Link href="/about/">About us</Link>
+            <Link href="/about/gabriel-machuret/">Meet Gabriel</Link>
+            <a href="https://yousail.com.au/">YouSail.com.au</a>
             <Link href="/sitemap/">Site map</Link>
             <Link href="/privacy-policy/">Privacy policy</Link>
             <Link href="/terms-and-conditions/">Terms &amp; conditions</Link>
-            <a href="mailto:hello@sailingschools.com.au">Contact</a>
+            <a href="mailto:gabriel@yousail.com.au">Contact</a>
           </span>
         </div>
         <div className="legal" style={{ marginTop: 0, borderTop: 0, paddingTop: 8 }}>

@@ -131,7 +131,7 @@ export default function PrivacyPolicyPage() {
             <p className="copy">
               You can ask us what personal information we hold about you, ask us to correct it, or
               ask us to delete it. Email{' '}
-              <a href="mailto:hello@sailingschools.com.au">hello@sailingschools.com.au</a> and we
+              <a href="mailto:gabriel@yousail.com.au">gabriel@yousail.com.au</a> and we
               will respond within a reasonable period.
             </p>
             <p className="copy">
@@ -164,7 +164,7 @@ export default function PrivacyPolicyPage() {
           <div className="note-box" style={{ marginTop: 48 }}>
             <p className="copy">
               Questions about this policy?{' '}
-              <a href="mailto:hello@sailingschools.com.au">hello@sailingschools.com.au</a> · See also
+              <a href="mailto:gabriel@yousail.com.au">gabriel@yousail.com.au</a> · See also
               our <Link href="/terms-and-conditions/">terms and conditions</Link>.
             </p>
           </div>

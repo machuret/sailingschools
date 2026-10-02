@@ -42,7 +42,7 @@ export default function SiteNav() {
           </nav>
           <div className="util" style={{ marginLeft: 'auto' }}>
             <Link className="hide-l" href="/about/">
-              About
+              About us
             </Link>
             <Link className="hide-m" href="/find-a-course/" aria-label="Search">
               <i className="ph-duotone ph-magnifying-glass" />
@@ -78,7 +78,7 @@ export default function SiteNav() {
               </Link>
             ))}
             <Link href="/about/" onClick={() => setOpen(false)}>
-              About
+              About us
             </Link>
             <Link href="/sitemap/" onClick={() => setOpen(false)}>
               Site map

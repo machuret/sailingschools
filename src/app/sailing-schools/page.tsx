@@ -176,7 +176,7 @@ export default function SchoolsIndexPage() {
             </p>
           </div>
           <div className="btns">
-            <a className="pill pill-orange" href="mailto:hello@sailingschools.com.au">
+            <a className="pill pill-orange" href="mailto:gabriel@yousail.com.au">
               Update a school
             </a>
             <Link className="pill pill-ghost" href="/find-a-course/">

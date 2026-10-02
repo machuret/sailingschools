@@ -9,7 +9,7 @@ export const organization = (): JsonLdNode => ({
   name: 'SailingSchools.com.au',
   url: absoluteUrl('/'),
   logo: absoluteUrl('/assets/logo.png'),
-  email: 'hello@sailingschools.com.au',
+  email: 'gabriel@yousail.com.au',
   description:
     'Australia’s independent guide to sailing schools, sailing courses and sailing qualifications.',
   areaServed: { '@type': 'Country', name: 'Australia' },

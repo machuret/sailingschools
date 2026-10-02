@@ -126,7 +126,7 @@ export default function GuidePage({ record }: { record: Guide }) {
               cannot pay to change the conclusion or their position in the directory.
             </p>
             <p className="note">
-              Found something that has changed? <a href="mailto:hello@sailingschools.com.au">Send a correction</a>.
+              Found something that has changed? <a href="mailto:gabriel@yousail.com.au">Send a correction</a>.
             </p>
           </div>
         </div>

@@ -134,7 +134,7 @@ export default function TermsPage() {
             <p className="copy">
               If a listing about your school is wrong, out of date, or should not be there, tell us
               and we will correct or remove it. Email{' '}
-              <a href="mailto:hello@sailingschools.com.au">hello@sailingschools.com.au</a> with the
+              <a href="mailto:gabriel@yousail.com.au">gabriel@yousail.com.au</a> with the
               detail and, where relevant, evidence of current accreditation or pricing.
             </p>
 
