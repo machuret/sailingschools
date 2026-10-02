@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import JsonLd from '@/components/JsonLd';
+import CourseDetails from '@/components/CourseDetails';
+import { schemeDetail } from '@/lib/all-course-details';
 import { course as courseSchema } from '@/lib/schema';
 import { schoolsWithScheme } from '@/lib/schools';
 import { schemeNames, coursesInScheme, type SchemeCourse } from '@/lib/scheme-courses';
@@ -9,15 +11,16 @@ import { schemeNames, coursesInScheme, type SchemeCourse } from '@/lib/scheme-co
 const OFFICIAL_SCHEME_SOURCES = {
   rya: { name: 'RYA training', url: 'https://www.rya.org.uk/training' },
   iyt: { name: 'IYT course catalogue', url: 'https://www.iytworld.com/courses/' },
-  asa: { name: 'American Sailing certifications', url: 'https://asa.com/certifications/' },
+  asa: { name: 'American Sailing certifications', url: 'https://americansailing.com/learn-to-sail/certifications/' },
   'australian-sailing': { name: 'Australian Sailing courses', url: 'https://www.sailing.org.au/australian-sailing-courses/' },
 } as const;
 
 /** Shared body for every scheme course page. One template, four namespaces. */
 export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
   const schemeName = schemeNames[record.scheme];
+  const detail = schemeDetail(record.scheme, record.slug);
   const siblings = coursesInScheme(record.scheme).filter((c) => c.slug !== record.slug);
-  const teaches = record.blocks.flatMap((b) => (b.type === 'list' ? b.items : []));
+  const teaches = detail.skills.map(([heading]) => heading);
   const prev = siblings.find((c) => `/${c.scheme}/${c.slug}/` === record.prev);
   const next = siblings.find((c) => `/${c.scheme}/${c.slug}/` === record.next);
   const schoolScheme = record.scheme === 'australian-sailing' ? 'Australian Sailing' : record.scheme === 'asa' ? 'ASA' : record.scheme.toUpperCase();
@@ -136,6 +139,8 @@ export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
           </div>
         </div>
       </section>
+
+      <CourseDetails detail={detail} />
 
       {(prev || next) && (
         <section className="sec">

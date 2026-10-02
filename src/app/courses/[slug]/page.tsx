@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import JsonLd from '@/components/JsonLd';
+import CourseDetails from '@/components/CourseDetails';
+import { skillDetails } from '@/lib/course-details-skills';
 import { webPage } from '@/lib/schema';
 import { courseBySlug, courses, courseCategories, coursesInCategory } from '@/lib/courses';
 
@@ -118,6 +120,8 @@ export default async function CourseIntentPage({ params }: Params) {
           </p>
         </div>
       </section>
+
+      <CourseDetails detail={skillDetails[record.slug]} />
 
       {siblings.length > 0 && (
         <section className="sec">

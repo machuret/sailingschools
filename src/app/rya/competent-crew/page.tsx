@@ -5,6 +5,8 @@ import SchoolCard from '@/components/SchoolCard';
 import { schoolsWithScheme } from '@/lib/schools';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
+import CourseDetails from '@/components/CourseDetails';
+import { schemeDetail } from '@/lib/all-course-details';
 import { course } from '@/lib/schema';
 
 export const metadata: Metadata = {
@@ -134,6 +136,8 @@ export default function CoursePage() {
           </div>
         </div>
       </section>
+
+      <CourseDetails detail={schemeDetail('rya', 'competent-crew')} />
 
       <section className="sec">
         <div className="wrap">
