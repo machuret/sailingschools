@@ -66,6 +66,29 @@ test('refuses an empty or duplicate source snapshot', () => {
   assert.throws(() => buildSchoolSnapshot({ schools: [{ sourceSlug: 'one' }, { sourceSlug: 'one' }], apiBaseUrl: 'https://example.test/' }), /duplicate/);
 });
 
+for (const [label, pages, pattern] of [
+  ['truncated pagination', [{ pagination: { totalCount: 2 }, schools: [{ slug: 'alpha' }] }, { pagination: { totalCount: 2 }, schools: [] }], /Incomplete/],
+  ['changing counts', [{ pagination: { totalCount: 2 }, schools: [{ slug: 'alpha' }] }, { pagination: { totalCount: 1 }, schools: [] }], /changed/],
+  ['duplicate identities', [{ pagination: { totalCount: 2 }, schools: [{ slug: 'alpha' }, { slug: 'alpha' }] }], /Duplicate/],
+  ['invalid counts', [{ pagination: { totalCount: '2' }, schools: [] }], /Invalid/],
+  ['unsafe slugs', [{ pagination: { totalCount: 1 }, schools: [{ slug: '../alpha' }] }], /Invalid/],
+]) {
+  test(`rejects ${label} before replacing the snapshot`, async () => {
+    await assert.rejects(fetchYouSailSchools({
+      apiBaseUrl: 'https://example.test', secret: 'x'.repeat(32),
+      fetchImpl: async () => ({ ok: true, json: async () => pages.shift() }),
+    }), pattern);
+  });
+}
+
+test('supports the current hero image field', async () => {
+  const detail = school('alpha', 'NSW');
+  detail.media.heroImageUrl = 'https://example.test/hero.webp';
+  const responses = [{ pagination: { totalCount: 1 }, schools: [{ slug: 'alpha' }] }, { school: detail }];
+  const result = await fetchYouSailSchools({ apiBaseUrl: 'https://example.test', secret: 'x'.repeat(32), fetchImpl: async () => ({ ok: true, json: async () => responses.shift() }) });
+  assert.equal(result[0].featureImage, detail.media.heroImageUrl);
+});
+
 function school(slug, state) {
   return {
     slug, canonicalUrl: `https://yousail.com.au/directory/${slug}`, sourceUpdatedAt: '2026-09-14',

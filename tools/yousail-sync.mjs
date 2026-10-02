@@ -11,6 +11,8 @@ export async function fetchYouSailSchools({ apiBaseUrl, secret, fetchImpl = fetc
     throw new Error('YOUSAIL_CONTENT_API_SECRET must contain at least 32 characters');
   }
   const summaries = [];
+  const slugs = new Set();
+  let expectedTotal;
   let offset = 0;
   do {
     const url = new URL(`${apiBaseUrl.replace(/\/$/, '')}/schools`);
@@ -18,6 +20,18 @@ export async function fetchYouSailSchools({ apiBaseUrl, secret, fetchImpl = fetc
     url.searchParams.set('offset', String(offset));
     const page = await readJson(url, secret, fetchImpl, sleepImpl);
     if (!page?.pagination || !Array.isArray(page.schools)) throw new Error('YouSail school list has an unexpected shape');
+    const total = page.pagination.totalCount;
+    if (!Number.isInteger(total) || total < 0 || total > 10000) throw new Error('Invalid YouSail school count');
+    expectedTotal ??= total;
+    if (total !== expectedTotal) throw new Error('YouSail school count changed during pagination');
+    if (offset + page.schools.length > total || (page.schools.length === 0 && offset < total)) {
+      throw new Error('Incomplete or inconsistent YouSail school pagination');
+    }
+    for (const summary of page.schools) {
+      if (typeof summary?.slug !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(summary.slug)) throw new Error('Invalid YouSail school slug');
+      if (slugs.has(summary.slug)) throw new Error('Duplicate YouSail school slug');
+      slugs.add(summary.slug);
+    }
     summaries.push(...page.schools);
     offset += page.schools.length;
     if (page.schools.length === 0 || offset >= page.pagination.totalCount) break;
@@ -70,7 +84,7 @@ function toSchool(entry) {
     phone: entry.contact?.phone,
     email: entry.contact?.email,
     logo: entry.media?.logoImageUrl,
-    featureImage: entry.media?.featureImageUrl ?? entry.featureImageUrl,
+    featureImage: entry.media?.featureImageUrl ?? entry.media?.heroImageUrl ?? entry.featureImageUrl,
     checked: entry.freshness?.lastVerifiedAt,
     freshness: entry.freshness?.state,
     services: entry.services,

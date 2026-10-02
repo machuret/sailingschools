@@ -33,7 +33,7 @@ jobs:
           const due = process.env.GITHUB_EVENT_NAME === 'workflow_dispatch'
             || (elapsedDays > 0 && elapsedDays % 5 === 0);
           fs.appendFileSync(process.env.GITHUB_OUTPUT, `due=${due}\n`);
-          console.log(due ? 'Sync is due.' : 'Not due; marina sync skipped.');
+          console.log(due ? 'Sync is due.' : 'Not due; sailing school sync skipped.');
           NODE
   sync:
     needs: cadence
@@ -63,6 +63,6 @@ jobs:
           fi
           git config user.name "machuret"
           git config user.email "gmachuret@gmail.com"
-          git add -A
+          git add data/yousail-schools.json
           git commit -m "Sync published sailing school facts from YouSail"
           git push
