@@ -6,16 +6,15 @@ import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 
 const LINKS = [
-  { href: '/learn-the-basics/', label: 'Learn the Basics', section: '/learn-the-basics' },
   { href: '/sailing-schools/', label: 'Schools', section: '/sailing-schools' },
+  { href: '/in-depth/', label: 'Featured Schools', section: '/in-depth' },
   { href: '/courses/', label: 'Courses', section: '/courses' },
   { href: '/pathways/', label: 'Pathways', section: '/pathways' },
-  { href: '/learn/', label: 'Guides', section: '/learn' },
-  { href: '/in-depth/', label: 'In depth', section: '/in-depth' },
 ];
 
 export default function SiteNav() {
   const [open, setOpen] = useState(false);
+  const [guidesOpen, setGuidesOpen] = useState(false);
   const pathname = usePathname();
   const currentOf = (section: string) =>
     pathname === section || pathname.startsWith(`${section}/`) ? ('page' as const) : undefined;
@@ -33,12 +32,26 @@ export default function SiteNav() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/assets/logo-white.png" alt="Sailing Schools Australia" />
           </Link>
-          <nav>
+          <nav aria-label="Main navigation">
             {LINKS.map((l) => (
               <Link key={l.label} href={l.href} aria-current={currentOf(l.section)}>
                 {l.label}
               </Link>
             ))}
+            <div className="guides-menu" onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget)) setGuidesOpen(false);
+            }} onKeyDown={(event) => {
+              if (event.key === 'Escape') {
+                setGuidesOpen(false);
+                event.currentTarget.querySelector('button')?.focus();
+              }
+            }}>
+              <button className="guides-toggle" aria-expanded={guidesOpen} aria-controls="guides-submenu" onClick={() => setGuidesOpen(value => !value)}>Guides <span aria-hidden="true">⌄</span></button>
+              <div id="guides-submenu" className="guides-submenu" hidden={!guidesOpen}>
+                <Link href="/learn/" onClick={() => setGuidesOpen(false)}>All guides</Link>
+                <Link href="/learn-the-basics/" onClick={() => setGuidesOpen(false)}>Learn the Basics with Saily</Link>
+              </div>
+            </div>
           </nav>
           <div className="util" style={{ marginLeft: 'auto' }}>
             <Link className="hide-l" href="/about/">
@@ -77,11 +90,12 @@ export default function SiteNav() {
                 {l.label}
               </Link>
             ))}
+            <div className="mobile-guides">
+              <Link href="/learn/" onClick={() => setOpen(false)}>Guides</Link>
+              <Link className="mobile-sub-link" href="/learn-the-basics/" onClick={() => setOpen(false)}>Learn the Basics with Saily</Link>
+            </div>
             <Link href="/about/" onClick={() => setOpen(false)}>
               About us
-            </Link>
-            <Link href="/sitemap/" onClick={() => setOpen(false)}>
-              Site map
             </Link>
           </div>
         </div>

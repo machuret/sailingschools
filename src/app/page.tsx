@@ -133,7 +133,7 @@ export default function HomePage() {
 
       <section className="sec in-depth-feature">
         <div className="wrap">
-          <div className="sec-head"><div><span className="kicker">Meet the schools · In depth</span><h2 className="h2">The stories behind the training</h2><p className="copy">Direct interviews expanded into practical, independent profiles of how Australian sailing schools teach.</p></div><Link className="pill pill-sky" href="/in-depth/">See all profiles</Link></div>
+          <div className="sec-head"><div><span className="kicker">Meet the schools · In depth</span><h2 className="h2">Featured Schools</h2><p className="copy">Meet the people behind the training through our interviews and in-depth school profiles.</p></div><Link className="pill pill-sky" href="/in-depth/">Meet the featured schools</Link></div>
           <div className="cards pair featured-school-cards">
             {inDepthArticles.map((feature) => <article className="ccard" key={feature.slug}>
               <div className="photo"><Image src={feature.heroImage ?? feature.portrait} alt={`${feature.schoolName} sailing training`} fill sizes="(max-width: 800px) 100vw, 50vw" /><span className="badge">Featured school</span></div>

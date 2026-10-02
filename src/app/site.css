@@ -122,6 +122,13 @@ em.serif { font-style: italic; }
 .hdr nav { display: flex; gap: 32px; margin-left: 24px; flex: 1; }
 .hdr nav a { color: var(--white); font-size: 16.5px; font-weight: 500; }
 .hdr nav a:hover, .hdr nav a[aria-current='page'] { color: var(--sky); }
+.hdr nav { align-items: center; }
+.hdr nav > a { white-space: nowrap; }
+.guides-menu { position: relative; }
+.guides-toggle { display: flex; align-items: center; gap: 6px; min-height: 44px; border: 0; padding: 0; background: transparent; color: var(--white); font: inherit; font-size: 16.5px; font-weight: 500; cursor: pointer; }
+.guides-submenu { position: absolute; top: 100%; right: 0; width: 270px; padding: 10px; background: var(--navy-3); border: 1px solid rgba(255,255,255,.2); border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,.2); }
+.hdr .guides-submenu a { display: block; padding: 12px; min-height: 44px; font-size: 15px; }
+.hdr .mnav .mobile-sub-link { padding-left: 20px; font-size: 15px; border-top: 0; padding-top: 4px; }
 .hdr .util { display: flex; align-items: center; gap: 22px; font-size: 14px; }
 .hdr .util a:not(.pill) { color: var(--white); }
 .hdr .menu-btn { display: none; align-items: center; justify-content: center; width: 44px; height: 44px; background: transparent; border: 0; color: var(--white); font-size: 30px; cursor: pointer; padding: 0; line-height: 1; }
