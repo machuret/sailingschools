@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { webPage } from '@/lib/schema';
@@ -25,6 +26,17 @@ export default function AboutPage() {
     <section className="sec"><article className="wrap" style={{ maxWidth: 760 }}>
       <h2 className="h3">Why we built SailingSchools.com.au</h2>
       <p className="copy">We’re Gabriel and Kristy, the couple behind SailingSchools.com.au and <a href="https://yousail.com.au/">YouSail</a>.</p>
+      <figure style={{ margin: '32px auto 40px', maxWidth: 440 }}>
+        <Image
+          src="/images/sailing/about-our-sailing-journey.webp"
+          alt="Two people aboard a sailing boat beneath orange sails at sunset."
+          width={960}
+          height={1279}
+          sizes="(max-width: 520px) calc(100vw - 40px), 440px"
+          style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 20 }}
+        />
+        <figcaption className="copy" style={{ marginTop: 12, fontSize: 15, textAlign: 'center' }}>Our journey towards a life aboard.</figcaption>
+      </figure>
       <p className="copy">Our dream is simple. Buy a sailing yacht, move aboard and see where the wind takes us. Australia first. Then the Pacific. Maybe much further.</p>
       <p className="copy">We’re not there yet. We’re still learning, taking courses, spending time on boats and asking a lot of questions.</p>
       <p className="copy">One of those questions kept coming back: where do we learn to sail?</p>
