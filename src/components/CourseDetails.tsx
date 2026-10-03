@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { CourseDetail } from '@/lib/course-details';
 import styles from './CourseDetails.module.css';
 
@@ -32,10 +33,16 @@ export default function CourseDetails({ detail }: { detail: CourseDetail }) {
             ))}
             <h2 id="course-format">Training and assessment</h2>
             <p>{detail.format}</p>
-            <aside className={styles.tip} aria-labelledby="course-preparation">
-              <span className="kicker">A practical learning tip</span>
-              <h2 id="course-preparation">Make the most of it</h2>
+            <aside className={styles.tip} id="course-preparation" aria-labelledby="course-preparation-heading">
+              <div className={styles.tipHeading}>
+                <Image src="/assets/saily.png" alt="Saily, the Sailing Schools mascot" width={108} height={108} className={styles.mascot} sizes="108px" />
+                <div>
+                  <span className="kicker">Saily&rsquo;s learning tip</span>
+                  <h2 id="course-preparation-heading">Make the most of it</h2>
+                </div>
+              </div>
               <p>{detail.practice}</p>
+              <Link className={styles.basicsLink} href="/learn-the-basics/">Refresh the basics with Saily <span aria-hidden="true">→</span></Link>
             </aside>
             <h2 id="course-questions">Questions to ask the school</h2>
             <ul>{detail.questions.map(question => <li key={question}>{question}</li>)}</ul>

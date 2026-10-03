@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import CourseImage from '@/components/CourseImage';
 import ImageSlot from '@/components/ImageSlot';
+import { courseImages } from '@/lib/course-images';
 import JsonLd from '@/components/JsonLd';
 import CourseDetails from '@/components/CourseDetails';
 import { skillDetails } from '@/lib/course-details-skills';
@@ -46,9 +48,9 @@ export default async function CourseIntentPage({ params }: Params) {
       />
 
       <section className="hero short">
-        <div className="hero-photo">
+        {!courseImages[`courses-${record.slug}`] && <div className="hero-photo">
           <ImageSlot tone="deep" placeholder={`Drop a photograph — ${record.title.toLowerCase()}`} />
-        </div>
+        </div>}
         <div className="hero-scrim" />
         <div className="wrap hero-in">
           <div>
@@ -78,6 +80,7 @@ export default async function CourseIntentPage({ params }: Params) {
         <div className="wrap">
           <span className="kicker">{category.name}</span>
           <h2 className="h2">What this training covers</h2>
+          <CourseImage courseKey={`courses-${record.slug}`} />
           {record.blocks.map((block, i) => {
             if (block.type === 'para') {
               return (

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import BasicsPromo from '@/components/BasicsPromo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageSlot from '@/components/ImageSlot';
 import JsonLd from '@/components/JsonLd';
@@ -137,6 +138,7 @@ export default function CoursesIndexPage() {
           </div>
         </div>
       </div>
+      <BasicsPromo />
     </>
   );
 }

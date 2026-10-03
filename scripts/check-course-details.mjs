@@ -24,6 +24,13 @@ const { schemeCourses } = load('src/lib/scheme-courses.ts');
 const { courses } = load('src/lib/courses.ts');
 const { schemeDetail } = load('src/lib/all-course-details.ts');
 const { skillDetails } = load('src/lib/course-details-skills.ts');
+const { courseImages } = load('src/lib/course-images.ts');
+const imageSources = Object.values(courseImages).map(image => image.src);
+assert.equal(new Set(imageSources).size, imageSources.length, 'Unique course artwork');
+for (const image of Object.values(courseImages)) {
+  assert.ok(image.alt.length > 20, image.src + ': descriptive alt');
+  assert.ok(fs.statSync('public' + image.src).size < 250000, image.src + ': image weight');
+}
 const records = [
   ...schemeCourses.map(c => [`/${c.scheme}/${c.slug}/`, schemeDetail(c.scheme, c.slug)]),
   ...courses.map(c => [`/courses/${c.slug}/`, skillDetails[c.slug]]),
@@ -56,6 +63,13 @@ if (origin) {
       assert.equal(response.status, 200, route);
       const html = await response.text();
       assert.ok(html.includes('data-course-detail'), route + ': rendered detail');
+      assert.ok(html.includes('Saily, the Sailing Schools mascot'), route + ': mascot alt');
+      assert.ok(html.includes('Refresh the basics with Saily'), route + ': learning link');
+      const imageKey = route.slice(1, -1).replace('/', '-');
+      if (courseImages[imageKey]) {
+        assert.ok(html.includes(`data-course-image="${imageKey}"`), route + ': custom artwork');
+        assert.ok(html.includes('AI-generated course illustration'), route + ': artwork disclosure');
+      }
       assert.ok(html.includes(detail.overview.slice(0, 55)), route + ': initial HTML content');
       for (const id of ['course-entry', 'course-skills', 'course-format', 'course-preparation', 'course-questions', 'course-next']) {
         assert.equal((html.match(new RegExp(`id="${id}"`, 'g')) || []).length, 1, route + ': ' + id);
@@ -74,4 +88,6 @@ if (origin) {
   const sitemap = await (await fetch(origin + '/sitemap.xml')).text();
   for (const [route] of records) assert.ok(sitemap.includes('https://www.sailingschools.com.au' + route), route + ': sitemap');
   console.log('All 81 pages, related destinations, canonical URLs, JSON-LD and sitemap entries passed.');
+  for (const src of imageSources) assert.equal((await fetch(origin + src)).status, 200, src);
+  console.log(`${imageSources.length} unique course illustrations load; all 81 course guides include Saily.`);
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import ImageSlot from '@/components/ImageSlot';
+import CourseImage from '@/components/CourseImage';
 import JsonLd from '@/components/JsonLd';
 import CourseDetails from '@/components/CourseDetails';
 import { schemeDetail } from '@/lib/all-course-details';
@@ -62,9 +62,7 @@ export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
               <p className="lead" style={{ marginTop: 22, fontSize: 'clamp(19px,2.1vw,25px)' }}>
                 {record.standfirst}
               </p>
-              <div className="photo wide" style={{ marginTop: 32 }}>
-                <ImageSlot placeholder={`Photo — ${record.title}`} />
-              </div>
+              <CourseImage courseKey={`${record.scheme}-${record.slug}`} title={record.title} eager />
             </div>
 
             <div className="panel" style={{ marginTop: 0 }}>

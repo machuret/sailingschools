@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import ImageSlot from '@/components/ImageSlot';
+import CourseImage from '@/components/CourseImage';
 import SchoolCard from '@/components/SchoolCard';
 import { schoolsWithScheme } from '@/lib/schools';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -60,10 +60,7 @@ export default function CoursePage() {
             className="split top lean-right"
             style={{ marginTop: 20 }}
           >
-            <div className="photo tall" style={{ aspectRatio: '1 / 1' }}>
-              <span className="badge">5 days</span>
-              <ImageSlot placeholder="Drop a photograph — crew reefing the mainsail" />
-            </div>
+            <CourseImage courseKey="rya-competent-crew" eager />
             <div className="panel" style={{ marginTop: 0, padding: '48px 44px' }}>
               <span className="kicker">RYA · Sail cruising</span>
               <h1 className="h2" style={{ fontSize: 'clamp(34px,3.6vw,50px)' }}>

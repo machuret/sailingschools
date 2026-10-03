@@ -14,6 +14,15 @@
 .tip { margin-top: 36px; padding: clamp(20px, 3vw, 32px); background: #e8f3f7; border-left: 4px solid #16708b; border-radius: 0 16px 16px 0; }
 .tip h2 { margin-top: 12px; }
 .tip p { margin-bottom: 0; }
+.tip { scroll-margin-top: 130px; }
+.tipHeading { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+.tipHeading h2 { margin: 8px 0 0; }
+.mascot { flex: 0 0 auto; width: 108px; height: 108px; object-fit: contain; border-radius: 18px; background: #fff; }
+.basicsLink { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 16px; font-size: 16px; font-weight: 600; }
+@media (max-width: 420px) {
+  .tipHeading { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .mascot { width: 88px; height: 88px; }
+}
 .related a { display: inline-block; padding-block: 8px; min-height: 44px; }
 .sources { margin-top: 36px; padding-top: 12px; border-top: 1px solid #cbdce6; font-size: 15px; line-height: 1.7; }
 .sources h3 { font-size: 18px; }

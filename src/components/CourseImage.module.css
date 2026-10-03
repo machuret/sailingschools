@@ -1,0 +1,19 @@
+.figure {
+  margin: 28px 0 0;
+  width: 100%;
+  max-width: 720px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  background: #e5eef1;
+}
+.caption {
+  margin-top: 10px;
+  color: var(--muted, #526579);
+  font-size: 12px;
+  line-height: 1.5;
+}
+:global(:root[data-theme='dark']) .caption { color: #bdd0df; }
