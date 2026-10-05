@@ -72,12 +72,14 @@ export function buildSchoolSnapshot({ schools, apiBaseUrl, now = new Date() }) {
 }
 
 function toSchool(entry) {
+  if (typeof entry.featured !== 'boolean') throw new Error('YouSail school featured status is missing or invalid');
   const state = STATE_KEYS[entry.location?.stateOrTerritory] ?? 'australia-wide';
   return compact({
     sourceSlug: entry.slug,
     sourceUrl: entry.canonicalUrl,
     sourceUpdatedAt: entry.sourceUpdatedAt,
     name: entry.name,
+    featured: entry.featured,
     state,
     region: entry.location?.suburb ?? entry.school?.serviceArea,
     website: entry.contact?.website,

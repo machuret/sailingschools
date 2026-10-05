@@ -14,7 +14,7 @@ test('fetches every paginated school including territories', async () => {
   assert.equal(schools.length, 2);
   assert.deepEqual(schools[0], {
     sourceSlug: 'alpha', sourceUrl: 'https://yousail.com.au/directory/alpha',
-    sourceUpdatedAt: '2026-09-14', name: 'Alpha Sailing', state: 'new-south-wales',
+    sourceUpdatedAt: '2026-09-14', name: 'Alpha Sailing', featured: false, state: 'new-south-wales',
     region: 'Sydney', website: 'https://alpha.test', logo: 'https://yousail.com.au/logo.png',
     checked: '2026-09-12', freshness: 'current', services: ['Sailing lessons'],
     operatingScope: 'online',
@@ -87,6 +87,16 @@ test('supports the current hero image field', async () => {
   const responses = [{ pagination: { totalCount: 1 }, schools: [{ slug: 'alpha' }] }, { school: detail }];
   const result = await fetchYouSailSchools({ apiBaseUrl: 'https://example.test', secret: 'x'.repeat(32), fetchImpl: async () => ({ ok: true, json: async () => responses.shift() }) });
   assert.equal(result[0].featureImage, detail.media.heroImageUrl);
+});
+
+test('preserves featured schools from YouSail and rejects unknown status', async () => {
+  for (const featured of [true, false, undefined, 'true']) {
+    const detail = {...school('alpha', 'NSW'), featured};
+    const responses = [{ pagination: {totalCount:1}, schools:[{slug:'alpha'}]}, {school:detail}];
+    const result = fetchYouSailSchools({apiBaseUrl:'https://example.test',secret:'x'.repeat(32),fetchImpl:async()=>({ok:true,json:async()=>responses.shift()})});
+    if (typeof featured === 'boolean') assert.equal((await result)[0].featured,featured);
+    else await assert.rejects(result,/featured status/);
+  }
 });
 
 function school(slug, state) {
