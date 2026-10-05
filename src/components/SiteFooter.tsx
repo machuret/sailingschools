@@ -99,7 +99,7 @@ export default function SiteFooter() {
             <Link href="/sitemap/">Site map</Link>
             <Link href="/privacy-policy/">Privacy policy</Link>
             <Link href="/terms-and-conditions/">Terms &amp; conditions</Link>
-            <a href="mailto:gabriel@yousail.com.au">Contact</a>
+            <Link href="/contact/">Contact</Link>
           </span>
         </div>
         <div className="legal" style={{ marginTop: 0, borderTop: 0, paddingTop: 8 }}>

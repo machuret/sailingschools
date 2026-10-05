@@ -20,7 +20,7 @@ export default function AboutPage() {
         <span className="kicker">Two sailors in the making</span>
         <h1>About <em>us</em></h1>
         <p className="sub">The sailing school guide we needed ourselves. Built by Gabriel and Kristy, as we learn our way towards a life aboard.</p>
-        <div className="cta"><Link className="pill pill-orange" href="/about/gabriel-machuret/">Meet Gabriel, our founder</Link><a className="pill pill-ghost" href="mailto:gabriel@yousail.com.au">Get in touch</a></div>
+        <div className="cta"><Link className="pill pill-orange" href="/about/gabriel-machuret/">Meet Gabriel, our founder</Link><Link className="pill pill-ghost" href="/contact/">Get in touch</Link></div>
       </div></div>
     </section>
     <section className="sec"><article className="wrap" style={{ maxWidth: 760 }}>
