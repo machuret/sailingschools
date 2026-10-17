@@ -1,3 +1,4 @@
+import { NetworkSupporters } from "./network-supporters";
 import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import '@phosphor-icons/web/duotone';
@@ -108,7 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <SiteNav />
         <main id="main-content">{children}</main>
-        <SiteFooter />
+        <NetworkSupporters /><SiteFooter />
       </body>
     </html>
   );
