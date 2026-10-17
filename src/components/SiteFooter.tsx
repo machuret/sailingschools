@@ -1,3 +1,4 @@
+import { NetworkSupportersLink } from "../app/network-supporters";
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -110,6 +111,6 @@ export default function SiteFooter() {
           <span>Australian Sailing · RYA · IYT · American Sailing · AMSA</span>
         </div>
       </div>
-    </footer>
+    <NetworkSupportersLink /></footer>
   );
 }

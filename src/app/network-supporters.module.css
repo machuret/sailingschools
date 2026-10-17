@@ -1,0 +1,1 @@
+.footerLink{grid-column:1/-1;flex-basis:100%;padding:16px 20px}.footerLink a{color:inherit;display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}.page{max-width:1200px;margin:0 auto;padding:48px 20px}.page h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.15;margin:0 0 20px}.page p{max-width:70ch;line-height:1.65}
