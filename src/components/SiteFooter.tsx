@@ -111,6 +111,6 @@ export default function SiteFooter() {
           <span>Australian Sailing · RYA · IYT · American Sailing · AMSA</span>
         </div>
       </div>
-    <NetworkSupportersLink /></footer>
+    <NetworkSupportersLink /><p><a href="/network/">Our Network</a></p></footer>
   );
 }
