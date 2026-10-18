@@ -47,6 +47,7 @@ const staticRoutes: SiteRoute[] = [
   { path: '/faq/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/learn/boat-licence/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/about/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/network/', priority: 0.5, changeFrequency: 'monthly' },
   { path: '/supporters/', priority: 0.5, changeFrequency: 'weekly' },
   { path: '/contact/', priority: 0.5, changeFrequency: 'monthly' },
   { path: '/about/gabriel-machuret/', priority: 0.5, changeFrequency: 'monthly' },
