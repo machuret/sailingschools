@@ -29,7 +29,7 @@ const AI_AGENTS = [
   'YouBot',
 ];
 
-export default function robots(): MetadataRoute.Robots {
+function baseRobots(): MetadataRoute.Robots {
   // Preview deployments must never be indexed in place of the real site.
   if (process.env.VERCEL_ENV === 'preview') {
     return { rules: { userAgent: '*', disallow: '/' } };
@@ -43,4 +43,10 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: absoluteUrl('/sitemap.xml'),
     host: siteUrl,
   };
+}
+
+export default function robots(): MetadataRoute.Robots {
+  const current = baseRobots();
+  const previous = current.sitemap ? (Array.isArray(current.sitemap) ? current.sitemap : [current.sitemap]) : [];
+  return { ...current, sitemap: [...new Set([...previous, "https://sailingschools.com.au/sitemap-supporters.xml"])] };
 }

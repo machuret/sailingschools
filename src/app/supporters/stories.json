@@ -1,0 +1,805 @@
+[
+  {
+    "slug": "boateye360",
+    "name": "BoatEye360",
+    "website": "https://boateye360.com/",
+    "category": "Marine cameras & low-light vision",
+    "headline": "BoatEye360: questions about teaching and electronics",
+    "intro": "When comparing schools, ask how they explain the relationship between outside observation and electronic aids.",
+    "description": "When comparing schools, ask how they explain the relationship between outside observation and electronic aids.",
+    "summary": "When comparing schools, ask how they explain the relationship between outside observation and electronic aids.",
+    "logo": {
+      "src": "/images/supporters/boateye360/logo.webp",
+      "alt": "BoatEye360 logo",
+      "width": 1200,
+      "height": 804
+    },
+    "logoOnLight": true,
+    "showcaseLabel": "Discover the range",
+    "showcaseTitle": "A fresh perspective after sunset.",
+    "showcaseHref": "https://boateye360.com/",
+    "showcaseCta": "Explore BoatEye360",
+    "tiles": [
+      {
+        "title": "Meet the C-1080",
+        "copy": "",
+        "href": "https://boateye360.com/products/c-1080-full-color-night-vision-camera-stainless-steel-316l",
+        "cta": "Explore the C-1080",
+        "image": {
+          "src": "/images/supporters/boateye360/camera.webp",
+          "alt": "BoatEye360 C-1080 marine camera",
+          "width": 801,
+          "height": 801
+        }
+      },
+      {
+        "title": "A dedicated display option",
+        "copy": "",
+        "href": "https://boateye360.com/products/monitor",
+        "cta": "Discover the monitor",
+        "image": {
+          "src": "/images/supporters/boateye360/monitor.webp",
+          "alt": "BoatEye360 External Monitor V2",
+          "width": 1200,
+          "height": 675
+        }
+      }
+    ],
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "BoatEye360 offers an example of equipment a student may encounter later; its presence alone does not tell you how well a school teaches lookout habits."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/boateye360/camera-detail.webp",
+        "alt": "BoatEye360 C-1080 product presentation",
+        "width": 1200,
+        "height": 675
+      },
+      "caption": "A closer look at the C-1080 and the marine camera design at the heart of BoatEye360.",
+      "href": "https://boateye360.com/"
+    },
+    "thanks": "Thank you, BoatEye360, for supporting YouSail and our community on the water.",
+    "questions": [
+      "Which camera and display arrangement is being proposed?",
+      "What mounting, connection and power information should be supplied to the installer?",
+      "Where can the current specifications and installation instructions be obtained?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Discover BoatEye360, a YouSail supporter specialising in full-colour marine night-vision cameras and display options for life aboard."
+  },
+  {
+    "slug": "captain-matt",
+    "name": "Captain Matt",
+    "category": "People & seamanship",
+    "website": "https://captainmatt.com.au/",
+    "headline": "Captain Matt: looking beyond the school brochure",
+    "intro": "The people teaching or hosting you matter as much as the vessel.",
+    "description": "The people teaching or hosting you matter as much as the vessel.",
+    "logo": {
+      "src": "/images/supporters/captain-matt/feed-logo.webp",
+      "alt": "Captain Matt logo",
+      "width": 480,
+      "height": 240
+    },
+    "compactLogo": true,
+    "showcaseLabel": "Meet the captain",
+    "showcaseTitle": "From the helm to the whole experience.",
+    "showcaseHref": "https://captainmatt.com.au/#career",
+    "showcaseCta": "Explore Matt’s experience",
+    "tiles": [
+      {
+        "title": "A life on the water",
+        "copy": "",
+        "href": "https://captainmatt.com.au/#profile",
+        "cta": "Get to know Matt",
+        "image": {
+          "src": "/images/supporters/captain-matt/helm.webp",
+          "alt": "Matt Dawe at the helm of a sailing yacht",
+          "width": 1199,
+          "height": 1200
+        }
+      },
+      {
+        "title": "Sydney Harbour, personally",
+        "copy": "",
+        "href": "https://www.exclusiveboats.com.au/",
+        "cta": "Discover Exclusive Boats",
+        "image": {
+          "src": "/images/supporters/captain-matt/charter.webp",
+          "alt": "Matt Dawe aboard an Exclusive Boats vessel",
+          "width": 1200,
+          "height": 1200
+        }
+      }
+    ],
+    "summary": "The people teaching or hosting you matter as much as the vessel.",
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "Captain Matt's maritime background provides a useful comparison point when considering the mix of operational experience, communication and hospitality you want from time on the water."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/captain-matt/crew.webp",
+        "alt": "Royal Australian Navy sailing team aboard Navy One",
+        "width": 1079,
+        "height": 1079
+      },
+      "caption": "Teamwork belongs at the heart of sailing. Matt’s website shares this photograph from his Navy sailing chapter.",
+      "href": "https://captainmatt.com.au/#career"
+    },
+    "thanks": "Thank you, Captain Matt, for supporting YouSail and sharing a life built around the water.",
+    "logoOnLight": false,
+    "questions": [
+      "What specific service is available for the vessel, location and dates?",
+      "Which responsibilities are included in the proposed arrangement?",
+      "What information about the boat and people involved is needed before agreeing the work?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "A Sydney maritime professional with experience in command, engineering and charter hospitality."
+  },
+  {
+    "slug": "easy-inflatables",
+    "name": "Easy Inflatables",
+    "website": "https://easyinflatables.com.au/",
+    "category": "Inflatable boats & yacht tenders",
+    "headline": "Easy Inflatables: the transfer from shore to school boat",
+    "intro": "Some training trips involve a transfer between shore and a moored yacht.",
+    "description": "Some training trips involve a transfer between shore and a moored yacht.",
+    "summary": "Some training trips involve a transfer between shore and a moored yacht.",
+    "logo": {
+      "src": "/images/supporters/easy-inflatables/logo.webp",
+      "alt": "Easy Inflatables logo",
+      "width": 1200,
+      "height": 1200
+    },
+    "compactLogo": true,
+    "showcaseLabel": "Meet the Aerowave range",
+    "showcaseTitle": "From yacht to shore. From beach to adventure.",
+    "showcaseHref": "https://easyinflatables.com.au/boats",
+    "showcaseCta": "Explore the boats",
+    "tiles": [
+      {
+        "title": "Viper catamarans",
+        "copy": "",
+        "href": "https://easyinflatables.com.au/viper-series",
+        "cta": "Discover the Viper range",
+        "image": {
+          "src": "/images/supporters/easy-inflatables/viper.webp",
+          "alt": "Aerowave Viper inflatable catamaran shown beside a tropical shoreline",
+          "width": 1200,
+          "height": 680
+        }
+      },
+      {
+        "title": "Swift yacht tenders",
+        "copy": "",
+        "href": "https://easyinflatables.com.au/tender-series",
+        "cta": "Meet the Swift tenders",
+        "image": {
+          "src": "/images/supporters/easy-inflatables/tender.webp",
+          "alt": "Aerowave Swift inflatable tender shown on a beach with a yacht offshore",
+          "width": 1200,
+          "height": 900
+        }
+      }
+    ],
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "Easy Inflatables is relevant to that often-overlooked part of the school experience: ask about the boarding arrangement and what happens to students' bags during the transfer."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/easy-inflatables/launch.webp",
+        "alt": "Aerowave Viper 365 beach-launch image",
+        "width": 1200,
+        "height": 680
+      },
+      "caption": "The shoreline is part of the adventure: explore Aerowave’s boat layouts, transport options and equipment packages.",
+      "href": "https://easyinflatables.com.au/boats"
+    },
+    "thanks": "Thank you, Easy Inflatables, for supporting YouSail and the little adventures that make life afloat so rewarding.",
+    "logoOnLight": false,
+    "questions": [
+      "Which model and package fit the described use?",
+      "What are the packed dimensions and the requirements for carrying and boarding?",
+      "Which accessories are included, and which need to be arranged separately?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Australian-designed Aerowave boats, practical equipment choices and a team with hands-on boating experience."
+  },
+  {
+    "slug": "ferosticker",
+    "name": "FeroSticker",
+    "website": "https://ferosticker.com/",
+    "category": "Compact fire suppression",
+    "headline": "FeroSticker: understanding the school's equipment briefing",
+    "intro": "A school's safety briefing should explain what students need to know about the actual boat.",
+    "description": "A school's safety briefing should explain what students need to know about the actual boat.",
+    "summary": "A school's safety briefing should explain what students need to know about the actual boat.",
+    "logo": {
+      "src": "/images/supporters/ferosticker/logo.webp",
+      "alt": "FeroSticker logo",
+      "width": 1200,
+      "height": 253
+    },
+    "logoOnLight": true,
+    "showcaseLabel": "Discover the range",
+    "showcaseTitle": "Small format. Thoughtful engineering.",
+    "showcaseHref": "https://ferosticker.com/",
+    "showcaseCta": "Explore FeroSticker",
+    "tiles": [
+      {
+        "title": "FeroSticker F01",
+        "copy": "",
+        "href": "https://ferosticker.com/products/ferosticker-f01",
+        "cta": "Explore the F01",
+        "image": {
+          "src": "/images/supporters/ferosticker/f01.webp",
+          "alt": "FeroSticker F01 device and packaging",
+          "width": 1200,
+          "height": 1200
+        }
+      },
+      {
+        "title": "FeroSticker F03",
+        "copy": "",
+        "href": "https://ferosticker.com/products/ferosticker-f03",
+        "cta": "Discover the F03",
+        "image": {
+          "src": "/images/supporters/ferosticker/f03.webp",
+          "alt": "FeroSticker F03 device and packaging",
+          "width": 1200,
+          "height": 1200
+        }
+      }
+    ],
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "FeroSticker can be a discussion point for enclosed-space equipment, but students should follow the operator's briefing rather than infer procedures from a product page."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/ferosticker/f09.webp",
+        "alt": "FeroSticker F09 device and packaging",
+        "width": 1200,
+        "height": 1200
+      },
+      "caption": "The F09 completes the three-model collection, with its own enclosure specifications.",
+      "href": "https://ferosticker.com/"
+    },
+    "thanks": "Thank you, FeroSticker, for supporting YouSail and our community on the water.",
+    "questions": [
+      "Is the exact enclosure and its contents within the manufacturer’s stated application?",
+      "Which model and installation conditions apply to this particular space?",
+      "What documentation and ongoing checks does the manufacturer specify?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Discover FeroSticker, a YouSail supporter developing compact, heat-activated aerosol fire suppression devices for small enclosed spaces."
+  },
+  {
+    "slug": "flying-fish-sailing",
+    "name": "Flying Fish Sailing",
+    "category": "Sailing skills & adventure",
+    "website": "https://flyingfishsailing.com.au/",
+    "headline": "Flying Fish Sailing: comparing different learning formats",
+    "intro": "Compare Flying Fish with your preferred school format in mind: regular local lessons, an intensive pathway or a sailing adventure.",
+    "description": "Compare Flying Fish with your preferred school format in mind: regular local lessons, an intensive pathway or a sailing adventure.",
+    "logo": {
+      "src": "/brand/partners/flying-fish.webp",
+      "alt": "Flying Fish Sailing logo",
+      "width": 1038,
+      "height": 273
+    },
+    "logoOnLight": true,
+    "showcaseLabel": "Find your next step",
+    "showcaseTitle": "First sails. Bigger horizons.",
+    "showcaseHref": "https://flyingfishsailing.com.au/catalogue/",
+    "showcaseCta": "Explore the course catalogue",
+    "tiles": [
+      {
+        "title": "A place to begin",
+        "copy": "",
+        "href": "https://flyingfishsailing.com.au/sailing-school/learn-to-sail/",
+        "cta": "Explore learn-to-sail courses",
+        "image": {
+          "src": "/images/supporters/flying-fish-sailing/photo-1.webp",
+          "alt": "Flying Fish sailors gathered aboard a training yacht",
+          "width": 1200,
+          "height": 1200
+        }
+      },
+      {
+        "title": "An invitation to go further",
+        "copy": "",
+        "href": "https://flyingfishsailing.com.au/racing-adventure/",
+        "cta": "Find a sailing adventure",
+        "image": {
+          "src": "/images/supporters/flying-fish-sailing/photo-2.webp",
+          "alt": "Sunset seen from the deck of a Flying Fish sailing yacht",
+          "width": 960,
+          "height": 1200
+        }
+      }
+    ],
+    "summary": "Compare Flying Fish with your preferred school format in mind: regular local lessons, an intensive pathway or a sailing adventure.",
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "Ask how students are grouped and what previous experience is expected so the course matches your starting point."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/flying-fish-sailing/photo-3.webp",
+        "alt": "Sailors handling lines aboard a Flying Fish yacht on Sydney Harbour",
+        "width": 500,
+        "height": 375
+      },
+      "caption": "Hands on the ropes, eyes on the water: a glimpse of the practical side of sailing with Flying Fish.",
+      "href": "https://flyingfishsailing.com.au/sailing-school/learn-to-sail/"
+    },
+    "thanks": "Thank you, Flying Fish Sailing, for supporting YouSail and helping more people find their place aboard.",
+    "questions": [
+      "Which programme matches the learner’s experience and intended outcome?",
+      "What prerequisites, practical activities and assessment are included?",
+      "What are the meeting arrangements, supplied equipment and booking conditions?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Sailing education, professional pathways and adventures, with Sydney Harbour as a remarkable classroom."
+  },
+  {
+    "slug": "honu",
+    "name": "Honu",
+    "category": "Paddleboarding & water life",
+    "website": "https://honuboards.com/en-au",
+    "headline": "Honu: a paddling outing around a school visit",
+    "intro": "Travelling to a sailing school can also create time for a separate paddling outing.",
+    "description": "Travelling to a sailing school can also create time for a separate paddling outing.",
+    "logo": {
+      "src": "/images/supporters/honu/logo.webp",
+      "alt": "Honu Paddleboards logo",
+      "width": 349,
+      "height": 100
+    },
+    "compactLogo": true,
+    "logoOnLight": true,
+    "showcaseLabel": "Meet the boards",
+    "showcaseTitle": "Make more of every anchorage.",
+    "showcaseHref": "https://honuboards.com/en-au/collections/inflatable-paddleboards",
+    "showcaseCta": "Explore Honu boards",
+    "tiles": [
+      {
+        "title": "Byron 10′6",
+        "copy": "",
+        "href": "https://honuboards.com/en-au/products/byron-10-6",
+        "cta": "Discover the Byron",
+        "image": {
+          "src": "/images/supporters/honu/byron.webp",
+          "alt": "Honu Byron paddleboard with its bag and leash",
+          "width": 1200,
+          "height": 954
+        }
+      },
+      {
+        "title": "Fairlight 11′6",
+        "copy": "",
+        "href": "https://honuboards.com/en-au/products/fairlight-11-6",
+        "cta": "Meet the Fairlight",
+        "image": {
+          "src": "/images/supporters/honu/fairlight.webp",
+          "alt": "Honu Fairlight paddleboard in the Dawn Patrol colourway",
+          "width": 1200,
+          "height": 954
+        }
+      }
+    ],
+    "summary": "Travelling to a sailing school can also create time for a separate paddling outing.",
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "Honu fits that wider coastal trip, particularly when packing space is limited; check the school's schedule before assuming there will be free time on the water."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/honu/paddling.webp",
+        "alt": "Honu paddleboarding lifestyle photograph",
+        "width": 1000,
+        "height": 654
+      },
+      "caption": "Honu’s world extends from the beach to sheltered waterways: a reminder to make time for the water around you.",
+      "href": "https://honuboards.com/en-au/pages/about"
+    },
+    "thanks": "Thank you, Honu, for supporting YouSail and bringing another way to enjoy the water into our community.",
+    "questions": [
+      "Which board suits the intended paddler and outing?",
+      "What are the packed dimensions and the complete carrying weight?",
+      "Which paddle and accessories belong in the proposed setup?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Australian paddleboard design with attention to materials, construction and the pleasure of being on the water."
+  },
+  {
+    "slug": "mainstay-sailing",
+    "name": "Mainstay Sailing",
+    "category": "Whitsundays sailing & learning",
+    "website": "https://www.mainstaysailing.com.au/",
+    "headline": "Mainstay Sailing: learning from an Airlie Beach base",
+    "intro": "For people choosing a school around a Whitsundays visit, Mainstay's Airlie Beach base is directly relevant.",
+    "description": "For people choosing a school around a Whitsundays visit, Mainstay's Airlie Beach base is directly relevant.",
+    "logo": {
+      "src": "/images/supporters/mainstay-sailing/logo.svg",
+      "alt": "Mainstay Sailing logo",
+      "width": 371,
+      "height": 322
+    },
+    "compactLogo": true,
+    "logoOnLight": true,
+    "showcaseLabel": "Find your Whitsundays experience",
+    "showcaseTitle": "Take the helm. Share the adventure.",
+    "showcaseHref": "https://www.mainstaysailing.com.au/rya-sailing-courses",
+    "showcaseCta": "Explore sailing courses",
+    "tiles": [
+      {
+        "title": "Learn by getting involved",
+        "copy": "",
+        "href": "https://www.mainstaysailing.com.au/rya-sailing-courses",
+        "cta": "Find your RYA course",
+        "image": {
+          "src": "/images/supporters/mainstay-sailing/course.webp",
+          "alt": "Mainstay Sailing yacht under sail beside a green Whitsundays island",
+          "width": 960,
+          "height": 540
+        }
+      },
+      {
+        "title": "An escape to enjoy together",
+        "copy": "",
+        "href": "https://www.mainstaysailing.com.au/couples-sailing-escape",
+        "cta": "Discover the couples escape",
+        "image": {
+          "src": "/images/supporters/mainstay-sailing/couples.webp",
+          "alt": "Mainstay Sailing’s Couples Sailing Escape photograph",
+          "width": 960,
+          "height": 540
+        }
+      }
+    ],
+    "summary": "For people choosing a school around a Whitsundays visit, Mainstay's Airlie Beach base is directly relevant.",
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "Discuss the training format, marina meeting arrangements and whether your companion wants the same learning experience before booking around a holiday."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/mainstay-sailing/private.webp",
+        "alt": "Private RYA tuition with Mainstay Sailing",
+        "width": 960,
+        "height": 540
+      },
+      "caption": "Mainstay also offers private RYA tuition, giving sailors another way to focus on their own experience and goals.",
+      "href": "https://www.mainstaysailing.com.au/"
+    },
+    "thanks": "Thank you, Mainstay Sailing, for supporting YouSail and making the next step into sailing so inviting.",
+    "questions": [
+      "Is a structured course or a private experience the better fit?",
+      "What boat, meeting arrangements and inclusions apply to the proposed dates?",
+      "How can different experience levels and learning interests be accommodated?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Practical sailing tuition and personal experiences from Coral Sea Marina, Airlie Beach."
+  },
+  {
+    "slug": "shakesure",
+    "name": "ShakeSure",
+    "website": "https://www.shakesure.com/",
+    "category": "Anchor chain & marine hardware",
+    "headline": "ShakeSure: chain records for a training yacht",
+    "intro": "A prospective school owner or boat operator may need to replace anchoring equipment between courses.",
+    "description": "A prospective school owner or boat operator may need to replace anchoring equipment between courses.",
+    "summary": "A prospective school owner or boat operator may need to replace anchoring equipment between courses.",
+    "logo": {
+      "src": "/images/supporters/shakesure/logo.webp",
+      "alt": "ShakeSure logo",
+      "width": 1200,
+      "height": 359
+    },
+    "logoOnLight": true,
+    "showcaseLabel": "Discover the range",
+    "showcaseTitle": "The details behind a great anchorage.",
+    "showcaseHref": "https://www.shakesure.com/",
+    "showcaseCta": "Explore ShakeSure",
+    "tiles": [
+      {
+        "title": "ELITE: electropolished stainless steel",
+        "copy": "",
+        "href": "https://www.shakesure.com/316l-stainless-steel-chain",
+        "cta": "Explore stainless steel chain",
+        "image": {
+          "src": "/images/supporters/shakesure/chain.webp",
+          "alt": "ShakeSure electropolished stainless steel anchor chain",
+          "width": 900,
+          "height": 1200
+        }
+      },
+      {
+        "title": "The detail in every link",
+        "copy": "",
+        "href": "https://www.shakesure.com/contact",
+        "cta": "Talk to ShakeSure",
+        "image": {
+          "src": "/images/supporters/shakesure/chain-detail.webp",
+          "alt": "ShakeSure stainless steel chain detail",
+          "width": 1200,
+          "height": 1200
+        }
+      }
+    ],
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "ShakeSure's chain options belong in a vessel-specific purchasing discussion that includes the windlass and locker, with student use considered in the operating brief."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/shakesure/range.webp",
+        "alt": "ShakeSure marine chain photograph",
+        "width": 670,
+        "height": 1200
+      },
+      "caption": "Explore the material choices and specifications behind ShakeSure’s anchor chain range.",
+      "href": "https://www.shakesure.com/"
+    },
+    "thanks": "Thank you, ShakeSure, for supporting YouSail and our community on the water.",
+    "questions": [
+      "What chain specification matches the identified windlass?",
+      "Which measurements and existing equipment records are needed?",
+      "What are the differences between the proposed collections and their documentation?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Specialist anchor chain, a personal approach to windlass compatibility, and three distinct collections to explore: CORE, ELITE and APEX."
+  },
+  {
+    "slug": "sos-marine",
+    "name": "SOS Marine",
+    "category": "Marine safety & rescue design",
+    "website": "https://www.sosmarine.com/",
+    "headline": "SOS Marine: briefing a changing student crew",
+    "intro": "School crews change frequently, so equipment familiarity cannot be assumed.",
+    "description": "School crews change frequently, so equipment familiarity cannot be assumed.",
+    "logo": {
+      "src": "/images/supporters/sos-marine/feed-logo.webp",
+      "alt": "SOS Marine logo",
+      "width": 480,
+      "height": 240
+    },
+    "compactLogo": true,
+    "showcaseLabel": "Meet the equipment",
+    "showcaseTitle": "Practical ideas with a clear purpose.",
+    "showcaseHref": "https://www.sosmarine.com/marine-leisure-safety-survival-equipment-sos-marine/",
+    "showcaseCta": "Explore marine leisure equipment",
+    "tiles": [
+      {
+        "title": "SOS Dan Buoy",
+        "copy": "",
+        "href": "https://www.sosmarine.com/site/product/sos-dan-buoy-sos-6375/",
+        "cta": "Discover the SOS Dan Buoy",
+        "image": {
+          "src": "/images/supporters/sos-marine/dan-buoy-detail.webp",
+          "alt": "SOS Marine Dan Buoy product photograph",
+          "width": 1158,
+          "height": 800
+        }
+      },
+      {
+        "title": "SOS Recovery Ladder",
+        "copy": "",
+        "href": "https://www.sosmarine.com/site/product/sos-recovery-ladder/",
+        "cta": "Explore the Recovery Ladder",
+        "image": {
+          "src": "/images/supporters/sos-marine/ladder.webp",
+          "alt": "SOS Recovery Ladder demonstrated at the side of a vessel",
+          "width": 600,
+          "height": 600
+        }
+      }
+    ],
+    "summary": "School crews change frequently, so equipment familiarity cannot be assumed.",
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "SOS Marine's marking and recovery products prompt useful questions about how each new group is shown the equipment and how the operator makes its location easy to remember."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/sos-marine/workshop.webp",
+        "alt": "Historical photograph from SOS Marine’s company story",
+        "width": 1170,
+        "height": 450
+      },
+      "caption": "A photograph from SOS Marine’s own history, connecting today’s specialist equipment with the company’s marine beginnings.",
+      "href": "https://www.sosmarine.com/sos-marine-company-profile-us-survival-operations-specialists/"
+    },
+    "thanks": "Thank you, SOS Marine, for supporting YouSail and bringing thoughtful Australian marine design to our community.",
+    "logoOnLight": false,
+    "questions": [
+      "What is the stated purpose of the proposed product?",
+      "Does the actual boat and intended application meet the manufacturer’s requirements?",
+      "What instructions, familiarisation and ongoing checks accompany the equipment?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Australian marine safety specialists with experience across recreational, commercial and professional operations."
+  },
+  {
+    "slug": "survival-kit",
+    "name": "SURVIVAL",
+    "category": "First aid kits & marine adventures",
+    "website": "https://survivalfirstaidkits.net.au/",
+    "summary": "Repeated course departures create a practical need to check first-aid stock and storage.",
+    "logo": {
+      "src": "/images/supporters/survival-official-logo.png",
+      "alt": "SURVIVAL First Aid Kits logo",
+      "width": 1440,
+      "height": 322
+    },
+    "logoOnLight": false,
+    "tiles": [
+      {
+        "title": "Ocean Warrior First Aid KIT",
+        "copy": "",
+        "href": "https://survivalfirstaidkits.net.au/products/ocean-warrior-first-aid-kit",
+        "cta": "Explore Ocean Warrior",
+        "image": {
+          "src": "/images/supporters/ocean-warrior.jpg",
+          "alt": "SURVIVAL Ocean Warrior kit and waterproof dry bag",
+          "width": 900,
+          "height": 900
+        }
+      },
+      {
+        "title": "Boaties First Aid Bundle",
+        "copy": "",
+        "href": "https://survivalfirstaidkits.net.au/products/boat-first-aid-bundle",
+        "cta": "Explore the boating bundle",
+        "image": {
+          "src": "/images/supporters/boaties-bundle.jpg",
+          "alt": "SURVIVAL Boaties First Aid Bundle and protective box",
+          "width": 2048,
+          "height": 2048
+        }
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/ocean-warrior-contents.jpg",
+        "alt": "Ocean Warrior kit and contents laid out",
+        "width": 900,
+        "height": 900
+      },
+      "caption": "Explore how the kit and its contents are organised.",
+      "href": "https://survivalfirstaidkits.net.au/collections/marine"
+    },
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "SURVIVAL's kit organisation is relevant to that handover process: establish who checks the contents and how used items are recorded before the next group arrives."
+        ]
+      }
+    ],
+    "headline": "SURVIVAL: keeping course-day supplies organised",
+    "intro": "Repeated course departures create a practical need to check first-aid stock and storage.",
+    "description": "Repeated course departures create a practical need to check first-aid stock and storage.",
+    "questions": [
+      "What does the current kit or bundle contain?",
+      "How should it be stored and its contents checked or replenished?",
+      "What additional activity-specific provision needs to be arranged independently?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "An Australian family business bringing clear organisation and thoughtful kit design to boating adventures."
+  },
+  {
+    "slug": "water-makers-australia",
+    "name": "Water Makers Australia",
+    "category": "Freshwater & life aboard",
+    "website": "https://www.watermakers.com.au/",
+    "headline": "Water Makers Australia: freshwater for longer training trips",
+    "intro": "A school running longer trips may have different freshwater needs from one returning to shore daily.",
+    "description": "A school running longer trips may have different freshwater needs from one returning to shore daily.",
+    "logo": {
+      "src": "/images/supporters/water-makers-australia/logo.webp",
+      "alt": "Water Makers Australia logo",
+      "width": 1200,
+      "height": 206
+    },
+    "logoOnLight": true,
+    "showcaseLabel": "Meet the systems",
+    "showcaseTitle": "Made around the way you cruise.",
+    "showcaseHref": "https://www.watermakers.com.au/category/all-products",
+    "showcaseCta": "Explore the watermaker range",
+    "tiles": [
+      {
+        "title": "Single-membrane systems",
+        "copy": "",
+        "href": "https://www.watermakers.com.au/category/marine-water-makers-80lh",
+        "cta": "Discover the small systems",
+        "image": {
+          "src": "/images/supporters/water-makers-australia/small.webp",
+          "alt": "Water Makers Australia single-membrane system and its components",
+          "width": 1200,
+          "height": 1200
+        }
+      },
+      {
+        "title": "Double-membrane systems",
+        "copy": "",
+        "href": "https://www.watermakers.com.au/category/marine-water-makers-160lh",
+        "cta": "Explore the medium systems",
+        "image": {
+          "src": "/images/supporters/water-makers-australia/medium.webp",
+          "alt": "Water Makers Australia double-membrane system with filters and control panel",
+          "width": 1200,
+          "height": 1200
+        }
+      }
+    ],
+    "summary": "A school running longer trips may have different freshwater needs from one returning to shore daily.",
+    "sections": [
+      {
+        "heading": "The practical connection",
+        "paragraphs": [
+          "Water Makers Australia can help an operator explore installation options, but first describe the actual course pattern and the time available for maintenance."
+        ]
+      }
+    ],
+    "detail": {
+      "image": {
+        "src": "/images/supporters/water-makers-australia/system.webp",
+        "alt": "Water Makers Australia modular triple-membrane system laid out with its components",
+        "width": 1200,
+        "height": 1200
+      },
+      "caption": "The modular approach in view: separate components give the installation conversation room to work around the boat.",
+      "href": "https://www.watermakers.com.au/choices"
+    },
+    "thanks": "Thank you, Water Makers Australia, for supporting YouSail and the freedom to enjoy more of life afloat.",
+    "questions": [
+      "Which configuration fits the stated freshwater use?",
+      "What electrical, plumbing and installation-space requirements apply?",
+      "How will routine servicing and component access work on this boat?"
+    ],
+    "contextLabel": "finding the right sailing school",
+    "fact": "Marine watermakers with modular layouts, serviceable components and direct Australian support."
+  }
+]
