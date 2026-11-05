@@ -646,10 +646,10 @@
     "name": "ShakeSure",
     "website": "https://www.shakesure.com/",
     "category": "Anchor chain & marine hardware",
-    "headline": "ShakeSure: getting to know the equipment beneath a good anchorage",
-    "intro": "Learning to sail changes the way you look at a boat. Things that once seemed like anonymous fittings begin to have names, jobs and relationships with one another. ShakeSure is a specialist worth discovering as that interest grows: a supplier of anchor chains, rodes and accessories with a particular focus on helping owners choose equipment that belongs in their anchoring arrangement.",
-    "description": "Get to know ShakeSure, the anchor-chain specialist helping new owners connect their sailing knowledge with thoughtful equipment choices.",
-    "summary": "Get to know ShakeSure, the anchor-chain specialist helping new owners connect their sailing knowledge with thoughtful equipment choices.",
+    "headline": "ShakeSure: anchor chain built for strength and salt water",
+    "intro": "ShakeSure supplies strong, corrosion-resistant anchor chain for boats and yachts. If learning to sail has led to buying your own boat, this is one of the less glamorous purchases that deserves proper attention: chain that suits your anchoring setup and works correctly with your windlass.",
+    "description": "Strong, corrosion-resistant anchor chains with material choices and help matching your windlass.",
+    "summary": "Strong, corrosion-resistant anchor chains with material choices and help matching your windlass.",
     "logo": {
       "src": "/images/supporters/shakesure/logo.webp",
       "alt": "ShakeSure logo",
@@ -689,26 +689,24 @@
     ],
     "sections": [
       {
-        "heading": "A specialist in a subject worth understanding",
+        "heading": "Choose the material for the job",
         "paragraphs": [
-          "The company offers galvanised and stainless-steel chains through its CORE, ELITE and APEX families, alongside rodes and associated equipment. That gives customers different starting points, but the business is about more than presenting a choice of finishes. ShakeSure also offers fitment assistance, bringing the vessel and its existing equipment into the buying conversation.",
-          "For someone moving from lessons towards boat ownership, that is an appealing approach. You may have practised anchoring on a school boat without ever having to buy the chain yourself. Choosing equipment introduces another layer of understanding: the dimensions, the windlass and the way the components work together. A supplier who spends its time on that subject can make the enquiry much more focused.",
-          "We like businesses that make room for a customer to learn. ShakeSure's emphasis on compatibility gives people a reason to describe their actual setup, rather than assuming that a nominal size tells the whole story. It turns an unfamiliar purchase into a discussion about a recognisable boat."
+          "ShakeSure offers CORE galvanised chain, ELITE stainless-steel chain and APEX duplex chain. The range gives owners different material options rather than presenting every chain as the same product with a different price. Corrosion resistance is particularly relevant aboard a boat, where chain repeatedly goes from seawater to a damp locker.",
+          "We like that the company puts strength, materials and inspection at the centre of its offering. Anchor chain has to carry loads and withstand regular handling. A polished finish might catch the eye, but its working qualities are what make it worth buying."
         ]
       },
       {
-        "heading": "From a lesson to your own cruising plans",
+        "heading": "Help with the part that has to fit",
         "paragraphs": [
-          "An anchoring lesson has an immediate purpose, but the pleasure behind it is often further ahead. Perhaps you picture taking your family to a quiet bay, stopping for lunch on a coastal trip or spending a weekend aboard with friends. The gear at the bow becomes part of making those plans possible.",
-          "ShakeSure's product focus belongs to that longer ownership story. Chain is something an owner expects to live with across many outings. Material choices, dimensional consistency and the handling equipment deserve attention because they affect the arrangement you will be using repeatedly, long after the purchase has stopped feeling new.",
-          "The company's interest in manufacturing and inspection adds substance to its presentation. It encourages buyers to look at what they are ordering and how it is intended to fit, rather than treating the equipment as an indistinguishable commodity. That closer interest is something we appreciate in a specialist supplier."
+          "The chain's dimensions need to match the windlass gypsy that pulls it aboard. ShakeSure offers fitment assistance, helping owners choose around the equipment on their boat. That is useful when you are new to owning a yacht and do not yet know exactly what to order.",
+          "Learning to lower and retrieve an anchor is one thing; replacing the components is another. We appreciate a supplier that deals with that practical gap. Checking the windlass and chain specification before purchase helps turn a potentially confusing order into a defined equipment choice."
         ]
       },
       {
-        "heading": "Keep asking better questions as you progress",
+        "heading": "A focused supplier for your anchoring setup",
         "paragraphs": [
-          "A sailing school gives you a foundation. Experience gradually gives you more informed preferences about the boats and equipment you enjoy using. ShakeSure offers a useful connection between those stages, with a defined range and a business prepared to discuss its application.",
-          "You do not need to be planning a major refit to become interested in the subject. Understanding the equipment is part of becoming more involved aboard. When the time comes to choose for your own boat, ShakeSure is a company to know: focused on anchoring, attentive to fit and connected to the places you hope to stop."
+          "Rodes and accessories are available alongside the chain. The business therefore gives owners a place to consider related parts of the anchoring arrangement, rather than choosing the chain in isolation.",
+          "Our reason for featuring ShakeSure is straightforward. Sailing skills matter, and so does the equipment you rely on when the sailing stops. Strong chain, suitable materials and the correct fit are concrete benefits for an owner preparing a boat for weekends away and longer trips."
         ]
       }
     ],
@@ -724,7 +722,7 @@
     },
     "thanks": "Thank you, ShakeSure, for supporting YouSail and our community on the water.",
     "contextLabel": "finding the right sailing school",
-    "editorialVersion": 2,
+    "editorialVersion": 3,
     "ctaLabel": "Explore ShakeSure anchor chains",
     "hero": {
       "src": "/images/supporters/shakesure/chain.webp",
@@ -738,9 +736,9 @@
     "name": "SOS Marine",
     "category": "Marine safety & rescue design",
     "website": "https://www.sosmarine.com/",
-    "headline": "SOS Marine: thoughtful equipment for the people learning beside you",
-    "intro": "A sailing school introduces more than sails and steering. It introduces the experience of sharing a boat with other people, noticing what they need and understanding that preparation is part of looking after them. SOS Marine makes that human side of boating tangible through Australian-designed and manufactured safety and rescue equipment.",
-    "description": "Meet SOS Marine, the Australian maker bringing practical design and a human focus to flotation, rescue and recovery equipment for boaters.",
+    "headline": "SOS Marine: lifejackets and equipment to help recover someone overboard",
+    "intro": "SOS Marine makes flotation and rescue equipment for people on boats, including lifejackets, life rafts, man-overboard markers and recovery products. For new sailors and boat owners, the important distinction is what each item does: support a person in the water, mark their location or help bring them aboard.",
+    "description": "Lifejackets, rafts, markers and recovery equipment to help protect the people sailing with you.",
     "logo": {
       "src": "/images/supporters/sos-marine/feed-logo.webp",
       "alt": "SOS Marine logo",
@@ -778,30 +776,27 @@
         }
       }
     ],
-    "summary": "Meet SOS Marine, the Australian maker bringing practical design and a human focus to flotation, rescue and recovery equipment for boaters.",
+    "summary": "Lifejackets, rafts, markers and recovery equipment to help protect the people sailing with you.",
     "sections": [
       {
-        "heading": "A maker with people in mind",
+        "heading": "Safety equipment with a specific job",
         "paragraphs": [
-          "Based in Botany, Sydney, SOS Marine develops products for recreational boaters and professional users. Its range includes lifejackets, recovery equipment, life rafts and specialist solutions, with design and manufacturing capabilities that extend to professional and defence applications. There is a working business behind the catalogue, making equipment for identifiable tasks.",
-          "What interests us is the breadth of thinking within that focus. Helping a person around water involves more than one moment. A product may be worn, deployed to mark a position or used during recovery. SOS Marine's different product families reflect those different jobs, giving boaters a fuller picture of what equipment can be for.",
-          "For someone learning through a school, that is a worthwhile business to discover. The equipment aboard a training vessel can become familiar through use, while the companies responsible for designing it remain largely invisible. Knowing a local manufacturer helps connect the object in front of you with the people who developed it."
+          "A sailing lesson may introduce the man-overboard procedure, but equipping your own boat brings another set of decisions. SOS Marine's range includes the SOS Dan Buoy marker, recovery ladders and Sea Scoopa, alongside its flotation products. These address different stages of looking after a person who has left the boat unexpectedly.",
+          "We particularly like the attention given to recovery. Getting alongside someone does not automatically solve the problem of lifting them over a boat's side. Equipment designed for that task gives owners something practical to consider when planning how their crew would bring a person back aboard."
         ]
       },
       {
-        "heading": "Products that make the purpose clear",
+        "heading": "Made by an Australian safety specialist",
         "paragraphs": [
-          "The leisure range includes the SOS Dan Buoy, Sea Scoopa, recovery ladders and flotation equipment. These are distinct products with distinct roles. Looking at the range gives a new sailor something concrete to explore as their interest in boat preparation develops beyond the first course.",
-          "We particularly like the attention given to recovery. It is a practical design subject centred on a person, a vessel and the challenge of bringing the two back together. The company's work in that area helps explain its identity more clearly than a broad promise about safety ever could.",
-          "Its professional manufacturing background adds another dimension. Specialist customers often bring particular requirements, and SOS Marine has built a business around responding to the way equipment will be used. That experience sits alongside the products offered to ordinary boat owners, without making every item in the catalogue the same kind of purchase."
+          "Based in Botany, Sydney, SOS Marine manufactures equipment for recreational, professional and defence users. That specialised background supports a product range concentrated on safety and rescue rather than a general selection of boating accessories.",
+          "For us, this makes the company relevant to people progressing from lessons to independent sailing. You are no longer simply using the equipment provided on a training boat; you may be choosing it, storing it and explaining it to your own guests. A specialist range helps you understand the options by their purpose."
         ]
       },
       {
-        "heading": "A useful connection as your sailing grows",
+        "heading": "Choose around the boat and the crew",
         "paragraphs": [
-          "Many people leave a school course wanting to become more capable crew. Others begin imagining a boat of their own. Either way, interest in equipment tends to grow with involvement. You start recognising the things you would like to understand properly, rather than simply knowing where they are stored.",
-          "SOS Marine offers a local point of contact for that curiosity, with a substantial range and continuing involvement through eligible equipment servicing. Its appeal is the combination of practical design, manufacturing knowledge and a clear human purpose.",
-          "For readers finding their place in sailing, this is a company worth knowing. The best part of learning is often the people you meet aboard. SOS Marine works on equipment intended to help look after people like them."
+          "A small yacht with two people aboard presents a different recovery task from a boat with more crew and a lower boarding point. SOS Marine offers products to assess against those real circumstances.",
+          "We feature the business because its products tackle the human side of boating safety directly. The aim is to help protect people and make rescue more achievable, with identifiable equipment for flotation, marking and recovery. Those are useful things to know about before you are responsible for a boatful of people."
         ]
       }
     ],
@@ -818,7 +813,7 @@
     "thanks": "Thank you, SOS Marine, for supporting YouSail and bringing thoughtful Australian marine design to our community.",
     "logoOnLight": false,
     "contextLabel": "finding the right sailing school",
-    "editorialVersion": 2,
+    "editorialVersion": 3,
     "ctaLabel": "Discover SOS Marine",
     "hero": {
       "src": "/images/supporters/sos-marine/dan-buoy-detail.webp",
@@ -832,7 +827,7 @@
     "name": "SURVIVAL",
     "category": "First aid kits & marine adventures",
     "website": "https://survivalfirstaidkits.net.au/",
-    "summary": "Discover SURVIVAL, the Australian first-aid brand offering marine kits and ongoing supplies for the adventures that follow your sailing lessons.",
+    "summary": "Organised marine first-aid kits, water-resistant storage options and replacements to keep your boat equipped.",
     "logo": {
       "src": "/images/supporters/survival-official-logo.png",
       "alt": "SURVIVAL First Aid Kits logo",
@@ -878,34 +873,32 @@
     },
     "sections": [
       {
-        "heading": "A familiar idea, carefully developed",
+        "heading": "First aid should have a clear place on the boat",
         "paragraphs": [
-          "With a history dating to 1988, SURVIVAL has built its range around a straightforward purpose: helping people have first-aid equipment available where they spend their time. Its offering includes complete kits, replacement supplies, books and the iFirstAid app, giving the brand a relationship with customers beyond the original purchase.",
-          "That ongoing aspect is what we like. A kit becomes part of a household or a boat's equipment, and its contents change as items are used. Being able to return to the same business for replenishment makes the purchase feel like the beginning of a useful routine, rather than a box ticked once and forgotten.",
-          "For a new sailor, the company is approachable because it works across familiar settings. You may already think about first aid for the car, a camping trip or a busy family home. Considering equipment for time afloat is another expression of the same care for the people around you."
+          "It is easy to focus on sails, weather and lunch before departure. First-aid supplies can receive less attention until someone needs them. A complete kit gives you a defined starting point and a recognisable item to show your crew before leaving the berth.",
+          "We like SURVIVAL's emphasis on organisation because it addresses an ordinary problem: finding what you need. Keeping supplies together is more useful than having a handful of loose items spread between bags and lockers. The marine range also gives attention to protecting the contents around water."
         ]
       },
       {
-        "heading": "An ocean connection of its own",
+        "heading": "Portable kits and waterproof-box options",
         "paragraphs": [
-          "SURVIVAL's marine offering includes the Ocean Warrior kit, developed with Australian surfer Mark Visser. That collaboration gives the range a clear connection to someone whose working and sporting life has been shaped by the sea. It is a more distinctive story than simply putting a nautical label on a general product.",
-          "The company also offers larger marine and trauma options. Different formats provide a starting point for thinking about the space available and the kind of boating involved. A kit carried between activities and one kept aboard permanently will have different places in an owner's routine, and it is useful to see those possibilities represented in the range.",
-          "The wider business supplies the items needed to keep kits stocked, alongside information resources. Together, those offerings show an interest in the product's everyday life: how people organise it, recognise what is inside and return to it over time. That is where a first-aid brand earns an ongoing place in the cupboard or locker."
+          "The Ocean Warrior kit was developed with Mark Visser. It is compact, designed to float and supplied with a waterproof dry bag, making it an option for people taking equipment between boats and watersports activities. The Marine Scale G kit is housed in a waterproof box, offering a different storage format for onboard use.",
+          "These are useful differences to consider when choosing where a kit will live. A portable setup may suit someone who sails on several boats; an owner may want a kit kept in one established place aboard. Comparing the contents and storage format gives the purchase a practical purpose."
         ]
       },
       {
-        "heading": "Carry the care beyond the classroom",
+        "heading": "Restock it after it earns its place",
         "paragraphs": [
-          "A good sailing course encourages involvement. You begin taking responsibility for small jobs and thinking about what makes a day work for everyone aboard. Choosing and looking after equipment can become part of that growing confidence, particularly when you start organising your own outings.",
-          "SURVIVAL gives that intention a practical destination. It is an established Australian business with identifiable marine products and a broader understanding of active lives. For people whose sailing lessons are opening the door to more adventures, we like a brand that helps preparation become an ordinary, thoughtful part of saying yes to them."
+          "SURVIVAL supplies replacement items as well as complete kits. We appreciate that because used dressings and other supplies need replacing if the kit is to remain ready for another outing.",
+          "The Australian brand dates to 1988, but our main reason for featuring it is the product itself: accessible first-aid supplies organised for boating. As you move from attending lessons to organising trips, giving those supplies a proper place aboard is a simple part of looking after the people sailing with you."
         ]
       }
     ],
-    "headline": "SURVIVAL: making preparation part of a life on the water",
-    "intro": "The bag you pack for a sailing lesson often marks the beginning of a new routine. Soon there are weekends at the club, trips with friends and holidays planned around the coast. SURVIVAL is an Australian first-aid business that belongs in that wider picture, offering kits and supplies for people whose lives take them between home, travel and the outdoors.",
-    "description": "Discover SURVIVAL, the Australian first-aid brand offering marine kits and ongoing supplies for the adventures that follow your sailing lessons.",
+    "headline": "SURVIVAL: first-aid kits ready for a day of sailing",
+    "intro": "SURVIVAL makes marine first-aid kits that bring dressings, bandages and other supplies together in organised storage. When you start arranging your own sailing trips, a kit aboard means the equipment comes with the people who may need it.",
+    "description": "Organised marine first-aid kits, water-resistant storage options and replacements to keep your boat equipped.",
     "contextLabel": "finding the right sailing school",
-    "editorialVersion": 2,
+    "editorialVersion": 3,
     "ctaLabel": "Explore SURVIVAL first-aid kits",
     "hero": {
       "src": "/images/supporters/ocean-warrior.jpg",
@@ -919,9 +912,9 @@
     "name": "Water Makers Australia",
     "category": "Freshwater & life aboard",
     "website": "https://www.watermakers.com.au/",
-    "headline": "Water Makers Australia: an idea for the cruising life beyond your lessons",
-    "intro": "Learning to sail can change the scale of your daydreams. A weekend course becomes a sailing holiday; a holiday becomes an interest in longer cruising. Water Makers Australia supplies equipment for that bigger picture, helping boat owners explore producing fresh water aboard through marine reverse-osmosis systems.",
-    "description": "Explore Water Makers Australia: a family boating project that became a practical watermaker business for owners dreaming of longer cruising.",
+    "headline": "Water Makers Australia: turn seawater into fresh water aboard",
+    "intro": "Water Makers Australia supplies watermakers that produce fresh water from seawater while you are offshore. For sailors planning longer trips, that means an onboard supply for cooking, washing and showers, with less dependence on finding somewhere to fill the tanks.",
+    "description": "Turn seawater into fresh water aboard and reduce reliance on marina refills during longer sailing trips.",
     "logo": {
       "src": "/images/supporters/water-makers-australia/logo.webp",
       "alt": "Water Makers Australia logo",
@@ -959,30 +952,27 @@
         }
       }
     ],
-    "summary": "Explore Water Makers Australia: a family boating project that became a practical watermaker business for owners dreaming of longer cruising.",
+    "summary": "Turn seawater into fresh water aboard and reduce reliance on marina refills during longer sailing trips.",
     "sections": [
       {
-        "heading": "A business that began with one boat",
+        "heading": "Make water instead of carrying the whole trip's supply",
         "paragraphs": [
-          "The company's story starts with Kalim and his father-in-law Stephen working on a watermaker for Stephen's boat on the Port Hacking River. That personal beginning matters because it puts an owner and an actual vessel at the centre of the idea. The project grew out of a boating need before becoming a business serving other owners.",
-          "Today Water Makers Australia offers different system configurations and direct advice about selecting equipment. Kalim remains involved in sales and technical conversations, giving customers access to someone closely connected with the product. For a first-time buyer, that is an attractive way to approach equipment that may initially seem unfamiliar.",
-          "What we like is the continuity between the origin story and the current offering. The business still talks about the practical realities of fitting and living with a system aboard. Its subject is technical, but the starting point remains the boat somebody wants to use and enjoy."
+          "A training boat may introduce you to conserving water, but living aboard makes the daily demand more obvious. More people, hot weather and longer periods away from a marina all change how quickly the tanks empty. A watermaker adds a way to produce fresh water during the trip rather than relying entirely on what you loaded before departure.",
+          "The systems use reverse osmosis, passing water through membranes to separate fresh water from salt. Water Makers Australia offers single-, double- and triple-membrane configurations with published production capacities up to 80, 160 and 240 litres per hour respectively. The choice depends on the boat's water demand and the power available."
         ]
       },
       {
-        "heading": "Finding room for a new possibility",
+        "heading": "Fit the system around your boat",
         "paragraphs": [
-          "The systems use a modular arrangement, with pumps, filters and membrane housings able to occupy separate positions. That approach recognises a basic truth about boat ownership: useful spaces are rarely waiting empty for the next piece of equipment. Installation involves working with the vessel you have.",
-          "Access is part of the appeal too. Water Makers Australia emphasises standard service parts and ongoing maintenance considerations, bringing the owner's future involvement into the discussion. Equipment has to remain approachable after installation, when the boat is away from the workshop and ordinary ownership resumes.",
-          "For readers progressing through a sailing school, these details offer a glimpse of another side of cruising. Handling a yacht is one part of the experience. Understanding the systems that support life aboard is another, and each becomes more interesting as your ambitions develop."
+          "Pumps, filters and membranes can be installed as separate components. This modular approach gives an owner more flexibility than finding one large empty space for the whole system. Keeping the service items accessible can also be considered as part of the installation.",
+          "We like that practical approach to boat ownership. Equipment needs to fit, but it also needs to be looked after once fitted. The use of standard parts and filter cartridges is another reason to consider the range when planning routine maintenance."
         ]
       },
       {
-        "heading": "Think about the trip, then the equipment",
+        "heading": "A clear benefit for future cruising plans",
         "paragraphs": [
-          "The attraction of a watermaker is usually connected with somewhere you want to go or somewhere you would like to stay longer. Fresh water supports meals, washing and the small routines that make a boat comfortable. Producing it aboard can offer more flexibility in how a cruising trip is arranged.",
-          "That makes Water Makers Australia relevant even if boat ownership is still a future plan. It is a company with a clear purpose, a personal story and a product closely connected to the freedom people associate with sailing.",
-          "We appreciate the grounded nature of the invitation. Bring the details of your vessel and the cruising you have in mind, then explore what could fit. The business began by solving a problem for a family boat; that remains a compelling perspective for helping the next owner imagine more time away."
+          "For someone learning with a view to longer voyages, this is an upgrade whose purpose is easy to understand. Making water aboard can make everyday life more comfortable and give the crew greater flexibility between shore visits.",
+          "We feature Water Makers Australia because it addresses that specific need, with systems that can be matched to different boats. The main attraction is fresh water at sea; capacity, power and installation choices are how you make that benefit work for your own sailing."
         ]
       }
     ],
@@ -998,7 +988,7 @@
     },
     "thanks": "Thank you, Water Makers Australia, for supporting YouSail and the freedom to enjoy more of life afloat.",
     "contextLabel": "finding the right sailing school",
-    "editorialVersion": 2,
+    "editorialVersion": 3,
     "ctaLabel": "Talk to Water Makers Australia",
     "hero": {
       "src": "/images/supporters/water-makers-australia/small.webp",
