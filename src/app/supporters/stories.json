@@ -4,10 +4,10 @@
     "name": "BoatEye360",
     "website": "https://boateye360.com/",
     "category": "Marine cameras & low-light vision",
-    "headline": "BoatEye360: questions about teaching and electronics",
-    "intro": "When comparing schools, ask how they explain the relationship between outside observation and electronic aids.",
-    "description": "When comparing schools, ask how they explain the relationship between outside observation and electronic aids.",
-    "summary": "When comparing schools, ask how they explain the relationship between outside observation and electronic aids.",
+    "headline": "BoatEye360: meet a company looking closely at the boating world",
+    "intro": "Choosing a sailing school can be the beginning of a much wider interest in boats. You start noticing the equipment at the helm, the way a vessel is arranged and the businesses behind the names aboard. BoatEye360 is a focused example: a marine camera company working on the view available to boaters when there is very little light.",
+    "description": "Discover BoatEye360's marine camera business and its focused approach to low-light vision as you get to know the equipment behind boating.",
+    "summary": "Discover BoatEye360's marine camera business and its focused approach to low-light vision as you get to know the equipment behind boating.",
     "logo": {
       "src": "/images/supporters/boateye360/logo.webp",
       "alt": "BoatEye360 logo",
@@ -47,9 +47,27 @@
     ],
     "sections": [
       {
-        "heading": "The practical connection",
+        "heading": "A specialist with an understandable ambition",
         "paragraphs": [
-          "BoatEye360 offers an example of equipment a student may encounter later; its presence alone does not tell you how well a school teaches lookout habits."
+          "The Florida-founded business concentrates on full-colour low-light cameras. Founder Dhru Shah's company offers products intended to bring a visual picture of the surrounding water onto an onboard screen. That is a clear purpose for a new boater to understand, even before the details of installation become relevant.",
+          "It also makes the company interesting to experienced owners. A camera is a different source of information from charts and instruments. It shows the scene around the boat, giving the person at the helm another view to consider. BoatEye360's offering is built around making that image available in a marine setting.",
+          "We like the focus. Rather than spreading across every category of boating equipment, the company develops and explains a particular kind of product. That gives customers a defined subject to explore and helps make an unfamiliar technology feel more approachable."
+        ]
+      },
+      {
+        "heading": "The image and the installation belong together",
+        "paragraphs": [
+          "BoatEye360's C-1080 uses a CMOS sensor and a 316L stainless-steel housing. The physical package matters because the camera is intended to live aboard a boat, with the exposure that entails. Its connection options include HDMI and analogue RCA, and the company offers a separate display as another way to view the image.",
+          "Those alternatives reflect the reality of the boats people already own. A suitable existing screen may be part of the plan, or the owner may prefer a dedicated one. Compatibility information for particular makes and models helps turn the broad idea into an installation conversation.",
+          "For someone coming into boating through a sailing school, that is an interesting lesson in how the industry works. Products are chosen around a vessel and its use. The most helpful suppliers make it easier to connect what they sell with the actual boat a customer has."
+        ]
+      },
+      {
+        "heading": "A name to know as your interest develops",
+        "paragraphs": [
+          "You may first encounter marine cameras through a demonstration, a conversation on a dock or an owner's explanation of their helm. Having a specialist brand to investigate gives that curiosity a useful direction. BoatEye360 offers a way to look more closely at both the product and the reasons people consider it.",
+          "What appeals to us is how closely the business is tied to an experience most boaters recognise: the world looking different as the light fades. The technology is specialised, but the motivation is easy to grasp.",
+          "As your sailing education introduces more of the boating community, BoatEye360 is worth adding to the list of companies you know. It represents a small, distinctive corner of marine equipment, with a clear ambition to improve the visual information available aboard."
         ]
       }
     ],
@@ -64,22 +82,24 @@
       "href": "https://boateye360.com/"
     },
     "thanks": "Thank you, BoatEye360, for supporting YouSail and our community on the water.",
-    "questions": [
-      "Which camera and display arrangement is being proposed?",
-      "What mounting, connection and power information should be supplied to the installer?",
-      "Where can the current specifications and installation instructions be obtained?"
-    ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Discover BoatEye360, a YouSail supporter specialising in full-colour marine night-vision cameras and display options for life aboard."
+    "ctaLabel": "Discover BoatEye360 cameras",
+    "editorialVersion": 2,
+    "hero": {
+      "src": "/images/supporters/boateye360/camera.webp",
+      "alt": "BoatEye360 C-1080 marine camera",
+      "width": 801,
+      "height": 801
+    }
   },
   {
     "slug": "captain-matt",
     "name": "Captain Matt",
     "category": "People & seamanship",
     "website": "https://captainmatt.com.au/",
-    "headline": "Captain Matt: looking beyond the school brochure",
-    "intro": "The people teaching or hosting you matter as much as the vessel.",
-    "description": "The people teaching or hosting you matter as much as the vessel.",
+    "headline": "Captain Matt: share your new love of boating with the people around you",
+    "intro": "When you discover sailing, it is natural to want others to understand the appeal. The harbour, the changing view and the simple pleasure of being aboard are things you want to share. Captain Matt offers a way to bring friends, family or colleagues into that experience through private Sydney Harbour charters with Exclusive Boats.",
+    "description": "Meet Captain Matt and Exclusive Boats: private harbour occasions to share your growing love of boating, plus experienced support for owners.",
     "logo": {
       "src": "/images/supporters/captain-matt/feed-logo.webp",
       "alt": "Captain Matt logo",
@@ -117,12 +137,30 @@
         }
       }
     ],
-    "summary": "The people teaching or hosting you matter as much as the vessel.",
+    "summary": "Meet Captain Matt and Exclusive Boats: private harbour occasions to share your growing love of boating, plus experienced support for owners.",
     "sections": [
       {
-        "heading": "The practical connection",
+        "heading": "Turn an interest into an occasion",
         "paragraphs": [
-          "Captain Matt's maritime background provides a useful comparison point when considering the mix of operational experience, communication and hospitality you want from time on the water."
+          "Matt Dawe runs Exclusive Boats alongside his work as a captain and marine engineer. The business offers personalised cruises and events, with its primary 40-foot catamaran, LIFES GOOD, available for private bookings. Other vessels can be arranged when a different option better suits the group.",
+          "The occasion can be as formal or relaxed as the people organising it. Exclusive Boats advertises birthdays, family gatherings, company events, swimming and barbecues among its experiences. That gives someone with a growing enthusiasm for boats a lovely opportunity: arrange a day others can enjoy without requiring them to share every technical interest.",
+          "We like that the experience begins with the group. A celebration with relatives and an afternoon with work friends have different rhythms. A private booking creates room to discuss those preferences and shape the outing around the people coming aboard."
+        ]
+      },
+      {
+        "heading": "A captain with more than one kind of experience",
+        "paragraphs": [
+          "Matt's background includes Sydney charter work, more than 60 charter weeks with The Yacht Week and flotilla leadership in the Mediterranean and Caribbean. His work has involved both running vessels and looking after the experience of the people on them.",
+          "There is technical depth behind that hospitality. Matt's Royal Australian Navy engineering career included work involving HMAS Canberra and HMAS Success, and his experience extends across sailing catamarans, motor yachts and larger naval vessels. That combination gives his business a substantial professional foundation.",
+          "For boat owners and operators, Captain Matt also welcomes enquiries about deliveries, captaincy, engineering, vessel operations and maritime leadership. It means the relationship can have another purpose if your interest in boating eventually develops into a vessel or project of your own."
+        ]
+      },
+      {
+        "heading": "Keep enjoying the reason you started",
+        "paragraphs": [
+          "Learning at a sailing school is rewarding, but it also asks for concentration. There are unfamiliar tasks and new responsibilities to understand. A day on the water simply to enjoy it can be a welcome reminder of why the effort is worthwhile.",
+          "That is where Captain Matt fits for our readers. His charter offering gives you a way to celebrate a new interest or include the people who have been hearing all about it. His wider professional work gives owners a person to approach when they need experienced involvement in a boat.",
+          "What stands out to us is the human connection. You can get to know the captain behind the business, talk about the occasion or work you have in mind and explore the next step directly. It is boating with a recognisable person at the centre of it."
         ]
       }
     ],
@@ -138,23 +176,25 @@
     },
     "thanks": "Thank you, Captain Matt, for supporting YouSail and sharing a life built around the water.",
     "logoOnLight": false,
-    "questions": [
-      "What specific service is available for the vessel, location and dates?",
-      "Which responsibilities are included in the proposed arrangement?",
-      "What information about the boat and people involved is needed before agreeing the work?"
-    ],
     "contextLabel": "finding the right sailing school",
-    "fact": "A Sydney maritime professional with experience in command, engineering and charter hospitality."
+    "ctaLabel": "Talk to Captain Matt",
+    "editorialVersion": 2,
+    "hero": {
+      "src": "/images/supporters/captain-matt/charter.webp",
+      "alt": "Matt Dawe aboard an Exclusive Boats vessel",
+      "width": 1200,
+      "height": 1200
+    }
   },
   {
     "slug": "easy-inflatables",
     "name": "Easy Inflatables",
     "website": "https://easyinflatables.com.au/",
     "category": "Inflatable boats & yacht tenders",
-    "headline": "Easy Inflatables: the transfer from shore to school boat",
-    "intro": "Some training trips involve a transfer between shore and a moored yacht.",
-    "description": "Some training trips involve a transfer between shore and a moored yacht.",
-    "summary": "Some training trips involve a transfer between shore and a moored yacht.",
+    "headline": "Easy Inflatables: discover how a small boat can fit a big interest",
+    "intro": "The first boat you learn on does not have to define every boating day that follows. As your interest grows, you may find yourself looking at tenders, portable boats and other ways to get afloat between sailing outings. Easy Inflatables introduces an Australian-designed range with plenty of relevance to that wider curiosity.",
+    "description": "Explore Aerowave boats from Easy Inflatables, with Australian design and operator-led advice for a growing interest in portable boating and tenders.",
+    "summary": "Explore Aerowave boats from Easy Inflatables, with Australian design and operator-led advice for a growing interest in portable boating and tenders.",
     "logo": {
       "src": "/images/supporters/easy-inflatables/logo.webp",
       "alt": "Easy Inflatables logo",
@@ -194,9 +234,27 @@
     ],
     "sections": [
       {
-        "heading": "The practical connection",
+        "heading": "Several boats, several ways to enjoy them",
         "paragraphs": [
-          "Easy Inflatables is relevant to that often-overlooked part of the school experience: ask about the boarding arrangement and what happens to students' bags during the transfer."
+          "The company supplies Aerowave inflatables, including AeroCat and Viper catamarans, Sports Series monohulls and Swift tenders. They serve different kinds of ownership: a portable craft taken on holiday, a fishing boat or a smaller boat that supports life aboard a yacht.",
+          "This variety is helpful when you are still discovering what you enjoy. You can begin with the activity and look at the designs around it. A boat intended to pack away aboard a yacht has a different place in someone's life from one transported regularly in a vehicle. The range gives those distinctions a practical form.",
+          "Outboards and accessories are also available, allowing buyers to think about the complete arrangement. For newcomers to ownership, that is an important part of the appeal. It turns the purchase into a conversation about getting a usable boat together, rather than choosing a hull and working out the rest later."
+        ]
+      },
+      {
+        "heading": "A business run by skippers",
+        "paragraphs": [
+          "Easy Inflatables is led by commercial skippers, including Sean Quinn. The business puts construction quality, materials and regular use at the centre of its explanation of the Aerowave range. Its products are designed and developed in Australia, with local after-sales support forming part of the offering.",
+          "We like that operational background because smaller boats still have to be lived with. Packing, carrying and storing them can matter as much to an owner as the time spent afloat. Advice from people familiar with boating routines can help connect an appealing design with the practicalities of using it.",
+          "The company describes its development as a response to shortcomings it saw in the wider inflatable market. That gives the brand a purpose beyond simply offering another range: it wants to provide a better ownership experience through its choices of design, construction and support."
+        ]
+      },
+      {
+        "heading": "Keep finding ways to get out there",
+        "paragraphs": [
+          "A sailing school can introduce you to a community as well as a skill. You meet people with different boats, plans and favourite places, and your own picture of boating begins to expand. Portable inflatables and tenders are part of that world, often making other experiences easier to enjoy.",
+          "What appeals to us about Easy Inflatables is the invitation to start with a realistic outing. Think about where you can go, who will come and how the boat will travel with you. Then explore the range with those details in mind.",
+          "For someone whose interest in the water is growing quickly, Aerowave offers another direction to investigate. The next boating memory may begin with a smaller craft than you expected."
         ]
       }
     ],
@@ -212,23 +270,25 @@
     },
     "thanks": "Thank you, Easy Inflatables, for supporting YouSail and the little adventures that make life afloat so rewarding.",
     "logoOnLight": false,
-    "questions": [
-      "Which model and package fit the described use?",
-      "What are the packed dimensions and the requirements for carrying and boarding?",
-      "Which accessories are included, and which need to be arranged separately?"
-    ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Australian-designed Aerowave boats, practical equipment choices and a team with hands-on boating experience."
+    "ctaLabel": "Explore Aerowave boats",
+    "editorialVersion": 2,
+    "hero": {
+      "src": "/images/supporters/easy-inflatables/viper.webp",
+      "alt": "Aerowave Viper inflatable catamaran shown beside a tropical shoreline",
+      "width": 1200,
+      "height": 680
+    }
   },
   {
     "slug": "ferosticker",
     "name": "FeroSticker",
     "website": "https://ferosticker.com/",
     "category": "Compact fire suppression",
-    "headline": "FeroSticker: understanding the school's equipment briefing",
-    "intro": "A school's safety briefing should explain what students need to know about the actual boat.",
-    "description": "A school's safety briefing should explain what students need to know about the actual boat.",
-    "summary": "A school's safety briefing should explain what students need to know about the actual boat.",
+    "headline": "FeroSticker: a compact idea for the spaces you do not usually see",
+    "intro": "A first visit to a sailing school reveals how much is happening aboard even a modest yacht. Some equipment is obvious; other parts remain behind panels or inside lockers. FeroSticker is a company working in that hidden territory, producing compact automatic fire-suppression devices intended for small enclosed spaces.",
+    "description": "Meet FeroSticker, a specialist offering compact automatic suppression devices for small enclosures in boats and other applications.",
+    "summary": "Meet FeroSticker, a specialist offering compact automatic suppression devices for small enclosures in boats and other applications.",
     "logo": {
       "src": "/images/supporters/ferosticker/logo.webp",
       "alt": "FeroSticker logo",
@@ -268,9 +328,27 @@
     ],
     "sections": [
       {
-        "heading": "The practical connection",
+        "heading": "Get to know the purpose",
         "paragraphs": [
-          "FeroSticker can be a discussion point for enclosed-space equipment, but students should follow the operator's briefing rather than infer procedures from a product page."
+          "The devices activate in response to heat and release a fire-suppressing aerosol. They do not require batteries, a wired power connection or a wireless network. FeroSticker offers different models for different enclosure volumes, with boats and yachts among the applications it identifies for the range.",
+          "That combination gives the business a specific proposition. It offers a small autonomous product, selected around an actual space and installed according to its requirements. For someone beginning to explore marine equipment, the idea is easy to distinguish from the more familiar electronics and controls at the helm.",
+          "We like the fact that the company has a narrow purpose it can explain. An owner can look into the device with a particular enclosure in mind and discuss whether the product suits it. That is a more concrete starting point than a general claim about improving every aspect of a boat."
+        ]
+      },
+      {
+        "heading": "The quieter decisions owners make",
+        "paragraphs": [
+          "As you spend more time around boats, you start to notice the work that happens before anyone goes sailing. Owners make choices about systems, installations and the equipment that supports the vessel's use. Many of those choices never become the subject of a photograph or a conversation with guests.",
+          "FeroSticker belongs to that quieter part of ownership. Its compact form and autonomous operation are intended to make it a background addition to a suitable enclosed space. It is an example of a product whose appeal rests on a defined function rather than on how often an owner interacts with it.",
+          "The range includes F01, F03 and F09 models. Their different coverage volumes underline the importance of considering the installation itself. The business gives buyers a category to investigate and a way to connect the product with the space they are thinking about."
+        ]
+      },
+      {
+        "heading": "Learn the businesses as well as the boats",
+        "paragraphs": [
+          "Finding a sailing school often becomes the start of meeting the wider industry. Instructors, owners, manufacturers and specialist suppliers each contribute something different to boating. Discovering those roles makes it easier to understand where to look when a new question arises.",
+          "FeroSticker is interesting to us as one of those specialists. It takes an autonomous suppression concept and offers it in a form intended for small enclosures, including applications aboard boats. The ambition is focused, and the product has a clearly defined place in the conversation.",
+          "For readers whose learning is expanding into an interest in how vessels are equipped, it is a brand worth exploring. Some of the thoughtful decisions behind a boating day are made in the spaces you cannot see from the cockpit."
         ]
       }
     ],
@@ -285,22 +363,24 @@
       "href": "https://ferosticker.com/"
     },
     "thanks": "Thank you, FeroSticker, for supporting YouSail and our community on the water.",
-    "questions": [
-      "Is the exact enclosure and its contents within the manufacturer’s stated application?",
-      "Which model and installation conditions apply to this particular space?",
-      "What documentation and ongoing checks does the manufacturer specify?"
-    ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Discover FeroSticker, a YouSail supporter developing compact, heat-activated aerosol fire suppression devices for small enclosed spaces."
+    "ctaLabel": "Discover FeroSticker",
+    "editorialVersion": 2,
+    "hero": {
+      "src": "/images/supporters/ferosticker/f01.webp",
+      "alt": "FeroSticker F01 device and packaging",
+      "width": 1200,
+      "height": 1200
+    }
   },
   {
     "slug": "flying-fish-sailing",
     "name": "Flying Fish Sailing",
     "category": "Sailing skills & adventure",
     "website": "https://flyingfishsailing.com.au/",
-    "headline": "Flying Fish Sailing: comparing different learning formats",
-    "intro": "Compare Flying Fish with your preferred school format in mind: regular local lessons, an intensive pathway or a sailing adventure.",
-    "description": "Compare Flying Fish with your preferred school format in mind: regular local lessons, an intensive pathway or a sailing adventure.",
+    "headline": "Flying Fish Sailing: find a school that can grow with your ambitions",
+    "intro": "A sailing school can be the place where a new interest begins. It can also become the place you return to when that interest changes shape: from first lessons to skippering, from holidays to offshore passages, or from recreation to a possible career. Flying Fish Sailing offers the breadth to be part of that longer relationship.",
+    "description": "Discover Flying Fish Sailing's Sydney base, broad training pathways and sailing experiences, with room for your ambitions to develop over time.",
     "logo": {
       "src": "/brand/partners/flying-fish.webp",
       "alt": "Flying Fish Sailing logo",
@@ -338,12 +418,30 @@
         }
       }
     ],
-    "summary": "Compare Flying Fish with your preferred school format in mind: regular local lessons, an intensive pathway or a sailing adventure.",
+    "summary": "Discover Flying Fish Sailing's Sydney base, broad training pathways and sailing experiences, with room for your ambitions to develop over time.",
     "sections": [
       {
-        "heading": "The practical connection",
+        "heading": "A clear home on Sydney Harbour",
         "paragraphs": [
-          "Ask how students are grouped and what previous experience is expected so the course matches your starting point."
+          "Flying Fish operates from Middle Harbour Yacht Club, with Sydney Harbour providing a memorable setting for its training. The company offers RYA sailing courses and Yachtmaster pathways, alongside powerboating, watersports and a range of supporting maritime subjects.",
+          "That gives prospective students several reasons to make contact. You may want an introduction to sailing, a more structured progression towards skippering or advice about professional training. The business has identifiable programmes for those different ambitions, making the conversation more useful than simply asking to become a better sailor.",
+          "The company has been involved in training for more than three decades. Its wider sailing world includes offshore adventures, racing and the Whitsundays, adding experiences to the course offering. Students can see possibilities beyond the first booking, even if they are not yet sure which will appeal to them."
+        ]
+      },
+      {
+        "heading": "A school with more than sailing technique to teach",
+        "paragraphs": [
+          "Flying Fish also offers courses in navigation, marine radio, engines, maintenance and electrical systems. These subjects acknowledge that confidence aboard develops across several areas. Handling the boat is important, but understanding the vessel and the decisions involved in a trip can be equally engaging.",
+          "We like the opportunity that gives students to follow their own interests. One person may discover a fascination with navigation, another may want to understand an engine, and another may be working towards a professional goal. A broad school can help those interests develop without pretending everyone needs the same next course.",
+          "It is also appealing for owners who want to become more involved in looking after their boats. Learning about the systems aboard can make conversations with service providers more meaningful and ownership itself more rewarding."
+        ]
+      },
+      {
+        "heading": "Choose a school for the next step and the one after",
+        "paragraphs": [
+          "When comparing schools, it helps to picture the experience you want now and the possibilities you might value later. Flying Fish offers both an accessible introduction and room for more ambitious training. Its racing, adventure and charter activities add further ways to stay connected with the water.",
+          "What stands out to us is that combination of an established base and a broad horizon. There is a place to start, a range of people the programmes are intended for and a variety of sailing experiences beyond the classroom or first lesson.",
+          "If you are looking for a school that can remain useful as your plans develop, Flying Fish deserves a closer look. Bring the curiosity you have today; the next ambition may become clear once you are aboard."
         ]
       }
     ],
@@ -358,22 +456,24 @@
       "href": "https://flyingfishsailing.com.au/sailing-school/learn-to-sail/"
     },
     "thanks": "Thank you, Flying Fish Sailing, for supporting YouSail and helping more people find their place aboard.",
-    "questions": [
-      "Which programme matches the learner’s experience and intended outcome?",
-      "What prerequisites, practical activities and assessment are included?",
-      "What are the meeting arrangements, supplied equipment and booking conditions?"
-    ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Sailing education, professional pathways and adventures, with Sydney Harbour as a remarkable classroom."
+    "ctaLabel": "Explore Flying Fish courses",
+    "editorialVersion": 2,
+    "hero": {
+      "src": "/images/supporters/flying-fish-sailing/photo-1.webp",
+      "alt": "Flying Fish sailors gathered aboard a training yacht",
+      "width": 1200,
+      "height": 1200
+    }
   },
   {
     "slug": "honu",
     "name": "Honu",
     "category": "Paddleboarding & water life",
     "website": "https://honuboards.com/en-au",
-    "headline": "Honu: a paddling outing around a school visit",
-    "intro": "Travelling to a sailing school can also create time for a separate paddling outing.",
-    "description": "Travelling to a sailing school can also create time for a separate paddling outing.",
+    "headline": "Honu: a fresh way to enjoy the water between sailing days",
+    "intro": "Once time on the water becomes something you look forward to, it is tempting to find more of it. A sailing lesson may fill one weekend, while a spare morning or a family beach trip offers another opportunity. Honu makes paddleboards for that growing appetite, with an Australian identity and a range that welcomes different kinds of paddler.",
+    "description": "Meet Honu's Australian paddleboard range, giving new sailors another way to enjoy the coast, family outings and time between sailing days.",
     "logo": {
       "src": "/images/supporters/honu/logo.webp",
       "alt": "Honu Paddleboards logo",
@@ -412,12 +512,30 @@
         }
       }
     ],
-    "summary": "Travelling to a sailing school can also create time for a separate paddling outing.",
+    "summary": "Meet Honu's Australian paddleboard range, giving new sailors another way to enjoy the coast, family outings and time between sailing days.",
     "sections": [
       {
-        "heading": "The practical connection",
+        "heading": "From Bondi beginnings to thoughtful equipment",
         "paragraphs": [
-          "Honu fits that wider coastal trip, particularly when packing space is limited; check the school's schedule before assuming there will be free time on the water."
+          "The brand began at Bondi Beach in 2001 and was relaunched under Mark Travers in 2019. Its boards are designed in Sydney, with names and colours that retain a strong connection to the coast. That gives Honu an appealing personality before you begin looking at the construction behind the designs.",
+          "Mark's background as an industrial engineer helps explain the attention to that construction. Honu considers how materials, reinforcement and shape work together to influence weight, stiffness and performance. The aim is a board that serves its intended use well and remains manageable for its owner off the water.",
+          "That second part matters. A paddleboard is carried, transported, stored and prepared for use. Those moments affect whether it feels easy to fit an outing into your day. We like a design approach that considers the whole activity, rather than only the time spent paddling."
+        ]
+      },
+      {
+        "heading": "Choose the kind of paddling that interests you",
+        "paragraphs": [
+          "Honu's range includes all-round boards, touring designs and surf SUPs. The choices reflect different ways to enjoy the same broad activity. Some owners want relaxed outings close to shore, while others are drawn to longer exploration or waves. The business gives those interests room within its range.",
+          "Paddles, pumps, fins, bags and accessories support the boards. Together, they let a customer think about a complete setup that suits their plans. The company also keeps a personal connection through Mark and the team, who remain involved in helping customers make their choices.",
+          "For people newly interested in sailing, an inflatable paddleboard may have a particular attraction. It can come along on a future boating holiday and pack away when it is not being used. It offers a way to enjoy the surroundings after the sails have been put away for the day."
+        ]
+      },
+      {
+        "heading": "Let one new interest lead to another",
+        "paragraphs": [
+          "Learning at a sailing school often changes how you see a coastline. It becomes somewhere to move through and explore, rather than simply a view from the beach. Paddleboarding can add another perspective, bringing you closer to the water and giving a short outing a character of its own.",
+          "What we like about Honu is that the invitation has substance behind it. The company offers a developed range, a recognisable design identity and an engineering story that explains why the products look and behave differently.",
+          "For readers building a life with more outdoor time in it, Honu is worth getting to know. Sailing can remain the big adventure, while a paddleboard helps make room for the smaller ones in between."
         ]
       }
     ],
@@ -432,22 +550,24 @@
       "href": "https://honuboards.com/en-au/pages/about"
     },
     "thanks": "Thank you, Honu, for supporting YouSail and bringing another way to enjoy the water into our community.",
-    "questions": [
-      "Which board suits the intended paddler and outing?",
-      "What are the packed dimensions and the complete carrying weight?",
-      "Which paddle and accessories belong in the proposed setup?"
-    ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Australian paddleboard design with attention to materials, construction and the pleasure of being on the water."
+    "ctaLabel": "Explore Honu paddleboards",
+    "editorialVersion": 2,
+    "hero": {
+      "src": "/images/supporters/honu/paddling.webp",
+      "alt": "Honu paddleboarding lifestyle photograph",
+      "width": 1000,
+      "height": 654
+    }
   },
   {
     "slug": "mainstay-sailing",
     "name": "Mainstay Sailing",
     "category": "Whitsundays sailing & learning",
     "website": "https://www.mainstaysailing.com.au/",
-    "headline": "Mainstay Sailing: learning from an Airlie Beach base",
-    "intro": "For people choosing a school around a Whitsundays visit, Mainstay's Airlie Beach base is directly relevant.",
-    "description": "For people choosing a school around a Whitsundays visit, Mainstay's Airlie Beach base is directly relevant.",
+    "headline": "Mainstay Sailing: a school where the destination is part of the appeal",
+    "intro": "If you are going to make time to learn to sail, why not choose somewhere you are excited to explore? Mainstay Sailing offers RYA-accredited training from Coral Sea Marina in Airlie Beach, putting the Whitsundays at the centre of the experience. It is a school for people who want their learning to come with a real sense of being away on the water.",
+    "description": "Explore Mainstay Sailing in the Whitsundays, with RYA courses, private training and a destination that makes the next step aboard inviting.",
     "logo": {
       "src": "/images/supporters/mainstay-sailing/logo.svg",
       "alt": "Mainstay Sailing logo",
@@ -486,12 +606,30 @@
         }
       }
     ],
-    "summary": "For people choosing a school around a Whitsundays visit, Mainstay's Airlie Beach base is directly relevant.",
+    "summary": "Explore Mainstay Sailing in the Whitsundays, with RYA courses, private training and a destination that makes the next step aboard inviting.",
     "sections": [
       {
-        "heading": "The practical connection",
+        "heading": "Find your place in the progression",
         "paragraphs": [
-          "Discuss the training format, marina meeting arrangements and whether your companion wants the same learning experience before booking around a holiday."
+          "Mainstay's course range extends from Competent Crew through to Yachtmaster. That creates different starting points for people comparing schools. You may be new to sailing, comfortable as crew or ready to work towards more advanced responsibilities. The offering gives those stages a recognisable structure.",
+          "Practical tuition is central to how the business presents its courses. Students learn in the setting of an actual sailing experience, with the boat, the crew and the surroundings forming part of the day. The Whitsundays add a strong reason to be there, giving the work of learning an appealing backdrop.",
+          "We like that combination because choosing a school is about more than matching a course title. It is also about where you want to spend your time and the kind of experience that will motivate you. A place you genuinely want to sail can make taking the first step feel easier."
+        ]
+      },
+      {
+        "heading": "Space for a more individual conversation",
+        "paragraphs": [
+          "Mainstay also offers private RYA training. That gives prospective students an option when their aims do not fit neatly into a general enquiry. Experience, confidence and future plans vary, and a private booking allows the discussion to begin with the people involved.",
+          "For couples looking for a different kind of trip, the company advertises a Couples Sailing Escape. It is a separate reason to approach the business, reflecting the fact that a sailing experience can be about shared time and enjoying a destination as well as formal progression.",
+          "Those options make Mainstay interesting beyond a single course booking. There is a training pathway, a more personal tuition option and a private experience to explore. Each responds to a different reason someone might want to get aboard in the Whitsundays."
+        ]
+      },
+      {
+        "heading": "Bring the experience home with you",
+        "paragraphs": [
+          "A well-chosen period of sailing can stay with you in several ways. There are the places you remember, the people you met and the new things you feel able to do. For someone choosing a school, that is an appealing return on time set aside to learn.",
+          "Mainstay's strength as an introduction is its clear identity: an Airlie Beach base, RYA training and private sailing options in a destination with a powerful appeal of its own. It gives students enough substance to begin imagining the experience before they book.",
+          "What we appreciate is that learning and enjoyment are allowed to belong together. You can take the course seriously while looking forward to the surroundings. If the Whitsundays are already on your sailing wish list, Mainstay offers a practical way to make them part of your next step."
         ]
       }
     ],
@@ -506,13 +644,15 @@
       "href": "https://www.mainstaysailing.com.au/"
     },
     "thanks": "Thank you, Mainstay Sailing, for supporting YouSail and making the next step into sailing so inviting.",
-    "questions": [
-      "Is a structured course or a private experience the better fit?",
-      "What boat, meeting arrangements and inclusions apply to the proposed dates?",
-      "How can different experience levels and learning interests be accommodated?"
-    ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Practical sailing tuition and personal experiences from Coral Sea Marina, Airlie Beach."
+    "ctaLabel": "Sail with Mainstay",
+    "editorialVersion": 2,
+    "hero": {
+      "src": "/images/supporters/mainstay-sailing/course.webp",
+      "alt": "Mainstay Sailing yacht under sail beside a green Whitsundays island",
+      "width": 960,
+      "height": 540
+    }
   },
   {
     "slug": "shakesure",
@@ -585,7 +725,15 @@
       "What are the differences between the proposed collections and their documentation?"
     ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Specialist anchor chain, a personal approach to windlass compatibility, and three distinct collections to explore: CORE, ELITE and APEX."
+    "fact": "Specialist anchor chain, a personal approach to windlass compatibility, and three distinct collections to explore: CORE, ELITE and APEX.",
+    "editorialVersion": 1,
+    "ctaLabel": "Explore ShakeSure anchor chains",
+    "hero": {
+      "src": "/images/supporters/shakesure/chain.webp",
+      "alt": "ShakeSure electropolished stainless steel anchor chain",
+      "width": 900,
+      "height": 1200
+    }
   },
   {
     "slug": "sos-marine",
@@ -659,7 +807,15 @@
       "What instructions, familiarisation and ongoing checks accompany the equipment?"
     ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Australian marine safety specialists with experience across recreational, commercial and professional operations."
+    "fact": "Australian marine safety specialists with experience across recreational, commercial and professional operations.",
+    "editorialVersion": 1,
+    "ctaLabel": "Discover SOS Marine",
+    "hero": {
+      "src": "/images/supporters/sos-marine/dan-buoy-detail.webp",
+      "alt": "SOS Marine Dan Buoy product photograph",
+      "width": 1158,
+      "height": 800
+    }
   },
   {
     "slug": "survival-kit",
@@ -727,7 +883,15 @@
       "What additional activity-specific provision needs to be arranged independently?"
     ],
     "contextLabel": "finding the right sailing school",
-    "fact": "An Australian family business bringing clear organisation and thoughtful kit design to boating adventures."
+    "fact": "An Australian family business bringing clear organisation and thoughtful kit design to boating adventures.",
+    "editorialVersion": 1,
+    "ctaLabel": "Explore SURVIVAL first-aid kits",
+    "hero": {
+      "src": "/images/supporters/ocean-warrior.jpg",
+      "alt": "SURVIVAL Ocean Warrior kit and waterproof dry bag",
+      "width": 900,
+      "height": 900
+    }
   },
   {
     "slug": "water-makers-australia",
@@ -800,6 +964,14 @@
       "How will routine servicing and component access work on this boat?"
     ],
     "contextLabel": "finding the right sailing school",
-    "fact": "Marine watermakers with modular layouts, serviceable components and direct Australian support."
+    "fact": "Marine watermakers with modular layouts, serviceable components and direct Australian support.",
+    "editorialVersion": 1,
+    "ctaLabel": "Talk to Water Makers Australia",
+    "hero": {
+      "src": "/images/supporters/water-makers-australia/small.webp",
+      "alt": "Water Makers Australia single-membrane system and its components",
+      "width": 1200,
+      "height": 1200
+    }
   }
 ]
