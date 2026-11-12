@@ -996,5 +996,255 @@
       "width": 1200,
       "height": 1200
     }
+  },
+  {
+    "slug": "bushman",
+    "name": "Bushman",
+    "website": "https://bushman.com.au/",
+    "category": "Portable fridge/freezers",
+    "logo": {
+      "src": "/images/supporters/bushman/logo.png",
+      "alt": "Bushman logo",
+      "width": 1200,
+      "height": 630
+    },
+    "logoOnLight": true,
+    "hero": {
+      "src": "/images/supporters/bushman/SC35-52_Camping.webp",
+      "alt": "A Bushman Original portable fridge/freezer at camp",
+      "width": 2000,
+      "height": 1620
+    },
+    "ctaLabel": "Compare Bushman portable fridge/freezers",
+    "editorialVersion": 4,
+    "headline": "Bushman fridge/freezers for a school's cruising yacht",
+    "intro": "Lunch matters on a teaching boat. When the morning's last tack takes a few attempts, a crew is much happier if lunch is cold, packed and easy to reach. Bushman's portable fridge/freezers give a school another place for provisions, whether the training yacht has a tiny galley fridge or only an insulated box.",
+    "summary": "Lunch matters on a teaching boat. When the morning's last tack takes a few attempts, a crew is much happier if lunch is cold, packed and easy to reach. Bushman's portable fridge/freezers give a school another place for provisions, whether the training yacht has a tiny galley fridge or only an insulated box.",
+    "description": "Lunch matters on a teaching boat. When the morning's last tack takes a few attempts, a crew is much happier if lunch is cold, packed and easy to reach. Bushman's portable fridge/freezers give a school another place for provisions, whether the training yacht has a tiny galley fridge or only an insulated box.",
+    "sections": [
+      {
+        "heading": "A fridge that can move between courses",
+        "paragraphs": [
+          "An instructor can pack a chest on land, chill it using the Original Bushman's supplied mains adaptor and run it from a suitable 12 or 24 volt supply once aboard. Think about the carry first. The Original weighs 22.5 kg empty in its 35 litre configuration. On a yacht reached by a narrow boarding gate, it may be far easier to secure the chest in place and bring the shopping aboard separately."
+        ]
+      },
+      {
+        "heading": "Where the baskets earn their keep",
+        "paragraphs": [
+          "Use one basket for today's sandwiches and keep tomorrow's dinner underneath. When several learners are sharing an unfamiliar galley, lifting lunch out together saves a surprisingly awkward search. We like the adjustable capacity for schools alternating between a small private lesson and a longer cruise. Check how much headroom the taller setup leaves under a berth or shelf before counting on the extra litres.",
+          "Ask Bushman about the temperatures you intend to hold, the space available for ventilation and your overnight battery allowance. A short course with chilled provisions and a multi-day trip with frozen dinners make different demands on the same chest."
+        ]
+      }
+    ],
+    "tiles": [
+      {
+        "image": {
+          "src": "/images/supporters/bushman/SC35-52_Camping.webp",
+          "alt": "A Bushman Original portable fridge/freezer at camp",
+          "width": 2000,
+          "height": 1620
+        }
+      }
+    ]
+  },
+  {
+    "slug": "boat-names-australia",
+    "name": "Boat Names Australia",
+    "website": "https://www.boatnames.com.au/",
+    "category": "Boat lettering",
+    "logo": {
+      "src": "/images/supporters/boat-names-australia/logo.png",
+      "alt": "Boat Names Australia logo",
+      "width": 943,
+      "height": 220
+    },
+    "logoOnLight": true,
+    "hero": {
+      "src": "/images/supporters/boat-names-australia/photo.webp",
+      "alt": "Boat lettering from Boat Names Australia",
+      "width": 900,
+      "height": 413
+    },
+    "ctaLabel": "Design your boat lettering",
+    "editorialVersion": 4,
+    "headline": "Custom boat lettering for the school's next fleet refit",
+    "intro": "A fleet can look like it belongs together even when the boats came from different yards. A shared lettering style and a consistent accent colour go a long way. Boat Names Australia makes vinyl boat names, graphics and rego stickers, with a design preview that lets a school try the look before applying anything to the hulls.",
+    "summary": "A fleet can look like it belongs together even when the boats came from different yards. A shared lettering style and a consistent accent colour go a long way. Boat Names Australia makes vinyl boat names, graphics and rego stickers, with a design preview that lets a school try the look before applying anything to the hulls.",
+    "description": "A fleet can look like it belongs together even when the boats came from different yards. A shared lettering style and a consistent accent colour go a long way. Boat Names Australia makes vinyl boat names, graphics and rego stickers, with a design preview that lets a school try the look before applying anything to the hulls.",
+    "sections": [
+      {
+        "heading": "Design for the smallest usable panel",
+        "paragraphs": [
+          "Take the narrowest dinghy quarter and the longest proposed name. Try that combination first. Leave room around fittings, seams and covers, then test the actual lettering against a background close to the hull colour. A design that reads clearly from the instructor's position on the pontoon usually makes a stronger starting point than one chosen close up on a laptop."
+        ]
+      },
+      {
+        "heading": "A smarter handover for the maintenance crew",
+        "paragraphs": [
+          "Photograph each hull square-on and keep the panel measurements with the boat's name. For new registration lettering, the characters arrive aligned on application paper. For a school crest or an old emblem you want to reproduce, the design team can work from a visual brief. Include the best original artwork you have and explain where it will sit.",
+          "What we like is how much can be agreed before the first boat is taken out of service. Staff can see the names, colours and dimensions together, order a trial design, then use the result on the actual hull to make the final fleet decision."
+        ]
+      }
+    ],
+    "tiles": [
+      {
+        "image": {
+          "src": "/images/supporters/boat-names-australia/photo.webp",
+          "alt": "Boat lettering from Boat Names Australia",
+          "width": 900,
+          "height": 413
+        }
+      }
+    ]
+  },
+  {
+    "slug": "seaair",
+    "name": "SeaAir",
+    "website": "https://seaair.com/",
+    "category": "Marine air conditioning",
+    "logo": {
+      "src": "/images/supporters/seaair/logo.png",
+      "alt": "SeaAir logo",
+      "width": 4791,
+      "height": 1529
+    },
+    "logoOnLight": true,
+    "hero": {
+      "src": "/images/supporters/seaair/photo.webp",
+      "alt": "Marine air conditioning from SeaAir",
+      "width": 900,
+      "height": 900
+    },
+    "ctaLabel": "Discuss your cabin with SeaAir",
+    "editorialVersion": 4,
+    "headline": "SeaAir cabin cooling for liveaboard teaching yachts",
+    "intro": "A school yacht works hard below deck. It can be a classroom at four, a galley at six and a shared sleeping space by nine. SeaAir makes DC air conditioning and heating for boats, giving an operator a way to cool a cabin from a suitable battery system. The most useful starting point is the part of the teaching day when people actually need relief from the heat.",
+    "summary": "A school yacht works hard below deck. It can be a classroom at four, a galley at six and a shared sleeping space by nine. SeaAir makes DC air conditioning and heating for boats, giving an operator a way to cool a cabin from a suitable battery system. The most useful starting point is the part of the teaching day when people actually need relief from the heat.",
+    "description": "A school yacht works hard below deck. It can be a classroom at four, a galley at six and a shared sleeping space by nine. SeaAir makes DC air conditioning and heating for boats, giving an operator a way to cool a cabin from a suitable battery system. The most useful starting point is the part of the teaching day when people actually need relief from the heat.",
+    "sections": [
+      {
+        "heading": "Follow the air to the bunk",
+        "paragraphs": [
+          "A comfortable saloon during a briefing doesn't tell you what the aft cabin will feel like with its door shut. Sketch the spaces occupied overnight, where cool air could enter and how it can return. Take the drawing to SeaAir with the operating voltage and the available installation space. Those details help shape a more realistic discussion than yacht length alone."
+        ]
+      },
+      {
+        "heading": "Give the skipper a clear power budget",
+        "paragraphs": [
+          "SeaAir's output settings let a skipper choose between bringing the temperature down and maintaining sleeping comfort. The amp-hour limit is the feature we like for a boat with changing instructors. Agree on an allowance for cooling alongside the yacht's other electrical loads and brief the next skipper on the setting.",
+          "A school comparing systems should ask about draw at the proposed overnight setting, access for service and the charging available between classes. A yacht that returns to its berth every evening has a different working week from one that spends several nights on anchor."
+        ]
+      }
+    ],
+    "tiles": [
+      {
+        "image": {
+          "src": "/images/supporters/seaair/photo.webp",
+          "alt": "Marine air conditioning from SeaAir",
+          "width": 900,
+          "height": 900
+        }
+      }
+    ]
+  },
+  {
+    "slug": "poclink",
+    "name": "Poclink",
+    "website": "https://poclink.com/",
+    "category": "Push-to-talk radios",
+    "logo": {
+      "src": "/images/supporters/poclink/logo.png",
+      "alt": "Poclink logo",
+      "width": 344,
+      "height": 266
+    },
+    "logoOnLight": true,
+    "hero": {
+      "src": "/images/supporters/poclink/photo.webp",
+      "alt": "Push-to-talk radios from Poclink",
+      "width": 900,
+      "height": 900
+    },
+    "ctaLabel": "Compare Poclink radios for your team",
+    "editorialVersion": 4,
+    "headline": "Poclink radios for the sailing school reception and launch team",
+    "intro": "A parent arrives at reception with a borrowed wetsuit. Their child's class has already gone to the beach. The office needs one quick answer from the instructor, and nobody wants to leave the launch unattended to walk back. Poclink handhelds carry push-to-talk voice calls over mobile networks, a useful arrangement for the people keeping a sailing school moving on land.",
+    "summary": "A parent arrives at reception with a borrowed wetsuit. Their child's class has already gone to the beach. The office needs one quick answer from the instructor, and nobody wants to leave the launch unattended to walk back. Poclink handhelds carry push-to-talk voice calls over mobile networks, a useful arrangement for the people keeping a sailing school moving on land.",
+    "description": "A parent arrives at reception with a borrowed wetsuit. Their child's class has already gone to the beach. The office needs one quick answer from the instructor, and nobody wants to leave the launch unattended to walk back. Poclink handhelds carry push-to-talk voice calls over mobile networks, a useful arrangement for the people keeping a sailing school moving on land.",
+    "sections": [
+      {
+        "heading": "Decide who needs to hear the call",
+        "paragraphs": [
+          "A launch delay affects several staff. A question about a student's lost gear may need just one person. Poclink offers group and private calling, so a school can keep a general team channel useful instead of making every conversation everybody's business. A handset handed from one shift to the next also keeps the job attached to a role, without relying on volunteers' personal phone numbers."
+        ]
+      },
+      {
+        "heading": "Walk the route with a pair",
+        "paragraphs": [
+          "Take one handset to the water's edge and leave the other in the office. Test from the rigging area, the storage shed and the overflow classroom. The Lite relies on 4G; the Pro can also use Wi-Fi. If the school has a good wireless network inside its buildings, check where that coverage ends and how the radios perform outside.",
+          "We'd send Poclink the town, the number of staff and a rough site plan before equipping a team. Confirm Australian cellular coverage and service terms for the handsets. Use them for shoreside coordination alongside the school's existing arrangements for marine radio afloat."
+        ]
+      }
+    ],
+    "tiles": [
+      {
+        "image": {
+          "src": "/images/supporters/poclink/photo.webp",
+          "alt": "Push-to-talk radios from Poclink",
+          "width": 900,
+          "height": 900
+        }
+      }
+    ]
+  },
+  {
+    "slug": "acebeam",
+    "name": "Acebeam",
+    "website": "https://www.acebeam.com/",
+    "category": "Torches and headlamps",
+    "logo": {
+      "src": "/images/supporters/acebeam/logo.png",
+      "alt": "Acebeam logo",
+      "width": 293,
+      "height": 48
+    },
+    "logoOnLight": true,
+    "hero": {
+      "src": "/images/supporters/acebeam/photo.webp",
+      "alt": "Torches and headlamps from Acebeam",
+      "width": 500,
+      "height": 300
+    },
+    "ctaLabel": "Compare Acebeam headlamps and torches",
+    "editorialVersion": 4,
+    "headline": "Acebeam lighting for instructors who teach after dark",
+    "intro": "An evening theory class may finish in a lit classroom, but somebody still has to get the training boat ready for the morning. Acebeam makes headlamps and handheld torches. For a sailing school, the attraction is the choice between a light that leaves both hands free and one an instructor can point exactly where a student needs to look.",
+    "summary": "An evening theory class may finish in a lit classroom, but somebody still has to get the training boat ready for the morning. Acebeam makes headlamps and handheld torches. For a sailing school, the attraction is the choice between a light that leaves both hands free and one an instructor can point exactly where a student needs to look.",
+    "description": "An evening theory class may finish in a lit classroom, but somebody still has to get the training boat ready for the morning. Acebeam makes headlamps and handheld torches. For a sailing school, the attraction is the choice between a light that leaves both hands free and one an instructor can point exactly where a student needs to look.",
+    "sections": [
+      {
+        "heading": "Show the fitting without blocking the view",
+        "paragraphs": [
+          "Imagine explaining the route of a reefing pennant under a boom cover. With a compact handheld, the instructor can light the turning point from one side while the learner follows the line with both hands. A low setting is often easier on the eyes than a bright beam reflecting straight back from the deck. Compare the beam at arm's length as well as across the yard."
+        ]
+      },
+      {
+        "heading": "Leave the headlamp with the work kit",
+        "paragraphs": [
+          "For tying down boats or sorting out a stubborn cover, a headlamp puts the light where the instructor is looking. We like that a school can choose a headlamp for the person doing the work and a different handheld for the duty desk. One can stay with the toolkit while the other is signed out by whoever locks up.",
+          "Ask Acebeam about runtime on a usable setting, charging connections and how to operate the controls with cold fingers. For a school handing kit between instructors, a clearly marked charging spot is as useful as the torch's top brightness setting."
+        ]
+      }
+    ],
+    "tiles": [
+      {
+        "image": {
+          "src": "/images/supporters/acebeam/photo.webp",
+          "alt": "Torches and headlamps from Acebeam",
+          "width": 500,
+          "height": 300
+        }
+      }
+    ]
   }
 ]
