@@ -1,4 +1,5 @@
 import { NetworkSupporters } from "./network-supporters";
+import Script from "next/script";
 import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import '@phosphor-icons/web/duotone';
@@ -103,6 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <Script src="https://yousail.com.au/network-promotions.v1.js" strategy="afterInteractive" />
         <JsonLd nodes={[organization(), website()]} />
         <a className="skip-link" href="#main-content">
           Skip to main content
