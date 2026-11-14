@@ -1,7 +1,7 @@
 import { NetworkSupporters } from "./network-supporters";
 import Script from "next/script";
 import type { Metadata, Viewport } from 'next';
-import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
+import localFont from 'next/font/local';
 import '@phosphor-icons/web/duotone';
 import { siteUrl } from '@/lib/site';
 import SiteNav from '@/components/SiteNav';
@@ -11,17 +11,19 @@ import { organization, website } from '@/lib/schema';
 import './site.css';
 
 // Self-hosted so the site never waits on a font CDN at runtime.
-const sans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
+const sans = localFont({
+  src: [
+    { path: './fonts/plusjakartasans-normal.ttf', weight: '400 700', style: 'normal' },
+    { path: './fonts/plusjakartasans-italic.ttf', weight: '400 700', style: 'italic' },
+  ],
   display: 'swap',
   variable: '--font-sans',
 });
-const serif = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  style: ['normal', 'italic'],
+const serif = localFont({
+  src: [
+    { path: './fonts/playfairdisplay-normal.ttf', weight: '400 500', style: 'normal' },
+    { path: './fonts/playfairdisplay-italic.ttf', weight: '400 500', style: 'italic' },
+  ],
   display: 'swap',
   variable: '--font-serif',
 });
