@@ -194,6 +194,7 @@ export default async function SchoolProfilePage({ params }: Params) {
             <h3>Contact the school</h3>
             <p>Ask about the exact course, training boat, student-to-instructor ratio, prerequisites and what certificate is issued.</p>
             <div className="profile-contact">
+              {school.sourceUrl && <a href={school.sourceUrl}>View this school on YouSail</a>}
               {school.phone && <a href={`tel:${school.phone.replace(/[^+0-9]/g, '')}`}><i className="ph-duotone ph-phone" /> {school.phone}</a>}
               {school.email && <a href={`mailto:${school.email}`}><i className="ph-duotone ph-envelope" /> {school.email}</a>}
               {school.website && <a href={school.website} rel="noopener" target="_blank"><i className="ph-duotone ph-globe" /> School website</a>}
