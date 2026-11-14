@@ -2,7 +2,7 @@ name: Sync YouSail sailing school facts
 
 on:
   push:
-    branches: [yousail-listing-refresh]
+    tags: ['yousail-listing-refresh-*']
   workflow_dispatch:
   schedule:
     # Weekly content refresh, staggered on Sunday morning in Sydney.
