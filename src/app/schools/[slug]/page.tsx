@@ -1,3 +1,4 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,7 +11,7 @@ import SchoolMark from '@/components/SchoolMark';
 import HelpTip from '@/components/HelpTip';
 import { cities } from '@/lib/cities';
 import { educationalOrganization, webPage } from '@/lib/schema';
-import { schools, schoolsInCity, schoolsInState } from '@/lib/schools';
+
 import { inDepthArticles } from '@/lib/in-depth';
 import { stateByKey } from '@/lib/states';
 
@@ -61,13 +62,10 @@ function parseEditorial(markdown: string | undefined): Map<string, EditorialSect
   return sections;
 }
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return schools.flatMap((school) => school.sourceSlug ? [{ slug: school.sourceSlug }] : []);
-}
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { schools } = await getLiveSchools();
   const { slug } = await params;
   const school = schools.find((entry) => entry.sourceSlug === slug);
   if (!school) return {};
@@ -86,6 +84,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function SchoolProfilePage({ params }: Params) {
+  const { schools, schoolsInCity, schoolsInState } = await getLiveSchools();
   const { slug } = await params;
   const school = schools.find((entry) => entry.sourceSlug === slug);
   if (!school) notFound();

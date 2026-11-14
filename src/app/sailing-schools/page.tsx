@@ -1,9 +1,10 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageSlot from '@/components/ImageSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import AustraliaChart from '@/components/AustraliaChart';
-import { schoolsInState } from '@/lib/schools';
+
 import { states } from '@/lib/states';
 import { mapMarkers, mapRegions } from '@/lib/geo';
 import { cities } from '@/lib/cities';
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/sailing-schools/' },
 };
 
-export default function SchoolsIndexPage() {
+export default async function SchoolsIndexPage() {
+  const { schoolsInState } = await getLiveSchools();
   return (
     <>
       <section className="hero short">

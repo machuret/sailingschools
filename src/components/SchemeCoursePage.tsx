@@ -1,3 +1,4 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CourseImage from '@/components/CourseImage';
@@ -5,7 +6,7 @@ import JsonLd from '@/components/JsonLd';
 import CourseDetails from '@/components/CourseDetails';
 import { schemeDetail } from '@/lib/all-course-details';
 import { course as courseSchema } from '@/lib/schema';
-import { schoolsWithScheme } from '@/lib/schools';
+
 import { schemeNames, coursesInScheme, type SchemeCourse } from '@/lib/scheme-courses';
 
 const OFFICIAL_SCHEME_SOURCES = {
@@ -16,7 +17,8 @@ const OFFICIAL_SCHEME_SOURCES = {
 } as const;
 
 /** Shared body for every scheme course page. One template, four namespaces. */
-export default function SchemeCoursePage({ record }: { record: SchemeCourse }) {
+export default async function SchemeCoursePage({ record }: { record: SchemeCourse }) {
+  const { schoolsWithScheme } = await getLiveSchools();
   const schemeName = schemeNames[record.scheme];
   const detail = schemeDetail(record.scheme, record.slug);
   const siblings = coursesInScheme(record.scheme).filter((c) => c.slug !== record.slug);

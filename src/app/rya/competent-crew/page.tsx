@@ -1,8 +1,9 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CourseImage from '@/components/CourseImage';
 import SchoolCard from '@/components/SchoolCard';
-import { schoolsWithScheme } from '@/lib/schools';
+
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import CourseDetails from '@/components/CourseDetails';
@@ -17,9 +18,10 @@ export const metadata: Metadata = {
 };
 
 /** RYA schools, from the verified directory — no second copy to drift. */
-const RYA_SCHOOLS = schoolsWithScheme('RYA');
 
-export default function CoursePage() {
+export default async function CoursePage() {
+  const { schoolsWithScheme } = await getLiveSchools();
+  const RYA_SCHOOLS = schoolsWithScheme('RYA');
   return (
     <>
       <JsonLd

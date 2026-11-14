@@ -386,9 +386,7 @@ const editorialSchools: School[] = [
 ];
 
 type YouSailSchool = School & { sourceSlug: string; sourceUrl: string; sourceUpdatedAt?: string; services?: string[] };
-const governedSchools = youSailSnapshot.schools as YouSailSchool[];
-
-export const schools: School[] = mergeGovernedFacts(editorialSchools, governedSchools);
+export const governedSchools = youSailSnapshot.schools as YouSailSchool[];
 
 function mergeGovernedFacts(editorial: School[], governed: YouSailSchool[]): School[] {
   const byWebsite = new Map(editorial.filter((school) => school.website).map((school) => [normaliseWebsite(school.website!), school]));
@@ -432,7 +430,6 @@ function formatChecked(value: string | undefined): string | undefined {
   return Number.isNaN(parsed.valueOf()) ? value : parsed.toLocaleDateString('en-AU', { month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
-export const schoolsInState = (state: StateKey) => schools.filter((s) => s.state === state);
 const cityLocationMatchers: Readonly<Record<string, RegExp>> = {
   "new-south-wales/sydney": /sydney|rushcutters|darling harbour|lavender bay|balmain|mosman|middle harbour|drummoyne|botany|cronulla/iu,
   "new-south-wales/pittwater": /pittwater|newport|broken bay|hawkesbury|barrenjoey/iu,
@@ -449,10 +446,16 @@ const cityLocationMatchers: Readonly<Record<string, RegExp>> = {
   "tasmania/hobart": /hobart|derwent|sandy bay|d.entrecasteaux|storm bay/iu,
 };
 
-export const schoolsInCity = (state: StateKey, city: string) => {
-  const matcher = cityLocationMatchers[`${state}/${city}`];
-  if (!matcher) return [];
-  return schoolsInState(state).filter((school) => matcher.test(school.region ?? ""));
-};
-export const schoolsWithScheme = (scheme: string) =>
-  schools.filter((s) => s.scheme?.includes(scheme));
+export function schoolDirectory(records: YouSailSchool[]) {
+  const schools = mergeGovernedFacts(editorialSchools, records);
+  const schoolsInState = (state: StateKey) => schools.filter(school => school.state === state);
+  const schoolsInCity = (state: StateKey, city: string) => {
+    const matcher = cityLocationMatchers[`${state}/${city}`];
+    if (!matcher) return [];
+    return schoolsInState(state).filter((school) => matcher.test(school.region ?? ""));
+  };
+  const schoolsWithScheme = (scheme: string) =>
+    schools.filter((s) => s.scheme?.includes(scheme));
+  return { schools, schoolsInState, schoolsInCity, schoolsWithScheme };
+}
+export const { schools, schoolsInState, schoolsInCity, schoolsWithScheme } = schoolDirectory(governedSchools);

@@ -1,3 +1,4 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -6,7 +7,7 @@ import { webPage } from '@/lib/schema';
 import { states } from '@/lib/states';
 import { cities } from '@/lib/cities';
 import { cityCoursesIn, cityCourseTopicBySlug } from '@/lib/city-courses';
-import { schoolsInState } from '@/lib/schools';
+
 import { courses, courseCategories, coursesInCategory } from '@/lib/courses';
 import { faqPages } from '@/lib/faq';
 import { schemeNames, coursesInScheme, type SchemeKey } from '@/lib/scheme-courses';
@@ -47,7 +48,8 @@ function Item({ href, children }: { href: string; children: React.ReactNode }) {
   );
 }
 
-export default function HtmlSitemapPage() {
+export default async function HtmlSitemapPage() {
+  const { schoolsInState } = await getLiveSchools();
   return (
     <>
       <JsonLd

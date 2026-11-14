@@ -1,3 +1,4 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,7 +8,6 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { inDepthArticles, inDepthBySlug } from '@/lib/in-depth';
 import { article as articleSchema, breadcrumbs, webPage } from '@/lib/schema';
-import { schools } from '@/lib/schools';
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function InDepthArticlePage({ params }: Params) {
+  const { schools } = await getLiveSchools();
   const feature = inDepthBySlug((await params).slug);
   if (!feature) notFound();
 

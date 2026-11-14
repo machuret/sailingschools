@@ -1,7 +1,8 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import Link from 'next/link';
-import { schools } from '@/lib/schools';
 
-export default function SchoolLogoRail() {
+export default async function SchoolLogoRail() {
+  const { schools } = await getLiveSchools();
   const entries = schools.filter((school) => school.logo && school.profile && school.freshness !== 'unverified');
   if (entries.length < 2) return null;
 

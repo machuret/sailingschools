@@ -1,3 +1,4 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -7,7 +8,7 @@ import SchoolCard from '@/components/SchoolCard';
 import JsonLd from '@/components/JsonLd';
 import { faqPage, itemList, webPage } from '@/lib/schema';
 import { cityBySlug, cityBySlugOnly } from '@/lib/cities';
-import { schoolsInCity } from '@/lib/schools';
+
 import {
   cityCourses,
   cityCourseFor,
@@ -44,6 +45,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function CityCoursePage({ params }: Params) {
+  const { schoolsInCity } = await getLiveSchools();
   const { state, city, topic } = await params;
   const found = load(state, city, topic);
   if (!found) notFound();

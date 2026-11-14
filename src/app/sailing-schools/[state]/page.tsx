@@ -1,3 +1,4 @@
+import { getLiveSchools } from '@/lib/live-schools';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -6,7 +7,7 @@ import SchoolCard from '@/components/SchoolCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { itemList, webPage } from '@/lib/schema';
-import { schoolsInState } from '@/lib/schools';
+
 import { states, stateByKey } from '@/lib/states';
 import { citiesInState } from '@/lib/cities';
 
@@ -44,6 +45,7 @@ const COURSE_TYPES = [
 ];
 
 export default async function StatePage({ params }: Params) {
+  const { schoolsInState } = await getLiveSchools();
   const { state } = await params;
   const record = stateByKey(state);
   if (!record) notFound();
