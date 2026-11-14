@@ -1,14 +1,14 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-11-14T10:25:32.350Z",
+    "syncedAt": "2026-11-14T11:57:46.284Z",
     "total": 20
   },
   "schools": [
     {
       "sourceSlug": "adventure-sailing",
       "sourceUrl": "https://yousail.com.au/directory/adventure-sailing",
-      "sourceUpdatedAt": "2026-09-28T05:42:27.713894+00:00",
+      "sourceUpdatedAt": "2026-11-14T11:57:03.820483+00:00",
       "name": "Adventure Sailing",
       "featured": true,
       "state": "western-australia",
