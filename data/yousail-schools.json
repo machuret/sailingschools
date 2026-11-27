@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-11-23T10:12:22.495Z",
+    "syncedAt": "2026-11-27T06:40:18.747Z",
     "total": 20
   },
   "schools": [
@@ -61,7 +61,7 @@
     {
       "sourceSlug": "mainstay-sailing",
       "sourceUrl": "https://yousail.com.au/directory/mainstay-sailing",
-      "sourceUpdatedAt": "2026-09-28T06:06:48.210507+00:00",
+      "sourceUpdatedAt": "2026-11-27T06:39:40.16565+00:00",
       "name": "Mainstay Sailing",
       "featured": true,
       "state": "queensland",
@@ -69,7 +69,7 @@
       "website": "https://www.mainstaysailing.com.au/",
       "phone": "+61 402 429 152",
       "email": "info@mainstaysailing.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/1a97ce39-0846-425e-9f9d-d0243e3ef0b5?v=1788606865",
+      "logo": "https://yousail.com.au/api/directory/image/c624dbba-84d1-4320-8819-c894d36c01a6?v=1795761580",
       "featureImage": "https://yousail.com.au/api/editorial-images/6e74ddfc-c22f-4f7d-bb6b-a6674f59e7fa?v=1788607048",
       "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
@@ -291,7 +291,7 @@
     {
       "sourceSlug": "sailing-eventide",
       "sourceUrl": "https://yousail.com.au/directory/sailing-eventide",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
+      "sourceUpdatedAt": "2026-11-27T06:40:08.018373+00:00",
       "name": "Sailing Eventide",
       "featured": false,
       "state": "western-australia",
@@ -299,7 +299,7 @@
       "website": "https://www.sailingeventide.com.au/",
       "phone": "0419 968 595",
       "email": "info@sailingeventide.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/3237da07-0d11-4185-8d48-bee27cfd45b9?v=1788605900",
+      "logo": "https://yousail.com.au/api/directory/image/a2983cad-d328-4578-a881-50180edaa25f?v=1795761608",
       "featureImage": "https://yousail.com.au/api/editorial-images/2bb85733-1d42-4679-879d-d622f7bdea26?v=1788605932",
       "checked": "2026-09-18T14:59:03.78641+00:00",
       "freshness": "current",
@@ -394,7 +394,7 @@
     {
       "sourceSlug": "sunshine-sailing-australia",
       "sourceUrl": "https://yousail.com.au/directory/sunshine-sailing-australia",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
+      "sourceUpdatedAt": "2026-11-27T06:39:35.937489+00:00",
       "name": "Sunshine Sailing Australia",
       "featured": false,
       "state": "queensland",
@@ -402,7 +402,7 @@
       "website": "https://learn2sail.com.au/",
       "phone": "+61 7 5478 2299",
       "email": "sailing@learn2sail.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/1678be9f-866c-41ab-bb13-102512db9ed3?v=1788606683",
+      "logo": "https://yousail.com.au/api/directory/image/ea38a031-a5a7-4f1c-b49e-935a62140bef?v=1795761576",
       "featureImage": "https://yousail.com.au/api/editorial-images/de0c4b70-ebfc-491b-abf2-0b79ec4e7ddb?v=1788605460",
       "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
@@ -496,7 +496,7 @@
     {
       "sourceSlug": "yachtmaster-sailing-school",
       "sourceUrl": "https://yousail.com.au/directory/yachtmaster-sailing-school",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
+      "sourceUpdatedAt": "2026-11-27T06:39:50.138289+00:00",
       "name": "Yachtmaster Sailing School",
       "featured": false,
       "state": "victoria",
@@ -504,7 +504,7 @@
       "website": "https://www.yachtmaster.com.au/",
       "phone": "0414 906 017",
       "email": "yacht@yachtmaster.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/24bac810-9098-4158-a4ad-7b0323ad6fc9?v=1788607414",
+      "logo": "https://yousail.com.au/api/directory/image/846fc8f7-ab9b-48e8-8202-fc3c2c7d5c22?v=1795761590",
       "featureImage": "https://yousail.com.au/api/editorial-images/ed0f9e25-c820-4994-82e6-92f5d6e28a23?v=1788607052",
       "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
