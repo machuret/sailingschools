@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "https://yousail.com.au/api/content-platform/v1/sites/sailingschools",
-    "syncedAt": "2026-11-27T06:41:16.535Z",
+    "syncedAt": "2026-11-27T06:42:09.424Z",
     "total": 20
   },
   "schools": [
@@ -35,7 +35,7 @@
     {
       "sourceSlug": "flying-fish-sailing",
       "sourceUrl": "https://yousail.com.au/directory/flying-fish-sailing",
-      "sourceUpdatedAt": "2026-09-28T03:46:37.05328+00:00",
+      "sourceUpdatedAt": "2026-11-27T06:41:16.021252+00:00",
       "name": "Flying Fish Sailing",
       "featured": true,
       "state": "new-south-wales",
@@ -43,7 +43,7 @@
       "website": "https://flyingfishsailing.com.au/",
       "phone": "+61 2 9969 8590",
       "email": "help@flyingfishsailing.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/6e30ae37-0e81-4cbe-9a59-db25a7a025c7?v=1788606474",
+      "logo": "https://yousail.com.au/api/directory/image/885dd618-2b3b-4afc-8cb6-b4cd26acecc4?v=1795761676",
       "featureImage": "https://yousail.com.au/api/editorial-images/9a435bfd-bf32-4291-bbb6-78fd24710ef4?v=1788010401",
       "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
@@ -87,14 +87,14 @@
     {
       "sourceSlug": "atlas-sailing",
       "sourceUrl": "https://yousail.com.au/directory/atlas-sailing",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
+      "sourceUpdatedAt": "2026-11-27T06:41:39.175444+00:00",
       "name": "Atlas Sailing",
       "featured": false,
       "state": "new-south-wales",
       "region": "Mosman",
       "website": "https://www.atlassailing.com.au/w/",
       "phone": "02 8467 2385",
-      "logo": "https://yousail.com.au/api/directory/image/83897c9f-da0a-4f1c-868c-b15f55abf832?v=1788609766",
+      "logo": "https://yousail.com.au/api/directory/image/948d86b2-b867-4aa2-a703-0088755030bc?v=1795761699",
       "featureImage": "https://yousail.com.au/api/editorial-images/6f042c82-6d23-4322-8161-74276c22a9d7?v=1788609792",
       "checked": "2026-09-18T15:04:01.352614+00:00",
       "freshness": "current",
@@ -369,7 +369,7 @@
     {
       "sourceSlug": "southern-cross-yachting",
       "sourceUrl": "https://yousail.com.au/directory/southern-cross-yachting",
-      "sourceUpdatedAt": "2026-09-26T16:34:49.424267+00:00",
+      "sourceUpdatedAt": "2026-11-27T06:41:39.60648+00:00",
       "name": "Southern Cross Yachting",
       "featured": false,
       "state": "queensland",
@@ -377,7 +377,7 @@
       "website": "https://southerncrossyachting.com.au/",
       "phone": "07 3396 4100",
       "email": "sailing@southerncrossyachting.com.au",
-      "logo": "https://yousail.com.au/api/directory/image/83e08532-a6ef-42a7-aa55-57c37a0809a5?v=1790430951",
+      "logo": "https://yousail.com.au/api/directory/image/262a9a70-fa34-4869-90b3-255d305ec27e?v=1795761700",
       "checked": "2026-09-18T14:56:03.2724+00:00",
       "freshness": "current",
       "services": [
